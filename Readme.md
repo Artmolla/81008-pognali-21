@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Artem Gafurbaiev](https://up.htmlacademy.ru/adaptive/21/user/81008).
-* Наставник: `Неизвестно`.
+* Наставник: [Ярослав Косович](https://htmlacademy.ru/profile/id703025).
 
 ---
 
