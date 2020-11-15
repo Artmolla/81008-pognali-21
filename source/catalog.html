@@ -158,9 +158,9 @@
             <label for="companion-quantity">
               ищу попутчиков: <span>чел.</span>
             </label>
-            <span class="">-</span>
+            <button class="less-button" aria-label="less">-</button>
             <input id="companion-quantity" type="number" name="companion" value="2">
-            <span class="">+</span>
+            <button class="more-button" aria-label="more">+</button>
           </div>
           <div class="planner__input">
             <label for="period">
@@ -176,75 +176,79 @@
           </label>
           <div class="calendar">
             <div class="calendar__header">
-              <span class="calendar__button calendar__button--previous">Previous</span>
-              <h3 class="calendar__title">Март  2019</h3>
-              <span class="calendar__button calendar__button--next">Next</span>
+              <button class="calendar__button calendar__button--previous" type="button">Previous</button>
+              <h3 class="calendar__title">Март 2019</h3>
+              <button class="calendar__button calendar__button--next" type="button">Next</button>
             </div>
             <div class="calendar__body">
               <table class="calendar__months">
-                <tr class="calendar__week">
-                  <th class="calendar__day"><a href="#">П</a></th>
-                  <th class="calendar__day"><a href="#">В</a></th>
-                  <th class="calendar__day"><a href="#">С</a></th>
-                  <th class="calendar__day"><a href="#">Ч</a></th>
-                  <th class="calendar__day"><a href="#">П</a></th>
-                  <th class="calendar__day calendar__day--weekend"><a href="#">С</a></th>
-                  <th class="calendar__day calendar__day--weekend"><a href="#">В</a></th>
-                </tr>
-                <tr class="calendar__week">
-                  <td class="calendar__day"><a href="#">23</a></td>
-                  <td class="calendar__day"><a href="#">24</a></td>
-                  <td class="calendar__day"><a href="#">25</a></td>
-                  <td class="calendar__day"><a href="#">26</a></td>
-                  <td class="calendar__day"><a href="#">27</a></td>
-                  <td class="calendar__day"><a href="#">28</a></td>
-                  <td class="calendar__day"><a href="#">1</a></td>
-                </tr>
-                <tr class="calendar__week">
-                  <td class="calendar__day"><a href="#">2</a></td>
-                  <td class="calendar__day"><a href="#">3</a></td>
-                  <td class="calendar__day"><a href="#">4</a></td>
-                  <td class="calendar__day"><a href="#">5</a></td>
-                  <td class="calendar__day"><a href="#">6</a></td>
-                  <td class="calendar__day"><a href="#">7</a></td>
-                  <td class="calendar__day"><a href="#">8</a></td>
-                </tr>
-                <tr class="calendar__week">
-                  <td class="calendar__day"><a href="#">9</a></td>
-                  <td class="calendar__day"><a href="#">10</a></td>
-                  <td class="calendar__day"><a href="#">11</a></td>
-                  <td class="calendar__day"><a href="#">12</a></td>
-                  <td class="calendar__day"><a href="#">13</a></td>
-                  <td class="calendar__day"><a href="#">14</a></td>
-                  <td class="calendar__day"><a href="#">15</a></td>
-                </tr>
-                <tr class="calendar__week">
-                  <td class="calendar__day"><a href="#">16</a></td>
-                  <td class="calendar__day"><a href="#">17</a></td>
-                  <td class="calendar__day"><a href="#">18</a></td>
-                  <td class="calendar__day"><a href="#">19</a></td>
-                  <td class="calendar__day"><a href="#">20</a></td>
-                  <td class="calendar__day"><a href="#">21</a></td>
-                  <td class="calendar__day"><a href="#">22</a></td>
-                </tr>
-                <tr class="calendar__week">
-                  <td class="calendar__day"><a href="#">23</a></td>
-                  <td class="calendar__day"><a href="#">24</a></td>
-                  <td class="calendar__day"><a href="#">25</a></td>
-                  <td class="calendar__day calendar__day--selected"><a href="#">26</a></td>
-                  <td class="calendar__day calendar__day--selected"><a href="#">27</a></td>
-                  <td class="calendar__day calendar__day--selected"><a href="#">28</a></td>
-                  <td class="calendar__day"><a href="#">29</a></td>
-                </tr>
-                <tr class="calendar__week">
-                  <td class="calendar__day"><a href="#">30</a></td>
-                  <td class="calendar__day"><a href="#">31</a></td>
-                  <td class="calendar__day"><a href="#">1</a></td>
-                  <td class="calendar__day"><a href="#">2</a></td>
-                  <td class="calendar__day"><a href="#">3</a></td>
-                  <td class="calendar__day"><a href="#">4</a></td>
-                  <td class="calendar__day"><a href="#">5</a></td>
-                </tr>
+                <thead>
+                  <tr class="calendar__week">
+                    <th class="calendar__day">П</th>
+                    <th class="calendar__day">В</th>
+                    <th class="calendar__day">С</th>
+                    <th class="calendar__day">Ч</th>
+                    <th class="calendar__day">П</th>
+                    <th class="calendar__day calendar__day--weekend">С</th>
+                    <th class="calendar__day calendar__day--weekend">В</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar__week">
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">23</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">24</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">25</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">26</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">27</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">28</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">1</button></td>
+                  </tr>
+                  <tr class="calendar__week">
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">2</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">3</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">4</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">5</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">6</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">7</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">8</button></td>
+                  </tr>
+                  <tr class="calendar__week">
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">9</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">10</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">11</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">12</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">13</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">14</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">15</button></td>
+                  </tr>
+                  <tr class="calendar__week">
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">16</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">17</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">18</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">19</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">20</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">21</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">22</button></td>
+                  </tr>
+                  <tr class="calendar__week">
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">23</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">24</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">25</button></td>
+                    <td class="calendar__day calendar__day--selected"><button class="calendar__button" type="button" aria-pressed="true" aria-label="Day of the week">26</button></td>
+                    <td class="calendar__day calendar__day--selected"><button class="calendar__button" type="button" aria-pressed="true" aria-label="Day of the week">27</button></td>
+                    <td class="calendar__day calendar__day--selected"><button class="calendar__button" type="button" aria-pressed="true" aria-label="Day of the week">28</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">29</button></td>
+                  </tr>
+                  <tr class="calendar__week">
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">30</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">31</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">1</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">2</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">3</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">4</button></td>
+                    <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false" aria-label="Day of the week">5</button></td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
@@ -262,7 +266,7 @@
               </select>
               <div class="icon icon--flag">
                 <img src="#" alt="flag">
-                <button class="button--close" type="button">x</button>
+                <button class="button--close" type="button" aria-label="Закрыть">x</button>
               </div>
             </div>
             <div class="planner__countries">
@@ -275,9 +279,7 @@
               </div>
             </div>
             <div class="planner__countries">
-              <select name="country">
-                <option value="">Выберите страну</option>
-              </select>
+                <button class="" type="button">Выберите страну</button>
               <div class="icon">
                 <img src="#" alt="v">
                 <button class="button--close" type="button">x</button>
