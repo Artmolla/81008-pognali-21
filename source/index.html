@@ -64,7 +64,7 @@
   </header>
   <main class="page__main">
     <section class="section">
-      <h1 class="section__title">
+      <h1 class="page__title">
         В путешествие с крутыми попутчиками!
       </h1>
       <ul class="contact-list">
@@ -182,65 +182,79 @@
           Теперь можно легко найти единомышленников!
         </strong>
       </p>
-      <div class="profile">
-        <ul class="profile__list">
-          <li class="profile__item">
-            <div class="profile__score-container">
-              <span class="profile__score">99</span>level
+      <div class="companions">
+        <ul class="companions__list">
+          <li class="companions__item">
+            <div class="user-card">
+              <div class="user-card__score-container">
+                <span class="user-card__score">99</span>level
+              </div>
+              <img class="user-card__image" src="#" alt="Таня Фирсова">
+              <ul class="flag-list">
+                <li class="flag-list__item">
+                  <img src="#" alt="Флаг">
+                </li>
+                <li class="flag-list__item">
+                  <img src="#" alt="Флаг">
+                </li>
+                <li class="flag-list__item">
+                  <img src="#" alt="Флаг">
+                </li>
+              </ul>
+              <p class="user-card__user-name">Таня Фирсова</p>
+              <ul class="tag-list">
+                <li class="tag-list__item">
+                  #ЗОЖ
+                </li>
+                <li class="tag-list__item">
+                  #ПП
+                </li>
+                <li class="tag-list__item">
+                  #Фитнес
+                </li>
+                <li class="tag-list__item">
+                  #пляж
+                </li>
+                <li class="tag-list__item">
+                  #авокадо
+                </li>
+                <li class="tag-list__item">
+                  #смузи
+                </li>
+              </ul>
+              <ul class="transport-list">
+                <li class="transport-list__item transport-list__item--active">
+                  <img src="#" alt="Самолет">
+                  <label aria-label="Самолет">
+                    <input class="visually-hidden" type="checkbox" name="transport" value="Самолет" checked>
+                  </label>
+                </li>
+                <li class="transport-list__item transport-list__item--active">
+                  <img src="#" alt="Автобус">
+                  <label aria-label="Автобус">
+                    <input class="visually-hidden" type="checkbox" name="transport" value="Автобус">
+                  </label>
+                </li>
+                <li class="transport-list__item">
+                  <img src="#" alt="Велосипед">
+                  <label aria-label="Велосипед">
+                    <input class="visually-hidden" type="checkbox" name="transport" value="Велосипед">
+                  </label>
+                </li>
+                <li class="transport-list__item transport-list__item--active">
+                  <img src="#" alt="Бег">
+                  <label aria-label="Бег">
+                  <input class="visually-hidden" type="checkbox" name="transport" value="Бег" checked>
+                  </label>
+                </li>
+              </ul>
             </div>
-            <img class="profile__image" src="#" alt="Таня Фирсова">
-            <ul class="flag-list">
-              <li class="flag-list__item">
-                <img src="#" alt="Флаг">
-              </li>
-              <li class="flag-list__item">
-                <img src="#" alt="Флаг">
-              </li>
-              <li class="flag-list__item">
-                <img src="#" alt="Флаг">
-              </li>
-            </ul>
-            <p>Таня Фирсова</p>
-            <ul class="tag-list">
-              <li class="tag-list__item">
-                #ЗОЖ
-              </li>
-              <li class="tag-list__item">
-                #ПП
-              </li>
-              <li class="tag-list__item">
-                #Фитнес
-              </li>
-              <li class="tag-list__item">
-                #пляж
-              </li>
-              <li class="tag-list__item">
-                #авокадо
-              </li>
-              <li class="tag-list__item">
-                #смузи
-              </li>
-            </ul>
-            <ul class="transport-list">
-              <li class="transport-list__item transport-list__item--active">
-                <img src="#" alt="Самолет">
-              </li>
-              <li class="transport-list__item">
-                <img src="#" alt="Автобус">
-              </li>
-              <li class="transport-list__item">
-                <img src="#" alt="Велосипед">
-              </li>
-              <li class="transport-list__item">
-                <img src="#" alt="Бег">
-              </li>
-            </ul>
           </li>
-          <li class="profile__item">
-            <div class="profile__score-container">
-              <span class="profile__score">80</span>level
+          <li class="companions__item">
+            <div class="user-card__score-container">
+              <span class="user-card__score">80</span>level
             </div>
-            <img class="profile__image" src="#" alt="Петя Демин">
+            <img class="user-card__image" src="#" alt="Петя Демин">
             <ul class="flag-list">
               <li class="flag-list__item">
                 <img src="#" alt="Флаг">
@@ -249,7 +263,7 @@
                 <img src="#" alt="Флаг">
               </li>
             </ul>
-            <p>Петя Демин</p>
+            <p class="user-card__user-name">Петя Демин</p>
             <ul class="tag-list">
               <li class="tag-list__item">
                 #бургер
@@ -270,20 +284,32 @@
             <ul class="transport-list">
               <li class="transport-list__item transport-list__item--active">
                 <img src="#" alt="Самолет">
+                <label aria-label="Самолет">
+                  <input class="visually-hidden" type="checkbox" name="transport" value="Самолет" checked>
+                </label>
               </li>
               <li class="transport-list__item transport-list__item--active">
                 <img src="#" alt="Автобус">
+                <label aria-label="Автобус">
+                  <input class="visually-hidden" type="checkbox" name="transport" value="Автобус" checked>
+                </label>
               </li>
               <li class="transport-list__item">
                 <img src="#" alt="Велосипед">
+                <label aria-label="Велосипед">
+                  <input class="visually-hidden" type="checkbox" name="transport" value="Велосипед">
+                </label>
               </li>
               <li class="transport-list__item transport-list__item--active">
                 <img src="#" alt="Бег">
+                <label aria-label="Бег">
+                <input class="visually-hidden" type="checkbox" name="transport" value="Бег" checked>
+                </label>
               </li>
             </ul>
           </li>
         </ul>
-        <a class="profile__link button" href="catalog.html">Показать всех</a>
+        <a class="companions__link button" href="catalog.html">Показать всех</a>
       </div>
     </section>
     <section class="section ">
@@ -343,7 +369,9 @@
         Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="">авторизуйтесь.</a>
       </p>
       <form class="register-form" action="https://echo.htmlacademy.ru" method="GET">
+        <label aria-label="E-mail">
         <input class="register-form__input" type="email" name="email" placeholder="E-mail">
+      </label>
         <button class="register-form__button button" type="submit">
           <span class="visually-hidden">Отправить</span>
         </button>
