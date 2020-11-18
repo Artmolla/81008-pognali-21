@@ -42,3 +42,8 @@
 @mixin popup-shadow {
   box-shadow: 0 2px 8px $popup-shadow;
 }
+
+@mixin outline {
+  outline: 3px solid rgb(107, 206, 107);
+  outline-offset: -3px;
+}

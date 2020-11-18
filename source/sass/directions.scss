@@ -1,4 +1,6 @@
 .directions {
+  @include outline;
+
   background-color: $basic-blue-light;
   padding: 71px 0 29px 0;
   color: $basic-blue;

@@ -1,4 +1,6 @@
 .user-card {
+  @include outline;
+
   background-color: $white;
   color: $special-grey;
   margin-bottom: 9px;

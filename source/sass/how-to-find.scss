@@ -1,4 +1,6 @@
 .how-to-find {
+  @include outline;
+
   background-color: $basic-yellow;
   color: $basic-blue-dark;
   padding: 35px 25px;

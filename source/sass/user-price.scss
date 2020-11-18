@@ -1,4 +1,6 @@
 .user-price__list {
+  @include outline;
+
   padding-bottom: 46px;
 }
 

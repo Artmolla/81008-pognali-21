@@ -1,4 +1,6 @@
 .about {
+  @include outline;
+
   background: url("../img/about-mobile.png") no-repeat center;
   padding: 33px 29px 82px 29px;
 }
