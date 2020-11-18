@@ -1,0 +1,28 @@
+.social-list {
+  @include flex;
+  @include flex-center;
+}
+
+.social-list__item {
+  padding: 13px;
+}
+
+.social-list__link {
+  @include flex;
+  @include flex-center;
+}
+
+.social-list--footer {
+  padding: 37px;
+}
+
+.social-list__item--footer {
+  @include flex;
+  @include flex-center;
+
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $basic-yellow;
+}

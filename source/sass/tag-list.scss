@@ -1,0 +1,7 @@
+.tag-list {
+  @include flex;
+  @include flex-center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}

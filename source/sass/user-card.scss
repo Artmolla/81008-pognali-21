@@ -1,0 +1,54 @@
+.user-card {
+  background-color: $white;
+  color: $special-grey;
+  margin-bottom: 9px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.user-card__content {
+  padding: 27px 10px 20px 10px;
+}
+
+.user-card__user-name {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: $basic-blue-dark;
+}
+
+.user-card__score-container {
+  @include flex;
+  @include flex-center;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $white;
+  background-color: rgba($black, 0.6);
+}
+
+.user-card__score {
+  border-bottom: 1px solid $white;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.user-card__user-status {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.user-card__user-status--online {
+  background-color: $special-green;
+}
+
+.user-card__user-status--offline {
+  background-color: $special-red;
+}

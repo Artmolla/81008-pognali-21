@@ -1,0 +1,36 @@
+.steps-list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.steps-list__item {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $basic-blue;
+  padding: 23px;
+  justify-content: space-between;
+  border-radius: 10px;
+
+  @include flex;
+}
+
+.steps-list__item--direction {
+  background-color: $special-orange;
+}
+
+.steps-list__item--ideas {
+  background-color: $special-yellow-dark;
+}
+
+.steps-list__item--similarities {
+  background-color: $special-orange-light;
+}
+
+.steps-list__item--travell {
+  background-color: $basic-yellow;
+}
+
+.steps-list__number {
+  color: $white;
+}

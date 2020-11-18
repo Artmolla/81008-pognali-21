@@ -1,0 +1,33 @@
+.directions {
+  background-color: $basic-blue-light;
+  padding: 71px 0 29px 0;
+  color: $basic-blue;
+  border-radius: 25px;
+}
+
+.directions__list {
+  padding-bottom: 25px;
+}
+
+.directions__title {
+  @include title;
+}
+
+.directions__content {
+  padding: 26px 24px 24px 24px;
+  border-radius: 10px;
+  background-color: $white;
+}
+
+.direction__heading {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: $black;
+}
+
+.directions__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
