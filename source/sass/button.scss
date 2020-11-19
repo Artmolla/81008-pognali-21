@@ -1,0 +1,60 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: $basic-yellow;
+  color: $basic-blue;
+}
+
+.button--authorization {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 25px;
+  padding: 12px 81px 8px 78px;
+  cursor: pointer;
+}
+
+.button--autorization-smaller {
+  line-height: 20px;
+  padding: 13px 40px 11px 39px;
+}
+
+.button--show-all {
+  @include flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 10px;
+  padding: 22px 29px 22px 29px;
+}
+
+.button--business-rates {
+  border: none;
+  color: $special-blue;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: inherit;
+}
+
+.button--register {
+  border: none;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.button--rout {
+  @include flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 3px solid $special-midnight;
+  border-radius: 10px;
+  padding: 22px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}

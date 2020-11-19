@@ -1,0 +1,40 @@
+.user-price__list {
+  @include outline;
+
+  padding-bottom: 46px;
+}
+
+.user-price__title {
+  @include title;
+}
+
+.user-price__item {
+  @include flex;
+  justify-content: space-between;
+  padding: 17px 0 17px 0;
+  border-top: 1px solid rgba($black, 0.05);
+
+  &:last-child {
+    border-bottom: 1px solid rgba($black, 0.05);
+  }
+}
+
+.user-price__number {
+  @include flex;
+  @include flex-center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.user-price__number--free-plan {
+  background-color: $special-orange;
+}
+
+.user-price__number--first-positions-plan {
+  background-color: $special-yellow-dark;
+}
+
+.user-price__number--custom-plan {
+  background-color: $basic-yellow;
+}

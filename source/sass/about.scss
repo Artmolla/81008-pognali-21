@@ -1,0 +1,16 @@
+.about {
+  @include outline;
+
+  background: url("../img/about-mobile.png") no-repeat center;
+  padding: 33px 29px 82px 29px;
+}
+
+.about__title {
+  @include title;
+}
+
+.about__text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}

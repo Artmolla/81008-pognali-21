@@ -1,0 +1,8 @@
+.register {
+  @include outline;
+
+  background-color: $basic-blue-light;
+  padding: 71px 25px 0 25px;
+  color: $basic-blue;
+  border-radius: 25px;
+}

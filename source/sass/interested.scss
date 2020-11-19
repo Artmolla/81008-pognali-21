@@ -1,0 +1,16 @@
+.interested {
+  @include outline;
+
+  background-color: $special-midnight;
+  padding: 72px 0 16px 0;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.interested__title {
+  @include title;
+}
+
+.interested__button {
+  color: $basic-yellow;
+}
