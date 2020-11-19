@@ -12,8 +12,13 @@
   text-transform: uppercase;
   text-align: center;
   border-radius: 25px;
-  padding: 10px 80px;
+  padding: 12px 81px 8px 78px;
   cursor: pointer;
+}
+
+.button--autorization-smaller {
+  line-height: 20px;
+  padding: 13px 40px 11px 39px;
 }
 
 .button--show-all {
