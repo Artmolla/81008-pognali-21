@@ -220,7 +220,7 @@
                   <img src="img/flag-seychelles.png" alt="Флаг Сейшелы" width="35" height="25">
                 </li>
               </ul>
-              <span class="user-card__user-status user-card__user-status--offline"></span>
+              <div class="user-card__user-status user-card__user-status--offline"><span class="visually-hidden">Статус пользователя</span></div>
               <p class="user-card__user-name">Таня Фирсова</p>
               <ul class="tag-list list-reset">
                 <li class="tag-list__item">
@@ -286,7 +286,7 @@
                   <img src="img/flag-czech.png" alt="Флаг Бельгии" width="35" height="24">
                 </li>
               </ul>
-              <span class="user-card__user-status user-card__user-status--online"></span>
+              <div class="user-card__user-status user-card__user-status--online"><span class="visually-hidden">Статус пользователя</span></div>
               <p class="user-card__user-name">Петя Демин</p>
               <ul class="tag-list list-reset">
                 <li class="tag-list__item">
@@ -400,9 +400,8 @@
       </p>
       <form class="register-form" action="https://echo.htmlacademy.ru" method="GET">
         <div class="register-form__content">
-          <label aria-label="E-mail">
-            <input class="register-form__input" type="email" name="email" placeholder="E-mail">
-          </label>
+          <label for="register-input" aria-label="E-mail"></label>
+            <input class="register-form__input" id="register-input" type="email" name="email" placeholder="E-mail">
           <button class="button button--register button-reset" type="submit">
             &#9654;
             <span class="visually-hidden">Отправить</span>
