@@ -1,0 +1,78 @@
+.calendar {
+  @include outline;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 22px;
+}
+
+.calendar__header {
+  @include grid-small;
+  border-top: 1px solid $special-grey-borders;
+  border-bottom: 1px solid $special-grey-borders;
+  margin-bottom: 22px;
+}
+
+.calendar__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.calendar__months {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.calendar__day-name {
+  padding-bottom: 10px;
+}
+
+.calendar__day-name--weekend {
+  color: $special-orange-borders;
+}
+
+.calendar__day {
+  border: 1px solid $special-grey-borders;
+  padding: 0;
+  width: 32px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 100%;
+  }
+}
+
+.calendar__button {
+  font-family: $main-font;
+  border: none;
+  background: none;
+  width: 100%;
+  min-height: 100%;
+  color: $special-blue-dark-opacity;
+
+  @include absolute-center;
+}
+
+.calendar__button--selected {
+  background-color: $basic-blue-dark;
+  color: $white;
+  font-weight: 500;
+}
+
+.calendar__button--current {
+  border: 2px solid $special-orange-borders;
+}
+
+.calendar__button--next-month {
+  background-color: $basic-blue-light;
+  color: $basic-blue-dark;
+  font-weight: 500;
+}

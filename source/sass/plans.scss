@@ -1,0 +1,47 @@
+.plans {
+  @include outline;
+
+  padding: 28px 25px 30px 25px;
+  background-color: $special-blue-light;
+  border-radius: 26px 26px 0 0;
+  color: $basic-blue-dark;
+}
+
+.plans__title {
+  @include title--blue;
+}
+
+.plans__list {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.plans__item {
+  padding: 24px 25px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: $white;
+}
+
+.plans__cities {
+  display: inline-block;
+  text-transform: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.plans__dates {
+  margin-bottom: 24px;
+}
+
+.plans__button {
+  letter-spacing: 0.03em;
+  color: $special-black-opacity;
+}

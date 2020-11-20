@@ -1,0 +1,56 @@
+.alphabet {
+  @include outline;
+}
+
+.alphabet__title {
+  @include title--white;
+  @include flex;
+
+  justify-content: space-between;
+  padding: 10px 17px 9px 17px;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border-radius: 4px 4px 0 0;
+  background-color: $basic-blue-dark;
+}
+
+.alphabet__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.alphabet__item {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  border: 1px solid $special-grey-borders;
+}
+
+.alphabet__letter {
+  @include flex;
+  @include flex-center;
+  padding: 13px 18px 13px 17px;
+}
+
+.alphabet__letter--selected {
+  background-color: $basic-blue-light;
+}
+
+.alphabet__countries-list {
+  padding: 20px 19px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special-grey;
+}
+
+.alphabet__country {
+  margin-bottom: 4px;
+}

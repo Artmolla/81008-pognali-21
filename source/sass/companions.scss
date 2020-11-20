@@ -1,8 +1,9 @@
 .companions {
   @include outline;
 
-  background: url("../img/companions-bg.png") no-repeat center;
-  padding-bottom: 20px;
+  background: url("../img/companions-bg.png") no-repeat;
+  background-color: $basic-blue;
+  padding: 0 25px 20px 25px;
 }
 
 .companions__title {

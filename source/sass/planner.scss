@@ -1,0 +1,133 @@
+.planner {
+  @include outline;
+
+  padding: 30px 25px 30px 25px;
+  border-radius: 26px 26px 0 0;
+  color: $basic-blue-dark;
+  background-color: $special-blue-lighter;
+}
+
+.planner__title {
+  @include title--blue;
+}
+
+.planner__step {
+  padding: 24px 25px 23px 25px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: $white;
+}
+
+.planner__info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 23px;
+  color: $special-grey;
+}
+
+.planner__input-container {
+  @include flex;
+  @include flex-center;
+  margin-bottom: 20px;
+}
+
+.planner__label {
+  @include flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.planner__band {
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $special-blue-dark-opacity;
+}
+
+.planner__buttons-group {
+  @include grid-small;
+  flex-basis: 100%;
+  border: 1px solid $special-grey-borders;
+  border-radius: 4px;
+  padding: 12px 14px 12px 14px;
+}
+
+.planner__input {
+  font-family: $main-font;
+  border: none;
+  background: none;
+  text-align: center;
+}
+
+.planner__country {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 22px;
+}
+
+.planner__destination-name {
+  font-family: $main-font;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border: 1px solid $special-grey-borders;
+  text-align: left;
+  border-radius: 4px;
+  padding: 11px 7px 11px 11px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $basic-blue-dark;
+}
+
+.planner__icon {
+  @include flex;
+  @include flex-center;
+  position: relative;
+  border: 1px solid $special-grey-borders;
+  border-radius: 4px;
+  padding: 9px;
+}
+
+.planner__textarea {
+  @include text-area-reset;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid $special-grey-borders;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin-bottom: 22px;
+  color: $special-blue-dark-opacity;
+}
+
+.planner__textarea--active {
+  color: $special-grey;
+}
+
+.planner__textarea-label {
+  @include flex;
+
+  padding-bottom: 14px;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+}

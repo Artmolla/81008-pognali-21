@@ -1,4 +1,5 @@
 .page-header {
-  @include outline;
-  padding: 28px 25px;
+  // @include outline;
+  padding: 28px 25px 52px 25px;
+  background-color: $basic-blue;
 }

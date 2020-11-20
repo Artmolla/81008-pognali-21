@@ -1,15 +1,24 @@
 .page-body {
-  padding: 0 25px;
   margin: 0;
   font-family: $main-font;
   font-size: 16px;
   line-height: 22px;
   color: $white;
-  background-color: $basic-blue;
 }
 
 .page-body__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 40px;
+  padding: 10px 25px 10px 25px;
+  margin: 0;
+  background-color: $basic-blue;
+}
+
+.page-body__contacts {
+  background-color: $basic-blue;
+}
+
+.page-body__title--directions {
+  border-radius: 0 0 26px 26px;
 }

@@ -13,13 +13,26 @@
 }
 
 @mixin button-reset {
+  font-family: $main-font;
   background: none;
   border: none;
+}
+
+@mixin text-area-reset {
+  border: none;
+  resize: none;
+  overflow: hidden;
+  background-color: inherit;
 }
 
 @mixin link-reset {
   text-decoration: none;
   color: inherit;
+}
+
+@mixin grid-small {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
 }
 
 @mixin flex {
@@ -39,6 +52,16 @@
   line-height: 24px;
 }
 
+@mixin title--blue {
+  @include title;
+  color: $basic-blue-dark;
+}
+
+@mixin title--white {
+  @include title;
+  color: $white;
+}
+
 @mixin popup-shadow {
   box-shadow: 0 2px 8px $popup-shadow;
 }
@@ -46,4 +69,12 @@
 @mixin outline {
   outline: 3px solid rgb(107, 206, 107);
   outline-offset: -3px;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
