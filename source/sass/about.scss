@@ -2,7 +2,9 @@
   @include outline;
 
   background: url("../img/about-mobile.png") no-repeat center;
-  padding: 33px 29px 82px 29px;
+  background-color: $special-midnight;
+  padding: 33px 25px 82px 25px;
+  border-radius: 0 0 26px 26px;
 }
 
 .about__title {

@@ -3,6 +3,7 @@
   display: inline-block;
   background-color: $basic-yellow;
   color: $basic-blue;
+  border: none;
 }
 
 .button--authorization {
@@ -33,7 +34,6 @@
 }
 
 .button--business-rates {
-  border: none;
   color: $special-blue;
   font-weight: bold;
   font-size: 16px;
@@ -42,7 +42,6 @@
 }
 
 .button--register {
-  border: none;
   border-radius: 20px;
   padding: 24px;
 }
@@ -57,4 +56,44 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+}
+
+.button--change-photo {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 33px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  background-color: $special-blue-light;
+}
+
+.button--next-step {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-bottom: 13px;
+  padding: 7px 41px 7px 43px;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.button--step-backwards {
+  background-color: transparent;
+}
+
+.button--close-flag {
+  position: absolute;
+  top: -13px;
+  right: -16px;
+  background-color: transparent;
+}
+
+.button--calendar {
+  background-color: transparent;
 }

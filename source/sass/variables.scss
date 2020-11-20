@@ -8,6 +8,7 @@ $basic-blue-dark: #1d2e5b;
 $basic-blue-light: #edeff6;
 $basic-yellow: #ffd74b;
 $special-blue-light: #dfe3f0;
+$special-blue-lighter: #d4d9eb;
 $special-yellow-dark: #ffa530;
 $special-orange: #ff8d30;
 $special-orange-light: #ffbd30;
@@ -18,5 +19,11 @@ $special-green: #81e31e;
 $special-red: #f97676;
 $special-blue: #132576;
 $special-grey-light: #f3f4f8;
+$special-grey-borders: #cbced9;
+$special-orange-borders: #ff5c23;
+$special-grey-opacity: rgba($special-grey, 0.6);
+$special-black-opacity: rgba($black, 0.3);
+$special-blue-dark-opacity: rgba($basic-blue-dark, 0.3);
+
 // shadows
 $popup-shadow: rgba(29, 46, 91, 0.14);
