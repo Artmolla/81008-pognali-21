@@ -62,6 +62,7 @@
 }
 
 .planner__input {
+  font-family: $main-font;
   border: none;
   background: none;
   text-align: center;
@@ -75,6 +76,7 @@
 }
 
 .planner__destination-name {
+  font-family: $main-font;
   display: grid;
   grid-template-columns: 1fr auto;
   border: 1px solid $special-grey-borders;
@@ -101,6 +103,11 @@
 .planner__textarea {
   @include text-area-reset;
 
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
   box-sizing: border-box;
   width: 100%;
   border: 1px solid $special-grey-borders;
