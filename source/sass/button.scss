@@ -78,7 +78,7 @@
   font-weight: bold;
   border-radius: 20px;
   margin-bottom: 13px;
-  padding: 7px 41px 7px 43px;
+  padding: 6px 41px 4px 43px;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
@@ -97,4 +97,45 @@
 
 .button--calendar {
   background-color: transparent;
+}
+
+.button--minimize {
+  width: 100%;
+  padding: 10px 10px 9px 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-color: $special-blue-grey;
+}
+
+.button--open-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-color: $special-blue-grey-light;
+}
+
+.button--companion-submit {
+  background-color: $white;
+  width: 100%;
+  padding: 12px 73px 12px 72px;
+  font-style: normal;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
 }

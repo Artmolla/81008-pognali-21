@@ -9,16 +9,21 @@
 .page-body__title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 40px;
   padding: 10px 25px 10px 25px;
+  border-radius: 0 0 26px 26px;
+  line-height: 40px;
   margin: 0;
   background-color: $basic-blue;
+}
+
+.page-body__title--companions {
+  padding: 62px 0 0 0;
 }
 
 .page-body__contacts {
   background-color: $basic-blue;
 }
 
-.page-body__title--directions {
-  border-radius: 0 0 26px 26px;
+.page-body__title--index {
+  border-radius: none;
 }

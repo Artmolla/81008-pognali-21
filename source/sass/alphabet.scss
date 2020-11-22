@@ -1,7 +1,3 @@
-.alphabet {
-  @include outline;
-}
-
 .alphabet__title {
   @include title--white;
   @include flex;

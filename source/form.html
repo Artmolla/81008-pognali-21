@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Погнали? - Формы</title>
 </head>
 
-<body class="page-body page-body--directions">
+<body class="page-body">
   <header class="page-header">
     <a class="page-header__logo link-reset">
       <img class="page-header__image" src="img/logo_mobile.png" alt="Погнали" width="96" height="15">
@@ -145,17 +146,19 @@
     </section>
     <section class="planner">
       <h2 class="planner__title">Добавить план:</h2>
-      <ul class="planner__pagination pagination-list list-reset">
-        <li class="pagination-list__item pagination-list__item--active">
-          <a class="pagination-list__link" href="#"><span class="visually-hidden">slide-1</span></a>
-        </li>
-        <li class="pagination-list__item">
-          <a class="pagination-list__link" href="#"><span class="visually-hidden">slide-2</span></a>
-        </li>
-        <li class="pagination-list__item">
-          <a class="pagination-list__link" href="#"><span class="visually-hidden">slide-3</span></a>
-        </li>
-      </ul>
+      <div class="pagination">
+        <ul class="pagination-list list-reset">
+          <li class="pagination__item pagination__item--directions-plan">
+            <a class="pagination-list__link pagination__link--directions-plan" href="#"><span class="visually-hidden">slide-1</span></a>
+          </li>
+          <li class="pagination__item pagination__item--directions-plan">
+            <a class="pagination-list__link pagination__link--directions-plan" href="#"><span class="visually-hidden">slide-2</span></a>
+          </li>
+          <li class="pagination__item pagination__item--directions-plan">
+            <a class="pagination__link pagination__link--directions-plan" href="#"><span class="visually-hidden">slide-3</span></a>
+          </li>
+        </ul>
+      </div>
       <form class="planner__steps" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="planner__step planner__step--1" id="step-1">
           <h3 class="planner__title planner__title--steps">Шаг 1. <br>Даты пребывания</h3>
@@ -365,128 +368,128 @@
           </div>
           <a class="button button--next-step link-reset" href="#step-3">Следующий шаг</a>
           <a class="button button--next-step button--step-backwards link-reset" href="#step-1">На шаг назад</a>
-            <div class="alphabet">
+          <div class="alphabet">
             <button class="button button--close" type="button" aria-label="Закрыть">&#10005;</button>
-              <h3 class="alphabet__title">Выбирите страну</h3>
-              <ul class="alphabet__list list-reset">
-                <li class="alphabet__item">
-                  <a class="alphabet__letter alphabet__letter--selected link-reset" href="#">А</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Б</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">В</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Г</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Д</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Е</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Ё</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Ж</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">З</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">И</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Й</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">К</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Л</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">М</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Н</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">О</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">П</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Р</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">С</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Т</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">У</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Ф</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Х</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Ц</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Ч</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Ш</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Щ</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Э</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Ю</a>
-                </li>
-                <li class="alphabet__item">
-                  <a class="alphabet__letter link-reset" href="#">Я</a>
-                </li>
-              </ul>
-              <ul class="alphabet__countries-list list-reset">
-                <li class="alphabet__country">Австралия</li>
-                <li class="alphabet__country">Австрия</li>
-                <li class="alphabet__country">Азербайджан</li>
-                <li class="alphabet__country">Албания</li>
-                <li class="alphabet__country">Алжир</li>
-                <li class="alphabet__country">Ангола</li>
-                <li class="alphabet__country">Андорра</li>
-                <li class="alphabet__country">Антигуа и Барбуда</li>
-                <li class="alphabet__country">Аргентина</li>
-                <li class="alphabet__country">Армения</li>
-                <li class="alphabet__country">Афганистан</li>
-              </ul>
-            </div>
+            <h3 class="alphabet__title">Выбирите страну</h3>
+            <ul class="alphabet__list list-reset">
+              <li class="alphabet__item">
+                <a class="alphabet__letter alphabet__letter--selected link-reset" href="#">А</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Б</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">В</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Г</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Д</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Е</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Ё</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Ж</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">З</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">И</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Й</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">К</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Л</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">М</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Н</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">О</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">П</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Р</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">С</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Т</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">У</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Ф</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Х</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Ц</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Ч</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Ш</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Щ</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Э</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Ю</a>
+              </li>
+              <li class="alphabet__item">
+                <a class="alphabet__letter link-reset" href="#">Я</a>
+              </li>
+            </ul>
+            <ul class="alphabet__countries-list list-reset">
+              <li class="alphabet__country">Австралия</li>
+              <li class="alphabet__country">Австрия</li>
+              <li class="alphabet__country">Азербайджан</li>
+              <li class="alphabet__country">Албания</li>
+              <li class="alphabet__country">Алжир</li>
+              <li class="alphabet__country">Ангола</li>
+              <li class="alphabet__country">Андорра</li>
+              <li class="alphabet__country">Антигуа и Барбуда</li>
+              <li class="alphabet__country">Аргентина</li>
+              <li class="alphabet__country">Армения</li>
+              <li class="alphabet__country">Афганистан</li>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="planner__step planner__step--3" id="step-3">
           <h3 class="planner__title planner__title--steps">Шаг 3.<br> Развлечения</h3>
           <p class="planner__info">
             Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.
           </p>
-            <label class="planner__textarea-label" for="plans-fiel-1">Босния и Герцеговина
+          <label class="planner__textarea-label" for="plans-fiel-1">Босния и Герцеговина
             <img src="img/bosnia-and-herzegovina.png" alt="Босния и Герцеговина" width="35" height="24">
-            </label>
-            <textarea class="planner__textarea" name="plans-field" id="plans-fiel-1" cols="30" rows="10">План действий
+          </label>
+          <textarea class="planner__textarea" name="plans-field" id="plans-fiel-1" cols="30" rows="10">План действий
           </textarea>
           <label class="planner__textarea-label" for="plans-field-2">Чехия
-          <img src="img/flag-czech.png" alt="Чехия" width="35" height="24">
+            <img src="img/flag-czech.png" alt="Чехия" width="35" height="24">
           </label>
           <textarea class="planner__textarea planner__textarea--active" name="plans-field" id="plans-field-2" cols="30"
             rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.

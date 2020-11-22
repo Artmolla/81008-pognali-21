@@ -1,0 +1,68 @@
+.level-filter {
+  margin-bottom: 22px;
+}
+
+.level-filter__level-controls {
+  @include flex;
+  @include flex-center;
+
+  text-align: center;
+  position: relative;
+  margin-bottom: 21px;
+}
+
+.level-filter__label {
+  @include flex;
+  @include flex-center;
+
+  flex-basis: 50%;
+}
+
+.level-filter__input {
+  width: 98%;
+  padding: 13px 10px 8px 10px;
+  text-align: center;
+  font-family: $main-font;
+  border: 1px solid $special-grey-borders;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  background-color: $white;
+}
+
+.level-filter__separator {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  border: 2px solid $white;
+  background-color: $special-grey-borders;
+}
+
+.level-filter__range-controls {
+  position: relative;
+}
+
+.level-filter__bar {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, $special-blue-dark-opacity 30%, $basic-blue-dark 30%);
+}
+
+.level-filter__toggle {
+  position: absolute;
+  top: -4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $basic-blue-dark;
+}
+
+.level-filter__toggle--min {
+  left: 30%;
+}
+
+.level-filter__toggle--max {
+  left: calc(100% - 10px);
+}
