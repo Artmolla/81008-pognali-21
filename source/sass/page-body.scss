@@ -20,6 +20,10 @@
   padding: 62px 0 0 0;
 }
 
+.page-body__section-title {
+  @include title;
+}
+
 .page-body__contacts {
   background-color: $basic-blue;
 }

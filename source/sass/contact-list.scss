@@ -10,9 +10,9 @@
 
 .contact-list__link {
   @include flex;
+
   align-items: center;
   font-weight: bold;
-  font-size: 16px;
   line-height: 18px;
   color: $special-midnight;
 }
