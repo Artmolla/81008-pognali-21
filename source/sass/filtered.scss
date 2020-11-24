@@ -40,11 +40,11 @@
   }
 }
 
-.filtered__breadcrumbs {
+.filtered__pagination {
   @include flex;
 }
 
-.filtered__breadcrumb {
+.filtered__pagination-items {
   @include flex;
   @include flex-center;
 }
@@ -61,6 +61,6 @@
   background-color: $basic-yellow;
 }
 
-.filtered__breadcrumbs--hide {
+.filtered__pagination--hide {
   display: none;
 }
