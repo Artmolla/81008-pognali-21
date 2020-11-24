@@ -1,0 +1,19 @@
+.flag-list {
+  @include flex;
+  @include flex-center;
+
+  padding-top: 28px;
+}
+
+.flag-list__item {
+  @include flex;
+}
+
+.flag-list__item--companions-filtered {
+  flex-basis: 100%;
+  align-items: center;
+}
+
+.flag-list__img {
+  margin-right: 14px;
+}

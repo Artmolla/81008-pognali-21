@@ -1,11 +1,29 @@
 .user-card {
-  @include outline;
+  // @include outline;
 
   background-color: $white;
   color: $special-grey;
   margin-bottom: 9px;
   border-radius: 10px;
   text-align: center;
+}
+
+.user-card__header {
+  @include flex;
+  justify-content: space-between;
+}
+
+.user-card__container {
+  position: relative;
+}
+
+.user-card__likes {
+  @include flex;
+  @include flex-center;
+
+  position: absolute;
+  top: 37px;
+  right: -44px;
 }
 
 .user-card__content {
@@ -32,4 +50,43 @@
 
 .user-card__user-status--offline {
   background-color: $special-red;
+}
+
+.user-card__likes-quantity {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.user-card__text-container {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $basic-blue-light;
+}
+
+.user-card__text {
+  position: absolute;
+  top: -12px;
+  border-left: 10px solid $white;
+  border-right: 10px solid $white;
+  background-color: $white;
+}
+
+.user-card__text--left {
+  left: 40px;
+}
+
+.user-card__text--right {
+  right: 40px;
+}
+
+.user-card__group {
+  padding-top: 25px;
+  margin-bottom: 14px;
+  display: grid;
+  grid-template-columns: 1fr auto;
 }

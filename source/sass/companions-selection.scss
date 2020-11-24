@@ -1,0 +1,36 @@
+.companion-selection {
+  padding: 26px 25px 22px 25px;
+  margin-bottom: 28px;
+  border-radius: 20px;
+  background-color: $basic-yellow;
+}
+
+.companion-selection__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+
+.companion-selection__filter {
+  border: none;
+  border-top: 1px solid $special-yellow-grey-borders;
+}
+
+.companion-selection__button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 12px 0 14px 0;
+}
+
+.companion-selection__label {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-blue-dark;
+}

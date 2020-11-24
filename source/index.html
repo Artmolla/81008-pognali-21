@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Погнали</title>
 </head>
@@ -74,7 +75,7 @@
   </header>
   <main class="main">
     <section class="intro">
-      <h1 class="page-body__title">
+      <h1 class="page-body__title page-body__title--index">
         В путешествие с крутыми попутчиками!
       </h1>
       <div class="page-body__contacts">
@@ -124,7 +125,7 @@
       </ol>
     </section>
     <section class="about">
-      <h2 class="about__title">О сервисе</h2>
+      <h2 class="page-body__section-title">О сервисе</h2>
       <p>
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
         черпайте вдохновение в чужих.
@@ -136,7 +137,7 @@
       </p>
     </section>
     <section class="directions">
-      <h2 class="directions__title">
+      <h2 class="page-body__section-title">
         Направления
       </h2>
       <p class="directions__text">
@@ -189,7 +190,7 @@
       </a>
     </section>
     <section class="companions">
-      <h2 class="companions__title">
+      <h2 class="page-body__section-title">
         Попутчики
       </h2>
       <p class="companions__text">
@@ -211,16 +212,17 @@
             <div class="user-card__content">
               <ul class="flag-list list-reset">
                 <li class="flag-list__item">
-                  <img src="img/flag-sri-lanka.png" alt="Флаг Шри-Ланки" width="35" height="25">
+                  <img class="flag-list__img" src="img/flag-sri-lanka.png" alt="Флаг Шри-Ланки" width="35" height="25">
                 </li>
                 <li class="flag-list__item">
-                  <img src="img/flag-thailand.png" alt="Флаг Тайланда" width="35" height="25">
+                  <img class="flag-list__img" src="img/flag-thailand.png" alt="Флаг Тайланда" width="35" height="25">
                 </li>
                 <li class="flag-list__item">
-                  <img src="img/flag-seychelles.png" alt="Флаг Сейшелы" width="35" height="25">
+                  <img class="flag-list__img" src="img/flag-seychelles.png" alt="Флаг Сейшелы" width="35" height="25">
                 </li>
               </ul>
-              <div class="user-card__user-status user-card__user-status--offline"><span class="visually-hidden">Статус пользователя: офлайн</span></div>
+              <div class="user-card__user-status user-card__user-status--offline"><span class="visually-hidden">Статус
+                  пользователя: офлайн</span></div>
               <p class="user-card__user-name">Таня Фирсова</p>
               <ul class="tag-list list-reset">
                 <li class="tag-list__item">
@@ -244,28 +246,16 @@
               </ul>
               <ul class="transport-list list-reset">
                 <li class="transport-list__item transport-list__item--active">
-                  <img src="img/icon_plane.svg" alt="Самолет" width="21" height="23">
-                  <label aria-label="Самолет">
-                    <input class="visually-hidden" type="checkbox" name="transport" value="Самолет" checked>
-                  </label>
+                  <img src="img/icon_plane.svg" alt="Самолет" width="33" height="33">
                 </li>
                 <li class="transport-list__item transport-list__item--active">
-                  <img src="img/icon_bus.svg" alt="Автобус" width="18" height="21">
-                  <label aria-label="Автобус">
-                    <input class="visually-hidden" type="checkbox" name="transport" value="Автобус">
-                  </label>
+                  <img src="img/icon_bus.svg" alt="Автобус" width="33" height="33">
                 </li>
                 <li class="transport-list__item">
-                  <img src="img/icon_bicycle.svg" alt="Велосипед" width="25" height="24">
-                  <label aria-label="Велосипед">
-                    <input class="visually-hidden" type="checkbox" name="transport" value="Велосипед">
-                  </label>
+                  <img src="img/icon_bicycle.svg" alt="Велосипед" width="33" height="33">
                 </li>
                 <li class="transport-list__item transport-list__item--active">
-                  <img src="img/icon_run.svg" alt="Бег" width="21" height="24">
-                  <label aria-label="Бег">
-                    <input class="visually-hidden" type="checkbox" name="transport" value="Бег" checked>
-                  </label>
+                  <img src="img/icon_run.svg" alt="Бег" width="33" height="33">
                 </li>
               </ul>
             </div>
@@ -280,13 +270,14 @@
             <div class="user-card__content">
               <ul class="flag-list list-reset">
                 <li class="flag-list__item">
-                  <img src="img/flag-belgium.png" alt="Флаг Бельгии" width="35" height="24">
+                  <img class="flag-list__img" src="img/flag-belgium.png" alt="Флаг Бельгии" width="35" height="24">
                 </li>
                 <li class="flag-list__item">
-                  <img src="img/flag-czech.png" alt="Флаг Бельгии" width="35" height="24">
+                  <img class="flag-list__img" src="img/flag-czech.png" alt="Флаг Бельгии" width="35" height="24">
                 </li>
               </ul>
-              <div class="user-card__user-status user-card__user-status--online"><span class="visually-hidden">Статус пользователя: онлайн</span></div>
+              <div class="user-card__user-status user-card__user-status--online"><span class="visually-hidden">Статус
+                  пользователя: онлайн</span></div>
               <p class="user-card__user-name">Петя Демин</p>
               <ul class="tag-list list-reset">
                 <li class="tag-list__item">
@@ -308,27 +299,15 @@
               <ul class="transport-list list-reset">
                 <li class="transport-list__item transport-list__item--active">
                   <img src="img/icon_plane.svg" alt="Самолет" width="33" height="33">
-                  <label aria-label="Самолет">
-                    <input class="visually-hidden" type="checkbox" name="transport" value="Самолет" checked>
-                  </label>
                 </li>
                 <li class="transport-list__item transport-list__item--active">
                   <img src="img/icon_bus.svg" alt="Автобус" width="33" height="33">
-                  <label aria-label="Автобус">
-                    <input class="visually-hidden" type="checkbox" name="transport" value="Автобус" checked>
-                  </label>
                 </li>
                 <li class="transport-list__item">
                   <img src="img/icon_bicycle.svg" alt="Велосипед" width="33" height="33">
-                  <label aria-label="Велосипед">
-                    <input class="visually-hidden" type="checkbox" name="transport" value="Велосипед">
-                  </label>
                 </li>
                 <li class="transport-list__item transport-list__item--active">
                   <img src="img/icon_run.svg" alt="Бег" width="33" height="33">
-                  <label aria-label="Бег">
-                    <input class="visually-hidden" type="checkbox" name="transport" value="Бег" checked>
-                  </label>
                 </li>
               </ul>
             </div>
@@ -401,7 +380,7 @@
       <form class="register-form" action="https://echo.htmlacademy.ru" method="GET">
         <div class="register-form__content">
           <label for="register-input" aria-label="E-mail"></label>
-            <input class="register-form__input" id="register-input" type="email" name="email" placeholder="E-mail">
+          <input class="register-form__input" id="register-input" type="email" name="email" placeholder="E-mail">
           <button class="button button--register button-reset" type="submit">
             &#9654;
             <span class="visually-hidden">Отправить</span>

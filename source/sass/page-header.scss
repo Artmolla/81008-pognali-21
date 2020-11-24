@@ -1,5 +1,9 @@
 .page-header {
-  // @include outline;
   padding: 28px 25px 52px 25px;
   background-color: $basic-blue;
+}
+
+.page-header--companions {
+  border-radius: 0 0 26px 26px;
+  padding-bottom: 10px;
 }

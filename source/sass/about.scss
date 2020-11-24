@@ -7,12 +7,7 @@
   border-radius: 0 0 26px 26px;
 }
 
-.about__title {
-  @include title;
-}
-
 .about__text {
   font-weight: bold;
-  font-size: 16px;
   line-height: 22px;
 }
