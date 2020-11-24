@@ -17,3 +17,50 @@
   text-transform: uppercase;
   color: $basic-blue-dark;
 }
+// ########################
+
+.filtered__button-list {
+  @include flex;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.filtered__button {
+  @include flex;
+  @include flex-center;
+
+  padding: 17px 0 14px 0;
+  flex-basis: calc(50% - 0.5px);
+  cursor: pointer;
+  background-color: $white;
+  margin-right: 1px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.filtered__breadcrumbs {
+  @include flex;
+}
+
+.filtered__breadcrumb {
+  @include flex;
+  @include flex-center;
+}
+
+.filtered__link {
+  @include flex;
+  @include flex-center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.filtered__link--active {
+  background-color: $basic-yellow;
+}
+
+.filtered__breadcrumbs--hide {
+  display: none;
+}
