@@ -1,13 +1,32 @@
 .quote {
   margin: 0;
-  padding: 28px 25px;
+  padding: 28px 100px 28px 50px;
   font-weight: 300;
-  background-color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    padding: 76px 100px 350px 72px;
+  }
+
+  @media (min-width: $desctop-width) {
+    flex-basis: 20%;
+    padding: 32px 23px 0 0;
+    text-align: left;
+  }
 }
 
 .quote__text {
   margin: 0 0 18px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    padding-right: 300px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 0;
+  }
 }
 
 .quote__author {

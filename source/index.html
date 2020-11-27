@@ -10,73 +10,78 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo link-reset">
-      <img class="page-header__image" src="img/logo_mobile.png" alt="Погнали" width="96" height="15">
-    </a>
-    <button class="page-header__open-menu-button button-reset" type="button">
-      <img src="img/icon_menu_mobile.svg" alt="Открыть меню" width="25" height="11">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <div class="menu">
-      <button class="menu__close-menu-button button-reset" type="button">
-        <img src="img/icon_menu_mobile_close.svg" alt="Закрыть" width="19" height="20">
-      </button>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list list-reset">
-          <li class="main-nav__item">
-            <a class="link-reset" href="#">О сервисе</a>
+    <div class="menu menu--closed">
+      <div class="menu__header">
+        <a class="page-header__logo link-reset">
+          <img class="page-header__image" src="img/logo_mobile.png" alt="Погнали" width="96" height="15">
+        </a>
+        <button class="page-header__open-menu-button button-reset" type="button">
+          <img src="img/icon_menu_mobile.svg" alt="Открыть меню" width="25" height="11">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <!-- <button class="menu__close-menu-button button-reset" type="button">
+          <img src="img/icon_menu_mobile_close.svg" alt="Закрыть" width="19" height="20">
+        </button> -->
+      </div>
+      <div class="menu__body menu__body--closed">
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list list-reset">
+            <li class="main-nav__item">
+              <a class="link-reset" href="#">О сервисе</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="link-reset" href="form.html">Направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="link-reset" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+          <div class="authorization authorization--hidden">
+            <a class="button button--authorization link-reset">Авторизация</a>
+          </div>
+        </nav>
+        <ul class="contact-list list-reset">
+          <li class="contact-list__item contact-list__item--menu-open">
+            <a class="contact-list__link link-reset" href="tel:88005558628">
+              <img class="contact-list__image" src="img/icon_telephone.svg" alt="Телефон" width="45" height="45">
+              8 800 555-86-28
+            </a>
           </li>
-          <li class="main-nav__item">
-            <a class="link-reset" href="form.html">Направления</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="link-reset" href="catalog.html">Попутчики</a>
+          <li class="contact-list__item contact-list__item--menu-open">
+            <a class="contact-list__link link-reset" href="mailto:mail@htmlacademy.ru">
+              <img class="contact-list__image" src="img/icon_envelope_closed.svg" alt="Телефон" width="45"
+                height="45">mail@htmlacademy.ru
+            </a>
           </li>
         </ul>
-        <div class="authorization">
-          <a class="button button--authorization link-reset">Авторизация</a>
-        </div>
-      </nav>
-      <ul class="contact-list list-reset">
-        <li class="contact-list__item contact-list__item--menu-open">
-          <a class="contact-list__link link-reset" href="tel:88005558628">
-            <img class="contact-list__image" src="img/icon_telephone.svg" alt="Телефон" width="45" height="45">
-            8 800 555-86-28
-          </a>
-        </li>
-        <li class="contact-list__item contact-list__item--menu-open">
-          <a class="contact-list__link link-reset" href="mailto:mail@htmlacademy.ru">
-            <img class="contact-list__image" src="img/icon_envelope_closed.svg" alt="Телефон" width="45"
-              height="45">mail@htmlacademy.ru
-          </a>
-        </li>
-      </ul>
-      <ul class="social-list list-reset">
-        <li class="social-list__item">
-          <a class="link-reset" href="#">
-            <img src="img/icon_facebook.svg" alt="Facebook">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="link-reset" href="#">
-            <img src="img/icon_vkontakte.svg" alt="Vkontakte">
-            <span class="visually-hidden">Vkontakte</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="link-reset" href="#">
-            <img src="img/icon_instagram.svg" alt="Instagram">
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-      </ul>
+        <ul class="social-list list-reset">
+          <li class="social-list__item">
+            <a class="link-reset" href="#">
+              <img src="img/icon_facebook.svg" alt="Facebook">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="link-reset" href="#">
+              <img src="img/icon_vkontakte.svg" alt="Vkontakte">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="link-reset" href="#">
+              <img src="img/icon_instagram.svg" alt="Instagram">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
     </div>
   </header>
   <main class="main">
     <section class="intro">
       <h1 class="page-body__title page-body__title--index">
-        В путешествие с крутыми попутчиками!
+        В путешествие<br>с крутыми<br> попутчиками!
       </h1>
       <div class="page-body__contacts">
         <ul class="contact-list list-reset">
@@ -102,7 +107,7 @@
           «Лучшее приложение, что я видел в жизни!»
         </blockquote>
         <figcaption class="quote__author">
-          Мурат Эльтазин главный редактор газеты «гаджетлайф»
+          Мурат Эльтазин <br class="line-break">главный редактор газеты «гаджетлайф»
         </figcaption>
       </figure>
       <ol class="steps-list list-reset">
@@ -115,7 +120,7 @@
           <span class="steps-list__number">2</span>
         </li>
         <li class="steps-list__item steps-list__item--similarities">
-          Находите тех, кто похож на вас
+          Находите тех,<br> кто похож на вас
           <span class="steps-list__number">3</span>
         </li>
         <li class="steps-list__item steps-list__item--travell">
@@ -125,30 +130,37 @@
       </ol>
     </section>
     <section class="about">
-      <h2 class="page-body__section-title">О сервисе</h2>
-      <p>
-        Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
+      <h2 class="page-body__section-title about__title">О сервисе</h2>
+      <p class="about__text">
+        Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий <br
+          class="line-break">и
         черпайте вдохновение в чужих.
       </p>
-      <p class="about__text">
+      <p class="about__text about__text--strong">
         <strong>
           А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
         </strong>
       </p>
+      <a class="about__show-all-button button button--show-all link-reset" href="form.html">
+        Показать все <span>&#9654;</span>
+      </a>
     </section>
     <section class="directions">
       <h2 class="page-body__section-title">
         Направления
       </h2>
-      <p class="directions__text">
-        Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно
+      <p class="directions__info">
+        Мы не продаем туры <br class="line-break">и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы
+        отправиться и чем можно
         там заняться.
       </p>
       <ul class="directions__list list-reset">
         <li class="directions__item">
-          <img src="img/thailand-mobile.png" alt="Таиланд" width="270" height="110">
-          <img class="directions__image" src="img/flag-thailand.png" alt="Флаг Таиланда" width="35" height="24">
+          <div class="directions__image-container directions__image-container--thailand">
+            <!-- <img src="img/thailand-mobile.png" alt="Таиланд" width="270" height="110"> -->
+          </div>
           <div class="directions__content">
+            <img class="directions__flag" src="img/flag-thailand.png" alt="Флаг Таиланда" width="35" height="24">
             <h3 class="directions__heading">
               Таиланд
             </h3>
@@ -159,9 +171,11 @@
           </div>
         </li>
         <li class="directions__item">
-          <img src="img/france-mobile.png" alt="Франция" width="270" height="110">
-          <img class="directions__image" src="img/flag-france.png" alt="Флаг Франции" width="35" height="24">
+          <div class="directions__image-container directions__image-container--french">
+            <!-- <img src="img/france-mobile.png" alt="Франция" width="270" height="110"> -->
+          </div>
           <div class="directions__content">
+            <img class="directions__flag" src="img/flag-france.png" alt="Флаг Франции" width="35" height="24">
             <h3 class="directions__heading">
               Франция
             </h3>
@@ -172,9 +186,11 @@
           </div>
         </li>
         <li class="directions__item">
-          <img src="img/czech-mobile.png" alt="Франция" width="270" height="110">
-          <img class="directions__image" src="img/flag-czech.png" alt="Флаг Чехии" width="35" height="24">
+          <div class="directions__image-container directions__image-container--czech">
+            <!-- <img src="img/czech-mobile.png" alt="Чехия" width="270" height="110"> -->
+          </div>
           <div class="directions__content">
+            <img class="directions__flag" src="img/flag-czech.png" alt="Флаг Чехии" width="35" height="24">
             <h3 class="directions__heading">
               Чехия
             </h3>
@@ -194,23 +210,24 @@
         Попутчики
       </h2>
       <p class="companions__text">
-        Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут
+        Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, <br
+          class="line-break">а другому маршрут
         для хайкинга.
       </p>
-      <p class="companions__text">
+      <p class="companions__text companions__text--strong">
         <strong>
-          Теперь можно легко найти единомышленников!
+          Теперь можно легко <br class="line-break line-break--off">найти единомышленников!
         </strong>
       </p>
       <ul class="companions__list list-reset">
         <li class="companions__item">
           <div class="user-card">
-            <div class="user-score">
+            <div class="user-score user-score--index">
               <span class="user-score__score">99</span>level
             </div>
             <img class="user-card__image" src="img/user-photo-tanya.png" alt="Таня Фирсова" width="270" height="270">
             <div class="user-card__content">
-              <ul class="flag-list list-reset">
+              <ul class="flag-list flag-list--index list-reset">
                 <li class="flag-list__item">
                   <img class="flag-list__img" src="img/flag-sri-lanka.png" alt="Флаг Шри-Ланки" width="35" height="25">
                 </li>
@@ -263,12 +280,12 @@
         </li>
         <li class="companions__item">
           <div class="user-card">
-            <div class="user-score">
+            <div class="user-score user-score--index">
               <span class="user-score__score">80</span>level
             </div>
             <img class="user-card__image" src="img/user-photo-petya.png" alt="Петя Демин" width="270" height="270">
             <div class="user-card__content">
-              <ul class="flag-list list-reset">
+              <ul class="flag-list flag-list--index list-reset">
                 <li class="flag-list__item">
                   <img class="flag-list__img" src="img/flag-belgium.png" alt="Флаг Бельгии" width="35" height="24">
                 </li>
@@ -315,7 +332,8 @@
         </li>
       </ul>
       <a class="companions__link button button--show-all link-reset" href="catalog.html">Показать всех
-        <span>&#9654;</span></a>
+        <span>&#9654;</span>
+      </a>
     </section>
     <section class="register">
       <img class="register__image" src="img/rates.png" alt="icon">
@@ -323,18 +341,18 @@
         <h2 class="user-price__title">Добавьте свой профиль</h2>
         <ol class="user-price__list list-reset">
           <li class="user-price__item">
-            Базовое размещение<br>
-            Бесплатно
+            <span class="user-price__text">Базовое размещение</span><br>
+            <span class="user-price__price">Бесплатно</span>
             <span class="user-price__number user-price__number--free-plan">1</span>
           </li>
           <li class="user-price__item">
-            Вывод на первых позициях<br>
-            99 руб./мес
+            <span class="user-price__text">Вывод на первых позициях</span><br>
+            <span class="user-price__price">99 руб./мес</span>
             <span class="user-price__number user-price__number--first-positions-plan">2</span>
           </li>
           <li class="user-price__item">
-            Кастомный цвет карточки<br>
-            59 руб./мес
+            <span class="user-price__text">Кастомный цвет карточки</span><br>
+            <span class="user-price__price">59 руб./мес</span>
             <span class="user-price__number user-price__number--custom-plan">3</span>
           </li>
         </ol>
@@ -374,8 +392,8 @@
         Заинтересовались?
       </h2>
       <p class="interested__text">
-        Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="interested__button"
-          href="#">авторизуйтесь.</a>
+        Зарегистрируйтесь, это быстро и бесплатно! <br class="line-break">Уже зарегистрированы? Тогда скорее <a
+          class="interested__button" href="#">авторизуйтесь.</a>
       </p>
       <form class="register-form" action="https://echo.htmlacademy.ru" method="GET">
         <div class="register-form__content">
@@ -387,10 +405,10 @@
           </button>
         </div>
       </form>
-      <p>
+      <p class="interested__text">
         Остались вопросы? Мы с радостью на них ответим!
       </p>
-      <ul class="contact-list contact-list list-reset">
+      <ul class="contact-list contact-list--interested-section list-reset">
         <li class="contact-list__item contact-list__item--menu-open">
           <a class="contact-list__link contact-list__link--yellow link-reset" href="tel:88005558628">
             <img class="contact-list__image" src="img/icon_telephone.svg" alt="Телефон" width="45" height="45">
@@ -409,7 +427,7 @@
       <h2 class="visually-hidden">Как нас найти</h2>
       <address class="how-to-find__adress">
         <img class="how-to-find__pin" src="img/map_mark.svg" alt="Пин">
-        <p>ул. Большая Конюшенная, 19/8</p>
+        <p>ул. Большая <br class="line-break line-break--off">Конюшенная, 19/8</p>
       </address>
       <a class="button button--rout link-reset" href="#">Проложить маршрут <span>&#9654;</span></a>
     </section>
@@ -443,7 +461,7 @@
         </ul>
       </div>
       <div class="page-footer__developers">
-        <p>Разработано</p>
+        <p class="page-footer__text">Разработано</p>
         <a class="link-reset" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <img src="img/htmlacademy.svg" alt="HTML Academy" width="60" height="60">
         </a>

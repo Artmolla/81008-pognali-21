@@ -2,18 +2,46 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: 0 25px;
+  background: linear-gradient(transparent 50%, $special-midnight 50%);
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: transparent;
+  }
+
+  @media (min-width: $desctop-width) {
+    flex-basis: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
+  }
 }
 
 .steps-list__item {
+  box-sizing: border-box;
+  min-height: 80px;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-gap: 30px;
+  gap: 30px;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
   color: $basic-blue;
   padding: 23px;
-  justify-content: space-between;
   border-radius: 10px;
 
-  @include flex;
+  @media (min-width: $tablet-width) and (max-width: $desctop-width) {
+    grid-template-columns: 1fr;
+    padding-right: 190px;
+    gap: 10px;
+  }
+
+  @media (min-width: $desctop-width) {
+    grid-template-columns: 1fr min-content;
+    padding-right: 32px;
+    gap: 100px;
+  }
 }
 
 .steps-list__item--direction {

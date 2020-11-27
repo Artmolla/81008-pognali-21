@@ -1,6 +1,10 @@
 .social-list {
   @include flex;
   @include flex-center;
+
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
 }
 
 .social-list__item {
@@ -14,6 +18,15 @@
 
 .social-list--footer {
   padding: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding: 37px 0;
+    transform: translateX(50%);
+  }
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+  }
 }
 
 .social-list__item--footer {

@@ -16,6 +16,12 @@
   background-color: rgba($black, 0.6);
 }
 
+.user-score--index {
+  position: absolute;
+  left: 17px;
+  top: 17px;
+}
+
 .user-score__score {
   border-bottom: 1px solid $white;
   font-weight: bold;

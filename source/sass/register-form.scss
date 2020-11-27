@@ -1,9 +1,12 @@
 .register-form__content {
-  @include flex;
-
+  display: flex;
   font-family: $main-font;
   background-color: $white;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .register-form__input {
@@ -16,9 +19,18 @@
   line-height: 18px;
   color: rgba($special-grey, 0.3);
   padding: 22px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 36px;
+  }
 }
 
 .register-form__input::placeholder {
   font-family: $main-font;
   color: rgba($special-grey, 0.3);
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }

@@ -20,7 +20,7 @@
 
 .button--autorization-smaller {
   line-height: 20px;
-  padding: 13px 40px 11px 39px;
+  padding: 11px 40px 9px 39px;
 }
 
 .button--show-all {
@@ -39,11 +39,21 @@
   font-weight: bold;
   line-height: 16px;
   background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button--register {
   border-radius: 20px;
   padding: 24px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 20px 20px 0;
+    padding: 31px;
+  }
 }
 
 .button--rout {
@@ -56,6 +66,14 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 29px 35px 27px 37px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 324px;
+  }
 }
 
 .button--change-photo {

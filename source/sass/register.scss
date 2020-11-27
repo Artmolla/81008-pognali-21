@@ -1,8 +1,31 @@
 .register {
-  @include outline;
-
+  position: relative;
   background-color: $basic-blue-light;
-  padding: 71px 25px 0 25px;
+  padding: 71px 25px 38px 50px;
   color: $basic-blue;
   border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 74px 40px 29px 40px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 70px 130px 165px 130px;
+  }
+}
+
+.register__image {
+  position: absolute;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    bottom: 50px;
+    right: 85px;
+  }
+
+  @media (min-width: $desctop-width) {
+    bottom: initial;
+    top: 242px;
+    right: 85px;
+  }
 }

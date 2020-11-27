@@ -1,16 +1,49 @@
 .page-footer {
-  @include outline;
-
   background-color: $white;
   padding: 37px 25px 0 25px;
-  border-radius: 26px 0;
+  border-radius: 26px 26px 0 0;
   color: $black;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 47px 60px 43px 60px;
+  }
+}
+
+.page-footer__content {
+  @media (min-width: $tablet-width) {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 50%;
+  }
 }
 
 .page-footer__developers {
   @include flex;
+
   justify-content: space-between;
+  align-items: center;
+  flex-basis: 50%;
   padding: 13px 0;
   border-top: 1px solid rgba($black, 0.05);
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desctop-width) {
+    border-top: none;
+  }
+}
+
+.page-footer__text {
+  @media (min-width: $tablet-width) {
+    margin-right: 29px;
+  }
 }

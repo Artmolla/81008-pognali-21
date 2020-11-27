@@ -1,21 +1,63 @@
 .user-price__list {
-  @include outline;
-
   padding-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 59px;
+  }
 }
 
 .user-price__title {
   @include title;
+  padding-right: 100px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    font-size: 45px;
+    line-height: 45px;
+    padding-right: 0;
+  }
 }
 
 .user-price__item {
   @include flex;
   justify-content: space-between;
   padding: 17px 0 17px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.user-price__text {
+  flex-grow: 2;
   border-top: 1px solid rgba($black, 0.05);
 
   &:last-child {
     border-bottom: 1px solid rgba($black, 0.05);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 0 0 0;
+  }
+}
+
+.user-price__price {
+  order: 3;
+  flex-basis: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-width: 198px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px 0;
+    flex-basis: initial;
+    background-color: $special-blue-grey-light;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 446px;
   }
 }
 
@@ -25,6 +67,13 @@
   width: 34px;
   height: 34px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: 68px;
+    height: 68px;
+    margin-right: 22px;
+  }
 }
 
 .user-price__number--free-plan {

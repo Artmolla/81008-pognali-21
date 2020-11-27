@@ -1,13 +1,65 @@
 .about {
-  @include outline;
-
-  background: url("../img/about-mobile.png") no-repeat center;
+  background-image: url("../img/about-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: $special-midnight;
-  padding: 33px 25px 82px 25px;
+  padding: 33px 50px 82px 50px;
   border-radius: 0 0 26px 26px;
+  margin-top: -1px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/about-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-position: top 20px right 8px;
+    padding: 33px 74px 82px 74px;
+  }
+
+  @media (min-width: $desctop-width) {
+    background-image:
+      url("../img/about-bg-desctop.png"),
+      url("../img/about-bg-rect-desctop.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+      top 125px right,
+      top 70px left 60px;
+    padding: 118px 26% 225px 130px;
+  }
+}
+
+.about__title {
+  padding: 0;
 }
 
 .about__text {
-  font-weight: bold;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    padding-right: 320px;
+  }
+}
+
+.about__text--strong {
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 125px;
+  }
+}
+
+.about__show-all-button {
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: initial;
+  }
 }

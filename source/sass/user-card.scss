@@ -1,11 +1,14 @@
 .user-card {
-  // @include outline;
-
+  position: relative;
   background-color: $white;
   color: $special-grey;
   margin-bottom: 9px;
   border-radius: 10px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 81px;
+  }
 }
 
 .user-card__header {
@@ -27,6 +30,7 @@
 }
 
 .user-card__content {
+  position: relative;
   padding: 27px 10px 20px 10px;
 }
 
