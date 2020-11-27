@@ -4,10 +4,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 40px;
+    background-color: $special-midnight;
   }
 
   @media (min-width: $desctop-width) {
     padding: 46px 60px 0 60px;
+    background-color: $basic-blue;
   }
 }
 
