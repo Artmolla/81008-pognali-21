@@ -1,7 +1,39 @@
 .menu {
-  // display: none;
   text-align: center;
-  padding: 25px 25px 25px 0;
-  background-color: $white;
+  padding: 25px 0 25px 0;
   color: $special-midnight;
+
+  &--closed {
+    @media (min-width: $tablet-width) {
+      @include flex;
+
+      padding: 10px 0;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.menu__header {
+  @include flex;
+
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 50%;
+  }
+}
+
+.menu__body {
+  &--closed {
+    display: none;
+  }
+
+  &--open {
+    display: block;
+  }
+
+  @media (min-width: $desctop-width) {
+    display: block;
+  }
 }

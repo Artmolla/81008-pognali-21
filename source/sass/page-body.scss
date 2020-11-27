@@ -8,12 +8,24 @@
 
 .page-body__title {
   font-weight: bold;
+  text-align: center;
   font-size: 36px;
   padding: 10px 25px 10px 25px;
   border-radius: 0 0 26px 26px;
   line-height: 40px;
   margin: 0;
-  background-color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 70px;
+    padding-top: 32px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-left: 67px;
+    text-align: left;
+    margin-bottom: 101px;
+  }
 }
 
 .page-body__title--companions {
@@ -22,10 +34,31 @@
 
 .page-body__section-title {
   @include title;
+  padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $desctop-width) {
+    align-self: start;
+    justify-self: start;
+    margin: 0;
+  }
 }
 
 .page-body__contacts {
-  background-color: $basic-blue;
+  @include flex;
+
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
 }
 
 .page-body__title--index {

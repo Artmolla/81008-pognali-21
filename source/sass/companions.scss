@@ -1,11 +1,77 @@
 .companions {
-  @include outline;
-
-  background: url("../img/companions-bg.png") no-repeat;
+  background-image: url("../img/companions-bg.png");
+  background-repeat: no-repeat;
   background-color: $basic-blue;
-  padding: 0 25px 20px 25px;
+  padding: 102px 25px 20px 25px;
+  border-radius: 0 0 25px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 102px 76px 87px 76px;
+    background-image: url("../img/companions-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-position: top 50px right 74px;
+  }
+
+  @media (min-width: $desctop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(4, auto);
+    gap: 0 50px;
+    padding: 102px 60px 87px 130px;
+  }
 }
 
 .companions__text {
+  padding: 0 25px;
   font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 140px 0 0;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  @media (min-width: $desctop-width) {
+    align-self: start;
+    margin: 0;
+  }
+}
+
+.companions__text--strong {
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desctop-width) {
+    justify-self: flex-start;
+  }
+}
+
+
+.companions__list {
+  @media (min-width: $tablet-width) {
+    @include flex;
+
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desctop-width) {
+    grid-column: 2;
+    grid-row: 1 / -1;
+  }
+}
+
+.companions__item {
+  @media (min-width: $tablet-width) {
+    margin-right: 50px;
+  }
+
+  &:last-of-type {
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+    }
+  }
 }

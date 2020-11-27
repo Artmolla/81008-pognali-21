@@ -1,5 +1,12 @@
 .tag-list {
   @include flex;
   @include flex-center;
+
+  width: 200px;
+  margin: auto;
   line-height: 18px;
+}
+
+.tag-list__item {
+  margin-right: 5px;
 }

@@ -1,10 +1,19 @@
 .how-to-find {
-  @include outline;
-
   background-color: $basic-yellow;
   color: $basic-blue-dark;
   padding: 35px 25px;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 75px 84px 75px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desctop-width) {
+    @include flex;
+    @include flex-center;
+    padding: 55px 75px 55px 75px;
+  }
 }
 
 .how-to-find__adress {
@@ -12,6 +21,12 @@
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
+  font-size: 28px;
+  line-height: 28px;
+
+  @media (min-width: $desctop-width) {
+    margin-right: 147px;
+  }
 }
 
 .how-to-find__pin {

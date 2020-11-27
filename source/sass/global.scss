@@ -13,3 +13,19 @@
 .button-reset {
   @include button-reset;
 }
+
+.line-break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: initial;
+  }
+}
+
+.line-break--off {
+  display: initial;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

@@ -1,19 +1,32 @@
 .business-rates {
+  display: none;
   padding: 34px 0 0 0;
   border-radius: 20px;
   background-color: $white;
 
   @include popup-shadow;
-  @include outline;
+
+  @media (min-width: $tablet-width) {
+    padding: 54px 0 0 0;
+  }
 }
 
 .business-rates__title {
   @include title;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .business-rates__list {
   padding: 0 25px 34px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 90px 0 90px;
+  }
 }
 
 .business-rates__item {
@@ -36,4 +49,10 @@
   padding: 21px 80px;
   background-color: $special-grey-light;
   border-radius: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 20px 20px;
+    font-size: 24px;
+    padding: 41px 80px;
+  }
 }

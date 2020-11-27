@@ -1,3 +1,9 @@
 .authorization {
   text-align: center;
 }
+
+.authorization--desctop-hidden {
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}

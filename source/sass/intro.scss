@@ -1,7 +1,31 @@
 .intro {
-  @include outline;
-
   padding-bottom: 39px;
-  border-radius: 10px;
-  background-color: $special-midnight;
+  background-color: $basic-blue;
+  margin-top: -1px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $special-midnight;
+    background-image:
+      url("../img/traveller-illustration-tablet.png"),
+      url("../img/globe-back-tablet.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+      bottom 255px right,
+      bottom 148px left;
+  }
+
+  @media (min-width: $desctop-width) {
+    @include flex;
+    justify-content: space-between;
+
+    padding: 110px 60px 123px 60px;
+    background-color: $basic-blue;
+    background-image:
+      url("../img/traveller-illustration-desktop.png"),
+      url("../img/globe-back-desktop.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+      bottom right 50%,
+      bottom left;
+  }
 }

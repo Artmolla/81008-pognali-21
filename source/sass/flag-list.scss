@@ -5,15 +5,23 @@
   padding-top: 28px;
 }
 
+.flag-list--index {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .flag-list__item {
   @include flex;
+  margin-right: 14px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .flag-list__item--companions-filtered {
   flex-basis: 100%;
   align-items: center;
-}
-
-.flag-list__img {
-  margin-right: 14px;
 }
