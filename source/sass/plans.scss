@@ -1,20 +1,36 @@
 .plans {
-  @include outline;
-
   padding: 28px 25px 30px 25px;
   background-color: $special-blue-light;
   border-radius: 26px 26px 0 0;
   color: $basic-blue-dark;
+
+  @media (min-width: $tablet-width) {
+    padding: 53px 75px 63px 75px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 54px 58px 64px 124px;
+  }
 }
 
 .plans__title {
   @include title--blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 0;
+  }
 }
 
 .plans__list {
   list-style-position: inside;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include flex;
+  }
 }
 
 .plans__item {
@@ -27,6 +43,36 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 40px 14px 40px;
+    flex-basis: 100%;
+  }
+
+  @media (min-width: $desctop-width) {
+    @include flex;
+  }
+}
+
+.plans__info {
+  @media (min-width: $tablet-width) {
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $special-grey-opacity-borders;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  @media (min-width: $desctop-width) {
+    flex-basis: 50%;
+  }
+
+  @media (min-width: $desctop-width) {
+    border: none;
+  }
 }
 
 .plans__cities {
@@ -34,10 +80,28 @@
   text-transform: none;
   font-weight: bold;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    @include flex;
+
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desctop-width) {
+    display: block;
+    flex-basis: 50%;
+  }
 }
 
 .plans__dates {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .plans__button {

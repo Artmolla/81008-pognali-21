@@ -2,6 +2,10 @@
   @include flex;
   @include flex-center;
 
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+
   @media (min-width: $desctop-width) {
     display: none;
   }

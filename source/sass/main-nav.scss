@@ -1,38 +1,42 @@
 .main-nav {
-  padding-bottom: 50px;
-
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
   }
 
   @media (min-width: $desctop-width) {
-    position: absolute;
-    top: 55px;
-    left: 20%;
+    // position: absolute;
+    // top: 10px;
+    // left: 20%;
   }
 }
 
 .main-nav__list {
   margin-bottom: 50px;
-
-  @media (min-width: $desctop-width) {
-    @include flex;
-    @include flex-center;
-  }
-}
-
-.main-nav__item {
   font-size: 30px;
   font-weight: 500;
   line-height: 35px;
   text-transform: uppercase;
-  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 71px;
+  }
 
   @media (min-width: $desctop-width) {
+    @include flex;
+    @include flex-center;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
     color: $white;
+    margin: 0;
+  }
+}
+
+.main-nav__item {
+  @media (min-width: $desctop-width) {
     margin-right: 34px;
   }
 }

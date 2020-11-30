@@ -9,86 +9,94 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
-    <a class="page-header__logo link-reset">
-      <img class="page-header__image" src="img/logo_mobile.png" alt="Погнали" width="96" height="15">
-    </a>
-    <button class="page-header__open-menu-button button-reset" type="button">
-      <img src="img/icon_menu_mobile.svg" alt="Открыть меню" width="25" height="11">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <div class="menu">
-      <button class="menu__close-menu-button button-reset" type="button">
-        <img src="img/icon_menu_mobile_close.svg" alt="Закрыть" width="19" height="20">
-      </button>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list list-reset">
-          <li class="main-nav__item">
-            <a class="link-reset" href="#">О сервисе</a>
+  <header class="page-header page-header--inner">
+    <div class="menu menu--closed">
+      <div class="menu__header">
+        <a class="page-header__logo link-reset" href="index.html">
+          <img class="page-header__image" src="img/logo_mobile.png" alt="Погнали" width="96" height="15">
+        </a>
+        <button class="page-header__toggle-menu-button button-reset" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <!-- <img src="img/icon_menu_mobile.svg" alt="Открыть меню" width="25" height="11"> -->
+          <img src="img/icon_menu_mobile_close.svg" alt="Закрыть" width="19" height="20">
+        </button>
+      </div>
+      <div class="menu__body">
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list list-reset">
+            <li class="main-nav__item">
+              <a class="link-reset" href="#">О сервисе</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="link-reset">Направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="link-reset" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="authorization authorization--desctop-hidden">
+          <a class="button authorization__button link-reset">Авторизация</a>
+        </div>
+        <ul class="contact-list list-reset">
+          <li class="contact-list__item contact-list__item--menu-open">
+            <a class="contact-list__link link-reset" href="tel:88005558628">
+              <img class="contact-list__image" src="img/icon_telephone.svg" alt="Телефон" width="45" height="45">
+              <span class="contact-list__text">8 800 555-86-28</span>
+            </a>
           </li>
-          <li class="main-nav__item">
-            <a class="link-reset">Направления</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="link-reset" href="catalog.html">Попутчики</a>
+          <li class="contact-list__item contact-list__item--menu-open">
+            <a class="contact-list__link link-reset" href="mailto:mail@htmlacademy.ru">
+              <img class="contact-list__image" src="img/icon_envelope_closed.svg" alt="Телефон" width="45"
+                height="45"><span class="contact-list__text">mail@htmlacademy.ru</span>
+            </a>
           </li>
         </ul>
-        <div class="authorization">
-          <a class="button button--authorization link-reset">Авторизация</a>
-        </div>
-      </nav>
-      <ul class="contact-list list-reset">
-        <li class="contact-list__item contact-list__item--menu-open">
-          <a class="contact-list__link link-reset" href="tel:88005558628">
-            <img class="contact-list__image" src="img/icon_telephone.svg" alt="Телефон" width="45" height="45">
-            8 800 555-86-28
-          </a>
-        </li>
-        <li class="contact-list__item contact-list__item--menu-open">
-          <a class="contact-list__link link-reset" href="mailto:mail@htmlacademy.ru">
-            <img class="contact-list__image" src="img/icon_envelope_closed.svg" alt="Телефон" width="45"
-              height="45">mail@htmlacademy.ru
-          </a>
-        </li>
-      </ul>
-      <ul class="social-list list-reset">
-        <li class="social-list__item">
-          <a class="link-reset" href="#">
-            <img src="img/icon_facebook.svg" alt="Facebook">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="link-reset" href="#">
-            <img src="img/icon_vkontakte.svg" alt="Vkontakte">
-            <span class="visually-hidden">Vkontakte</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="link-reset" href="#">
-            <img src="img/icon_instagram.svg" alt="Instagram">
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-      </ul>
+        <ul class="social-list list-reset">
+          <li class="social-list__item">
+            <a class="link-reset" href="#">
+              <img src="img/icon_facebook.svg" alt="Facebook">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="link-reset" href="#">
+              <img src="img/icon_vkontakte.svg" alt="Vkontakte">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="link-reset" href="#">
+              <img src="img/icon_instagram.svg" alt="Instagram">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <main class="main">
-    <h1 class="page-body__title page-body__title--directions">Направления</h1>
     <section class="profile">
-      <h2 class="visually-hidden">Настройка профиля</h2>
+      <!-- <h2 class="visually-hidden">Настройка профиля</h2> -->
       <div class="profile__content">
+        <!-- <div class=""> -->
+        <h1 class="page-body__title page-body__title--inner">Направления</h1>
         <div class="user-score user-score--profile">
           <span class="user-score__score user-score__score--profile">80</span>level
         </div>
-        <img class="profile__image" src="img/profile-photo-petya.png" alt="Ваша фотография" width="100" height="100">
-        <button class="button button--change-photo" type="button">Сменить фото</button>
-        <div class="profile__container">
-          <h3 class="profile__title">Тэги</h3>
+        <!-- <img class="profile__image" src="img/profile-photo-petya.png" alt="Ваша фотография" width="100" height="100"> -->
+        <img class="profile__image" src="img/user-photo-petya-desktop.png" alt="">
+        <button class="button button--change-photo" type="button">
+          <span class="button__text">Сменить фото</span>
+          <span class="button__text-desctop">Фото</span>
+        </button>
+        <!-- </div> -->
+        <div class="profile__container profile__container--tags">
+          <h3 class="profile__title profile__title--tags">Тэги</h3>
           <textarea class="profile__tags">#бургер #бар #футбол #концерт #крафт
           </textarea>
         </div>
-        <div class="profile__container">
+        <div class="profile__container profile__container--transport">
           <h3 class="profile__title">Транспорт</h3>
           <ul class="transport-list list-reset">
             <li class="transport-list__item transport-list__item--active">
@@ -121,75 +129,102 @@
     </section>
     <section class="plans">
       <h2 class="plans__title">Мои планы:</h2>
-      <ol class="plans__list">
+      <ol class="plans__list list-reset">
         <li class="plans__item">
-          <p class="plans__cities">Франция, Италия</p>
-          <p class="plans__companion">3 Попутчика</p>
-          <p class="plans__dates">
-            <time datetime="2020-03-26">26 мар</time>
-            —
-            <time datetime="2020-03-29">29 мар</time>
-          </p>
-          <a class="plans__button link-reset" href="my-plans.html">Изменить</a>
+          <p class="plans__cities"><span class="plans__number">1.</span>Франция, Италия</p>
+          <div class="plans__info">
+            <p class="plans__companion">3 Попутчика</p>
+            <p class="plans__dates">
+              <time datetime="2020-03-26">26 мар</time>
+              —
+              <time datetime="2020-03-29">29 мар</time>
+            </p>
+            <a class="plans__button link-reset" href="my-plans.html">Изменить</a>
+          </div>
         </li>
         <li class="plans__item">
-          <p class="plans__cities">Таиланд, Индонезия</p>
-          <p class="plans__companion">1 Попутчика</p>
-          <p class="plans__dates">
-            <time datetime="2020-06-01">1 Июл</time>
-            —
-            <time datetime="2020-06-15">15 Июл</time>
-          </p>
-          <a class="plans__button link-reset" href="my-plans.html">Изменить</a>
+          <p class="plans__cities"><span class="plans__number">2.</span>Таиланд, Индонезия</p>
+          <div class="plans__info">
+            <p class="plans__companion">1 Попутчика</p>
+            <p class="plans__dates">
+              <time datetime="2020-06-01">1 Июл</time>
+              —
+              <time datetime="2020-06-15">15 Июл</time>
+            </p>
+            <a class="plans__button link-reset" href="my-plans.html">Изменить</a>
+          </div>
         </li>
       </ol>
     </section>
     <section class="planner">
-      <h2 class="planner__title">Добавить план:</h2>
-      <div class="pagination">
-        <ul class="pagination-list list-reset">
-          <li class="pagination__item">
-            <a class="pagination-list__link" href="#"><span class="visually-hidden">slide-1</span></a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination-list__link" href="#"><span class="visually-hidden">slide-2</span></a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#"><span class="visually-hidden">slide-3</span></a>
-          </li>
-        </ul>
+      <div class="planner__header">
+        <h2 class="planner__title">Добавить план:</h2>
+        <div class="pagination pagination--mobile">
+          <ul class="pagination-list list-reset">
+            <li class="pagination__item">
+              <a class="pagination-list__link pagination-list__link--active" href="#"><span
+                  class="visually-hidden">Даты</span></a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination-list__link" href="#"><span class="visually-hidden">Маршрут</span></a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination-list__link" href="#"><span class="visually-hidden">Развлечения</span></a>
+            </li>
+          </ul>
+        </div>
       </div>
       <form class="planner__steps" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="planner__step planner__step--1" id="step-1">
-          <h3 class="planner__title planner__title--steps">Шаг 1. <br>Даты пребывания</h3>
+          <div class="planner__header">
+            <h3 class="planner__title planner__title--steps">Шаг 1. <br class="line-break--off">Даты пребывания</h3>
+            <div class="pagination pagination--desctop">
+              <ul class="pagination-list list-reset">
+                <li class="pagination__item pagination__item--active">
+                  <a class="pagination-list__link pagination-list__link--active link-reset" href="#">&#9679;<span
+                      class="pagination__text">Даты</span></a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination-list__link link-reset" href="#">&#9679;<span
+                      class="pagination__text">Маршрут</span></a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination-list__link link-reset" href="#">&#9679;<span
+                      class="pagination__text">Развлечения</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <p class="planner__info">
             Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую
             длительность.
           </p>
-          <div class="planner__input-container">
-            <label class="planner__label" for="companion-quantity">
-              ищу попутчиков: <span class="planner__band">чел.</span>
+          <div class="planner__input-group">
+            <div class="planner__input-container">
+              <label class="planner__label" for="companion-quantity">
+                ищу попутчиков: <span class="planner__band">чел.</span>
+              </label>
+              <div class="planner__buttons-group">
+                <button class="button button--less button--calendar" type="button" aria-label="less">-</button>
+                <input class="planner__input" id="companion-quantity" type="number" name="companion" value="2">
+                <button class="button button--more button--calendar" type="button" aria-label="more">+</button>
+              </div>
+            </div>
+            <label class="planner__checkbox-label">
+              <input type="checkbox" name="kids" checked>
+              Можно с детьми
             </label>
-            <div class="planner__buttons-group">
-              <button class="button button--less button--calendar" type="button" aria-label="less">-</button>
-              <input class="planner__input" id="companion-quantity" type="number" name="companion" value="2">
-              <button class="button button--more button--calendar" type="button" aria-label="more">+</button>
+            <div class="planner__input-container">
+              <label class="planner__label" for="period">
+                длительность: <span class="planner__band">дн.</span>
+              </label>
+              <div class="planner__buttons-group">
+                <button class="button button--less button--calendar" type="button" aria-label="less">-</button>
+                <input class="planner__input" id="period" type="number" name="period" value="3">
+                <button class="button button--more button--calendar" type="button" aria-label="more">+</button>
+              </div>
             </div>
           </div>
-          <div class="planner__input-container">
-            <label class="planner__label" for="period">
-              длительность: <span class="planner__band">дн.</span>
-            </label>
-            <div class="planner__buttons-group">
-              <button class="button button--less button--calendar" type="button" aria-label="less">-</button>
-              <input class="planner__input" id="period" type="number" name="period" value="3">
-              <button class="button button--more button--calendar" type="button" aria-label="more">+</button>
-            </div>
-          </div>
-          <label>
-            <input type="checkbox" name="kids" checked>
-            Можно с детьми
-          </label>
           <div class="calendar">
             <div class="calendar__header">
               <button class="button button--calendar button--previous" type="button"><span
@@ -206,19 +241,40 @@
               <table class="calendar__months">
                 <thead class="calendar__head">
                   <tr class="calendar__week">
-                    <th class="calendar__day-name">П</th>
-                    <th class="calendar__day-name">В</th>
-                    <th class="calendar__day-name">С</th>
-                    <th class="calendar__day-name">Ч</th>
-                    <th class="calendar__day-name">П</th>
-                    <th class="calendar__day-name calendar__day-name--weekend">С</th>
-                    <th class="calendar__day-name calendar__day-name--weekend">В</th>
+                    <th class="calendar__day-name">
+                      <span class="calendar__text-mobile">П</span>
+                      <span class="calendar__text-tablet">Пн</span>
+                    </th>
+                    <th class="calendar__day-name">
+                      <span class="calendar__text-mobile">В</span>
+                      <span class="calendar__text-tablet">Вт</span>
+                    </th>
+                    <th class="calendar__day-name">
+                      <span class="calendar__text-mobile">С</span>
+                      <span class="calendar__text-tablet">Ср</span>
+                    </th>
+                    <th class="calendar__day-name">
+                      <span class="calendar__text-mobile">Ч</span>
+                      <span class="calendar__text-tablet">Чт</span>
+                    </th>
+                    <th class="calendar__day-name">
+                      <span class="calendar__text-mobile">П</span>
+                      <span class="calendar__text-tablet">Пт</span>
+                    </th>
+                    <th class="calendar__day-name calendar__day-name--weekend">
+                      <span class="calendar__text-mobile">С</span>
+                      <span class="calendar__text-tablet">Сб</span>
+                    </th>
+                    <th class="calendar__day-name calendar__day-name--weekend">
+                      <span class="calendar__text-mobile">В</span>
+                      <span class="calendar__text-tablet">Вс</span>
+                    </th>
                   </tr>
                 </thead>
                 <tbody class="calendar__dates">
                   <tr class="calendar__week">
                     <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false"
-                        aria-label="Day of the week">23</button></td>
+                        aria-label="Day of the week"><span>23</span></button></td>
                     <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false"
                         aria-label="Day of the week">24</button></td>
                     <td class="calendar__day"><button class="calendar__button" type="button" aria-pressed="false"
@@ -320,10 +376,69 @@
           <a class="button button--next-step link-reset" href="#step-2">Следующий шаг</a>
         </fieldset>
         <fieldset class="planner__step planner__step--2" id="step-2">
-          <h3 class="planner__title planner__title--steps">Шаг 2.<br> Маршрут</h3>
+          <div class="planner__header">
+            <h3 class="planner__title planner__title--steps">Шаг 2.<br class="line-break--off"> Маршрут</h3>
+            <div class="pagination pagination--desctop">
+              <ul class="pagination-list list-reset">
+                <li class="pagination__item">
+                  <a class="pagination-list__link link-reset" href="#">&#9679;<span
+                      class="pagination__text">Даты</span></a>
+                </li>
+                <li class="pagination__item  pagination__item--active">
+                  <a class="pagination-list__link link-reset" href="#">&#9679;<span
+                      class="pagination__text">Маршрут</span></a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination-list__link link-reset" href="#">&#9679;<span
+                      class="pagination__text">Развлечения</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <p class="planner__info">
             Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
           </p>
+          <!-- ################################################## -->
+          <!-- <div class="planner__countries">
+            <div class="planner__country">
+              <select class="planner__destination-name" name="country">
+                <option value="Босния и герцеговина">Босния и герцеговина</option>
+              </select>
+            </div>
+            <div class="planner__country">
+              <select class="planner__destination-name" name="country">
+                <option value="Чехия">Чехия</option>
+              </select>
+            </div>
+            <div class="planner__country">
+              <button class="planner__destination-name" type="button">Выберите страну
+                <img src="img/arrow-down.svg" alt="Дропдаун" width="12" height="16"></button>
+              <button class="button button--close button--close-flag" type="button">
+                <img src="img/icon-close-flag.svg" alt="Dismiss flag button" width="21" height="21">
+              </button>
+            </div>
+            <div class="planner__country">
+              <button class="planner__destination-name" type="button">Добавить страну
+                <img src="img/icon_plus.svg" alt="Добавить страну" width="14" height="14">
+              </button>
+            </div>
+          </div> -->
+          <!-- #########################################################3 -->
+          <!-- <div class="planner__country-icons">
+            <div class="planner__icon">
+              <img src="img/bosnia-and-herzegovina.png" alt="Босния и герцеговина" width="35" height="24">
+              <button class="button button--close button--close-flag" type="button" aria-label="Закрыть">
+                <img src="img/icon-close-flag.svg" alt="Dismiss flag button" width="21" height="21">
+              </button>
+            </div>
+            <div class="planner__icon">
+              <img src="img/flag-czech.png" alt="Чехия" width="35" height="24">
+              <button class="button button--close button--close-flag" type="button">
+                <img src="img/icon-close-flag.svg" alt="Dismiss flag button" width="21" height="21">
+              </button>
+            </div>
+          </div> -->
+          <!-- ################################33 -->
           <div class="planner__countries">
             <div class="planner__country">
               <select class="planner__destination-name" name="country">
@@ -366,11 +481,15 @@
               </button>
             </div>
           </div>
-          <a class="button button--next-step link-reset" href="#step-3">Следующий шаг</a>
-          <a class="button button--next-step button--step-backwards link-reset" href="#step-1">На шаг назад</a>
+          <div class="planner__buttons">
+            <a class="button button--next-step link-reset" href="#step-3">Следующий шаг</a>
+            <a class="button button--next-step button--step-backwards link-reset" href="#step-1">На шаг назад</a>
+          </div>
           <div class="alphabet">
-            <button class="button button--close" type="button" aria-label="Закрыть">&#10005;</button>
-            <h2 class="alphabet__title">Выбирите страну</h2>
+            <!-- <button class="button button--close" type="button" aria-label="Закрыть">&#10005;</button> -->
+            <h2 class="alphabet__title">Выбирите страну
+              <button class="button button--close" type="button" aria-label="Закрыть">&#10005;</button>
+            </h2>
             <ul class="alphabet__list list-reset">
               <li class="alphabet__item">
                 <a class="alphabet__letter alphabet__letter--selected link-reset" href="#">А</a>
@@ -479,7 +598,25 @@
           </div>
         </fieldset>
         <fieldset class="planner__step planner__step--3" id="step-3">
-          <h3 class="planner__title planner__title--steps">Шаг 3.<br> Развлечения</h3>
+          <div class="planner__header">
+            <h3 class="planner__title planner__title--steps">Шаг 3.<br class="line-break--off"> Развлечения</h3>
+            <div class="pagination pagination--desctop">
+              <ul class="pagination-list list-reset">
+                <li class="pagination__item">
+                  <a class="pagination-list__link pagination-list__link--active link-reset" href="#">&#9679;<span
+                      class="pagination__text">Даты</span></a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination-list__link link-reset" href="#">&#9679;<span
+                      class="pagination__text">Маршрут</span></a>
+                </li>
+                <li class="pagination__item  pagination__item--active">
+                  <a class="pagination-list__link link-reset" href="#">&#9679;<span
+                      class="pagination__text">Развлечения</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <p class="planner__info">
             Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.
           </p>
@@ -494,8 +631,10 @@
           <textarea class="planner__textarea planner__textarea--active" name="plans-field" id="plans-field-2" cols="30"
             rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
           </textarea>
-          <button class="button button--next-step link-reset" type="submit">Отправить</button>
-          <a class="button button--next-step button--step-backwards link-reset" href="#step-2">На шаг назад</a>
+          <div class="planner__buttons">
+            <button class="button button--next-step link-reset" type="submit">Отправить</button>
+            <a class="button button--next-step button--step-backwards link-reset" href="#step-2">На шаг назад</a>
+          </div>
         </fieldset>
       </form>
     </section>

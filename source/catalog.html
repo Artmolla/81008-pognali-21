@@ -9,70 +9,72 @@
 </head>
 
 <body class="page-body page-body--companions">
-  <header class="page-header page-header--companions">
-    <a class="page-header__logo link-reset">
-      <img class="page-header__image" src="img/logo_mobile.png" alt="Погнали" width="96" height="15">
-    </a>
-    <button class="page-header__open-menu-button button-reset" type="button">
-      <img src="img/icon_menu_mobile.svg" alt="Открыть меню" width="25" height="11">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <div class="menu">
-      <button class="menu__close-menu-button button-reset" type="button">
-        <img src="img/icon_menu_mobile_close.svg" alt="Закрыть" width="19" height="20">
-      </button>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list list-reset">
-          <li class="main-nav__item">
-            <a class="link-reset" href="#">О сервисе</a>
+  <header class="page-header page-header--inner">
+    <div class="menu menu--closed">
+      <div class="menu__header">
+        <a class="page-header__logo link-reset" href="index.html">
+          <img class="page-header__image" src="img/logo_mobile.png" alt="Погнали" width="96" height="15">
+        </a>
+        <button class="page-header__toggle-menu-button button-reset" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <!-- <img src="img/icon_menu_mobile.svg" alt="Открыть меню" width="25" height="11"> -->
+          <img src="img/icon_menu_mobile_close.svg" alt="Закрыть" width="19" height="20">
+        </button>
+      </div>
+      <div class="menu__body">
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list list-reset">
+            <li class="main-nav__item">
+              <a class="link-reset" href="#">О сервисе</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="link-reset" href="form.html">Направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="link-reset">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="authorization authorization--desctop-hidden">
+          <a class="button authorization__button link-reset">Авторизация</a>
+        </div>
+        <ul class="contact-list list-reset">
+          <li class="contact-list__item contact-list__item--menu-open">
+            <a class="contact-list__link link-reset" href="tel:88005558628">
+              <img class="contact-list__image" src="img/icon_telephone.svg" alt="Телефон" width="45" height="45">
+              <span class="contact-list__text">8 800 555-86-28</span>
+            </a>
           </li>
-          <li class="main-nav__item">
-            <a class="link-reset" href="form.html">Направления</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="link-reset">Попутчики</a>
+          <li class="contact-list__item contact-list__item--menu-open">
+            <a class="contact-list__link link-reset" href="mailto:mail@htmlacademy.ru">
+              <img class="contact-list__image" src="img/icon_envelope_closed.svg" alt="Телефон" width="45"
+                height="45"><span class="contact-list__text">mail@htmlacademy.ru</span>
+            </a>
           </li>
         </ul>
-        <div class="authorization">
-          <a class="button button--authorization link-reset">Авторизация</a>
-        </div>
-      </nav>
-      <ul class="contact-list list-reset">
-        <li class="contact-list__item contact-list__item--menu-open">
-          <a class="contact-list__link link-reset" href="tel:88005558628">
-            <img class="contact-list__image" src="img/icon_telephone.svg" alt="Телефон" width="45" height="45">
-            8 800 555-86-28
-          </a>
-        </li>
-        <li class="contact-list__item contact-list__item--menu-open">
-          <a class="contact-list__link link-reset" href="mailto:mail@htmlacademy.ru">
-            <img class="contact-list__image" src="img/icon_envelope_closed.svg" alt="Телефон" width="45"
-              height="45">mail@htmlacademy.ru
-          </a>
-        </li>
-      </ul>
-      <ul class="social-list list-reset">
-        <li class="social-list__item">
-          <a class="link-reset" href="#">
-            <img src="img/icon_facebook.svg" alt="Facebook">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="link-reset" href="#">
-            <img src="img/icon_vkontakte.svg" alt="Vkontakte">
-            <span class="visually-hidden">Vkontakte</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="link-reset" href="#">
-            <img src="img/icon_instagram.svg" alt="Instagram">
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-      </ul>
+        <ul class="social-list list-reset">
+          <li class="social-list__item">
+            <a class="link-reset" href="#">
+              <img src="img/icon_facebook.svg" alt="Facebook">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="link-reset" href="#">
+              <img src="img/icon_vkontakte.svg" alt="Vkontakte">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="link-reset" href="#">
+              <img src="img/icon_instagram.svg" alt="Instagram">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <h1 class="page-body__title page-body__title--companions">Попутчики</h1>
+    <h1 class="page-body__title page-body__title--inner">Попутчики</h1>
   </header>
   <main class="main main--companions">
     <button class="button button--open-filter button-reset" type="button">Фильтрация по странам:</button>
@@ -352,7 +354,8 @@
                 #смузи
               </li>
             </ul>
-            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">хочет посетить:</span></p>
+            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">хочет
+                посетить:</span></p>
             <ul class="flag-list list-reset">
               <li class="flag-list__item flag-list__item--companions-filtered">
                 <img class="flag-list__img" src="img/flag-sri-lanka.png" alt="Флаг Шри-Ланки" width="35" height="25">
@@ -367,7 +370,9 @@
                 <p class="flag-list__text">Сейшелы</p>
               </li>
             </ul>
-            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">транспорт:</span><span class="user-card__text user-card__text--right">левел:</span></p>
+            <p class="user-card__text-container"><span
+                class="user-card__text user-card__text--left">транспорт:</span><span
+                class="user-card__text user-card__text--right">левел:</span></p>
             <div class="user-card__group">
               <ul class="transport-list list-reset">
                 <li class="transport-list__item transport-list__item--active">
@@ -421,7 +426,8 @@
                 #крафт
               </li>
             </ul>
-            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">хочет посетить:</span></p>
+            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">хочет
+                посетить:</span></p>
             <ul class="flag-list list-reset">
               <li class="flag-list__item flag-list__item--companions-filtered">
                 <img class="flag-list__img" src="img/flag-belgium.png" alt="Флаг Бельгии" width="35" height="24">
@@ -432,7 +438,9 @@
                 <p class="flag-list__text">Чехия</p>
               </li>
             </ul>
-            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">транспорт:</span><span class="user-card__text user-card__text--right">левел:</span></p>
+            <p class="user-card__text-container"><span
+                class="user-card__text user-card__text--left">транспорт:</span><span
+                class="user-card__text user-card__text--right">левел:</span></p>
             <div class="user-card__group">
               <ul class="transport-list list-reset">
                 <li class="transport-list__item transport-list__item--active">
@@ -486,7 +494,8 @@
                 #суприм
               </li>
             </ul>
-            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">хочет посетить:</span></p>
+            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">хочет
+                посетить:</span></p>
             <ul class="flag-list list-reset">
               <li class="flag-list__item flag-list__item--companions-filtered">
                 <img class="flag-list__img" src="img/flag-usa.png" alt="США" width="26" height="18">
@@ -501,7 +510,9 @@
                 <p class="flag-list__text">Доминикана</p>
               </li>
             </ul>
-            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">транспорт:</span><span class="user-card__text user-card__text--right">левел:</span></p>
+            <p class="user-card__text-container"><span
+                class="user-card__text user-card__text--left">транспорт:</span><span
+                class="user-card__text user-card__text--right">левел:</span></p>
             <div class="user-card__group">
               <ul class="transport-list list-reset">
                 <li class="transport-list__item transport-list__item--active">
@@ -552,7 +563,8 @@
                 #линкедин
               </li>
             </ul>
-            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">хочет посетить:</span></p>
+            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">хочет
+                посетить:</span></p>
             <ul class="flag-list list-reset">
               <li class="flag-list__item flag-list__item--companions-filtered">
                 <img class="flag-list__img" src="img/flag-united-kingdom.png" alt="Великобритания" width="26"
@@ -564,7 +576,9 @@
                 <p class="flag-list__text">Германия</p>
               </li>
             </ul>
-            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">транспорт:</span><span class="user-card__text user-card__text--right">левел:</span></p>
+            <p class="user-card__text-container"><span
+                class="user-card__text user-card__text--left">транспорт:</span><span
+                class="user-card__text user-card__text--right">левел:</span></p>
             <div class="user-card__group">
               <ul class="transport-list list-reset">
                 <li class="transport-list__item transport-list__item--active">
@@ -589,25 +603,25 @@
         </li>
       </ul>
       <a class="filtered__show-more-button link-reset" href="catalog.html"><span>&#x2b;</span> Показать еще</a>
-        <ul class="filtered__button-list list-reset">
-          <li class="filtered__button filtered__button--previous">
-            <a class="link-reset" href="#" title="Предыдущий">
-              &#x25C0;
-            </a>
-          </li>
-          <li class="filtered__button filtered__button--next">
-            <a class="link-reset" href="#" title="Следующий">
-              &#x25B6;
-            </a>
-          </li>
-        </ul>
-        <ul class="filtered__pagination filtered__pagination--hide list-reset">
-          <li class="filtered__pagination-item"><a class="filtered__link filtered__link--active link-reset" href="#">1</a>
-          </li>
-          <li class="filtered__pagination-item"><a class="filtered__link link-reset" href="#">2</a></li>
-          <li class="filtered__pagination-item"><a class="filtered__link link-reset" href="#">3</a></li>
-          <li class="filtered__pagination-item"><a class="filtered__link link-reset" href="#">4</a></li>
-        </ul>
+      <ul class="filtered__button-list list-reset">
+        <li class="filtered__button filtered__button--previous">
+          <a class="link-reset" href="#" title="Предыдущий">
+            &#x25C0;
+          </a>
+        </li>
+        <li class="filtered__button filtered__button--next">
+          <a class="link-reset" href="#" title="Следующий">
+            &#x25B6;
+          </a>
+        </li>
+      </ul>
+      <ul class="filtered__pagination filtered__pagination--hide list-reset">
+        <li class="filtered__pagination-item"><a class="filtered__link filtered__link--active link-reset" href="#">1</a>
+        </li>
+        <li class="filtered__pagination-item"><a class="filtered__link link-reset" href="#">2</a></li>
+        <li class="filtered__pagination-item"><a class="filtered__link link-reset" href="#">3</a></li>
+        <li class="filtered__pagination-item"><a class="filtered__link link-reset" href="#">4</a></li>
+      </ul>
     </section>
   </main>
   <footer class="page-footer">
