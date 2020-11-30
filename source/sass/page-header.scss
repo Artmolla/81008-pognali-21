@@ -13,12 +13,17 @@
   }
 }
 
-.page-header--companions {
-  border-radius: 0 0 26px 26px;
-  padding-bottom: 10px;
+.page-header--inner {
+  background-color: $basic-blue;
+
+  @media (min-width: $desctop-width) {
+    position: relative;
+    padding-bottom: 148px;
+    border-radius: 0 0 26px 26px;
+  }
 }
 
-.page-header__open-menu-button {
+.page-header__toggle-menu-button {
   @media (min-width: $desctop-width) {
     display: none;
   }

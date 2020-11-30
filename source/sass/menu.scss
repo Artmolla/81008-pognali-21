@@ -1,39 +1,74 @@
 .menu {
+  @include flex;
+
+  position: relative;
   text-align: center;
-  padding: 25px 0 25px 0;
+  padding: 0 0 25px 0;
   color: $special-midnight;
+  background-color: $white;
 
-  &--closed {
-    @media (min-width: $tablet-width) {
-      @include flex;
-
-      padding: 10px 0;
-      align-items: center;
-      justify-content: space-between;
-    }
+  @media (min-width: $desctop-width) {
+    background-color: $basic-blue;
   }
 }
+
+// .menu--closed {
+//   @media (min-width: $tablet-width) {
+//     background-color: $special-midnight;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+// }
 
 .menu__header {
   @include flex;
 
+  flex-basis: 100%;
   justify-content: space-between;
+  padding-top: 25px;
+  margin-bottom: 76px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 50%;
+    margin-bottom: 98px;
+    padding-top: 12px;
+    // background-color: $special-midnight;
+  }
+
+  @media (min-width: $desctop-width) {
+    flex-basis: 25%;
+    padding: 0;
   }
 }
 
 .menu__body {
-  &--closed {
-    display: none;
-  }
+  flex-basis: 100%;
 
-  &--open {
-    display: block;
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 57px;
   }
 
   @media (min-width: $desctop-width) {
-    display: block;
+    @include flex;
+
+    flex-basis: 55%;
+    justify-content: space-between;
+    margin-right: 205px;
+    background-color: $basic-blue;
   }
 }
+
+// .menu__body {
+//   &--closed {
+//     display: none;
+//   }
+
+//   &--open {
+//     display: block;
+//   }
+
+//   @media (min-width: $desctop-width) {
+//     display: block;
+//   }
+// }

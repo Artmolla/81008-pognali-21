@@ -9,21 +9,19 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header page-header--inner">
     <div class="menu menu--closed">
       <div class="menu__header">
         <a class="page-header__logo link-reset">
           <img class="page-header__image" src="img/logo_mobile.png" alt="Погнали" width="96" height="15">
         </a>
-        <button class="page-header__open-menu-button button-reset" type="button">
-          <img src="img/icon_menu_mobile.svg" alt="Открыть меню" width="25" height="11">
+        <button class="page-header__toggle-menu-button button-reset" type="button">
           <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <!-- <button class="menu__close-menu-button button-reset" type="button">
+          <!-- <img src="img/icon_menu_mobile.svg" alt="Открыть меню" width="25" height="11"> -->
           <img src="img/icon_menu_mobile_close.svg" alt="Закрыть" width="19" height="20">
-        </button> -->
+        </button>
       </div>
-      <div class="menu__body menu__body--closed">
+      <div class="menu__body">
         <nav class="main-nav">
           <ul class="main-nav__list site-list list-reset">
             <li class="main-nav__item">
@@ -36,21 +34,21 @@
               <a class="link-reset" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <div class="authorization authorization--desctop-hidden">
-            <a class="button button--authorization link-reset">Авторизация</a>
-          </div>
         </nav>
+        <div class="authorization authorization--desctop-hidden">
+          <a class="button authorization__button link-reset">Авторизация</a>
+        </div>
         <ul class="contact-list list-reset">
           <li class="contact-list__item contact-list__item--menu-open">
             <a class="contact-list__link link-reset" href="tel:88005558628">
               <img class="contact-list__image" src="img/icon_telephone.svg" alt="Телефон" width="45" height="45">
-              8 800 555-86-28
+              <span class="contact-list__text">8 800 555-86-28</span>
             </a>
           </li>
           <li class="contact-list__item contact-list__item--menu-open">
             <a class="contact-list__link link-reset" href="mailto:mail@htmlacademy.ru">
               <img class="contact-list__image" src="img/icon_envelope_closed.svg" alt="Телефон" width="45"
-                height="45">mail@htmlacademy.ru
+                height="45"><span class="contact-list__text">mail@htmlacademy.ru</span>
             </a>
           </li>
         </ul>
@@ -74,7 +72,6 @@
             </a>
           </li>
         </ul>
-
       </div>
     </div>
   </header>
@@ -83,25 +80,6 @@
       <h1 class="page-body__title page-body__title--index">
         В путешествие<br>с крутыми<br> попутчиками!
       </h1>
-      <div class="page-body__contacts">
-        <ul class="contact-list list-reset">
-          <li class="contact-list__item">
-            <a class="link-reset" href="tel:88005558628">
-              <img src="img/icon_phone_btn.svg" alt="Телефон" width="40" height="40">
-              <span class="visually-hidden">8 800 555-86-28</span>
-            </a>
-          </li>
-          <li class="contact-list__item">
-            <a class="link-reset" href="mailto:mail@htmlacademy.ru">
-              <img src="img/icon_mail_btn.svg" alt="Почта" width="40" height="40">
-              <span class="visually-hidden">mail@htmlacademy.ru</span>
-            </a>
-          </li>
-        </ul>
-        <div class="authorization">
-          <a class="button button--authorization button--autorization-smaller link-reset">Авторизация</a>
-        </div>
-      </div>
       <figure class="quote">
         <blockquote class="quote__text">
           «Лучшее приложение, что я видел в жизни!»

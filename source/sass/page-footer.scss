@@ -7,7 +7,9 @@
 
   @media (min-width: $tablet-width) {
     @include flex;
+
     justify-content: space-between;
+    padding: 46px 40px 32px 40px;
   }
 
   @media (min-width: $desctop-width) {
@@ -35,6 +37,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
+    border: none;
   }
 
   @media (min-width: $desctop-width) {

@@ -7,22 +7,6 @@
   border: none;
 }
 
-.button--authorization {
-  font-size: 17px;
-  line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 25px;
-  padding: 12px 81px 8px 78px;
-  cursor: pointer;
-}
-
-.button--autorization-smaller {
-  line-height: 20px;
-  padding: 11px 40px 9px 39px;
-}
-
 .button--show-all {
   @include flex;
   justify-content: space-between;
@@ -79,7 +63,7 @@
 .button--change-photo {
   width: 100%;
   padding: 11px;
-  margin-bottom: 33px;
+  margin: 0 25px 33px 25px;
   border-radius: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -87,6 +71,37 @@
   font-size: 20px;
   line-height: 18px;
   background-color: $special-blue-light;
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+    margin: 0 75px 52px 75px;
+    padding: 21px;
+    letter-spacing: 0.09em;
+  }
+
+  @media (min-width: $desctop-width) {
+    border-radius: 0 0 20px 20px;
+    padding: 15px;
+    // margin: 0;
+    position: absolute;
+    top: 190px;
+    right: 0;
+    width: 190px;
+  }
+}
+
+.button__text {
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}
+
+.button__text-desctop {
+  display: none;
+
+  @media (min-width: $desctop-width) {
+    display: block;
+  }
 }
 
 .button--next-step {
@@ -95,10 +110,17 @@
   font-weight: bold;
   border-radius: 20px;
   margin-bottom: 13px;
-  padding: 6px 41px 4px 43px;
+  padding: 6px 39px 4px 39px;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    width: 50%;
+    padding: 26px 34px 24px 34px;
+  }
 }
 
 .button--step-backwards {

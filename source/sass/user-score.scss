@@ -7,6 +7,7 @@
   flex-direction: column;
   width: 60px;
   height: 60px;
+  margin-bottom: 18px;
   border: 3px solid $special-orange;
   border-radius: 50%;
   font-weight: normal;
@@ -39,6 +40,16 @@
   color: $basic-blue;
   // padding: 20px;
   background: transparent;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin: 0 0 40px 75px;
+  }
+
+  @media (min-width: $desctop-width) {
+    color: $white;
+    margin: 0 0 149px 75px;
+  }
 }
 
 .user-score__score--profile {
@@ -47,4 +58,8 @@
   line-height: 38px;
   border-bottom: 1px solid $basic-blue;
   margin-bottom: 6px;
+
+  @media (min-width: $desctop-width) {
+    border-bottom: 1px solid $white;
+  }
 }

@@ -1,14 +1,42 @@
 .planner {
-  @include outline;
-
   padding: 30px 25px 30px 25px;
   border-radius: 26px 26px 0 0;
   color: $basic-blue-dark;
   background-color: $special-blue-lighter;
+
+  @media (min-width: $tablet-width) {
+    padding: 53px 75px 63px 75px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 55px 60px 70px 60px;
+  }
+}
+
+.planner__header {
+  @include flex;
+  justify-content: space-between;
+  // align-items: center;
 }
 
 .planner__title {
   @include title--blue;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-left: 69px;
+  }
+}
+
+.planner__title--steps {
+  @media (min-width: $desctop-width) {
+    padding-left: 0;
+  }
 }
 
 .planner__step {
@@ -17,21 +45,54 @@
   border-radius: 10px;
   margin-bottom: 10px;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 40px 56px 40px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 73px 159px 106px 159px;
+    margin-bottom: 44px;
+  }
 }
 
 .planner__info {
   padding-bottom: 23px;
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 62px;
+  }
+}
+
+.planner__input-group {
+  @include flex;
+
+  @media (min-width: $desctop-width) {
+    justify-content: space-between;
+  }
 }
 
 .planner__input-container {
   @include flex;
   @include flex-center;
+
+  flex-basis: 100%;
   margin-bottom: 20px;
+
+  @media (min-width: $desctop-width) {
+    flex-basis: 50%;
+  }
 }
 
 .planner__label {
   @include flex;
+
   justify-content: space-between;
   flex-basis: 100%;
   text-align: center;
@@ -40,6 +101,27 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.planner__checkbox-label {
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+    order: 0;
+  }
 }
 
 .planner__band {
@@ -54,6 +136,10 @@
   border: 1px solid $special-grey-borders;
   border-radius: 4px;
   padding: 12px 14px 12px 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 14px 22px 14px;
+  }
 }
 
 .planner__input {
@@ -61,6 +147,12 @@
   border: none;
   background: none;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .planner__country {
@@ -68,10 +160,31 @@
   display: grid;
   grid-template-columns: 1fr auto;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 73% auto;
+    gap: 0 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    margin: 0;
+  }
+
+  // @media (min-width: $desctop-width) {
+  //   grid-template-columns: 73% auto;
+  //   gap: 0 40px;
+  //   font-weight: 500;
+  //   font-size: 20px;
+  //   line-height: 20px;
+  //   letter-spacing: 0.1em;
+  //   margin: 0;
+  // }
 }
 
 .planner__destination-name {
   font-family: $main-font;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr auto;
   border: 1px solid $special-grey-borders;
@@ -84,6 +197,15 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: $basic-blue-dark;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+    padding: 27px 25px 23px 25px;
+  }
 }
 
 .planner__icon {
@@ -93,6 +215,14 @@
   border: 1px solid $special-grey-borders;
   border-radius: 4px;
   padding: 9px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 0  0  15px 40px;
+  }
 }
 
 .planner__textarea {
@@ -110,6 +240,11 @@
   padding: 10px 14px;
   margin-bottom: 22px;
   color: $special-blue-dark-opacity;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 
 .planner__textarea--active {
@@ -125,4 +260,16 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.planner__buttons {
+  @media (min-width: $tablet-width) {
+    @include flex;
+    justify-content: space-between;
+  }
 }
