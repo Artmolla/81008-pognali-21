@@ -10,7 +10,7 @@
     line-height: 28px;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     align-items: baseline;
     width: 100px;
     padding: 0;
@@ -19,7 +19,7 @@
 }
 
 .contact-list--interested-section {
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: center;
   }
@@ -33,7 +33,7 @@
     padding-left: 0;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     @include flex;
     @include flex-center;
     flex-basis: 50%;
@@ -54,7 +54,7 @@
 }
 
 .contact-list__text {
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -62,7 +62,7 @@
 .contact-list__image {
   margin-right: 17px;
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     width: 50px;
     height: 50px;
     margin: 0;

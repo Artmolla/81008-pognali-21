@@ -2,7 +2,7 @@
   @include flex;
   @include flex-center;
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 36px;
@@ -18,7 +18,7 @@
   background-color: $special-blue-dark-opacity;
   margin-right: 16px;
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 27px;
     justify-content: flex-start;
     border-radius: none;
@@ -30,30 +30,16 @@
   }
 }
 
-// .pagination__link {
-//   cursor: pointer;
-//   display: block;
-//   width: 5px;
-//   height: 5px;
-//   border-radius: 50%;
-// }
-
-// .pagination-list__link {
-//   @media (min-width: $desctop-width) {
-//     margin-left: 36px;
-//   }
-// }
-
 .pagination--mobile {
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
-.pagination--desctop {
+.pagination--desktop {
   display: none;
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     display: block;
   }
 }
@@ -70,7 +56,7 @@
 .pagination__item--active {
   background-color: $basic-blue-dark;
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     color: $black;
     background-color: initial;
   }

@@ -1,8 +1,20 @@
+.filtered {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 3;
+  }
+}
+
 .filtered__item {
   margin-bottom: 20px;
   border-radius: 20px;
-  padding: 14px 21px 23px 25px;
+  padding: 15px 26px 23px 26px;
   background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 43px 0 0;
+    min-height: 286px;
+  }
 }
 
 .filtered__show-more-button {
@@ -17,7 +29,20 @@
   text-transform: uppercase;
   color: $basic-blue-dark;
 }
-// ########################
+
+.filtered__pagination-container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    padding: 25px 29px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 20px;
+    background-color: $white;
+  }
+}
 
 .filtered__button-list {
   @include flex;
@@ -41,7 +66,11 @@
 }
 
 .filtered__pagination {
-  @include flex;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include flex;
+  }
 }
 
 .filtered__pagination-items {
@@ -59,8 +88,4 @@
 
 .filtered__link--active {
   background-color: $basic-yellow;
-}
-
-.filtered__pagination--hide {
-  display: none;
 }

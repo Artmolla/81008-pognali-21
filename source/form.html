@@ -35,7 +35,7 @@
             </li>
           </ul>
         </nav>
-        <div class="authorization authorization--desctop-hidden">
+        <div class="authorization authorization--desktop-hidden">
           <a class="button authorization__button link-reset">Авторизация</a>
         </div>
         <ul class="contact-list list-reset">
@@ -77,20 +77,20 @@
   </header>
   <main class="main">
     <section class="profile">
-      <!-- <h2 class="visually-hidden">Настройка профиля</h2> -->
       <div class="profile__content">
-        <!-- <div class=""> -->
         <h1 class="page-body__title page-body__title--inner">Направления</h1>
         <div class="user-score user-score--profile">
           <span class="user-score__score user-score__score--profile">80</span>level
         </div>
-        <img class="profile__image" src="img/profile-photo-petya.png" alt="Ваша фотография" width="100" height="100">
-        <!-- <img class="profile__image" src="img/user-photo-petya-desktop.png" alt=""> -->
+        <picture class="profile__image">
+          <source srcset="img/users/demin-desktop-190-190.png" media="(min-width: 1439px)">
+          <source srcset="img/users/demin-tablet-94-94.png" media="(min-width: 768px)">
+          <img src="img/users/demin-mobile-100-100.png" alt="Петя Демин">
+        </picture>
         <button class="button button--change-photo" type="button">
           <span class="button__text">Сменить фото</span>
-          <span class="button__text-desctop">Фото</span>
+          <span class="button__text-desktop">Фото</span>
         </button>
-        <!-- </div> -->
         <div class="profile__container profile__container--tags">
           <h3 class="profile__title profile__title--tags">Тэги</h3>
           <textarea class="profile__tags">#бургер #бар #футбол #концерт #крафт
@@ -178,7 +178,7 @@
         <fieldset class="planner__step planner__step--1" id="step-1">
           <div class="planner__header">
             <h3 class="planner__title planner__title--steps">Шаг 1. <br class="line-break--off">Даты пребывания</h3>
-            <div class="pagination pagination--desctop">
+            <div class="pagination pagination--desktop">
               <ul class="pagination-list list-reset">
                 <li class="pagination__item pagination__item--active">
                   <a class="pagination-list__link pagination-list__link--active link-reset" href="#">&#9679;<span
@@ -378,7 +378,7 @@
         <fieldset class="planner__step planner__step--2" id="step-2">
           <div class="planner__header">
             <h3 class="planner__title planner__title--steps">Шаг 2.<br class="line-break--off"> Маршрут</h3>
-            <div class="pagination pagination--desctop">
+            <div class="pagination pagination--desktop">
               <ul class="pagination-list list-reset">
                 <li class="pagination__item">
                   <a class="pagination-list__link link-reset" href="#">&#9679;<span
@@ -558,7 +558,7 @@
         <fieldset class="planner__step planner__step--3" id="step-3">
           <div class="planner__header">
             <h3 class="planner__title planner__title--steps">Шаг 3.<br class="line-break--off"> Развлечения</h3>
-            <div class="pagination pagination--desctop">
+            <div class="pagination pagination--desktop">
               <ul class="pagination-list list-reset">
                 <li class="pagination__item">
                   <a class="pagination-list__link pagination-list__link--active link-reset" href="#">&#9679;<span

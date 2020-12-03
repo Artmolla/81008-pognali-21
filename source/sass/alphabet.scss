@@ -6,7 +6,6 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    // width: 575px;
     grid-template-columns: 1fr auto;
     font-weight: 500;
     font-size: 20px;
@@ -14,9 +13,13 @@
     letter-spacing: 0.1em;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     width: 730px;
   }
+}
+
+.alphabet--catalog {
+  flex-basis: 100%;
 }
 
 .alphabet__title {
@@ -44,7 +47,7 @@
     width: 63%;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     padding: 20px 25px;
     letter-spacing: 0.1em;
     margin-bottom: 34px;
@@ -63,10 +66,15 @@
     grid-template-rows: repeat(6, 70px);
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: repeat(5, 60px);
     gap: 15px;
   }
+}
+
+.alphabet__list--catalog {
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(6, auto);
 }
 
 .alphabet__item {
@@ -80,8 +88,17 @@
     height: 100%;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     border-radius: 4px;
+  }
+}
+
+.alphabet__item--catalog {
+  @media (min-width: $tablet-width) {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
   }
 }
 
@@ -97,9 +114,15 @@
     padding: 0;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     border-radius: 4px;
     width: 60px;
+  }
+}
+
+.alphabet__letter--catalog {
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
   }
 }
 
@@ -108,8 +131,34 @@
 }
 
 .alphabet__countries-list {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
   padding: 20px 19px;
   color: $special-grey;
+}
+
+.alphabet__countries-list--catalog {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.alphabet__countries-list--desktop-only {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    display: block;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .alphabet__country {

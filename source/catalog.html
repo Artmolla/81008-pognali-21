@@ -9,15 +9,18 @@
 </head>
 
 <body class="page-body page-body--companions">
-  <header class="page-header page-header--inner">
+  <header class="page-header page-header--inner page-header--catalog">
     <div class="menu menu--closed">
       <div class="menu__header">
         <a class="page-header__logo link-reset" href="index.html">
-          <img class="page-header__image" src="img/logo_mobile.png" alt="Погнали" width="96" height="15">
+          <picture class="page-header__logo">
+            <source srcset="img/logos/logo-desktop.png" media="(min-width: 1440px)">
+            <source srcset="img/logos/logo-tablet.png" media="(min-width: 768px)">
+            <img src="img/logos/logo-white-mobile.png" alt="Погнали?">
+          </picture>
         </a>
         <button class="page-header__toggle-menu-button button-reset" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <!-- <img src="img/icon_menu_mobile.svg" alt="Открыть меню" width="25" height="11"> -->
           <img src="img/icon_menu_mobile_close.svg" alt="Закрыть" width="19" height="20">
         </button>
       </div>
@@ -35,7 +38,7 @@
             </li>
           </ul>
         </nav>
-        <div class="authorization authorization--desctop-hidden">
+        <div class="authorization authorization--desktop-hidden">
           <a class="button authorization__button link-reset">Авторизация</a>
         </div>
         <ul class="contact-list list-reset">
@@ -74,12 +77,11 @@
         </ul>
       </div>
     </div>
-    <h1 class="page-body__title page-body__title--inner">Попутчики</h1>
+    <h1 class="page-body__title page-body__title--inner page-body__title--catalog">Попутчики</h1>
   </header>
   <main class="main main--companions">
-    <button class="button button--open-filter button-reset" type="button">Фильтрация по странам:</button>
-    <div class="countries-filter-popup">
-      <button class="button button--close-button button-reset" type="button" aria-label="Закрыть">x</button>
+    <div class="main__button-container">
+      <button class="button button--open-filter button-reset" type="button">Фильтрация по странам:</button>
       <div class="continents">
         <ul class="continents__list list-reset">
           <li class="continents__item continents__item--active">Европа</li>
@@ -88,102 +90,304 @@
           <li class="continents__item">Острова</li>
         </ul>
       </div>
-      <div class="alphabet">
-        <button class="button button--close" type="button" aria-label="Закрыть">&#10005;</button>
-        <h2 class="alphabet__title">Выбирите страну</h2>
-        <ul class="alphabet__list list-reset">
-          <li class="alphabet__item">
-            <a class="alphabet__letter alphabet__letter--selected link-reset" href="#">А</a>
+      <button class="button button--show-all-countries">
+        <span class="button__text button__text--show-on-desktop">Показать все</span>
+      </button>
+    </div>
+    <div class="countries-filter-popup">
+      <div class="alphabet alphabet--catalog">
+        <ul class="alphabet__list alphabet__list--catalog list-reset">
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog alphabet__letter alphabet__letter--catalog--selected link-reset"
+              href="#">А</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Австралия</li>
+              <li class="alphabet__country">Австрия</li>
+              <li class="alphabet__country">Азербайджан</li>
+              <li class="alphabet__country">Албания</li>
+              <li class="alphabet__country">Алжир</li>
+              <li class="alphabet__country">Ангола</li>
+              <li class="alphabet__country">Андорра</li>
+              <li class="alphabet__country">Антигуа и Барбуда</li>
+              <li class="alphabet__country">Аргентина</li>
+              <li class="alphabet__country">Армения</li>
+              <li class="alphabet__country">Афганистан</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Б</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Б</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Багамские Острова</li>
+              <li class="alphabet__country">Бангладеш</li>
+              <li class="alphabet__country">Барбадос</li>
+              <li class="alphabet__country">Бахрейн</li>
+              <li class="alphabet__country">Белоруссия</li>
+              <li class="alphabet__country">Белиз</li>
+              <li class="alphabet__country">Бельгия</li>
+              <li class="alphabet__country">Бенин</li>
+              <li class="alphabet__country">Болгария</li>
+              <li class="alphabet__country">Боливия</li>
+              <li class="alphabet__country">Босния и Герцеговина</li>
+              <li class="alphabet__country">Ботсвана</li>
+              <li class="alphabet__country">Бразилия</li>
+              <li class="alphabet__country">Бруней</li>
+              <li class="alphabet__country">Буркина-Фасо</li>
+              <li class="alphabet__country">Бурунди</li>
+              <li class="alphabet__country">Бутан</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">В</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">В</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Вануату</li>
+              <li class="alphabet__country">Великобритания</li>
+              <li class="alphabet__country">Венгрия</li>
+              <li class="alphabet__country">Венесуэла</li>
+              <li class="alphabet__country">Восточный Тимор</li>
+              <li class="alphabet__country">Вьетнам</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Г</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Г</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Габон</li>
+              <li class="alphabet__country">Гаити</li>
+              <li class="alphabet__country">Гайана</li>
+              <li class="alphabet__country">Гамбия</li>
+              <li class="alphabet__country">Гана</li>
+              <li class="alphabet__country">Гватемала</li>
+              <li class="alphabet__country">Гвинея</li>
+              <li class="alphabet__country">Гвинея-Бисау</li>
+              <li class="alphabet__country">Германия</li>
+              <li class="alphabet__country">Гондурас</li>
+              <li class="alphabet__country">Гренада</li>
+              <li class="alphabet__country">Греция</li>
+              <li class="alphabet__country">Грузия</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Д</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Д</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Дания</li>
+              <li class="alphabet__country">Джибути</li>
+              <li class="alphabet__country">Доминика</li>
+              <li class="alphabet__country">Доминикана</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Е</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Е</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Египет</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Ё</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">З</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Замбия</li>
+              <li class="alphabet__country">Зимбабве</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Ж</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">И</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Израиль</li>
+              <li class="alphabet__country">Индия</li>
+              <li class="alphabet__country">Индонезия</li>
+              <li class="alphabet__country">Иордания</li>
+              <li class="alphabet__country">Ирак</li>
+              <li class="alphabet__country">Иран</li>
+              <li class="alphabet__country">Ирландия</li>
+              <li class="alphabet__country">Исландия</li>
+              <li class="alphabet__country">Испания</li>
+              <li class="alphabet__country">Италия</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">З</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">К</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Кабо-Верде</li>
+              <li class="alphabet__country">Казахстан</li>
+              <li class="alphabet__country">Камбоджа</li>
+              <li class="alphabet__country">Камерун</li>
+              <li class="alphabet__country">Канада</li>
+              <li class="alphabet__country">Катар</li>
+              <li class="alphabet__country">Кения</li>
+              <li class="alphabet__country">Кипр</li>
+              <li class="alphabet__country">Киргизия</li>
+              <li class="alphabet__country">Кирибати</li>
+              <li class="alphabet__country">Китай</li>
+              <li class="alphabet__country">Колумбия</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">И</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Л</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Лаос</li>
+              <li class="alphabet__country">Латвия</li>
+              <li class="alphabet__country">Лесото</li>
+              <li class="alphabet__country">Либерия</li>
+              <li class="alphabet__country">Ливан</li>
+              <li class="alphabet__country">Ливия</li>
+              <li class="alphabet__country">Литва</li>
+              <li class="alphabet__country">Лихтенштейн</li>
+              <li class="alphabet__country">Люксембург</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Й</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">М</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Маврикий</li>
+              <li class="alphabet__country">Мавритания</li>
+              <li class="alphabet__country">Мадагаскар</li>
+              <li class="alphabet__country">Малави</li>
+              <li class="alphabet__country">Малайзия</li>
+              <li class="alphabet__country">Мали</li>
+              <li class="alphabet__country">Мальдивы</li>
+              <li class="alphabet__country">Мальта</li>
+              <li class="alphabet__country">Марокко</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">К</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Н</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Намибия</li>
+              <li class="alphabet__country">Науру</li>
+              <li class="alphabet__country">Непал</li>
+              <li class="alphabet__country">Нигер</li>
+              <li class="alphabet__country">Нигерия</li>
+              <li class="alphabet__country">Нидерланды</li>
+              <li class="alphabet__country">Никарагуа</li>
+              <li class="alphabet__country">Новая Зеландия</li>
+              <li class="alphabet__country">Норвегия</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Л</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">О</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">ОАЭ</li>
+              <li class="alphabet__country">Оман</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">М</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">П</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Пакистан</li>
+              <li class="alphabet__country">Палау</li>
+              <li class="alphabet__country">Панама</li>
+              <li class="alphabet__country">Папуа - Новая Гвинея</li>
+              <li class="alphabet__country">Парагвай</li>
+              <li class="alphabet__country">Перу</li>
+              <li class="alphabet__country">Польша</li>
+              <li class="alphabet__country">Португалия</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Н</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Р</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Руанда</li>
+              <li class="alphabet__country">Румыния</li>
+              <li class="alphabet__country">Россия</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">О</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">С</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Сальвадор</li>
+              <li class="alphabet__country">Самоа</li>
+              <li class="alphabet__country">Сан-Марино</li>
+              <li class="alphabet__country">Саудовская Аравия</li>
+              <li class="alphabet__country">Сейшелы</li>
+              <li class="alphabet__country">Сенегал</li>
+              <li class="alphabet__country">Сербия</li>
+              <li class="alphabet__country">Сингапур</li>
+              <li class="alphabet__country">Сирия</li>
+              <li class="alphabet__country">Словакия</li>
+              <li class="alphabet__country">Словения</li>
+              <li class="alphabet__country">США</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">П</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Т</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Таджикистан</li>
+              <li class="alphabet__country">Таиланд</li>
+              <li class="alphabet__country">Танзания</li>
+              <li class="alphabet__country">Того</li>
+              <li class="alphabet__country">Тонга</li>
+              <li class="alphabet__country">Тринидад и Тобаго</li>
+              <li class="alphabet__country">Тувалу</li>
+              <li class="alphabet__country">Тунис</li>
+              <li class="alphabet__country">Туркмения</li>
+              <li class="alphabet__country">Турция</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Р</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">У</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Уганда</li>
+              <li class="alphabet__country">Узбекистан</li>
+              <li class="alphabet__country">Украина</li>
+              <li class="alphabet__country">Уругвай</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">С</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Ф</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Фиджи</li>
+              <li class="alphabet__country">Филиппины</li>
+              <li class="alphabet__country">Финляндия</li>
+              <li class="alphabet__country">Франция</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Т</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Х</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Хорватия</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">У</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Ч</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Чад</li>
+              <li class="alphabet__country">Черногория</li>
+              <li class="alphabet__country">Чехия</li>
+              <li class="alphabet__country">Чили</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Ф</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Ш</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Швейцария</li>
+              <li class="alphabet__country">Швеция</li>
+              <li class="alphabet__country">Шри-Ланка</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Х</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Э</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Эквадор</li>
+              <li class="alphabet__country">Эритрея</li>
+              <li class="alphabet__country">Эсватини</li>
+              <li class="alphabet__country">Эстония</li>
+              <li class="alphabet__country">Эфиопия</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Ц</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Ю</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">ЮАР</li>
+              <li class="alphabet__country">Южный Судан</li>
+            </ul>
           </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Ч</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Ш</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Щ</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Э</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Ю</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__letter link-reset" href="#">Я</a>
+          <li class="alphabet__item alphabet__item--catalog">
+            <a class="alphabet__letter alphabet__letter--catalog link-reset" href="#">Я</a>
+            <ul class="alphabet__countries-list alphabet__countries-list--desktop-only list-reset">
+              <li class="alphabet__country">Ямайка</li>
+              <li class="alphabet__country">Япония</li>
+            </ul>
           </li>
         </ul>
-        <ul class="alphabet__countries-list list-reset">
+        <ul class="alphabet__countries-list alphabet__countries-list--catalog list-reset">
           <li class="alphabet__country">Австралия</li>
           <li class="alphabet__country">Австрия</li>
           <li class="alphabet__country">Азербайджан</li>
@@ -321,20 +525,19 @@
       <h2 class="visually-hidden">Отфильтрованный список попутчиков</h2>
       <ul class="filtered__list list-reset">
         <li class="filtered__item">
-          <div class="user-card">
-            <div class="user-card__header">
-              <div class="user-card__container">
-                <img class="user-card__image" src="img/user-photo-tanya-circle.png" alt="Таня Фирсова" width="70"
-                  height="70">
-                <div class="user-card__likes">
-                  <img class="user-card__heart" src="img/like-button.svg" alt="Лайк" width="31" height="32">
-                  <span class="user-card__likes-quantity">1.5 М</span>
-                </div>
-              </div>
-              <p class="user-card__user-name">Таня Фирсова</p>
-              <div class="user-card__user-status user-card__user-status--offline"></div>
+          <div class="user-card user-card--catalog">
+            <picture class="user-card__image">
+              <source srcset="img/users/firsova-desktop.png" media="(min-width: 1440px)">
+              <source srcset="img/users/firsova-tablet.png" media="(min-width: 768px)">
+              <img class="user-card__image" src="img/users/firsova-mobile.png" alt="Таня Фирсова">
+            </picture>
+            <div class="user-card__likes user-card__likes--catalog">
+              <img class="user-card__heart" src="img/like-button.svg" alt="Лайк" width="31" height="32">
+              <span class="user-card__likes-quantity">1.5 М</span>
             </div>
-            <ul class="tag-list list-reset">
+            <p class="user-card__user-name user-card__user-name--catalog">Таня Фирсова</p>
+            <div class="user-card__user-status user-card__user-status--offline"></div>
+            <ul class="tag-list tag-list--catalog list-reset">
               <li class="tag-list__item">
                 #ЗОЖ
               </li>
@@ -354,9 +557,10 @@
                 #смузи
               </li>
             </ul>
-            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">хочет
+            <p class="user-card__text-container user-card__text-container--hide-on-desktop"><span
+                class="user-card__text user-card__text--left">хочет
                 посетить:</span></p>
-            <ul class="flag-list list-reset">
+            <ul class="flag-list flag-list--catalog list-reset">
               <li class="flag-list__item flag-list__item--companions-filtered">
                 <img class="flag-list__img" src="img/flag-sri-lanka.png" alt="Флаг Шри-Ланки" width="35" height="25">
                 <p class="flag-list__text">Шри-ланка</p>
@@ -370,11 +574,11 @@
                 <p class="flag-list__text">Сейшелы</p>
               </li>
             </ul>
-            <p class="user-card__text-container"><span
+            <p class="user-card__text-container user-card__text-container--hide-on-tablets"><span
                 class="user-card__text user-card__text--left">транспорт:</span><span
                 class="user-card__text user-card__text--right">левел:</span></p>
             <div class="user-card__group">
-              <ul class="transport-list list-reset">
+              <ul class="transport-list transport-list--catalog list-reset">
                 <li class="transport-list__item transport-list__item--active">
                   <img src="img/icon_plane.svg" alt="Самолет" width="33" height="33">
                 </li>
@@ -392,24 +596,23 @@
                 <span class="user-score__score">50</span>level
               </div>
             </div>
-            <a class="button button--next-step link-reset" href="#">Позвать!</a>
+            <a class="button button--next-step button--catalog link-reset" href="#">Позвать!</a>
           </div>
         </li>
         <li class="filtered__item">
-          <div class="user-card">
-            <div class="user-card__header">
-              <div class="user-card__container">
-                <img class="user-card__image" src="img/user-photo-petya-circle.png" alt="Петя Демин" width="70"
-                  height="70">
-                <div class="user-card__likes">
-                  <img class="user-card__heart" src="img/like-button.svg" alt="Лайк" width="31" height="32">
-                  <span class="user-card__likes-quantity">1500</span>
-                </div>
-              </div>
-              <p class="user-card__user-name">Петя Демин</p>
-              <div class="user-card__user-status user-card__user-status--offline"></div>
+          <div class="user-card user-card--catalog">
+            <picture class="user-card__image">
+              <source srcset="img/users/demin-desktop.png" media="(min-width: 1440px)">
+              <source srcset="img/users/demin-tablet.png" media="(min-width: 768px)">
+              <img class="user-card__image" src="img/users/demin-mobile.png" alt="Петя Демин">
+            </picture>
+            <div class="user-card__likes user-card__likes--catalog">
+              <img class="user-card__heart" src="img/like-button.svg" alt="Лайк" width="31" height="32">
+              <span class="user-card__likes-quantity">1500</span>
             </div>
-            <ul class="tag-list list-reset">
+            <p class="user-card__user-name user-card__user-name--catalog">Петя Демин</p>
+            <div class="user-card__user-status user-card__user-status--offline"></div>
+            <ul class="tag-list tag-list--catalog list-reset">
               <li class="tag-list__item">
                 #бургер
               </li>
@@ -426,9 +629,10 @@
                 #крафт
               </li>
             </ul>
-            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">хочет
+            <p class="user-card__text-container user-card__text-container--hide-on-desktop"><span
+                class="user-card__text user-card__text--left">хочет
                 посетить:</span></p>
-            <ul class="flag-list list-reset">
+            <ul class="flag-list flag-list--catalog list-reset">
               <li class="flag-list__item flag-list__item--companions-filtered">
                 <img class="flag-list__img" src="img/flag-belgium.png" alt="Флаг Бельгии" width="35" height="24">
                 <p class="flag-list__text">Бельгия</p>
@@ -438,11 +642,11 @@
                 <p class="flag-list__text">Чехия</p>
               </li>
             </ul>
-            <p class="user-card__text-container"><span
+            <p class="user-card__text-container user-card__text-container--hide-on-tablets"><span
                 class="user-card__text user-card__text--left">транспорт:</span><span
                 class="user-card__text user-card__text--right">левел:</span></p>
             <div class="user-card__group">
-              <ul class="transport-list list-reset">
+              <ul class="transport-list transport-list--catalog list-reset">
                 <li class="transport-list__item transport-list__item--active">
                   <img src="img/icon_plane.svg" alt="Самолет" width="33" height="33">
                 </li>
@@ -460,24 +664,23 @@
                 <span class="user-score__score">80</span>level
               </div>
             </div>
-            <a class="button button--next-step link-reset" href="#">Позвать!</a>
+            <a class="button button--next-step button--catalog link-reset" href="#">Позвать!</a>
           </div>
         </li>
         <li class="filtered__item">
-          <div class="user-card">
-            <div class="user-card__header">
-              <div class="user-card__container">
-                <img class="user-card__image" src="img/user-photo-mark-circle.png" alt="Марк Смолов" width="70"
-                  height="70">
-                <div class="user-card__likes">
-                  <img class="user-card__heart" src="img/like-button.svg" alt="Лайк" width="31" height="32">
-                  <span class="user-card__likes-quantity">170</span>
-                </div>
-              </div>
-              <p class="user-card__user-name">Марк Смолов</p>
-              <div class="user-card__user-status user-card__user-status--offline"></div>
+          <div class="user-card user-card--catalog">
+            <picture class="user-card__image">
+              <source srcset="img/users/smolov-desktop.png" media="(min-width: 1440px)">
+              <source srcset="img/users/smolov-tablet.png" media="(min-width: 768px)">
+              <img class="user-card__image" src="img/users/smolov-mobile.png" alt="Марк Смолов">
+            </picture>
+            <div class="user-card__likes user-card__likes--catalog">
+              <img class="user-card__heart" src="img/like-button.svg" alt="Лайк" width="31" height="32">
+              <span class="user-card__likes-quantity">170</span>
             </div>
-            <ul class="tag-list list-reset">
+            <p class="user-card__user-name user-card__user-name--catalog">Марк Смолов</p>
+            <div class="user-card__user-status user-card__user-status--offline"></div>
+            <ul class="tag-list tag-list--catalog list-reset">
               <li class="tag-list__item">
                 #рэп
               </li>
@@ -494,9 +697,10 @@
                 #суприм
               </li>
             </ul>
-            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">хочет
+            <p class="user-card__text-container user-card__text-container--hide-on-desktop"><span
+                class="user-card__text user-card__text--left">хочет
                 посетить:</span></p>
-            <ul class="flag-list list-reset">
+            <ul class="flag-list flag-list--catalog list-reset">
               <li class="flag-list__item flag-list__item--companions-filtered">
                 <img class="flag-list__img" src="img/flag-usa.png" alt="США" width="26" height="18">
                 <p class="flag-list__text">США</p>
@@ -510,11 +714,11 @@
                 <p class="flag-list__text">Доминикана</p>
               </li>
             </ul>
-            <p class="user-card__text-container"><span
+            <p class="user-card__text-container user-card__text-container--hide-on-tablets"><span
                 class="user-card__text user-card__text--left">транспорт:</span><span
                 class="user-card__text user-card__text--right">левел:</span></p>
             <div class="user-card__group">
-              <ul class="transport-list list-reset">
+              <ul class="transport-list transport-list--catalog list-reset">
                 <li class="transport-list__item transport-list__item--active">
                   <img src="img/icon_plane.svg" alt="Самолет" width="33" height="33">
                 </li>
@@ -532,24 +736,23 @@
                 <span class="user-score__score">50</span>level
               </div>
             </div>
-            <a class="button button--next-step link-reset" href="#">Позвать!</a>
+            <a class="button button--next-step button--catalog link-reset" href="#">Позвать!</a>
           </div>
         </li>
         <li class="filtered__item">
-          <div class="user-card">
-            <div class="user-card__header">
-              <div class="user-card__container">
-                <img class="user-card__image" src="img/user-photo-larysa-circle.png" alt="Лариса Роговая" width="70"
-                  height="70">
-                <div class="user-card__likes">
-                  <img class="user-card__heart" src="img/like-button.svg" alt="Лайк" width="31" height="32">
-                  <span class="user-card__likes-quantity">23</span>
-                </div>
-              </div>
-              <p class="user-card__user-name">Лариса Роговая</p>
-              <div class="user-card__user-status user-card__user-status--offline"></div>
+          <div class="user-card user-card--catalog">
+            <picture class="user-card__image">
+              <source srcset="img/users/rogovaya-desktop.png" media="(min-width: 1440px)">
+              <source srcset="img/users/rogovaya-tablet.png" media="(min-width: 768px)">
+              <img class="user-card__image" src="img/users/rogovaya-mobile.png" alt="Лариса Роговая">
+            </picture>
+            <div class="user-card__likes user-card__likes--catalog">
+              <img class="user-card__heart" src="img/like-button.svg" alt="Лайк" width="31" height="32">
+              <span class="user-card__likes-quantity">23</span>
             </div>
-            <ul class="tag-list list-reset">
+            <p class="user-card__user-name user-card__user-name--catalog">Лариса Роговая</p>
+            <div class="user-card__user-status user-card__user-status--offline"></div>
+            <ul class="tag-list tag-list--catalog list-reset">
               <li class="tag-list__item">
                 #образование
               </li>
@@ -563,9 +766,10 @@
                 #линкедин
               </li>
             </ul>
-            <p class="user-card__text-container"><span class="user-card__text user-card__text--left">хочет
+            <p class="user-card__text-container user-card__text-container--hide-on-desktop"><span
+                class="user-card__text user-card__text--left">хочет
                 посетить:</span></p>
-            <ul class="flag-list list-reset">
+            <ul class="flag-list flag-list--catalog list-reset">
               <li class="flag-list__item flag-list__item--companions-filtered">
                 <img class="flag-list__img" src="img/flag-united-kingdom.png" alt="Великобритания" width="26"
                   height="18">
@@ -576,11 +780,11 @@
                 <p class="flag-list__text">Германия</p>
               </li>
             </ul>
-            <p class="user-card__text-container"><span
+            <p class="user-card__text-container user-card__text-container--hide-on-tablets"><span
                 class="user-card__text user-card__text--left">транспорт:</span><span
                 class="user-card__text user-card__text--right">левел:</span></p>
             <div class="user-card__group">
-              <ul class="transport-list list-reset">
+              <ul class="transport-list transport-list--catalog list-reset">
                 <li class="transport-list__item transport-list__item--active">
                   <img src="img/icon_plane.svg" alt="Самолет" width="33" height="33">
                 </li>
@@ -598,35 +802,44 @@
                 <span class="user-score__score">50</span>level
               </div>
             </div>
-            <a class="button button--next-step link-reset" href="#">Позвать!</a>
+            <a class="button button--next-step button--catalog link-reset" href="#">Позвать!</a>
           </div>
         </li>
       </ul>
       <a class="filtered__show-more-button link-reset" href="catalog.html"><span>&#x2b;</span> Показать еще</a>
-      <ul class="filtered__button-list list-reset">
-        <li class="filtered__button filtered__button--previous">
-          <a class="link-reset" href="#" title="Предыдущий">
-            &#x25C0;
-          </a>
-        </li>
-        <li class="filtered__button filtered__button--next">
-          <a class="link-reset" href="#" title="Следующий">
-            &#x25B6;
-          </a>
-        </li>
-      </ul>
-      <ul class="filtered__pagination filtered__pagination--hide list-reset">
-        <li class="filtered__pagination-item"><a class="filtered__link filtered__link--active link-reset" href="#">1</a>
-        </li>
-        <li class="filtered__pagination-item"><a class="filtered__link link-reset" href="#">2</a></li>
-        <li class="filtered__pagination-item"><a class="filtered__link link-reset" href="#">3</a></li>
-        <li class="filtered__pagination-item"><a class="filtered__link link-reset" href="#">4</a></li>
-      </ul>
+      <div class="filtered__pagination-container">
+        <ul class="filtered__pagination filtered__pagination--hide list-reset">
+          <li class="filtered__pagination-item"><a class="filtered__link filtered__link--active link-reset"
+              href="#">1</a>
+          </li>
+          <li class="filtered__pagination-item"><a class="filtered__link link-reset" href="#">2</a></li>
+          <li class="filtered__pagination-item"><a class="filtered__link link-reset" href="#">3</a></li>
+          <li class="filtered__pagination-item"><a class="filtered__link link-reset" href="#">4</a></li>
+        </ul>
+        <ul class="filtered__button-list list-reset">
+          <li class="filtered__button filtered__button--previous">
+            <a class="link-reset" href="#" title="Предыдущий">
+              &#x25C0;
+            </a>
+          </li>
+          <li class="filtered__button filtered__button--next">
+            <a class="link-reset" href="#" title="Следующий">
+              &#x25B6;
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__content">
-      <img class="page-footer__logo" src="img/logo_footer_mobile.png" alt="Погнали?" width="96" height="16">
+      <a class="page-footer__logo link-reset" href="index.html">
+        <picture class="page-footer__logo">
+          <source srcset="img/logos/logo-desktop.png" media="(min-width: 1440px)">
+          <source srcset="img/logos/logo-tablet.png" media="(min-width: 768px)">
+          <img src="img/logos/logo-white-mobile.png" alt="Погнали?">
+        </picture>
+      </a>
       <ul class="social-list social-list--footer list-reset">
         <li class="social-list__item social-list__item--footer">
           <a class="social-list__link link-reset" href="#">

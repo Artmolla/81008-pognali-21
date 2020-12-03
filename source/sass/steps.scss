@@ -10,7 +10,7 @@
     background: transparent;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     flex-basis: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 0;
@@ -31,13 +31,13 @@
   padding: 23px;
   border-radius: 10px;
 
-  @media (min-width: $tablet-width) and (max-width: $desctop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-template-columns: 1fr;
     padding-right: 190px;
     gap: 10px;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: 1fr min-content;
     padding-right: 32px;
     gap: 100px;

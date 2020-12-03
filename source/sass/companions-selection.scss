@@ -3,6 +3,10 @@
   margin-bottom: 28px;
   border-radius: 20px;
   background-color: $basic-yellow;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+  }
 }
 
 .companion-selection__title {
@@ -11,11 +15,36 @@
   font-size: 22px;
   line-height: 22px;
   letter-spacing: 0.02em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .companion-selection__filter {
   border: none;
   border-top: 1px solid $special-yellow-grey-borders;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    @include flex;
+  }
+}
+
+.companion-selection__list {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    @include flex;
+
+    flex-basis: 80%;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.companion-selection__item {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    flex: 1;
+  }
 }
 
 .companion-selection__button {
@@ -25,6 +54,12 @@
   line-height: 18px;
   text-transform: uppercase;
   padding: 12px 0 14px 0;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    text-align: left;
+    flex-basis: 20%;
+    color: $basic-blue-dark;
+  }
 }
 
 .companion-selection__label {

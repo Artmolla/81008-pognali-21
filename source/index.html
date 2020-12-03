@@ -13,11 +13,14 @@
     <div class="menu menu--closed">
       <div class="menu__header">
         <a class="page-header__logo link-reset">
-          <img class="page-header__image" src="img/logo_mobile.png" alt="Погнали" width="96" height="15">
+          <picture class="user-card__image">
+            <source srcset="img/logos/logo-desktop.png" media="(min-width: 1440px)">
+            <source srcset="img/logos/logo-tablet.png" media="(min-width: 768px)">
+            <img src="img/logos/logo-white-mobile.png" alt="Погнали?">
+          </picture>
         </a>
         <button class="page-header__toggle-menu-button button-reset" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <!-- <img src="img/icon_menu_mobile.svg" alt="Открыть меню" width="25" height="11"> -->
           <img src="img/icon_menu_mobile_close.svg" alt="Закрыть" width="19" height="20">
         </button>
       </div>
@@ -35,7 +38,7 @@
             </li>
           </ul>
         </nav>
-        <div class="authorization authorization--desctop-hidden">
+        <div class="authorization authorization--desktop-hidden">
           <a class="button authorization__button link-reset">Авторизация</a>
         </div>
         <ul class="contact-list list-reset">
@@ -135,7 +138,6 @@
       <ul class="directions__list list-reset">
         <li class="directions__item">
           <div class="directions__image-container directions__image-container--thailand">
-            <!-- <img src="img/thailand-mobile.png" alt="Таиланд" width="270" height="110"> -->
           </div>
           <div class="directions__content">
             <img class="directions__flag" src="img/flag-thailand.png" alt="Флаг Таиланда" width="35" height="24">
@@ -150,7 +152,6 @@
         </li>
         <li class="directions__item">
           <div class="directions__image-container directions__image-container--french">
-            <!-- <img src="img/france-mobile.png" alt="Франция" width="270" height="110"> -->
           </div>
           <div class="directions__content">
             <img class="directions__flag" src="img/flag-france.png" alt="Флаг Франции" width="35" height="24">
@@ -165,7 +166,6 @@
         </li>
         <li class="directions__item">
           <div class="directions__image-container directions__image-container--czech">
-            <!-- <img src="img/czech-mobile.png" alt="Чехия" width="270" height="110"> -->
           </div>
           <div class="directions__content">
             <img class="directions__flag" src="img/flag-czech.png" alt="Флаг Чехии" width="35" height="24">
@@ -203,7 +203,9 @@
             <div class="user-score user-score--index">
               <span class="user-score__score">99</span>level
             </div>
-            <img class="user-card__image" src="img/user-photo-tanya.png" alt="Таня Фирсова" width="270" height="270">
+            <picture class="user-card__image">
+              <img src="img/users/firsova-mobile-270-270.png" alt="Таня Фирсова" width="270" height="270">
+            </picture>
             <div class="user-card__content">
               <ul class="flag-list flag-list--index list-reset">
                 <li class="flag-list__item">
@@ -261,7 +263,9 @@
             <div class="user-score user-score--index">
               <span class="user-score__score">80</span>level
             </div>
-            <img class="user-card__image" src="img/user-photo-petya.png" alt="Петя Демин" width="270" height="270">
+            <picture class="user-card__image">
+              <img src="img/users/demin-mobile-270-270.png" alt="Таня Фирсова" width="270" height="270">
+            </picture>
             <div class="user-card__content">
               <ul class="flag-list flag-list--index list-reset">
                 <li class="flag-list__item">

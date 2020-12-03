@@ -1,5 +1,12 @@
 .level-filter {
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    flex: 1;
+
+    @include flex;
+    align-items: center;
+  }
 }
 
 .level-filter__level-controls {
@@ -9,6 +16,12 @@
   text-align: center;
   position: relative;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    min-width: 148px;
+    order: 2;
+    margin: 0;
+  }
 }
 
 .level-filter__label {
@@ -42,6 +55,12 @@
 
 .level-filter__range-controls {
   position: relative;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    margin-right: 61px;
+    order: 1;
+    flex: 1;
+  }
 }
 
 .level-filter__bar {

@@ -1,4 +1,6 @@
 .user-card {
+  font-size: 15px;
+  line-height: 16px;
   position: relative;
   background-color: $white;
   color: $special-grey;
@@ -22,11 +24,19 @@
 
 .user-card__likes {
   @include flex;
-  @include flex-center;
 
+  align-items: center;
   position: absolute;
-  top: 37px;
-  right: -44px;
+  width: 100px;
+  top: 40px;
+  left: 49px;
+}
+
+.user-card__likes--catalog {
+  @media (min-width: $tablet-width) {
+    grid-area: likes;
+    position: static;
+  }
 }
 
 .user-card__content {
@@ -46,6 +56,10 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    grid-area: user-status;
+  }
 }
 
 .user-card__user-status--online {
@@ -65,11 +79,16 @@
 }
 
 .user-card__text-container {
-  position: absolute;
-  left: 0;
-  width: 100%;
+  position: relative;
+  margin-right: -26px;
+  margin-left: -26px;
+  width: calc(100% + 50px);
   height: 1px;
   background-color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    grid-area: text-container;
+  }
 }
 
 .user-card__text {
@@ -81,16 +100,90 @@
 }
 
 .user-card__text--left {
-  left: 40px;
+  left: 15px;
 }
 
 .user-card__text--right {
-  right: 40px;
+  right: 25px;
 }
 
 .user-card__group {
+  width: 100%;
   padding-top: 25px;
   margin-bottom: 14px;
   display: grid;
   grid-template-columns: 1fr auto;
+  justify-items: start;
+
+  @media (min-width: $tablet-width) {
+    grid-area: transport-list;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr auto;
+    justify-items: start;
+    margin: 0;
+  }
+}
+
+.user-card--catalog {
+  @include flex;
+
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    align-items: self-start;
+    grid-template-areas:
+      "profile-photo user-name user-status transport-list"
+      "profile-photo tag-list user-status transport-list"
+      "profile-photo button likes transport-list"
+      "text-container text-container text-container text-container"
+      "flag-list flag-list flag-list flag-list";
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    border-radius: 25px;
+    grid-template-areas:
+      "profile-photo user-status user-name flag-list"
+      "profile-photo tag-list tag-list flag-list"
+      "profile-photo button likes transport-list";
+  }
+}
+
+.user-card__image {
+  vertical-align: top;
+
+  @media (min-width: $tablet-width) {
+    grid-area: profile-photo;
+  }
+}
+
+.user-card__user-name--catalog {
+  @media (min-width: $tablet-width) {
+    grid-area: user-name;
+    grid-column: 2 / 4;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.user-card__text-container--hide-on-tablets {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.user-card__text-container--hide-on-desktop {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

@@ -2,3 +2,13 @@
   @include flex;
   @include flex-center;
 }
+
+.transport-list--catalog {
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}

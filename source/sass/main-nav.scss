@@ -2,12 +2,6 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
   }
-
-  @media (min-width: $desctop-width) {
-    // position: absolute;
-    // top: 10px;
-    // left: 20%;
-  }
 }
 
 .main-nav__list {
@@ -23,7 +17,7 @@
     line-height: 71px;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     @include flex;
     @include flex-center;
 
@@ -36,7 +30,7 @@
 }
 
 .main-nav__item {
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     margin-right: 34px;
   }
 }
