@@ -3,11 +3,28 @@
   font-weight: bold;
   line-height: 18px;
   text-transform: uppercase;
+  padding: 15px 0 15px 0;
   color: $special-midnight-opacity;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.continents__list {
+  @media (min-width: $tablet-width) {
+    @include flex;
+  }
 }
 
 .continents__item {
   margin-bottom: 9px;
+  margin-right: 28px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .continents__item--active {

@@ -12,6 +12,20 @@
   transform: translateX(-50%);
 }
 
+.flag-list--catalog {
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    grid-area: flag-list;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .flag-list__item {
   @include flex;
   margin-right: 14px;
@@ -21,7 +35,22 @@
   }
 }
 
+.flag-list__text {
+  font-weight: 500;
+  margin-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .flag-list__item--companions-filtered {
   flex-basis: 100%;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: initial;
+  }
 }

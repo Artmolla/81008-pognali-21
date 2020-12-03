@@ -9,7 +9,7 @@
     margin-bottom: 42px;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     @include flex;
     @include flex-center;
     padding: 55px 75px 55px 75px;
@@ -24,7 +24,7 @@
   font-size: 28px;
   line-height: 28px;
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     margin-right: 147px;
   }
 }

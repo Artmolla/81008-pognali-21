@@ -18,6 +18,21 @@
   padding: 22px 29px 22px 29px;
 }
 
+.button--show-all-countries {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    flex-basis: 30%;
+    background-color: inherit;
+  }
+}
+
 .button--business-rates {
   color: $special-blue;
   font-weight: bold;
@@ -55,7 +70,7 @@
     padding: 29px 35px 27px 37px;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     width: 324px;
   }
 }
@@ -79,10 +94,9 @@
     letter-spacing: 0.09em;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     border-radius: 0 0 20px 20px;
     padding: 15px;
-    // margin: 0;
     position: absolute;
     top: 190px;
     right: 0;
@@ -91,17 +105,21 @@
 }
 
 .button__text {
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
-.button__text-desctop {
+.button__text-desktop {
   display: none;
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     display: block;
   }
+}
+
+.button__text--show-on-desktop {
+  display: initial;
 }
 
 .button--next-step {
@@ -149,6 +167,11 @@
   text-transform: uppercase;
   border-radius: 20px;
   background-color: $special-blue-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button--open-filter {
@@ -164,6 +187,14 @@
   text-transform: uppercase;
   border-radius: 20px;
   background-color: $special-blue-grey-light;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .button--companion-submit {
@@ -177,4 +208,16 @@
   line-height: 17px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.button--catalog {
+  grid-area: button;
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 16px 33px 14px 33px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 150px;
+  }
 }

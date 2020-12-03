@@ -11,7 +11,7 @@
     background-position: top 100px right 40px;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
@@ -29,7 +29,7 @@
     margin-bottom: 21px;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     grid-row: 1 / -1;
   }
 }

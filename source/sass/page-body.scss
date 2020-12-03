@@ -21,7 +21,7 @@
     padding-top: 32px;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 67px;
     text-align: left;
     margin-bottom: 101px;
@@ -40,10 +40,17 @@
     margin-bottom: 62px;
   }
 
-  @media (min-width: $desctop-width) {
-    flex-basis: 50%;
+  @media (min-width: $desktop-width) {
+    width: 50%;
     padding: 62px 0 0 124px;
     margin-bottom: 171px;
+  }
+}
+
+.page-body__title--catalog {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0 0 0 64px;
   }
 }
 
@@ -57,24 +64,12 @@
     line-height: 45px;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     align-self: start;
     justify-self: start;
     margin: 0;
   }
 }
-
-// .page-body__contacts {
-//   @include flex;
-
-//   justify-content: center;
-
-//   @media (min-width: $tablet-width) {
-//     position: absolute;
-//     top: 40px;
-//     right: 40px;
-//   }
-// }
 
 .page-body__title--index {
   border-radius: none;

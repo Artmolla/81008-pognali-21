@@ -8,7 +8,7 @@
     padding: 53px 75px 63px 75px;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     padding: 55px 60px 70px 60px;
   }
 }
@@ -16,7 +16,6 @@
 .planner__header {
   @include flex;
   justify-content: space-between;
-  // align-items: center;
 }
 
 .planner__title {
@@ -28,13 +27,13 @@
     line-height: 36px;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 69px;
   }
 }
 
 .planner__title--steps {
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 0;
   }
 }
@@ -50,7 +49,7 @@
     padding: 48px 40px 56px 40px;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     padding: 73px 159px 106px 159px;
     margin-bottom: 44px;
   }
@@ -65,7 +64,7 @@
     line-height: 24px;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 62px;
   }
 }
@@ -73,7 +72,7 @@
 .planner__input-group {
   @include flex;
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     justify-content: space-between;
   }
 }
@@ -85,7 +84,7 @@
   flex-basis: 100%;
   margin-bottom: 20px;
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     flex-basis: 50%;
   }
 }
@@ -170,16 +169,6 @@
     letter-spacing: 0.1em;
     margin: 0;
   }
-
-  // @media (min-width: $desctop-width) {
-  //   grid-template-columns: 73% auto;
-  //   gap: 0 40px;
-  //   font-weight: 500;
-  //   font-size: 20px;
-  //   line-height: 20px;
-  //   letter-spacing: 0.1em;
-  //   margin: 0;
-  // }
 }
 
 .planner__destination-name {
@@ -220,7 +209,7 @@
     border: none;
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0  0  15px 40px;
   }
 }
