@@ -5,6 +5,13 @@
   width: 200px;
   margin: auto;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 21px;
+  }
 }
 
 .tag-list--catalog {

@@ -1,5 +1,5 @@
 .page-header {
-  padding: 28px 25px 52px 25px;
+  padding: 27px 19px 0 27px;
   background-color: $basic-blue;
 
   @media (min-width: $tablet-width) {
@@ -30,6 +30,10 @@
 }
 
 .page-header__toggle-menu-button {
+  @media (min-width: $tablet-width) {
+    transform: translateX(50%);
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }

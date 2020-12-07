@@ -9,8 +9,8 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header page-header--inner">
-    <div class="menu menu--closed">
+  <header class="page-header">
+    <div class="menu">
       <div class="menu__header">
         <a class="page-header__logo link-reset">
           <picture class="user-card__image">
@@ -21,8 +21,11 @@
         </a>
         <button class="page-header__toggle-menu-button button-reset" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <img src="img/icon_menu_mobile_close.svg" alt="Закрыть" width="19" height="20">
+          <img src="img/menu-icon.svg" alt="Закрыть" width="25" height="11">
         </button>
+        <div class="authorization">
+          <a class="button authorization__button link-reset">Авторизация</a>
+        </div>
       </div>
       <div class="menu__body">
         <nav class="main-nav">
@@ -38,20 +41,23 @@
             </li>
           </ul>
         </nav>
-        <div class="authorization authorization--desktop-hidden">
-          <a class="button authorization__button link-reset">Авторизация</a>
-        </div>
         <ul class="contact-list list-reset">
           <li class="contact-list__item contact-list__item--menu-open">
             <a class="contact-list__link link-reset" href="tel:88005558628">
-              <img class="contact-list__image" src="img/icon_telephone.svg" alt="Телефон" width="45" height="45">
+              <picture class="contact-list__image">
+                <source srcset="img/icon-telephone-desktop.svg" media="(min-width: 1439px)">
+                <img src="img/icon_telephone.svg" alt="Телефон">
+              </picture>
               <span class="contact-list__text">8 800 555-86-28</span>
             </a>
           </li>
           <li class="contact-list__item contact-list__item--menu-open">
             <a class="contact-list__link link-reset" href="mailto:mail@htmlacademy.ru">
-              <img class="contact-list__image" src="img/icon_envelope_closed.svg" alt="Телефон" width="45"
-                height="45"><span class="contact-list__text">mail@htmlacademy.ru</span>
+              <picture class="contact-list__image">
+                <source srcset="img/icon-mail-desktop.svg" media="(min-width: 1439px)">
+                <img src="img/icon_envelope_closed.svg" alt="Телефон">
+              </picture>
+              <span class="contact-list__text">mail@htmlacademy.ru</span>
             </a>
           </li>
         </ul>
@@ -83,12 +89,30 @@
       <h1 class="page-body__title page-body__title--index">
         В путешествие<br>с крутыми<br> попутчиками!
       </h1>
+      <div class="page-body__contacts">
+        <ul class="contact-list contact-list--index-body list-reset">
+          <li class="contact-list__item contact-list__item--index-body">
+            <a class="link-reset" href="tel:88005558628">
+              <img src="img/icon_phone_btn.svg" alt="Телефон" width="40" height="40">
+              <span class="visually-hidden">8&nbsp;800 555-86-28</span>
+            </a>
+          </li>
+          <li class="contact-list__item contact-list__item--index-body">
+            <a class="link-reset" href="mailto:mail@htmlacademy.ru">
+              <img src="img/icon_mail_btn.svg" alt="Почта" width="40" height="40">
+              <span class="visually-hidden">mail@htmlacademy.ru</span>
+            </a>
+          </li>
+        </ul>
+        <a class="page-body__authorization link-reset">Авторизация</a>
+      </div>
       <figure class="quote">
         <blockquote class="quote__text">
           «Лучшее приложение, что я видел в жизни!»
         </blockquote>
         <figcaption class="quote__author">
-          Мурат Эльтазин <br class="line-break">главный редактор газеты «гаджетлайф»
+          Мурат Эльтазин <br>главный редактор<br class="hide-on-tablets hide-on-desktops"> газеты <br
+            class="hide-on-mobile hide-on-desktops">«гаджетлайф»
         </figcaption>
       </figure>
       <ol class="steps-list list-reset">
@@ -113,9 +137,9 @@
     <section class="about">
       <h2 class="page-body__section-title about__title">О сервисе</h2>
       <p class="about__text">
-        Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий <br
-          class="line-break">и
-        черпайте вдохновение в чужих.
+        Любое путешествие веселее <br class="hide-on-tablets hide-on-desktops">с попутчиками, которые на<br
+          class="hide-on-tablets hide-on-desktops"> одной волне с тобой! Делитесь своими идеями путешествий <br
+          class="hide-on-mobile hide-on-desktops">и черпайте вдохновение в чужих.
       </p>
       <p class="about__text about__text--strong">
         <strong>
@@ -123,15 +147,17 @@
         </strong>
       </p>
       <a class="about__show-all-button button button--show-all link-reset" href="form.html">
-        Показать все <span>&#9654;</span>
+        <span class="button__text-mobile">Показать все</span><span class="button__text-desktop">Подробнее</span>
+        <span>&#9654;</span>
       </a>
     </section>
     <section class="directions">
-      <h2 class="page-body__section-title">
+      <h2 class="page-body__section-title page-body__section-title--directions">
         Направления
       </h2>
-      <p class="directions__info">
-        Мы не продаем туры <br class="line-break">и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы
+      <p class="directions__info directions__info--index">
+        Мы не продаем туры <br>и ничего не рекламируем. Люди сами пишут о странах,
+        куда хотели бы
         отправиться и чем можно
         там заняться.
       </p>
@@ -140,7 +166,10 @@
           <div class="directions__image-container directions__image-container--thailand">
           </div>
           <div class="directions__content">
-            <img class="directions__flag" src="img/flag-thailand.png" alt="Флаг Таиланда" width="35" height="24">
+            <picture class="directions__flag">
+              <source srcset="img/flags/flag-thailand-70-47.png" media="(min-width: 767px)">
+              <img src="img/flags/flag-thailand-35-24.png" alt="Флаг Таиланда">
+            </picture>
             <h3 class="directions__heading">
               Таиланд
             </h3>
@@ -154,7 +183,10 @@
           <div class="directions__image-container directions__image-container--french">
           </div>
           <div class="directions__content">
-            <img class="directions__flag" src="img/flag-france.png" alt="Флаг Франции" width="35" height="24">
+            <picture class="directions__flag">
+              <source srcset="img/flags/flag-france-70-47.png" media="(min-width: 768px)">
+              <img src="img/flags/flag-france-35-24.png" alt="Флаг Франции">
+            </picture>
             <h3 class="directions__heading">
               Франция
             </h3>
@@ -168,13 +200,16 @@
           <div class="directions__image-container directions__image-container--czech">
           </div>
           <div class="directions__content">
-            <img class="directions__flag" src="img/flag-czech.png" alt="Флаг Чехии" width="35" height="24">
+            <picture class="directions__flag">
+              <source srcset="img/flags/flag-czech-70-47.png" media="(min-width: 768px)">
+              <img src="img/flags/flag-czech-35-24.png" alt="Флаг Чехии">
+            </picture>
             <h3 class="directions__heading">
               Чехия
             </h3>
             <span class="directions__counter directions__counter--czech">5326</span>
             <p class="directions__text">
-              Закоулки старой Европы
+              Закоулки <br class="hide-on-mobile hide-on-desctops">старой Европы
             </p>
           </div>
         </li>
@@ -184,43 +219,52 @@
       </a>
     </section>
     <section class="companions">
-      <h2 class="page-body__section-title">
+      <h2 class="page-body__section-title page-body__section-title--companions">
         Попутчики
       </h2>
       <p class="companions__text">
-        Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, <br
-          class="line-break">а другому маршрут
-        для хайкинга.
+        Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному <br
+          class="hide-on-tablets hide-on-desktops">нужен пляж и коктейль, <br class="hide-on-mobile">а <br
+          class="hide-on-tablets hide-on-desktops">другому маршрут для хайкинга.
       </p>
       <p class="companions__text companions__text--strong">
         <strong>
-          Теперь можно легко <br class="line-break line-break--off">найти единомышленников!
+          Теперь можно легко <br class="hide-on-mobile">найти единомышленников!
         </strong>
       </p>
       <ul class="companions__list list-reset">
         <li class="companions__item">
           <div class="user-card">
             <div class="user-score user-score--index">
+              <svg class="user-score__progress-ring" width="120" height="120">
+                <circle class="user-score__progress-ring__circle" fill="transparent" r="30" cx="60" cy="60" />
+              </svg>
               <span class="user-score__score">99</span>level
             </div>
             <picture class="user-card__image">
-              <img src="img/users/firsova-mobile-270-270.png" alt="Таня Фирсова" width="270" height="270">
+              <source srcset="img/users/firsova-tablet-285-285.png" media="(min-width: 767px)">
+              <img src="img/users/firsova-mobile-270-270.png" alt="Таня Фирсова">
             </picture>
             <div class="user-card__content">
               <ul class="flag-list flag-list--index list-reset">
                 <li class="flag-list__item">
-                  <img class="flag-list__img" src="img/flag-sri-lanka.png" alt="Флаг Шри-Ланки" width="35" height="25">
+                  <img class="flag-list__img" src="img/flags/flag-sri-lanka-35-24.png" alt="Флаг Шри-Ланки" width="35"
+                    height="25">
                 </li>
                 <li class="flag-list__item">
-                  <img class="flag-list__img" src="img/flag-thailand.png" alt="Флаг Тайланда" width="35" height="25">
+                  <img class="flag-list__img" src="img/flags/flag-thailand-35-24.png" alt="Флаг Тайланда" width="35"
+                    height="25">
                 </li>
                 <li class="flag-list__item">
-                  <img class="flag-list__img" src="img/flag-seychelles.png" alt="Флаг Сейшелы" width="35" height="25">
+                  <img class="flag-list__img" src="img/flags/flag-seychelles-35-24.png" alt="Флаг Сейшелы" width="35"
+                    height="25">
                 </li>
               </ul>
-              <div class="user-card__user-status user-card__user-status--offline"><span class="visually-hidden">Статус
-                  пользователя: офлайн</span></div>
-              <p class="user-card__user-name">Таня Фирсова</p>
+              <div class="user-card__container">
+                <div class="user-card__user-status user-card__user-status--offline"><span class="visually-hidden">Статус
+                    пользователя: офлайн</span></div>
+                <p class="user-card__user-name">Таня Фирсова</p>
+              </div>
               <ul class="tag-list list-reset">
                 <li class="tag-list__item">
                   #ЗОЖ
@@ -261,23 +305,31 @@
         <li class="companions__item">
           <div class="user-card">
             <div class="user-score user-score--index">
+              <svg class="user-score__progress-ring" width="120" height="120">
+                <circle class="user-score__progress-ring__circle" fill="transparent" r="30" cx="60" cy="60" />
+              </svg>
               <span class="user-score__score">80</span>level
             </div>
             <picture class="user-card__image">
-              <img src="img/users/demin-mobile-270-270.png" alt="Таня Фирсова" width="270" height="270">
+              <source srcset="img/users/demin-tablet-285-285.png" media="(min-width: 767px)">
+              <img src="img/users/demin-mobile-270-270.png" alt="Петя Демин">
             </picture>
             <div class="user-card__content">
               <ul class="flag-list flag-list--index list-reset">
                 <li class="flag-list__item">
-                  <img class="flag-list__img" src="img/flag-belgium.png" alt="Флаг Бельгии" width="35" height="24">
+                  <img class="flag-list__img" src="img/flags/flag-belgium-35-24.png" alt="Флаг Бельгии" width="35"
+                    height="24">
                 </li>
                 <li class="flag-list__item">
-                  <img class="flag-list__img" src="img/flag-czech.png" alt="Флаг Бельгии" width="35" height="24">
+                  <img class="flag-list__img" src="img/flags/flag-czech-35-24.png" alt="Флаг Бельгии" width="35"
+                    height="24">
                 </li>
               </ul>
-              <div class="user-card__user-status user-card__user-status--online"><span class="visually-hidden">Статус
-                  пользователя: онлайн</span></div>
-              <p class="user-card__user-name">Петя Демин</p>
+              <div class="user-card__container">
+                <div class="user-card__user-status user-card__user-status--online"><span class="visually-hidden">Статус
+                    пользователя: онлайн</span></div>
+                <p class="user-card__user-name">Петя Демин</p>
+              </div>
               <ul class="tag-list list-reset">
                 <li class="tag-list__item">
                   #бургер
@@ -318,13 +370,16 @@
       </a>
     </section>
     <section class="register">
-      <img class="register__image" src="img/rates.png" alt="icon">
+      <picture>
+        <source srcset="img/rates-desktop.png" media="(min-width: 1439px)">
+        <img class="register__image" src="img/rates.png" alt="icon">
+      </picture>
       <div class="user-price">
         <h2 class="user-price__title">Добавьте свой профиль</h2>
         <ol class="user-price__list list-reset">
           <li class="user-price__item">
             <span class="user-price__text">Базовое размещение</span><br>
-            <span class="user-price__price">Бесплатно</span>
+            <span class="user-price__price user-price__price--basic-price">Бесплатно</span>
             <span class="user-price__number user-price__number--free-plan">1</span>
           </li>
           <li class="user-price__item">
@@ -334,11 +389,13 @@
           </li>
           <li class="user-price__item">
             <span class="user-price__text">Кастомный цвет карточки</span><br>
-            <span class="user-price__price">59 руб./мес</span>
+            <span class="user-price__price user-price__price--custom-price">59 руб./мес</span>
             <span class="user-price__number user-price__number--custom-plan">3</span>
           </li>
         </ol>
         <a class="button button--business-rates link-reset" href="#">
+          <img class="business-rates__icon" src="img/business-rates-link.svg" alt="Тарифы для бизнеса" width="68"
+            height="68">
           Показать тарифы для бизнеса
         </a>
       </div>
@@ -374,33 +431,43 @@
         Заинтересовались?
       </h2>
       <p class="interested__text">
-        Зарегистрируйтесь, это быстро и бесплатно! <br class="line-break">Уже зарегистрированы? Тогда скорее <a
-          class="interested__button" href="#">авторизуйтесь.</a>
+        Зарегистрируйтесь, <br class="hide-on-tablets hide-on-desktops">это быстро и бесплатно! <br>Уже
+        зарегистрированы? Тогда <br class="hide-on-tablets hide-on-desktops">скорее <a class="interested__button"
+          href="#">авторизуйтесь.</a>
       </p>
       <form class="register-form" action="https://echo.htmlacademy.ru" method="GET">
         <div class="register-form__content">
           <label for="register-input" aria-label="E-mail"></label>
           <input class="register-form__input" id="register-input" type="email" name="email" placeholder="E-mail">
           <button class="button button--register button-reset" type="submit">
+            <span class="register-form__button-text register-form__button-text--show-on-desktop">Регистрация</span>
             &#9654;
             <span class="visually-hidden">Отправить</span>
           </button>
         </div>
       </form>
-      <p class="interested__text">
-        Остались вопросы? Мы с радостью на них ответим!
+      <p class="interested__text interested__text--questions">
+        Остались вопросы? <br class="hide-on-tablets hide-on-desktops">Мы с радостью на них ответим!
       </p>
       <ul class="contact-list contact-list--interested-section list-reset">
-        <li class="contact-list__item contact-list__item--menu-open">
+        <li class="contact-list__item contact-list__item--interested-section">
           <a class="contact-list__link contact-list__link--yellow link-reset" href="tel:88005558628">
-            <img class="contact-list__image" src="img/icon_telephone.svg" alt="Телефон" width="45" height="45">
+            <picture class="contact-list__image contact-list__image--interested-section">
+              <source srcset="img/contacts-phone-icon-desktop.svg" media="(min-width: 1439px)">
+              <source srcset="img/contacts-phone-icon-tablet.svg" media="(min-width: 767px)">
+              <img src="img/contacts-phone-icon-mobile.svg" alt="Телефон">
+            </picture>
             8 800 555-86-28
           </a>
         </li>
-        <li class="contact-list__item contact-list__item--menu-open">
+        <li class="contact-list__item contact-list__item--interested-section">
           <a class="contact-list__link contact-list__link--yellow link-reset" href="mailto:mail@htmlacademy.ru">
-            <img class="contact-list__image" src="img/icon_envelope_closed.svg" alt="Телефон" width="45"
-              height="45">mail@htmlacademy.ru
+            <picture class="contact-list__image contact-list__image--interested-section">
+              <source srcset="img/contacts-mail-icon-desktop.svg" media="(min-width: 1439px)">
+              <source srcset="img/contacts-mail-icon-tablet.svg" media="(min-width: 767px)">
+              <img src="img/contacts-mail-icon-mobile.svg" alt="Почта">
+            </picture>
+            mail@htmlacademy.ru
           </a>
         </li>
       </ul>
@@ -408,35 +475,57 @@
     <section class="how-to-find">
       <h2 class="visually-hidden">Как нас найти</h2>
       <address class="how-to-find__adress">
-        <img class="how-to-find__pin" src="img/map_mark.svg" alt="Пин">
-        <p>ул. Большая <br class="line-break line-break--off">Конюшенная, 19/8</p>
+        <picture class="how-to-find__pin">
+          <source srcset="img/map-mark-icon-desktop.svg" media="(min-width: 1440px)">
+          <source srcset="img/map-mark-icon-tablet.svg" media="(min-width: 767px)">
+          <img src="img/map-mark-icon-mobile.svg" alt="Пин">
+        </picture>
+        <p class="how-to-find__street">ул. Большая <br class="hide-on-tablets hide-on-desktops">Конюшенная, 19/8</p>
       </address>
       <a class="button button--rout link-reset" href="#">Проложить маршрут <span>&#9654;</span></a>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img class="map__image" src="img/background_map.png" alt="Наш адрес: ул. Большая Конюшенная, 19/8" width="320"
-        height="424">
+      <picture class="map__image">
+        <source srcset="img/background-map-desktop.jpg" media="(min-width: 1439px)">
+        <source srcset="img/background-map-tablet.jpg" media="(min-width: 767px)">
+        <img src="img/background_map.png" alt="Наш адрес: ул. Большая Конюшенная, 19/8">
+      </picture>
     </section>
     <footer class="page-footer">
       <div class="page-footer__content">
-        <img class="page-footer__logo" src="img/logo_footer_mobile.png" alt="Погнали?" width="96" height="16">
+        <a class="page-header__logo link-reset">
+          <picture class="user-card__image">
+            <source srcset="img/logos/logo-desktop.png" media="(min-width: 1440px)">
+            <source srcset="img/logos/logo-tablet.png" media="(min-width: 768px)">
+            <img src="img/logos/logo-white-mobile.png" alt="Погнали?">
+          </picture>
+        </a>
         <ul class="social-list social-list--footer list-reset">
           <li class="social-list__item social-list__item--footer">
             <a class="social-list__link link-reset" href="#">
-              <img src="img/icon_facebook.svg" alt="Facebook">
+              <picture>
+                <source srcset="img/icon-facebook-tablet.svg" media="(min-width: 767px)">
+                <img src="img/icon-facebook.svg" alt="Facebook">
+              </picture>
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="social-list__item social-list__item--footer">
             <a class="social-list__link link-reset" href="#">
-              <img src="img/icon_vkontakte.svg" alt="Vkontakte">
+              <picture>
+                <source srcset="img/icon-vkontakte-tablet.svg" media="(min-width: 767px)">
+                <img src="img/icon-vkontakte.svg" alt="Vkontakte">
+              </picture>
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="social-list__item social-list__item--footer">
             <a class="social-list__link link-reset" href="#">
-              <img src="img/icon_instagram.svg" alt="Instagram">
+              <picture>
+                <source srcset="img/icon-instagram-tablet.svg" media="(min-width: 767px)">
+                <img src="img/icon-instagram.svg" alt="Instagram">
+              </picture>
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
@@ -450,6 +539,7 @@
       </div>
     </footer>
   </main>
+  <script src="js/user-score-progress-bar.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,14 @@
 .intro {
-  padding-bottom: 39px;
+  padding-bottom: 23px;
   background-color: $basic-blue;
   margin-top: -1px;
+  background-image:
+    url("../img/traveller-illustration-mobile.png"),
+    url("../img/globe-back-mobile.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    right 48px top 174px,
+    left top -52px;
 
   @media (min-width: $tablet-width) {
     background-color: $special-midnight;
@@ -10,22 +17,22 @@
       url("../img/globe-back-tablet.svg");
     background-repeat: no-repeat, no-repeat;
     background-position:
-      bottom 255px right,
-      bottom 148px left;
+      bottom 304px right 111px,
+      bottom 164px left;
   }
 
   @media (min-width: $desktop-width) {
     @include flex;
-    justify-content: space-between;
 
-    padding: 110px 60px 123px 60px;
+    justify-content: space-between;
+    padding: 76px 60px 123px 60px;
     background-color: $basic-blue;
     background-image:
       url("../img/traveller-illustration-desktop.png"),
       url("../img/globe-back-desktop.png");
     background-repeat: no-repeat, no-repeat;
     background-position:
-      bottom right 50%,
+      bottom right 40%,
       bottom left;
   }
 }

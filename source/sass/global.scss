@@ -15,18 +15,20 @@
   @include button-reset;
 }
 
-.line-break {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: initial;
+.hide-on-mobile {
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    display: none;
   }
 }
 
-.line-break--off {
-  display: initial;
+.hide-on-tablets {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    display: none;
+  }
+}
 
-  @media (min-width: $tablet-width) {
+.hide-on-desktops {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }

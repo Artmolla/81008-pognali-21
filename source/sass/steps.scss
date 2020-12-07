@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: transparent;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +20,7 @@
 
 .steps-list__item {
   box-sizing: border-box;
-  min-height: 80px;
+  min-height: 88px;
   display: grid;
   grid-template-columns: 1fr min-content;
   grid-gap: 30px;
@@ -29,37 +30,120 @@
   line-height: 18px;
   color: $basic-blue;
   padding: 23px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+  margin: -8px 0 0 0;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    border-radius: 10px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
     grid-template-columns: 1fr;
-    padding-right: 190px;
     gap: 10px;
+    border-radius: 20px 20px 0 0;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 0 0 -1px;
+    padding: 31px 100px 22px 33px;
+
+    &:nth-child(2n - 1) {
+      margin: 0 -13px 0 0;
+    }
+
+    &:first-child {
+      border-radius: 20px 0 0 0;
+    }
+
+    &:nth-child(2) {
+      border-radius: 20px 20px 0 0;
+    }
+
+    &:nth-last-child(2) {
+      border-radius: 0 0 0 20px;
+      margin-top: -1px;
+    }
+
+    &:last-child {
+      border-radius: 0 0 20px 20px;
+      margin-top: -1px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr min-content;
-    padding-right: 32px;
-    gap: 100px;
+    gap: 50px;
+    border-radius: 20px;
+    margin: 0;
+    margin-left: -14px;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 29px 22px;
+
+    &:first-child {
+      margin: 0 -20px 0 0;
+    }
+
+    &:last-child {
+      border-radius: 20px;
+    }
   }
 }
 
 .steps-list__item--direction {
   background-color: $special-orange;
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 69px 29px 34px;
+  }
 }
 
 .steps-list__item--ideas {
   background-color: $special-yellow-dark;
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 65px 29px 29px;
+    margin-right: -33px;
+  }
 }
 
 .steps-list__item--similarities {
   background-color: $special-orange-light;
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 75px 29px 31px;
+    margin: 0 -58px 0 0;
+  }
 }
 
 .steps-list__item--travell {
   background-color: $basic-yellow;
+  min-height: 76px;
+  padding: 23px 23px 20px 23px;
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 100px 22px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 33px 29px 31px;
+    margin-left: 14px;
+  }
 }
 
 .steps-list__number {
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }

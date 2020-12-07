@@ -3,9 +3,7 @@
 
   position: relative;
   text-align: center;
-  padding: 0 0 25px 0;
   color: $special-midnight;
-  background-color: $white;
 
   @media (min-width: $desktop-width) {
     background-color: $basic-blue;
@@ -17,13 +15,10 @@
 
   flex-basis: 100%;
   justify-content: space-between;
-  padding-top: 25px;
-  margin-bottom: 76px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 50%;
-    margin-bottom: 98px;
-    padding-top: 12px;
+    padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +28,9 @@
 }
 
 .menu__body {
+  display: none;
   flex-basis: 100%;
+  padding-top: 76px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -43,9 +40,9 @@
   @media (min-width: $desktop-width) {
     @include flex;
 
-    flex-basis: 55%;
+    flex-basis: 61%;
     justify-content: space-between;
-    margin-right: 205px;
+    padding: 0;
     background-color: $basic-blue;
   }
 }

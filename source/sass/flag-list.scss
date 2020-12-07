@@ -7,9 +7,11 @@
 
 .flag-list--index {
   position: absolute;
-  top: -50px;
+  top: -44px;
   left: 50%;
   transform: translateX(-50%);
+  min-width: 145px;
+  justify-content: space-between;
 }
 
 .flag-list--catalog {

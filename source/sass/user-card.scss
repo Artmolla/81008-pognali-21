@@ -9,7 +9,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 81px;
+    margin-bottom: 61px;
+    border-radius: 20px;
   }
 }
 
@@ -19,7 +20,13 @@
 }
 
 .user-card__container {
-  position: relative;
+  @include flex;
+  @include flex-center;
+
+  @media (min-width: $tablet-width) {
+    // flex-direction: column;
+    // padding-top: 20px;
+  }
 }
 
 .user-card__likes {
@@ -41,7 +48,14 @@
 
 .user-card__content {
   position: relative;
-  padding: 27px 10px 20px 10px;
+  padding: 0 10px 16px 10px;
+
+  // @media (min-width: $mobile-width) and (max-width: 1439px) {
+  //   @include flex;
+  //   @include flex-center;
+
+  //   justify-content: center;
+  // }
 }
 
 .user-card__user-name {
@@ -49,6 +63,11 @@
   font-size: 21px;
   line-height: 21px;
   color: $basic-blue-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 22px;
+  }
 }
 
 .user-card__user-status {
@@ -56,6 +75,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
+  // align-self: flex-start;
 
   @media (min-width: $tablet-width) {
     grid-area: user-status;

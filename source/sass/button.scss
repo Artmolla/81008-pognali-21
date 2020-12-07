@@ -15,7 +15,14 @@
   font-size: 18px;
   line-height: 18px;
   border-radius: 10px;
-  padding: 22px 29px 22px 29px;
+  padding: 24px 21px 21px 23px;
+
+  @media (min-width: $tablet-width) {
+    padding: 29px 34px 27px 31px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+  }
 }
 
 .button--show-all-countries {
@@ -34,6 +41,8 @@
 }
 
 .button--business-rates {
+  display: flex;
+  align-items: center;
   color: $special-blue;
   font-weight: bold;
   line-height: 16px;
@@ -46,12 +55,20 @@
 }
 
 .button--register {
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 24px;
 
   @media (min-width: $tablet-width) {
     border-radius: 0 20px 20px 0;
     padding: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 324px;
+    padding: 29px 31px;
   }
 }
 
@@ -61,13 +78,16 @@
   width: 100%;
   border: 3px solid $special-midnight;
   border-radius: 10px;
-  padding: 22px;
+  padding: 20px;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 29px 35px 27px 37px;
+    padding: 26px 28px 25px 37px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,10 +130,16 @@
   }
 }
 
+.button__text-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .button__text-desktop {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }

@@ -1,18 +1,23 @@
 .how-to-find {
+  position: relative;
+  margin-top: -30px;
+  z-index: 2;
   background-color: $basic-yellow;
   color: $basic-blue-dark;
-  padding: 35px 25px;
-  border-radius: 20px;
+  padding: 46px 25px 34px 25px;
+  border-radius: 0 0 31px 31px;
 
   @media (min-width: $tablet-width) {
-    padding: 70px 75px 84px 75px;
-    margin-bottom: 42px;
+    padding: 103px 75px 83px 75px;
+    margin-top: -61px;
+    border-radius: 0 0 61px 61px;
   }
 
   @media (min-width: $desktop-width) {
     @include flex;
-    @include flex-center;
-    padding: 55px 75px 55px 75px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 113px 134px 52px 283px;
   }
 }
 
@@ -21,14 +26,32 @@
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 28px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 34px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-right: 147px;
+    margin-bottom: 0;
+  }
+}
+
+.how-to-find__street {
+  @media (min-width: $desktop-width) {
+    padding-top: 7px;
   }
 }
 
 .how-to-find__pin {
   margin-right: 16px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 31px;
+  }
 }
