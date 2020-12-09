@@ -4,7 +4,7 @@
   z-index: 2;
   background-color: $basic-yellow;
   color: $basic-blue-dark;
-  padding: 46px 25px 34px 25px;
+  padding: 49px 25px 34px 25px;
   border-radius: 0 0 31px 31px;
 
   @media (min-width: $tablet-width) {
@@ -23,6 +23,8 @@
 
 .how-to-find__adress {
   @include flex;
+
+  align-items: center;
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
@@ -33,7 +35,7 @@
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 28px;
-    margin-bottom: 34px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {

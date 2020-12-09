@@ -11,3 +11,16 @@
     margin-top: -122px;
   }
 }
+
+.map__frame {
+  width: 100%;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 581px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 584px;
+  }
+}

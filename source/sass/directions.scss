@@ -2,17 +2,17 @@
   position: relative;
   z-index: 6;
   background-color: $basic-blue-light;
-  padding: 79px 25px 35px 25px;
+  padding: 81px 25px 34px 25px;
   margin-top: -30px;
   color: $basic-blue;
-  border-radius: 31px;
+  border-radius: 0 0 30px 30px;
 
   @media (min-width: $tablet-width) {
     padding: 95px 76px 80px 76px;
     background-image: url("../img/flags-back.png");
     background-repeat: no-repeat;
-    background-position: top 100px right 40px;
-    border-radius: 0 0 61px 61px;
+    background-position: top 140px right 40px;
+    border-radius: 0 0 60px 60px;
     margin-top: -60px;
   }
 
@@ -22,17 +22,17 @@
     grid-template-rows: repeat(3, auto);
     align-items: baseline;
     gap: 0 65px;
-    padding: 221px 130px 101px 130px;
+    padding: 219px 130px 101px 130px;
     background-position: top 148px right 59px;
   }
 }
 
 .directions__list {
   grid-template-columns: 1fr;
-  padding-bottom: 17px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 21px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,13 +44,17 @@
   display: grid;
   grid-template-columns: minmax(min-content, 1fr);
   grid-template-rows: auto 11px auto;
-  margin-bottom: 7px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr auto;
     grid-template-rows: 1fr;
     margin-bottom: 10px;
   }
+}
+
+.directions__item--france {
+  margin-bottom: 10px;
 }
 
 .directions__content {
@@ -61,7 +65,7 @@
   grid-row: 2 / -1;
   justify-content: space-between;
   align-items: center;
-  padding: 26px 24px 22px 24px;
+  padding: 27px 24px 18px 24px;
   border-radius: 10px;
   background-color: $white;
 
@@ -75,12 +79,21 @@
   }
 }
 
+.directions__content--czech {
+  padding-bottom: 0;
+}
+
 .directions__heading {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   margin: 0;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
@@ -97,7 +110,7 @@
     font-size: 28px;
     line-height: 33px;
     margin-bottom: 98px;
-    padding: 25px 270px 0 0;
+    padding: 21px 270px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,9 +120,15 @@
 }
 
 .directions__info--index {
+  margin-bottom: 59px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 102px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 109px;
-    margin-top: -7px;
+    margin: 0;
   }
 }
 
@@ -127,16 +146,17 @@
 }
 
 .directions__counter {
+  @include flex;
+
+  justify-content: space-between;
+  align-items: center;
   color: $special-grey-opacity;
 
   @media (min-width: $tablet-width) {
     flex-basis: 100%;
     order: 3;
+    justify-content: flex-start;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   order: 3;
-  // }
 }
 
 .directions__flag {
@@ -199,16 +219,21 @@
 }
 
 .directions__link {
+  padding: 24px 21px 20px 23px;
+
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
-    padding: 30px 21px 28px 23px;
+    padding: 32px 29px 26px 32px;
     border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 275px;
     margin-left: 110px;
+    padding: 30px 32px 26px 32px;
     align-self: center;
+    position: relative;
+    top: -5px;
   }
 }

@@ -10,8 +10,8 @@
   top: -44px;
   left: 50%;
   transform: translateX(-50%);
-  min-width: 145px;
-  justify-content: space-between;
+  // min-width: 145px;
+  justify-content: flex-start;
 }
 
 .flag-list--catalog {

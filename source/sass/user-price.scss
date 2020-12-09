@@ -1,5 +1,6 @@
 .user-price__list {
   padding: 27px 0 15px 0;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
@@ -30,7 +31,7 @@
   @include flex;
 
   justify-content: space-between;
-  padding-bottom: 14px;
+  padding-bottom: 6px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -100,8 +101,6 @@
   @include flex;
   @include flex-center;
 
-  // position: absolute;
-  // right: 25px;
   width: 34px;
   height: 34px;
   border-radius: 50%;
@@ -124,4 +123,13 @@
 
 .user-price__number--custom-plan {
   background-color: $basic-yellow;
+}
+
+.user-price__business-price-link-icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-right: 20px;
+  }
 }

@@ -3,10 +3,13 @@
 
   position: relative;
   text-align: center;
-  color: $special-midnight;
+
+  @media (min-width: $mobile-width) and (max-width: 1439px) {
+    color: $special-midnight;
+  }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-blue;
+    // background-color: $basic-blue;
   }
 }
 
@@ -29,6 +32,7 @@
 
 .menu__body {
   display: none;
+  // background-color: white;
   flex-basis: 100%;
   padding-top: 76px;
 
@@ -43,6 +47,10 @@
     flex-basis: 61%;
     justify-content: space-between;
     padding: 0;
-    background-color: $basic-blue;
+    // background-color: $basic-blue;
   }
+}
+
+.menu__body--menu-open {
+  display: block;
 }

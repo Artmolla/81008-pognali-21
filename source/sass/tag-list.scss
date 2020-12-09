@@ -3,7 +3,7 @@
   @include flex-center;
 
   width: 200px;
-  margin: auto;
+  margin: auto auto 10px auto;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {

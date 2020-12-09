@@ -85,8 +85,8 @@
 
 .page-body__title--index {
   border-radius: none;
-  padding: 43px 25px 10px 25px;
-  margin-bottom: 254px;
+  padding: 19px 25px 10px 25px;
+  margin-bottom: 206px;
 
   @media (min-width: $tablet-width) {
     padding-top: 30px;
@@ -104,7 +104,7 @@
 
   align-items: flex-start;
   justify-content: center;
-  transform: translateY(-38%);
+  transform: translateY(58%);
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -122,4 +122,12 @@
   text-transform: uppercase;
   color: $basic-blue;
   background-color: $basic-yellow;
+
+  &:hover {
+    background-color: $special-orange-light;
+  }
+
+  &:active {
+    color: $basic-blue-opacity;
+  }
 }

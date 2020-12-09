@@ -15,10 +15,10 @@
   font-size: 18px;
   line-height: 18px;
   border-radius: 10px;
-  padding: 24px 21px 21px 23px;
+  padding: 24px 21px 20px 23px;
 
   @media (min-width: $tablet-width) {
-    padding: 29px 34px 27px 31px;
+    padding: 29px 37px 27px 31px;
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px;
@@ -56,11 +56,12 @@
 
 .button--register {
   border-radius: 10px;
-  padding: 24px;
+  padding: 22px 23px 21px 24px;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     border-radius: 0 20px 20px 0;
-    padding: 31px;
+    padding: 34px 34px 28px 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,13 +79,13 @@
   width: 100%;
   border: 3px solid $special-midnight;
   border-radius: 10px;
-  padding: 20px;
+  padding: 19px;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 28px 25px 37px;
+    padding: 29px 31px 23px 37px;
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px;
@@ -134,6 +135,10 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.button__arrow {
+  font-size: 16px;
 }
 
 .button__text-desktop {

@@ -54,6 +54,10 @@
   color: $basic-yellow;
 }
 
+.contact-list__link--mail {
+  margin-top: -5px;
+}
+
 .contact-list__text {
   @media (min-width: $desktop-width) {
     display: none;
@@ -71,6 +75,10 @@
 }
 
 .contact-list__item--interested-section {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     flex-basis: auto;
   }
@@ -86,4 +94,28 @@
 
 .contact-list__item--index-body {
   flex-basis: auto;
+}
+
+.contact-list__svg--phone-icon {
+  fill: $special-orange;
+
+  &:hover {
+    fill: $special-orange-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contact-list__svg--envelop-icon {
+  fill: $special-orange-light;
+
+  &:hover {
+    fill: $special-orange;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

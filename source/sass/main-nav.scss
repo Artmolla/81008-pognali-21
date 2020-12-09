@@ -28,7 +28,6 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
-    color: $white;
     margin: 0;
   }
 }
@@ -36,5 +35,15 @@
 .main-nav__item {
   @media (min-width: $desktop-width) {
     margin-right: 34px;
+  }
+}
+
+.main-nav__link {
+  &:hover {
+    color: $basic-yellow;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

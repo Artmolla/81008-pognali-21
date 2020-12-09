@@ -13,7 +13,7 @@
     <div class="menu">
       <div class="menu__header">
         <a class="page-header__logo link-reset">
-          <picture class="user-card__image">
+          <picture class="page-header__image">
             <source srcset="img/logos/logo-desktop.png" media="(min-width: 1440px)">
             <source srcset="img/logos/logo-tablet.png" media="(min-width: 768px)">
             <img src="img/logos/logo-white-mobile.png" alt="Погнали?">
@@ -21,7 +21,6 @@
         </a>
         <button class="page-header__toggle-menu-button button-reset" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <img src="img/menu-icon.svg" alt="Закрыть" width="25" height="11">
         </button>
         <div class="authorization">
           <a class="button authorization__button link-reset">Авторизация</a>
@@ -31,13 +30,13 @@
         <nav class="main-nav">
           <ul class="main-nav__list site-list list-reset">
             <li class="main-nav__item">
-              <a class="link-reset" href="#">О сервисе</a>
+              <a class="main-nav__link link-reset" href="#">О сервисе</a>
             </li>
             <li class="main-nav__item">
-              <a class="link-reset" href="form.html">Направления</a>
+              <a class="main-nav__link link-reset" href="form.html">Направления</a>
             </li>
             <li class="main-nav__item">
-              <a class="link-reset" href="catalog.html">Попутчики</a>
+              <a class="main-nav__link link-reset" href="catalog.html">Попутчики</a>
             </li>
           </ul>
         </nav>
@@ -54,7 +53,7 @@
           <li class="contact-list__item contact-list__item--menu-open">
             <a class="contact-list__link link-reset" href="mailto:mail@htmlacademy.ru">
               <picture class="contact-list__image">
-                <source srcset="img/icon-mail-desktop.svg" media="(min-width: 1439px)">
+                <source class="test" srcset="img/icon-mail-desktop.svg" media="(min-width: 1439px)">
                 <img src="img/icon_envelope_closed.svg" alt="Телефон">
               </picture>
               <span class="contact-list__text">mail@htmlacademy.ru</span>
@@ -64,19 +63,28 @@
         <ul class="social-list list-reset">
           <li class="social-list__item">
             <a class="link-reset" href="#">
-              <img src="img/icon_facebook.svg" alt="Facebook">
+              <picture>
+                <source srcset="img/icon-menu-facebook-tablet.svg" media="(min-width: 767px)">
+                <img src="img/icon-menu-facebook-mobile.svg" alt="Facebook">
+              </picture>
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="social-list__item">
             <a class="link-reset" href="#">
-              <img src="img/icon_vkontakte.svg" alt="Vkontakte">
+              <picture>
+                <source srcset="img/icon-menu-vkontakte-tablet.svg" media="(min-width: 767px)">
+                <img src="img/icon-menu-vkontakte-mobile.svg" alt="Vkontakte">
+              </picture>
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="social-list__item">
             <a class="link-reset" href="#">
-              <img src="img/icon_instagram.svg" alt="Instagram">
+              <picture>
+                <source srcset="img/icon-menu-instagram-tablet.svg" media="(min-width: 767px)">
+                <img src="img/icon-menu-instagram-mobile.svg" alt="Instagram">
+              </picture>
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
@@ -87,19 +95,31 @@
   <main class="main">
     <section class="intro">
       <h1 class="page-body__title page-body__title--index">
-        В путешествие<br>с крутыми<br> попутчиками!
+        В путешествие <br>с крутыми<br> попутчиками!
       </h1>
       <div class="page-body__contacts">
         <ul class="contact-list contact-list--index-body list-reset">
           <li class="contact-list__item contact-list__item--index-body">
             <a class="link-reset" href="tel:88005558628">
-              <img src="img/icon_phone_btn.svg" alt="Телефон" width="40" height="40">
+              <svg class="contact-list__svg contact-list__svg--phone-icon" xmlns="http://www.w3.org/2000/svg" width="40"
+                height="40" fill="none">
+                <circle cx="20" cy="20" r="20" />
+                <path fill="#161C35"
+                  d="M19.7743 19.2239c0 .189.1536.3375.3414.3375.3891 0 .7032.3139.7032.6952 0 .1857.1536.3375.3414.3375.1877 0 .3414-.1518.3414-.3375 0-.756-.6213-1.3702-1.386-1.3702-.1878 0-.3414.1519-.3414.3375zm5.5577 1.3702c.1911 0 .3413-.1518.3413-.3375 0-3.0307-2.492-5.4945-5.5576-5.4945-.1878 0-.3414.1519-.3414.3375 0 .1857.1536.3375.3414.3375 2.69 0 4.8749 2.1634 4.8749 4.8195 0 .1857.1536.3375.3414.3375z" />
+                <path fill="#161C35"
+                  d="M22.9047 20.2566c0 .1856.1536.3375.3414.3375s.3414-.1519.3414-.3375c0-1.8934-1.5567-3.4324-3.4718-3.4324-.1878 0-.3414.1519-.3414.3375 0 .189.1536.3375.3414.3375 1.5396 0 2.789 1.2387 2.789 2.7574zM20.1157 12.7c-.1878 0-.3414.1519-.3414.3375 0 .1856.1536.3375.3414.3375 3.8405 0 6.9641 3.0881 6.9641 6.8816 0 .1856.1502.3375.3414.3375.1877 0 .3414-.1519.3414-.3375 0-4.1681-3.4309-7.5566-7.6469-7.5566zm3.3352 11.1139l-.4472.2396c-.7544.4084-1.3415 1.5277-2.2725.684L18.3001 22.3 16.2 20.2566c-1.0551-1.3331.1264-1.6504.5394-2.3996l.2424-.4388c.2731-.4995.3721-1.0597.2902-1.62-.0786-.5602-.3346-1.0698-.7442-1.4748-.4984-.4928-1.1607-.7628-1.8674-.7628-.7066 0-1.3723.27-1.8708.7628l-.174.1755c-.9218.9112-1.0276 2.4806-.3005 4.4246.6862 1.8562 2.0688 3.8677 3.8849 5.6632 2.7686 2.7372 5.8513 4.3133 8.0634 4.3133.8739 0 1.6147-.2464 2.1405-.7661l.1775-.1755c.495-.4894.7715-1.1442.7749-1.8495-.0034-.6885-.2868-1.3635-.7749-1.8462-.8227-.8133-2.1097-.9956-3.1305-.4488z" />
+              </svg>
               <span class="visually-hidden">8&nbsp;800 555-86-28</span>
             </a>
           </li>
           <li class="contact-list__item contact-list__item--index-body">
             <a class="link-reset" href="mailto:mail@htmlacademy.ru">
-              <img src="img/icon_mail_btn.svg" alt="Почта" width="40" height="40">
+              <svg class="contact-list__svg contact-list__svg--envelop-icon" xmlns="http://www.w3.org/2000/svg"
+                width="40" height="40" fill="none">
+                <circle cx="20" cy="20" r="20" />
+                <path fill="#161C35"
+                  d="M12.0166 15.3253l6.75 4.2304c.2268.1418.5202.209.8154.209s.5886-.0672.8154-.209l6.75-4.2304c.4401-.2762.8559-1.3503.0486-1.3503H11.9689c-.8073 0-.3915 1.0741.0477 1.3503zm15.3351 2.3131l-6.9543 4.2284c-.306.1869-.5202.2089-.8154.2089s-.5094-.022-.8154-.2089c-.306-.1869-6.4197-3.926-6.9192-4.2294-.351-.2142-.3474.0367-.3474.2299v7.6577c0 .441.5094 1.05.9 1.05h14.4c.3906 0 .9-.609.9-1.05v-7.6566c0-.1932.0036-.4442-.3483-.23z" />
+              </svg>
               <span class="visually-hidden">mail@htmlacademy.ru</span>
             </a>
           </li>
@@ -148,7 +168,7 @@
       </p>
       <a class="about__show-all-button button button--show-all link-reset" href="form.html">
         <span class="button__text-mobile">Показать все</span><span class="button__text-desktop">Подробнее</span>
-        <span>&#9654;</span>
+        <span class="button__arrow">&#9654;</span>
       </a>
     </section>
     <section class="directions">
@@ -173,13 +193,19 @@
             <h3 class="directions__heading">
               Таиланд
             </h3>
-            <span class="directions__counter directions__counter--thailand">18321</span>
+            <span class="directions__counter directions__counter--thailand">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
+                <path fill="#192144"
+                  d="M4.375 3.92978c0 1.52343 1.17775 2.76316 2.625 2.76316s2.625-1.23973 2.625-2.76316c0-1.52342-1.17775-2.76315-2.625-2.76315S4.375 2.40636 4.375 3.92978zm7.2917 8.90352h.5833v-.614c0-2.3696-1.8323-4.29829-4.08333-4.29829H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193v.614h9.9167z"
+                  opacity=".1" />
+              </svg>
+              18321</span>
             <p class="directions__text">
               Джунгли зовут!
             </p>
           </div>
         </li>
-        <li class="directions__item">
+        <li class="directions__item directions__item--france">
           <div class="directions__image-container directions__image-container--french">
           </div>
           <div class="directions__content">
@@ -190,7 +216,13 @@
             <h3 class="directions__heading">
               Франция
             </h3>
-            <span class="directions__counter directions__counter--france">12518</span>
+            <span class="directions__counter directions__counter--france">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
+                <path fill="#192144"
+                  d="M4.375 3.92978c0 1.52343 1.17775 2.76316 2.625 2.76316s2.625-1.23973 2.625-2.76316c0-1.52342-1.17775-2.76315-2.625-2.76315S4.375 2.40636 4.375 3.92978zm7.2917 8.90352h.5833v-.614c0-2.3696-1.8323-4.29829-4.08333-4.29829H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193v.614h9.9167z"
+                  opacity=".1" />
+              </svg>
+              12518</span>
             <p class="directions__text">
               Трэ бьен, манифик!
             </p>
@@ -199,7 +231,7 @@
         <li class="directions__item">
           <div class="directions__image-container directions__image-container--czech">
           </div>
-          <div class="directions__content">
+          <div class="directions__content directions__content--czech">
             <picture class="directions__flag">
               <source srcset="img/flags/flag-czech-70-47.png" media="(min-width: 768px)">
               <img src="img/flags/flag-czech-35-24.png" alt="Флаг Чехии">
@@ -207,15 +239,22 @@
             <h3 class="directions__heading">
               Чехия
             </h3>
-            <span class="directions__counter directions__counter--czech">5326</span>
+            <span class="directions__counter directions__counter--czech">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
+                <path fill="#192144"
+                  d="M4.375 3.92978c0 1.52343 1.17775 2.76316 2.625 2.76316s2.625-1.23973 2.625-2.76316c0-1.52342-1.17775-2.76315-2.625-2.76315S4.375 2.40636 4.375 3.92978zm7.2917 8.90352h.5833v-.614c0-2.3696-1.8323-4.29829-4.08333-4.29829H5.83333C3.58167 7.92101 1.75 9.8497 1.75 12.2193v.614h9.9167z"
+                  opacity=".1" />
+              </svg>
+              5326</span>
             <p class="directions__text">
-              Закоулки <br class="hide-on-mobile hide-on-desctops">старой Европы
+              Закоулки <br class="hide-on-mobile hide-on-desctops">старой <br
+                class="hide-on-tablets hode-on-desktops">Европы
             </p>
           </div>
         </li>
       </ul>
       <a class="directions__link button button--show-all link-reset" href="form.html">
-        Показать все <span>&#9654;</span>
+        Показать все <span class="button__arrow">&#9654;</span>
       </a>
     </section>
     <section class="companions">
@@ -237,7 +276,7 @@
           <div class="user-card">
             <div class="user-score user-score--index">
               <svg class="user-score__progress-ring" width="120" height="120">
-                <circle class="user-score__progress-ring__circle" fill="transparent" r="30" cx="60" cy="60" />
+                <circle class="user-score__progress-ring__circle" fill="transparent" r="29" cx="60" cy="60" />
               </svg>
               <span class="user-score__score">99</span>level
             </div>
@@ -306,7 +345,7 @@
           <div class="user-card">
             <div class="user-score user-score--index">
               <svg class="user-score__progress-ring" width="120" height="120">
-                <circle class="user-score__progress-ring__circle" fill="transparent" r="30" cx="60" cy="60" />
+                <circle class="user-score__progress-ring__circle" fill="transparent" r="29" cx="60" cy="60" />
               </svg>
               <span class="user-score__score">80</span>level
             </div>
@@ -366,7 +405,7 @@
         </li>
       </ul>
       <a class="companions__link button button--show-all link-reset" href="catalog.html">Показать всех
-        <span>&#9654;</span>
+        <span class="button__arrow">&#9654;</span>
       </a>
     </section>
     <section class="register">
@@ -394,8 +433,8 @@
           </li>
         </ol>
         <a class="button button--business-rates link-reset" href="#">
-          <img class="business-rates__icon" src="img/business-rates-link.svg" alt="Тарифы для бизнеса" width="68"
-            height="68">
+          <img class="user-price__business-price-link-icon" src="img/business-rates-link.svg" alt="Тарифы для бизнеса"
+            width="68" height="68">
           Показать тарифы для бизнеса
         </a>
       </div>
@@ -461,7 +500,8 @@
           </a>
         </li>
         <li class="contact-list__item contact-list__item--interested-section">
-          <a class="contact-list__link contact-list__link--yellow link-reset" href="mailto:mail@htmlacademy.ru">
+          <a class="contact-list__link contact-list__link--mail contact-list__link--yellow link-reset"
+            href="mailto:mail@htmlacademy.ru">
             <picture class="contact-list__image contact-list__image--interested-section">
               <source srcset="img/contacts-mail-icon-desktop.svg" media="(min-width: 1439px)">
               <source srcset="img/contacts-mail-icon-tablet.svg" media="(min-width: 767px)">
@@ -482,23 +522,23 @@
         </picture>
         <p class="how-to-find__street">ул. Большая <br class="hide-on-tablets hide-on-desktops">Конюшенная, 19/8</p>
       </address>
-      <a class="button button--rout link-reset" href="#">Проложить маршрут <span>&#9654;</span></a>
+      <a class="button button--rout link-reset" href="#">Проложить маршрут <span
+          class="button__arrow">&#9654;</span></a>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <picture class="map__image">
-        <source srcset="img/background-map-desktop.jpg" media="(min-width: 1439px)">
-        <source srcset="img/background-map-tablet.jpg" media="(min-width: 767px)">
-        <img src="img/background_map.png" alt="Наш адрес: ул. Большая Конюшенная, 19/8">
-      </picture>
+      <iframe class="map__frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.04368775839!2d30.318834002417514!3d59.93851937462457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2sBolshaya%20Konyushennaya%20St%2C%2018%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sua!4v1607542697664!5m2!1sen!2sua"
+        width="270" height="424" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
     </section>
     <footer class="page-footer">
       <div class="page-footer__content">
-        <a class="page-header__logo link-reset">
-          <picture class="user-card__image">
-            <source srcset="img/logos/logo-desktop.png" media="(min-width: 1440px)">
-            <source srcset="img/logos/logo-tablet.png" media="(min-width: 768px)">
-            <img src="img/logos/logo-white-mobile.png" alt="Погнали?">
+        <a class="link-reset">
+          <picture>
+            <source srcset="img/logos/logo-blue-desktop.png" media="(min-width: 1440px)">
+            <source srcset="img/logos/logo-blue-tablet.png" media="(min-width: 768px)">
+            <img src="img/logos/logo-blue-mobile.png" alt="Погнали?">
           </picture>
         </a>
         <ul class="social-list social-list--footer list-reset">
@@ -506,7 +546,7 @@
             <a class="social-list__link link-reset" href="#">
               <picture>
                 <source srcset="img/icon-facebook-tablet.svg" media="(min-width: 767px)">
-                <img src="img/icon-facebook.svg" alt="Facebook">
+                <img src="img/icon-facebook-mobile.svg" alt="Facebook">
               </picture>
               <span class="visually-hidden">Facebook</span>
             </a>
@@ -515,7 +555,7 @@
             <a class="social-list__link link-reset" href="#">
               <picture>
                 <source srcset="img/icon-vkontakte-tablet.svg" media="(min-width: 767px)">
-                <img src="img/icon-vkontakte.svg" alt="Vkontakte">
+                <img src="img/icon-vkontakte-mobile.svg" alt="Vkontakte">
               </picture>
               <span class="visually-hidden">Vkontakte</span>
             </a>
@@ -524,7 +564,7 @@
             <a class="social-list__link link-reset" href="#">
               <picture>
                 <source srcset="img/icon-instagram-tablet.svg" media="(min-width: 767px)">
-                <img src="img/icon-instagram.svg" alt="Instagram">
+                <img src="img/icon-instagram-mobile.svg" alt="Instagram">
               </picture>
               <span class="visually-hidden">Instagram</span>
             </a>
@@ -534,11 +574,12 @@
       <div class="page-footer__developers">
         <p class="page-footer__text">Разработано</p>
         <a class="link-reset" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <img src="img/htmlacademy.svg" alt="HTML Academy" width="60" height="60">
+          <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
         </a>
       </div>
     </footer>
   </main>
+  <script src="js/toggle-menu.js"></script>
   <script src="js/user-score-progress-bar.js"></script>
 </body>
 

@@ -4,17 +4,17 @@
   z-index: 3;
   background-color: $special-midnight;
   text-align: center;
-  border-radius: 31px;
-  padding: 81px 25px 26px 25px;
+  border-radius: 0 0 30px 30px;
+  padding: 82px 25px 24px 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 101px 75px 45px 75px;
-    border-radius: 0 0 61px 61px;
+    padding: 101px 75px 60px 75px;
+    border-radius: 0 0 60px 60px;
     margin-top: -61px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 133px 133px 101px 133px;
+    padding: 133px 133px 103px 133px;
   }
 }
 
@@ -24,17 +24,17 @@
   @media (min-width: $tablet-width) {
     font-size: 45px;
     line-height: 45px;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 }
 
 .interested__text {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 32px;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
     font-weight: 300;
   }
 
@@ -44,6 +44,10 @@
 }
 
 .interested__text--questions {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+
   @media (min-width: $desktop-width) {
     letter-spacing: 0.3px;
     padding-top: 10px;

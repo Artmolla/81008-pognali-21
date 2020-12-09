@@ -6,19 +6,19 @@
   border-radius: 31px 31px 0 0;
   color: $black;
   text-align: center;
-  margin-top: -140px;
+  margin-top: -139px;
 
   @media (min-width: $tablet-width) {
     @include flex;
 
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 47px 40px 0 40px;
     margin-top: -77px;
     border-radius: 61px 61px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 12px 60px 0 60px;
+    padding: 48px 60px 0 58px;
     margin-top: -73px;
     border-radius: 57px 57px 0 0;
   }
@@ -43,6 +43,7 @@
   align-items: center;
   flex-basis: 50%;
   border-top: 1px solid rgba($black, 0.05);
+  padding-top: 8px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;

@@ -56,12 +56,3 @@
     padding: 41px 80px;
   }
 }
-
-.business-rates__icon {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    margin-right: 20px;
-  }
-}
