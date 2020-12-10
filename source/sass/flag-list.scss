@@ -10,7 +10,6 @@
   top: -44px;
   left: 50%;
   transform: translateX(-50%);
-  // min-width: 145px;
   justify-content: flex-start;
 }
 
@@ -31,6 +30,7 @@
 .flag-list__item {
   @include flex;
   margin-right: 14px;
+  position: relative;
 
   &:last-child {
     margin-right: 0;

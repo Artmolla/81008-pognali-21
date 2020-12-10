@@ -1,10 +1,14 @@
 .main-nav {
+  margin-bottom: 153px;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+    margin-bottom: 127px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 20px 0 0 17px;
+    margin-bottom: 0;
   }
 }
 

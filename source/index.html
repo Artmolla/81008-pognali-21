@@ -40,11 +40,12 @@
             </li>
           </ul>
         </nav>
-        <ul class="contact-list list-reset">
+        <ul class="contact-list contact-list--menu-open list-reset">
           <li class="contact-list__item contact-list__item--menu-open">
             <a class="contact-list__link link-reset" href="tel:88005558628">
               <picture class="contact-list__image">
                 <source srcset="img/icon-telephone-desktop.svg" media="(min-width: 1439px)">
+                <source srcset="img/icon-contact-phone-menu-tablet.svg" media="(min-width: 767px)">
                 <img src="img/icon_telephone.svg" alt="Телефон">
               </picture>
               <span class="contact-list__text">8 800 555-86-28</span>
@@ -54,6 +55,7 @@
             <a class="contact-list__link link-reset" href="mailto:mail@htmlacademy.ru">
               <picture class="contact-list__image">
                 <source class="test" srcset="img/icon-mail-desktop.svg" media="(min-width: 1439px)">
+                <source srcset="img/icon-contact-mail-menu-tablet.svg" media="(min-width: 767px)">
                 <img src="img/icon_envelope_closed.svg" alt="Телефон">
               </picture>
               <span class="contact-list__text">mail@htmlacademy.ru</span>
@@ -289,14 +291,17 @@
                 <li class="flag-list__item">
                   <img class="flag-list__img" src="img/flags/flag-sri-lanka-35-24.png" alt="Флаг Шри-Ланки" width="35"
                     height="25">
+                  <span class="tooltip tooltip--flags">Шри Ланка</span>
                 </li>
                 <li class="flag-list__item">
                   <img class="flag-list__img" src="img/flags/flag-thailand-35-24.png" alt="Флаг Тайланда" width="35"
                     height="25">
+                  <span class="tooltip tooltip--flags">Тайланд</span>
                 </li>
                 <li class="flag-list__item">
                   <img class="flag-list__img" src="img/flags/flag-seychelles-35-24.png" alt="Флаг Сейшелы" width="35"
                     height="25">
+                  <span class="tooltip tooltip--flags">Сейшелы</span>
                 </li>
               </ul>
               <div class="user-card__container">
@@ -326,16 +331,20 @@
               </ul>
               <ul class="transport-list list-reset">
                 <li class="transport-list__item transport-list__item--active">
-                  <img src="img/icon_plane.svg" alt="Самолет" width="33" height="33">
+                  <img src="img/icon_plane.svg" alt="Самолетом" width="33" height="33">
+                  <span class="tooltip">Авиаперелет</span>
                 </li>
                 <li class="transport-list__item transport-list__item--active">
                   <img src="img/icon_bus.svg" alt="Автобус" width="33" height="33">
+                  <span class="tooltip">Автотранспорт</span>
                 </li>
                 <li class="transport-list__item">
                   <img src="img/icon_bicycle.svg" alt="Велосипед" width="33" height="33">
+                  <span class="tooltip">Велосипед</span>
                 </li>
                 <li class="transport-list__item transport-list__item--active">
-                  <img src="img/icon_run.svg" alt="Бег" width="33" height="33">
+                  <img src="img/icon_run.svg" alt="Пешком" width="33" height="33">
+                  <span class="tooltip">Пешком</span>
                 </li>
               </ul>
             </div>
@@ -358,10 +367,12 @@
                 <li class="flag-list__item">
                   <img class="flag-list__img" src="img/flags/flag-belgium-35-24.png" alt="Флаг Бельгии" width="35"
                     height="24">
+                  <span class="tooltip tooltip--flags">Бельгия</span>
                 </li>
                 <li class="flag-list__item">
-                  <img class="flag-list__img" src="img/flags/flag-czech-35-24.png" alt="Флаг Бельгии" width="35"
+                  <img class="flag-list__img" src="img/flags/flag-czech-35-24.png" alt="Флаг Чехии" width="35"
                     height="24">
+                  <span class="tooltip tooltip--flags">Чехия</span>
                 </li>
               </ul>
               <div class="user-card__container">
@@ -389,15 +400,19 @@
               <ul class="transport-list list-reset">
                 <li class="transport-list__item transport-list__item--active">
                   <img src="img/icon_plane.svg" alt="Самолет" width="33" height="33">
+                  <span class="tooltip">Авиаперелет</span>
                 </li>
                 <li class="transport-list__item transport-list__item--active">
                   <img src="img/icon_bus.svg" alt="Автобус" width="33" height="33">
+                  <span class="tooltip">Автотранспорт</span>
                 </li>
                 <li class="transport-list__item">
                   <img src="img/icon_bicycle.svg" alt="Велосипед" width="33" height="33">
+                  <span class="tooltip">Велосипед</span>
                 </li>
                 <li class="transport-list__item transport-list__item--active">
-                  <img src="img/icon_run.svg" alt="Бег" width="33" height="33">
+                  <img src="img/icon_run.svg" alt="Пешком" width="33" height="33">
+                  <span class="tooltip">Пешком</span>
                 </li>
               </ul>
             </div>
@@ -529,8 +544,7 @@
       <h2 class="visually-hidden">Карта</h2>
       <iframe class="map__frame"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.04368775839!2d30.318834002417514!3d59.93851937462457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2sBolshaya%20Konyushennaya%20St%2C%2018%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sua!4v1607542697664!5m2!1sen!2sua"
-        width="270" height="424" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
+        width="270" height="424" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
     <footer class="page-footer">
       <div class="page-footer__content">

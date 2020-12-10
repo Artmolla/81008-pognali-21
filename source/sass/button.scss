@@ -5,6 +5,14 @@
   background-color: $basic-yellow;
   color: $basic-blue;
   border: none;
+
+  &:hover {
+    background-color: $special-orange-light;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .button--show-all {

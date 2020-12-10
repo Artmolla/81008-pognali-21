@@ -82,6 +82,11 @@
 }
 
 .companions__item {
+  &:hover {
+    transform: scale(1.01);
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 20px;
   }

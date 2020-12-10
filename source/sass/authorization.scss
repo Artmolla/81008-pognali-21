@@ -50,3 +50,13 @@
     padding: 15px 25px 14px 26px;
   }
 }
+
+.authorization--menu-open {
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    display: block;
+    position: absolute;
+    top: 248px;
+    left: 0;
+    right: 0;
+  }
+}
