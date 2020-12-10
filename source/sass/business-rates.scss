@@ -1,5 +1,10 @@
 .business-rates {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 25px;
+  right: 25px;
+  z-index: 20;
   padding: 34px 0 0 0;
   border-radius: 20px;
   background-color: $white;
@@ -36,6 +41,12 @@
   &:last-child {
     border-bottom: 1px solid rgba($black, 0.05);
   }
+
+  @media (min-width: $tablet-width) {
+    @include flex;
+
+    justify-content: space-between;
+  }
 }
 
 .business-rates__button {
@@ -48,7 +59,7 @@
   color: $basic-blue-dark;
   padding: 21px 80px;
   background-color: $special-grey-light;
-  border-radius: 0 20px;
+  border-radius: 0 0 20px 20px;
 
   @media (min-width: $tablet-width) {
     border-radius: 0 0 20px 20px;
