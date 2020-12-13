@@ -138,6 +138,12 @@
   }
 }
 
+.contact-list__link--blue-bg-mail {
+  @media (min-width: $desktop-width) {
+    transform: translateY(7px);
+  }
+}
+
 .contact-list__image--menu {
   display: none;
 
