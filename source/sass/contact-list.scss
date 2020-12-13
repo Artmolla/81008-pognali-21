@@ -11,7 +11,7 @@
 
   @media (min-width: $desktop-width) {
     align-items: baseline;
-    padding: 5px 0 0 0;
+    padding: 1px 3px 0 0;
     margin: 0;
   }
 }
@@ -158,6 +158,26 @@
   }
 }
 
+.contact-list__link--header-phone:hover {
+  @media (min-width: $desktop-width) {
+    background-color: $special-orange-hover;
+  }
+}
+
+.contact-list__link--header-phone:active .contact-list__image {
+  opacity: 0.3;
+}
+
+.contact-list__link--header-mail:hover {
+  @media (min-width: $desktop-width) {
+    background-color: $special-orange;
+  }
+}
+
+.contact-list__link--header-mail:active .contact-list__image {
+  opacity: 0.3;
+}
+
 .contact-list__image--interested-section {
   @media (min-width: $desktop-width) {
     margin-right: 31px;
@@ -191,6 +211,12 @@
     height: 68px;
     margin-right: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+    margin-right: 32px;
+  }
 }
 
 .contact-list__icon {
@@ -198,12 +224,22 @@
     width: 37px;
     height: 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 47px;
+    height: 50px;
+  }
 }
 
 .contact-list__icon--old-phone {
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 36px;
+    height: 34px;
   }
 }
 

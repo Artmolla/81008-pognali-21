@@ -24,14 +24,14 @@
     @include flex;
 
     justify-content: space-between;
-    padding: 76px 60px 123px 60px;
+    padding: 76px 60px 124px 60px;
     background-color: $basic-blue;
     background-image:
       url("../img/traveller-illustration-desktop.png"),
       url("../img/globe-back-desktop.png");
     background-repeat: no-repeat, no-repeat;
     background-position:
-      bottom right 40%,
-      bottom left;
+      bottom 1px right 405px,
+      bottom 1px left;
   }
 }

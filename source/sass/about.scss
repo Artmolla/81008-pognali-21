@@ -23,9 +23,10 @@
       url("../img/about-bg-rect-desktop.png");
     background-repeat: no-repeat, no-repeat;
     background-position:
-      top 87px right 60px,
+      top 85px right 60px,
       top 70px left 60px;
-    padding: 133px 48% 165px 130px;
+    padding: 133px 48% 163px 130px;
+    border-radius: 0 0 56px 56px;
   }
 }
 
@@ -33,7 +34,7 @@
   padding: 0;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 58px;
+    margin-bottom: 55px;
   }
 }
 
@@ -65,7 +66,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 10px 150px 0 0;
-    margin-bottom: 86px;
+    margin-bottom: 84px;
   }
 }
 
@@ -82,5 +83,9 @@
     line-height: 24px;
     padding: 28px 31px 28px 33px;
     border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 31px 27px 33px;
   }
 }

@@ -34,6 +34,7 @@
   &:focus {
     color: $white;
     background-color: $special-midnight;
+    border: 2px solid $white;
   }
 
   &:focus::placeholder {

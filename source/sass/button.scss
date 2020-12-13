@@ -32,6 +32,10 @@
     border-radius: 20px;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 35px 27px 33px;
+  }
 }
 
 .button--show-all-countries {
@@ -87,7 +91,7 @@
     align-items: center;
     justify-content: space-between;
     min-width: 324px;
-    padding: 29px 31px;
+    padding: 29px 35px 28px 36px;
   }
 }
 

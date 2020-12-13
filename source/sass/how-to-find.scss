@@ -17,7 +17,8 @@
     @include flex;
     justify-content: space-between;
     align-items: center;
-    padding: 113px 134px 52px 283px;
+    padding: 117px 135px 56px 283px;
+    border-radius: 0 0 56px 56px;
   }
 }
 
@@ -69,6 +70,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      top: -29px;
       width: 90px;
       height: 90px;
       background-size: 42px;
@@ -81,7 +83,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 7px;
+    padding: 4px 0 0 120px;
   }
 }
 
