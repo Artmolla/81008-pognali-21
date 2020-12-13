@@ -52,7 +52,7 @@
   background-position: center;
 
   @media (min-width: $tablet-width) {
-    transform: translateX(50%);
+    transform: translate(50%, -3px);
   }
 
   @media (min-width: $desktop-width) {

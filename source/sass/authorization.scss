@@ -25,14 +25,6 @@
   padding: 12px 81px 8px 78px;
   cursor: pointer;
 
-  &:hover {
-    background-color: $special-orange-light;
-  }
-
-  &:active {
-    color: $basic-blue-opacity;
-  }
-
   @media (min-width: $tablet-width) {
     line-height: 20px;
     padding: 15px 26px 15px 25px;
@@ -59,4 +51,8 @@
     left: 0;
     right: 0;
   }
+}
+
+.authorization__button:active .authorization__text {
+  opacity: 0.3;
 }

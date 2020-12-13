@@ -2,7 +2,6 @@ let openMenuButton = document.querySelector('.page-header__toggle-menu-button');
 let menuBody = document.querySelector('.menu__body');
 let pageHeader = document.querySelector('.page-header');
 let authorizationButton = document.querySelector('.authorization');
-console.log(authorizationButton);
 
 openMenuButton.addEventListener('click', function(evt){
   evt.preventDefault();

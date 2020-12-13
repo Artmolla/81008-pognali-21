@@ -1,5 +1,4 @@
 .intro {
-  padding-bottom: 23px;
   background-color: $basic-blue;
   margin-top: -1px;
   background-image:
@@ -7,7 +6,7 @@
     url("../img/globe-back-mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-position:
-    right 48px top 148px,
+    right 48px top 147px,
     left top -76px;
 
   @media (min-width: $tablet-width) {
@@ -17,8 +16,8 @@
       url("../img/globe-back-tablet.svg");
     background-repeat: no-repeat, no-repeat;
     background-position:
-      bottom 304px right 111px,
-      bottom 164px left;
+      bottom 281px right 111px,
+      bottom 142px left;
   }
 
   @media (min-width: $desktop-width) {

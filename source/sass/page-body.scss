@@ -86,7 +86,7 @@
 .page-body__title--index {
   border-radius: none;
   padding: 19px 25px 10px 25px;
-  margin-bottom: 206px;
+  margin-bottom: 213px;
 
   @media (min-width: $tablet-width) {
     padding-top: 30px;
@@ -104,7 +104,7 @@
 
   align-items: flex-start;
   justify-content: center;
-  transform: translateY(58%);
+  transform: translateY(50%);
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -113,7 +113,7 @@
 }
 
 .page-body__authorization {
-  padding: 10px 40px;
+  padding: 12px 40px 8px 40px;
   border-radius: 20px;
   font-style: normal;
   font-weight: bold;
@@ -126,8 +126,8 @@
   &:hover {
     background-color: $special-orange-light;
   }
+}
 
-  &:active {
-    color: $basic-blue-opacity;
-  }
+.page-body__authorization:active .page-body__button-text {
+  opacity: 0.3;
 }

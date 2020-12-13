@@ -7,6 +7,7 @@
   margin-bottom: 9px;
   border-radius: 10px;
   text-align: center;
+  max-width: 270px;
 
   @media (min-width: $tablet-width) {
     max-width: 285px;
@@ -21,11 +22,6 @@
 }
 
 .user-card__container {
-  display: grid;
-  grid-template-columns: 6px auto;
-  gap: 10px;
-  align-items: center;
-
   &:hover {
     opacity: 0.7;
   }
@@ -60,7 +56,7 @@
   padding: 0 10px 10px 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 1px 10px 17px 10px;
+    padding: 1px 10px 16px 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,12 +65,30 @@
 }
 
 .user-card__user-name {
+  position: relative;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   color: $basic-blue-dark;
-  padding: 1px 16px 0 0;
+  padding: 1px 0 0 0;
   margin-bottom: 16px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -16px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 8px;
+      height: 8px;
+      left: -22px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -83,28 +97,17 @@
   }
 }
 
-.user-card__user-status {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  margin-right: 10px;
-
+.user-card__user-name--online {
   @media (min-width: $tablet-width) {
-    width: 8px;
-    height: 8px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // grid-area: user-status;
+    margin-left: -21px;
   }
 }
 
-.user-card__user-status--online {
+.user-card__user-name--online::before {
   background-color: $special-green;
 }
 
-.user-card__user-status--offline {
+.user-card__user-name--offline::before {
   background-color: $special-red;
 }
 

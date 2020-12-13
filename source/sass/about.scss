@@ -3,18 +3,18 @@
   z-index: 7;
   background-image: url("../img/about-mobile.png");
   background-repeat: no-repeat;
-  background-position: top 18px right 8px;
+  background-position: top 17px right 8px;
   background-color: $special-midnight;
-  padding: 29px 50px 65px 50px;
+  padding: 30px 50px 65px 50px;
   border-radius: 0 0 30px 30px;
   margin-top: -1px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/about-bg-tablet.png");
     background-repeat: no-repeat;
-    background-position: top 73px right 8px;
-    padding: 78px 74px 89px 74px;
-    border-radius: 0 0 61px 61px;
+    background-position: top 96px right 8px;
+    padding: 100px 74px 89px 74px;
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,6 +45,7 @@
     font-size: 28px;
     line-height: 33px;
     padding-right: 320px;
+    padding-top: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,12 +55,12 @@
 
 .about__text--strong {
   font-weight: bold;
-  padding-top: 5px;
+  padding-top: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 25px;
-    margin-bottom: 52px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,10 +76,11 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: center;
     width: 44%;
     font-size: 24px;
     line-height: 24px;
-    padding: 27px 30px 28px 33px;
+    padding: 28px 31px 28px 33px;
     border-radius: 20px;
   }
 }

@@ -1,7 +1,7 @@
 .steps-list {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0 25px;
+  padding: 0 25px 23px 25px;
   background: linear-gradient(transparent 50%, $special-midnight 50%);
 
   @media (min-width: $tablet-width) {
@@ -29,7 +29,7 @@
   font-size: 18px;
   line-height: 18px;
   color: $basic-blue;
-  padding: 23px;
+  padding: 23px 21px 23px 24px;
   border-radius: 10px 10px 0 0;
   margin: -8px 0 0 0;
 
@@ -39,6 +39,10 @@
 
   &:last-child {
     border-radius: 10px;
+
+    @media (min-width: $mobile-width) and (max-width: 767px) {
+      padding-bottom: 21px;
+    }
   }
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
