@@ -1,6 +1,14 @@
 .main-nav {
+  margin-bottom: 153px;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+    margin-bottom: 127px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 0 0 15px;
+    margin-bottom: 0;
   }
 }
 
@@ -24,7 +32,6 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
-    color: $white;
     margin: 0;
   }
 }
@@ -32,5 +39,15 @@
 .main-nav__item {
   @media (min-width: $desktop-width) {
     margin-right: 34px;
+  }
+}
+
+.main-nav__link {
+  &:hover {
+    color: $basic-yellow;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

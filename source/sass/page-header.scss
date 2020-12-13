@@ -1,16 +1,32 @@
 .page-header {
-  padding: 28px 25px 52px 25px;
+  padding: 27px 25px 27px 27px;
   background-color: $basic-blue;
+  color: $white;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
     padding: 40px;
     background-color: $special-midnight;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 46px 60px 0 60px;
-    background-color: $basic-blue;
+    padding: 47px 60px 0 60px;
   }
+}
+
+.page-header--scroll {
+  padding: 21px 60px 21px 60px;
+  color: $special-midnight;
+  background-color: $white;
+}
+
+.page-header--menu-open {
+  background-color: $white;
+  position: absolute;
+  padding-bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .page-header--inner {
@@ -30,7 +46,20 @@
 }
 
 .page-header__toggle-menu-button {
+  background-image: url("../img/menu-icon.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    transform: translate(50%, -3px);
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.page-header__toggle-menu-button--menu-open {
+  background-image: url("../img/icon_menu_mobile_close.svg");
 }

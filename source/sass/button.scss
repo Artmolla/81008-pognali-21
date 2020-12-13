@@ -5,6 +5,14 @@
   background-color: $basic-yellow;
   color: $basic-blue;
   border: none;
+
+  &:hover {
+    background-color: $special-orange-light;
+  }
+
+  &:active {
+    color: $basic-blue-opacity;
+  }
 }
 
 .button--show-all {
@@ -13,9 +21,21 @@
   width: 100%;
   font-weight: bold;
   font-size: 18px;
-  line-height: 18px;
   border-radius: 10px;
-  padding: 22px 29px 22px 29px;
+  padding: 25px 22px 23px 23px;
+  line-height: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 38px 28px 31px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 35px 27px 33px;
+  }
 }
 
 .button--show-all-countries {
@@ -34,10 +54,21 @@
 }
 
 .button--business-rates {
+  display: flex;
+  align-items: center;
   color: $special-blue;
   font-weight: bold;
   line-height: 16px;
   background-color: inherit;
+
+  &:hover {
+    background-color: inherit;
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -46,12 +77,21 @@
 }
 
 .button--register {
-  border-radius: 20px;
-  padding: 24px;
+  border-radius: 10px;
+  padding: 25px 21px 20px 28px;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     border-radius: 0 20px 20px 0;
-    padding: 31px;
+    padding: 36px 35px 27px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 324px;
+    padding: 29px 35px 28px 36px;
   }
 }
 
@@ -61,13 +101,26 @@
   width: 100%;
   border: 3px solid $special-midnight;
   border-radius: 10px;
-  padding: 22px;
+  padding: 22px 19px 21px 19px;
   font-weight: bold;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 13px;
+
+  &:hover {
+    color: $white;
+    background-color: $basic-blue;
+  }
+
+  &:active {
+    color: $basic-white-opacity;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 29px 35px 27px 37px;
+    padding: 27px 32px 23px 35px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,10 +163,20 @@
   }
 }
 
+.button__text-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.button__arrow {
+  font-size: 16px;
+}
+
 .button__text-desktop {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }

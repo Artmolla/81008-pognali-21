@@ -1,17 +1,20 @@
 .about {
+  position: relative;
+  z-index: 7;
   background-image: url("../img/about-mobile.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top 17px right 8px;
   background-color: $special-midnight;
-  padding: 33px 50px 82px 50px;
-  border-radius: 0 0 26px 26px;
+  padding: 30px 50px 65px 50px;
+  border-radius: 0 0 30px 30px;
   margin-top: -1px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/about-bg-tablet.png");
     background-repeat: no-repeat;
-    background-position: top 20px right 8px;
-    padding: 33px 74px 82px 74px;
+    background-position: top 96px right 8px;
+    padding: 100px 74px 89px 74px;
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,37 +23,50 @@
       url("../img/about-bg-rect-desktop.png");
     background-repeat: no-repeat, no-repeat;
     background-position:
-      top 125px right,
+      top 85px right 60px,
       top 70px left 60px;
-    padding: 118px 26% 225px 130px;
+    padding: 133px 48% 163px 130px;
+    border-radius: 0 0 56px 56px;
   }
 }
 
 .about__title {
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .about__text {
   line-height: 22px;
+  font-weight: 300;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
     padding-right: 320px;
+    padding-top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }
 
 .about__text--strong {
   font-weight: bold;
+  padding-top: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 25px;
-    margin-bottom: 90px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 125px;
+    padding: 10px 150px 0 0;
+    margin-bottom: 84px;
   }
 }
 
@@ -60,6 +76,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: initial;
+    display: flex;
+    align-items: center;
+    width: 44%;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 28px 31px 28px 33px;
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 31px 27px 33px;
   }
 }

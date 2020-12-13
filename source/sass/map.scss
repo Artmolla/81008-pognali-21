@@ -1,0 +1,26 @@
+.map {
+  position: relative;
+  margin-top: -30px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -122px;
+  }
+}
+
+.map__frame {
+  width: 100%;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 581px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 584px;
+  }
+}

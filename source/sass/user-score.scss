@@ -8,7 +8,6 @@
   width: 60px;
   height: 60px;
   margin-bottom: 18px;
-  border: 3px solid $special-orange;
   border-radius: 50%;
   font-weight: normal;
   font-size: 14px;
@@ -21,13 +20,19 @@
   position: absolute;
   left: 17px;
   top: 17px;
+
+  @media (min-width: $tablet-width) {
+    left: 22px;
+    top: 20px;
+  }
 }
 
 .user-score__score {
   border-bottom: 1px solid $white;
   font-weight: bold;
   font-size: 24px;
-  line-height: 24px;
+  margin-top: 9px;
+  line-height: 19px;
 }
 
 .user-score--profile {
@@ -61,4 +66,18 @@
   @media (min-width: $desktop-width) {
     border-bottom: 1px solid $white;
   }
+}
+
+.user-score__progress-ring {
+  position: absolute;
+  right: -30px;
+  top: -30px;
+}
+
+.user-score__progress-ring__circle {
+  transition: 0.35s stroke-dashoffset;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke: $special-orange;
+  stroke-width: 4px;
 }

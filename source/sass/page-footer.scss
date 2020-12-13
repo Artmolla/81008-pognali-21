@@ -1,19 +1,26 @@
 .page-footer {
+  position: relative;
+  z-index: 2;
   background-color: $white;
   padding: 37px 25px 0 25px;
-  border-radius: 26px 26px 0 0;
+  border-radius: 31px 31px 0 0;
   color: $black;
   text-align: center;
+  margin-top: -139px;
 
   @media (min-width: $tablet-width) {
     @include flex;
 
     justify-content: space-between;
-    padding: 46px 40px 32px 40px;
+    padding: 51px 40px 0 40px;
+    margin-top: -77px;
+    border-radius: 61px 61px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 60px 43px 60px;
+    padding: 51px 60px 0 58px;
+    margin-top: -73px;
+    border-radius: 57px 57px 0 0;
   }
 }
 
@@ -22,6 +29,9 @@
     @include flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
     flex-basis: 50%;
   }
 }
@@ -32,12 +42,16 @@
   justify-content: space-between;
   align-items: center;
   flex-basis: 50%;
-  padding: 13px 0;
   border-top: 1px solid rgba($black, 0.05);
+  padding-top: 13px;
+  margin-top: 2px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
+    flex-basis: unset;
     border: none;
+    padding-top: 0;
+    margin-top: -5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +61,8 @@
 
 .page-footer__text {
   @media (min-width: $tablet-width) {
-    margin-right: 29px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 24px;
   }
 }

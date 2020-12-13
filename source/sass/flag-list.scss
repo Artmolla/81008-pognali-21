@@ -7,9 +7,9 @@
 
 .flag-list--index {
   position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  top: -44px;
 }
 
 .flag-list--catalog {
@@ -28,7 +28,8 @@
 
 .flag-list__item {
   @include flex;
-  margin-right: 14px;
+  margin-right: 21px;
+  position: relative;
 
   &:last-child {
     margin-right: 0;

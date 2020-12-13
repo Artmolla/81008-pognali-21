@@ -1,15 +1,17 @@
 .quote {
   margin: 0;
-  padding: 28px 100px 28px 50px;
+  padding: 48px 100px 29px 50px;
   font-weight: 300;
+  background-color: $basic-blue;
 
   @media (min-width: $tablet-width) {
-    padding: 76px 100px 350px 72px;
+    padding: 76px 100px 211px 72px;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
     flex-basis: 20%;
-    padding: 32px 23px 0 0;
+    padding: 42px 23px 0 0;
     text-align: left;
   }
 }
@@ -22,6 +24,7 @@
     font-size: 28px;
     line-height: 33px;
     padding-right: 300px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,4 +34,14 @@
 
 .quote__author {
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+    padding-right: 220px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }

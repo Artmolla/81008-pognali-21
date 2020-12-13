@@ -3,12 +3,9 @@
 
   position: relative;
   text-align: center;
-  padding: 0 0 25px 0;
-  color: $special-midnight;
-  background-color: $white;
 
-  @media (min-width: $desktop-width) {
-    background-color: $basic-blue;
+  @media (min-width: $mobile-width) and (max-width: 1439px) {
+    color: $special-midnight;
   }
 }
 
@@ -17,13 +14,10 @@
 
   flex-basis: 100%;
   justify-content: space-between;
-  padding-top: 25px;
-  margin-bottom: 76px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 50%;
-    margin-bottom: 98px;
-    padding-top: 12px;
+    padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +27,22 @@
 }
 
 .menu__body {
+  position: relative;
+  display: none;
   flex-basis: 100%;
+  padding-top: 76px;
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      left: -90px;
+      top: 27px;
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: $white;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -43,9 +52,17 @@
   @media (min-width: $desktop-width) {
     @include flex;
 
-    flex-basis: 55%;
+    flex-basis: 61%;
     justify-content: space-between;
-    margin-right: 205px;
-    background-color: $basic-blue;
+    padding: 0;
+  }
+}
+
+.menu__body--menu-open {
+  display: block;
+  padding-top: 69px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 92px;
   }
 }

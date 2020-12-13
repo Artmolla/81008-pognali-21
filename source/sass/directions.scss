@@ -1,14 +1,21 @@
 .directions {
+  position: relative;
+  z-index: 6;
   background-color: $basic-blue-light;
-  padding: 71px 25px 29px 25px;
+  padding: 81px 25px 34px 25px;
+  margin-top: -30px;
   color: $basic-blue;
-  border-radius: 25px;
+  border-radius: 0 0 30px 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 71px 76px 80px 76px;
-    background-image: url("../img/flags-back.png");
-    background-repeat: no-repeat;
-    background-position: top 100px right 40px;
+    padding: 95px 76px 80px 76px;
+    background-image: url("../img/flags-back.png"), url("../img/rectangle-directions-bg-tablet.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+      top 140px right 40px,
+      top 466px left 40px;
+    border-radius: 0 0 60px 60px;
+    margin-top: -60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,14 +23,16 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     align-items: baseline;
-    gap: 0 100px;
-    padding: 100px 130px 138px 130px;
+    gap: 0 65px;
+    padding: 219px 130px 104px 130px;
+    background-position: top 148px right 59px;
+    border-radius: 0 0 56px 56px;
   }
 }
 
 .directions__list {
   grid-template-columns: 1fr;
-  padding-bottom: 25px;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 21px;
@@ -37,13 +46,18 @@
 .directions__item {
   display: grid;
   grid-template-columns: minmax(min-content, 1fr);
-  grid-template-rows: auto 15px auto;
-  margin-bottom: 10px;
+  grid-template-rows: auto 11px auto;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr auto;
     grid-template-rows: 1fr;
+    margin-bottom: 10px;
   }
+}
+
+.directions__item--france {
+  margin-bottom: 10px;
 }
 
 .directions__content {
@@ -54,13 +68,30 @@
   grid-row: 2 / -1;
   justify-content: space-between;
   align-items: center;
-  padding: 26px 24px 24px 24px;
+  padding: 26px 24px 23px 24px;
   border-radius: 10px;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
     border-radius: 20px 0 0 20px;
+    padding: 25px 24px 23px 29px;
     grid-row: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 19px 24px 22px 30px;
+  }
+}
+
+.directions__content--czech {
+  padding: 26px 33px 5px 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 33px 5px 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 33px 5px 30px;
   }
 }
 
@@ -70,36 +101,106 @@
   line-height: 21px;
   margin: 0;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .directions__info {
   color: $special-grey;
+  padding: 0 50px 0 25px;
+  margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
-    margin-bottom: 104px;
-    padding-right: 270px;
+    margin-bottom: 98px;
+    padding: 21px 270px 0 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
     margin: 0;
   }
 }
 
+.directions__info--index {
+  margin-bottom: 59px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 109px 13px 109px;
+    margin: 0;
+  }
+}
+
 .directions__text {
-  font-weight: 300;
+  font-weight: 500;
+  line-height: 18px;
   margin: 0;
   color: $special-grey-opacity;
   flex-basis: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -9px;
+  }
+}
+
+.directions__text--czech {
+  @media (min-width: $desktop-width) {
+    margin-top: -20px;
+  }
 }
 
 .directions__counter {
+  @include flex;
+
+  justify-content: space-between;
+  align-items: center;
   color: $special-grey-opacity;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    bottom: -8px;
+    left: -2px;
     flex-basis: 100%;
+    order: 3;
+    justify-content: flex-start;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -11px;
+    left: 0;
+  }
+}
+
+.directions__counter--czech {
+  @media (min-width: $tablet-width) {
+    top: -10px;
+    left: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: -1px;
   }
 }
 
@@ -110,22 +211,15 @@
 
   @media (min-width: $tablet-width) {
     left: initial;
-    right: -20px;
-    top: 50%;
+    right: -36px;
+    top: 32%;
     transform: translateY(-50%);
   }
-}
 
-.directions__image-container--thailand {
-  background: url("../img/thailand-mobile.png");
-}
-
-.directions__image-container--french {
-  background: url("../img/france-mobile.png");
-}
-
-.directions__image-container--czech {
-  background: url("../img/czech-mobile.png");
+  @media (min-width: $desktop-width) {
+    right: -34px;
+    top: 36%;
+  }
 }
 
 .directions__image-container {
@@ -139,8 +233,63 @@
     grid-column: 2;
     grid-row: 1;
     border-radius: 0 20px 20px 0;
-    padding: 140px 184px 0 0;
+    padding: 70px 93px 70px 92px;
     background-size: cover;
     background-position: center;
+  }
+}
+
+.directions__image-container--thailand {
+  background: url("../img/thailand-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/thailand-tablet.png");
+  }
+}
+
+.directions__image-container--french {
+  background: url("../img/france-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/france-tablet.png");
+  }
+}
+
+.directions__image-container--czech {
+  background: url("../img/czech-mobile.png");
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/czech-tablet.png");
+  }
+}
+
+.directions__link {
+  padding: 25px 22px 23px 23px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 31px 30px 27px 32px;
+    border-radius: 20px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 275px;
+    margin-left: 110px;
+    padding: 29px 34px 26px 33px;
+    align-self: center;
+    position: relative;
+    top: -5px;
+  }
+}
+
+.directions__icon {
+  margin-right: 7px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
   }
 }
