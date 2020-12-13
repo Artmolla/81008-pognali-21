@@ -27,9 +27,22 @@
 }
 
 .menu__body {
+  position: relative;
   display: none;
   flex-basis: 100%;
   padding-top: 76px;
+
+  &:before {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      left: -90px;
+      top: 27px;
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: $white;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     text-align: left;
