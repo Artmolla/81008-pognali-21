@@ -68,10 +68,21 @@
   }
 }
 
+.user-score__score--directions {
+  margin-bottom: 3px;
+}
+
 .user-score__progress-ring {
   position: absolute;
   right: -30px;
   top: -30px;
+}
+
+.user-score__progress-ring--directions {
+  width: 108px;
+  height: 108px;
+  right: -3px;
+  top: 2px;
 }
 
 .user-score__progress-ring__circle {
@@ -80,4 +91,8 @@
   transform-origin: 50% 50%;
   stroke: $special-orange;
   stroke-width: 4px;
+}
+
+.user-score__progress-ring__circle--directions {
+  stroke-width: 3px;
 }

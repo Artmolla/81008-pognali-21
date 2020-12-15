@@ -1,4 +1,5 @@
 .profile {
+  position: relative;
   color: $basic-blue;
   padding: 0 0 34px 0;
   background-color: $basic-blue-light;
@@ -10,12 +11,15 @@
 
 .profile__title {
   position: absolute;
-  top: -30px;
+  top: -25px;
   left: 50%;
   transform: translateX(-50%);
   background-color: $basic-blue-light;
   padding: 0 18px;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     top: unset;
@@ -59,12 +63,14 @@
   flex-basis: 100%;
   border: 1px solid $special-grey-borders;
   border-radius: 10px;
-  padding: 27px 28px 27px 25px;
+  padding: 22px 28px 18px 25px;
   text-align: center;
   margin: 0 25px 25px 25px;
 }
 
 .profile__container--transport {
+  padding: 15px 28px 14px 29px;
+
   @media (min-width: $tablet-width) {
     order: 3;
     flex-basis: 30%;
@@ -96,9 +102,10 @@
 .profile__tags {
   flex-basis: 100%;
   width: 100%;
+  letter-spacing: -2.5px;
 
   @include text-area-reset;
-  text-align: center;
+  text-align: left;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -113,7 +120,7 @@
 }
 
 .profile__image {
-  margin-bottom: 18px;
+  // margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     order: 4;

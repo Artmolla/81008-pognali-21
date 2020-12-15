@@ -1,6 +1,8 @@
 .planner {
-  padding: 30px 25px 30px 25px;
-  border-radius: 26px 26px 0 0;
+  position: relative;
+  margin-top: -50px;
+  padding: 10px 23px 63px 23px;
+  border-radius: 30px 30px 0 0;
   color: $basic-blue-dark;
   background-color: $special-blue-lighter;
 
@@ -15,6 +17,7 @@
 
 .planner__header {
   @include flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -32,14 +35,23 @@
   }
 }
 
+.planner__steps {
+  padding-top: 9px;
+}
+
 .planner__title--steps {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+
   @media (min-width: $desktop-width) {
     padding-left: 0;
   }
 }
 
 .planner__step {
-  padding: 24px 25px 23px 25px;
+  padding: 4px 25px 10px 25px;
   border: none;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -55,9 +67,18 @@
   }
 }
 
+.planner__step--2 {
+  padding-bottom: 6px;
+}
+
+.planner__step--3 {
+  padding-bottom: 3px;
+}
+
 .planner__info {
-  padding-bottom: 23px;
+  padding-bottom: 20px;
   color: $special-grey;
+  margin: -5px 0 0 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -82,7 +103,7 @@
   @include flex-center;
 
   flex-basis: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: $desktop-width) {
     flex-basis: 50%;
@@ -99,7 +120,7 @@
   line-height: 16px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -109,7 +130,27 @@
 }
 
 .planner__checkbox-label {
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 7px 10px 15px 39px;
+  margin-bottom: 11px;
   order: 1;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-size: 26px 26px;
+    background-image: url("../img/checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -123,6 +164,31 @@
   }
 }
 
+.planner__checkbox:checked + .planner__checkbox-label::before {
+  background-image: url("../img/checkbox-checked.svg");
+}
+
+
+.planner__checkbox-label:hover::before {
+  background-image: url("../img/checkbox-hover.svg");
+}
+
+.planner__checkbox:checked + .planner__checkbox-label:hover::before {
+  background-image: url("../img/checkbox-checked-hover.svg");
+}
+
+.planner__checkbox-label:active::before {
+  background-color: $special-blue-grey-light;
+  background-image: none;
+  border-radius: 4px;
+}
+
+.planner__checkbox:checked + .planner__checkbox-label:active::before {
+  background-color: $special-blue-grey-light;
+  background-image: none;
+  border-radius: 4px;
+}
+
 .planner__band {
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -132,9 +198,7 @@
 .planner__buttons-group {
   @include grid-small;
   flex-basis: 100%;
-  border: 1px solid $special-grey-borders;
   border-radius: 4px;
-  padding: 12px 14px 12px 14px;
 
   @media (min-width: $tablet-width) {
     padding: 22px 14px 22px 14px;
@@ -143,9 +207,33 @@
 
 .planner__input {
   font-family: $main-font;
-  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
   background: none;
   text-align: center;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  padding: 12px 7px 13px 7px;
+  border: 1px solid $special-grey-borders;
+  border-radius: 4px;
+
+  &:hover {
+    border: 1px solid $special-grey-hover;
+  }
+
+  &:active {
+    border: 1px solid $basic-blue;
+  }
+
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  &::-webkit-outer-spin-button {
+    appearance: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-weight: 500;
@@ -154,11 +242,44 @@
   }
 }
 
+.planner__buttons-group:hover .button--calendar {
+  color: $special-grey-hover;
+}
+
+.planner__buttons-group:active .button--calendar {
+  color: $basic-blue;
+}
+
 .planner__country {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 24%;
   margin-bottom: 22px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: $basic-blue;
+    border-radius: 50%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-2px, -50%);
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 48px;
+    bottom: -15px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/icon-decorative-arrow-doen.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 73% auto;
@@ -171,7 +292,25 @@
   }
 }
 
+.planner__country--choose-country {
+  grid-template-columns: 1fr;
+
+  &::before {
+    width: 7px;
+    height: 7px;
+    background-color: $white;
+    border: 1px solid $special-grey-borders;
+  }
+}
+
+.planner__country--add-country {
+  &::before {
+    background-color: $special-grey-borders;
+  }
+}
+
 .planner__destination-name {
+  appearance: none;
   font-family: $main-font;
   width: 100%;
   display: grid;
@@ -179,7 +318,7 @@
   border: 1px solid $special-grey-borders;
   text-align: left;
   border-radius: 4px;
-  padding: 11px 7px 11px 11px;
+  padding: 10px 13px 11px 11px;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -195,6 +334,15 @@
     margin-bottom: 15px;
     padding: 27px 25px 23px 25px;
   }
+}
+
+.planner__destination-name--country {
+  position: relative;
+  box-sizing: border-box;
+  padding: 12px 39px 11px 8px;
+  background-image: url("../img/icon-select-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 11px) 38%;
 }
 
 .planner__icon {
@@ -217,6 +365,7 @@
 .planner__textarea {
   @include text-area-reset;
 
+  position: relative;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -227,7 +376,7 @@
   border: 1px solid $special-grey-borders;
   border-radius: 4px;
   padding: 10px 14px;
-  margin-bottom: 22px;
+  margin-bottom: 17px;
   color: $special-blue-dark-opacity;
 
   @media (min-width: $tablet-width) {
@@ -243,16 +392,43 @@
 .planner__textarea-label {
   @include flex;
 
-  padding-bottom: 14px;
+  position: relative;
+  align-items: center;
+  padding: 0 0 13px 11px;
   justify-content: space-between;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
 
+  &::after {
+    position: absolute;
+    left: -3px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: $basic-blue;
+    border-radius: 50%;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 30px;
+  }
+}
+
+.planner__textarea-label--bosnia {
+  &::before {
+    position: absolute;
+    top: 11px;
+    left: -14px;
+    content: "";
+    width: 13px;
+    height: 279px;
+    border-width: 2px 0 2px 2px;
+    border-style: solid;
+    border-color: $basic-blue;
+    z-index: 10;
   }
 }
 

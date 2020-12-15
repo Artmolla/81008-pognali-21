@@ -3,14 +3,14 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 
 .calendar__header {
   @include grid-small;
   border-top: 1px solid $special-grey-borders;
   border-bottom: 1px solid $special-grey-borders;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 .calendar__title {
@@ -19,6 +19,8 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
+  padding: 11px 10px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -33,7 +35,7 @@
 }
 
 .calendar__day-name {
-  padding-bottom: 10px;
+  padding: 0 0 8px 6px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -95,6 +97,16 @@
   }
 }
 
+.calendar__button--availible-day {
+  background-color: $basic-blue-light;
+  color: $basic-blue-dark;
+  font-weight: 500;
+
+  &:hover {
+    border: 2px solid $special-orange-borders;
+  }
+}
+
 .calendar__button--selected {
   background-color: $basic-blue-dark;
   color: $white;
@@ -103,10 +115,4 @@
 
 .calendar__button--current {
   border: 2px solid $special-orange-borders;
-}
-
-.calendar__button--next-month {
-  background-color: $basic-blue-light;
-  color: $basic-blue-dark;
-  font-weight: 500;
 }

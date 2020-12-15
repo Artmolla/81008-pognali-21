@@ -29,11 +29,28 @@
 }
 
 .page-body__title--inner {
+  position: relative;
   width: 100%;
   padding: 62px 0 10px 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: $white;
   background-color: $basic-blue;
+  border-radius: 0 0 20px 20px;
+
+  &::before {
+    position: absolute;
+    bottom: -2px;
+    content: "";
+    width: 214px;
+    height: 5px;
+    border-radius: 4px;
+    background-color: $special-orange;
+  }
+
+  @media (min-width: $mobile-width) {
+    padding: 21px 0 10px 25px;
+    text-align: left;
+  }
 
   @media (min-width: $tablet-width) {
     order: 1;
