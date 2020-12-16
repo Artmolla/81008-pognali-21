@@ -1,11 +1,16 @@
 .alphabet {
   display: none;
+  position: absolute;
+  top: 293px;
+  width: calc(100% - 50px);
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+  z-index: 10;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
-    display: grid;
+    // display: grid;
     grid-template-columns: 1fr auto;
     font-weight: 500;
     font-size: 20px;
@@ -32,7 +37,8 @@
   letter-spacing: 0.02em;
 
   justify-content: space-between;
-  padding: 10px 17px 9px 17px;
+  padding: 13px 11px 11px 16px;
+  margin-top: 0;
   margin-bottom: 0;
   text-transform: uppercase;
   border-radius: 4px 4px 0 0;
@@ -57,7 +63,7 @@
 .alphabet__list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   align-items: center;
   justify-items: center;
 
@@ -106,7 +112,7 @@
   @include flex;
   @include flex-center;
 
-  padding: 10px 16px 10px 15px;
+  padding: 11px 16px 10px 15px;
 
   @media (min-width: $tablet-width) {
     width: 55px;
@@ -135,8 +141,9 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  padding: 20px 19px;
+  padding: 18px 19px;
   color: $special-grey;
+  background-color: $white;
 }
 
 .alphabet__countries-list--catalog {

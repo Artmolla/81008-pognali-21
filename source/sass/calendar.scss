@@ -3,7 +3,11 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
 }
 
 .calendar__header {
@@ -11,6 +15,10 @@
   border-top: 1px solid $special-grey-borders;
   border-bottom: 1px solid $special-grey-borders;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+  }
 }
 
 .calendar__title {
@@ -25,6 +33,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding: 25px 10px;
   }
 }
 
@@ -72,7 +81,11 @@
   &::after {
     content: "";
     display: block;
-    margin-top: 100%;
+    margin-top: 98%;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 90%;
+    }
   }
 }
 
@@ -87,8 +100,10 @@
   @include absolute-center;
 
   @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,6 +119,8 @@
 
   &:hover {
     border: 2px solid $special-orange-borders;
+    background-color: $basic-blue-dark;
+    color: $white;
   }
 }
 
@@ -115,4 +132,12 @@
 
 .calendar__button--current {
   border: 2px solid $special-orange-borders;
+}
+
+
+.calendar__icon {
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 40px;
+  }
 }

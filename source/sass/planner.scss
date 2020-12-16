@@ -19,13 +19,17 @@
   @include flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .planner__title {
   @include title--blue;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
+    margin: 0;
     font-size: 36px;
     line-height: 36px;
   }
@@ -45,6 +49,11 @@
   font-size: 20px;
   line-height: 20px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 0;
   }
@@ -58,7 +67,9 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 48px 40px 56px 40px;
+    padding: 48px 40px 43px 40px;
+    border-radius: 26px;
+    margin-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,11 +79,28 @@
 }
 
 .planner__step--2 {
-  padding-bottom: 6px;
+  position: relative;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+    margin-bottom: 55px;
+  }
+
+
+  // &::before {
+  //   position: absolute;
+  //   width: 1;
+  //   height: ;
+  // }
 }
 
 .planner__step--3 {
-  padding-bottom: 3px;
+  padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 38px;
+  }
 }
 
 .planner__info {
@@ -83,6 +111,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
+    margin: -7px 0 17px 0;
+    padding-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,8 +120,22 @@
   }
 }
 
+.planner__info--step-2 {
+  @media (min-width: $tablet-width) {
+    padding-right: 100px;
+    margin-top: -7px;
+    margin-bottom: 42px;
+    border-bottom: 1px solid $special-grey-borders;
+    padding-bottom: 29px;
+  }
+}
+
 .planner__input-group {
   @include flex;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
@@ -105,8 +149,20 @@
   flex-basis: 100%;
   margin-bottom: 19px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    border-top: 1px solid $special-grey-borders;
+  }
+
   @media (min-width: $desktop-width) {
     flex-basis: 50%;
+  }
+}
+
+.planner__input-icon {
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -126,6 +182,7 @@
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 0.1em;
+    margin-bottom: 2px;
   }
 }
 
@@ -150,6 +207,14 @@
     background-image: url("../img/checkbox.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      top: -2px;
+      left: -2px;
+      width: 36px;
+      height: 36px;
+      background-size: 36px 36px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -161,6 +226,8 @@
     text-transform: uppercase;
     margin-bottom: 34px;
     order: 0;
+    padding: 7px 10px 33px 58px;
+    margin: 0;
   }
 }
 
@@ -201,7 +268,7 @@
   border-radius: 4px;
 
   @media (min-width: $tablet-width) {
-    padding: 22px 14px 22px 14px;
+    padding: 22px 14px 8px 0;
   }
 }
 
@@ -239,6 +306,8 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
+    padding: 23px 7px 23px 2px;
+    width: 100%;
   }
 }
 
@@ -248,6 +317,33 @@
 
 .planner__buttons-group:active .button--calendar {
   color: $basic-blue;
+}
+
+.planner__countries {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 48px;
+    bottom: -15px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/icon-decorative-arrow-doen.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.planner__countries--add-country {
+  margin-bottom: 25px;
+  &::after {
+    display: none;
+  }
 }
 
 .planner__country {
@@ -267,22 +363,17 @@
     left: 75%;
     transform: translate(-2px, -50%);
     z-index: 1;
-  }
 
-  &::after {
-    position: absolute;
-    content: "";
-    right: 48px;
-    bottom: -15px;
-    width: 10px;
-    height: 10px;
-    background-image: url("../img/icon-decorative-arrow-doen.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    @media (min-width: $tablet-width) {
+      top: 38%;
+      left: 73%;
+      width: 14px;
+      height: 14px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 73% auto;
+    grid-template-columns: 69% auto;
     gap: 0 40px;
     font-weight: 500;
     font-size: 20px;
@@ -300,6 +391,15 @@
     height: 7px;
     background-color: $white;
     border: 1px solid $special-grey-borders;
+
+    @media (min-width: $tablet-width) {
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 69% auto;
   }
 }
 
@@ -326,6 +426,10 @@
   text-transform: uppercase;
   color: $basic-blue-dark;
 
+  &:hover {
+    border: 1px solid $special-grey-hover;
+  }
+
   @media (min-width: $tablet-width) {
     font-weight: 500;
     font-size: 20px;
@@ -343,6 +447,12 @@
   background-image: url("../img/icon-select-arrow-down.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 11px) 38%;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 39px 24px 25px;
+    background-size: 25px 24px;
+    background-position: calc(100% - 20px) 47%;
+  }
 }
 
 .planner__icon {
@@ -351,14 +461,21 @@
   position: relative;
   border: 1px solid $special-grey-borders;
   border-radius: 4px;
-  padding: 9px;
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 0px 39px 11px 11px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0  0  15px 40px;
+  }
+}
+
+.planner__close-icon {
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 24px;
   }
 }
 
@@ -376,17 +493,25 @@
   border: 1px solid $special-grey-borders;
   border-radius: 4px;
   padding: 10px 14px;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
   color: $special-blue-dark-opacity;
 
   @media (min-width: $tablet-width) {
+    width: 94%;
     font-size: 20px;
     line-height: 23px;
+    max-height: 141px;
+    padding: 20px 30px 16px 20px;
   }
 }
 
 .planner__textarea--active {
   color: $special-grey;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .planner__textarea-label {
@@ -409,11 +534,19 @@
     height: 6px;
     background-color: $basic-blue;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      left: unset;
+      right: -2px;
+      width: 14px;
+      height: 14px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 30px;
+    padding: 21px 31px 25px 3px;
   }
 }
 
@@ -429,6 +562,14 @@
     border-style: solid;
     border-color: $basic-blue;
     z-index: 10;
+
+    @media (min-width: $tablet-width) {
+      height: 270px;
+      left: unset;
+      right: -9px;
+      top: 42px;
+      border-width: 0 0 0 2px;
+    }
   }
 }
 

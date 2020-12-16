@@ -143,7 +143,7 @@
 
   @media (min-width: $tablet-width) {
     order: 5;
-    margin: 0 75px 52px 75px;
+    margin: 10px 75px 52px 75px;
     padding: 21px;
     letter-spacing: 0.09em;
   }
@@ -174,10 +174,18 @@
   font-size: 16px;
 }
 
-.button__text-desktop {
+.button__text-tablet {
   display: none;
 
   @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.button__text-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
     display: block;
   }
 }
@@ -198,10 +206,16 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    @include flex;
+
+    justify-content: space-between;
+    align-items: center;
+    text-transform: none;
     font-size: 24px;
     line-height: 24px;
-    width: 50%;
-    padding: 26px 34px 24px 34px;
+    width: 53%;
+    margin-left: -2px;
+    padding: 29px 31px 27px 34px;
   }
 }
 
@@ -218,13 +232,33 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 47%;
+    padding: 0px 0px 15px 71px;
+  }
 }
 
 .button--close-flag {
+  @include flex;
+  @include flex-center;
+
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
   position: absolute;
-  top: -13px;
-  right: -16px;
-  background-color: transparent;
+  top: -11px;
+  right: -11px;
+  background-color: $basic-blue-light;
+  color: $special-icon-grey;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    right: -18px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+  }
 }
 
 .button--calendar {
@@ -242,6 +276,25 @@
     background-color: inherit;
     opacity: 0.1;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 7px;
+  }
+}
+
+.button--close-alphabet {
+  color: $white;
+  background-color: inherit;
+  opacity: 0.3;
+
+  &:hover {
+    background-color: inherit;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .button--less {
@@ -253,6 +306,10 @@
   grid-column: 1 / -1;
   grid-row: 1;
   justify-self: start;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 21px;
+  }
 }
 
 .button--more {
@@ -260,6 +317,10 @@
   grid-column: 1 / -1;
   grid-row: 1;
   justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 6px;
+  }
 }
 
 .button--minimize {
@@ -334,4 +395,10 @@
 
 .button--next {
   padding: 0;
+}
+
+.button__arrow-icon--reflect {
+  @media (min-width: $tablet-width) {
+    transform: scale(-1, 1);
+  }
 }

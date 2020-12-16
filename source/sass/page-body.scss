@@ -45,6 +45,12 @@
     height: 5px;
     border-radius: 4px;
     background-color: $special-orange;
+
+    @media (min-width: $tablet-width) {
+      bottom: -4px;
+      width: 358px;
+      height: 8px;
+    }
   }
 
   @media (min-width: $mobile-width) {
@@ -53,7 +59,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 84px 0 62px 75px;
     order: 1;
+    border-radius: 0 0 60px 60px;
     margin-bottom: 62px;
   }
 

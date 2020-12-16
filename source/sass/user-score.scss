@@ -83,6 +83,13 @@
   height: 108px;
   right: -3px;
   top: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 102px;
+    height: 102px;
+    right: 2px;
+    top: -1px;
+  }
 }
 
 .user-score__progress-ring__circle {

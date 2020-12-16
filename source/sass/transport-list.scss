@@ -19,6 +19,26 @@
   height: 32px;
   background-color: $white;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.transport-list__item--index {
+  width: 33px;
+  height: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 33px;
+    height: 38px;
+  }
+}
+
+.transport-list__icon {
+  width: 23px;
+  height: 22px;
 }
 
 .transport-list__label {

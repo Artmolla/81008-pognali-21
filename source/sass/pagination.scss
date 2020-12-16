@@ -18,6 +18,16 @@
   background-color: $special-blue-dark-opacity;
   margin-right: 16px;
 
+  @media (min-width: $tablet-width) {
+    width: 6px;
+    height: 6px;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 27px;
     justify-content: flex-start;

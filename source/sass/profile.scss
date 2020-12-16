@@ -5,7 +5,7 @@
   background-color: $basic-blue-light;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 48px 0;
+    padding: 0 0 84px 0;
   }
 }
 
@@ -74,7 +74,7 @@
   @media (min-width: $tablet-width) {
     order: 3;
     flex-basis: 30%;
-    padding: 31px 38px 31px 38px;
+    padding: 26px 35px 24px 37px;
     margin-bottom: 40px;
   }
 
@@ -87,9 +87,11 @@
 
 .profile__container--tags {
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
     order: 6;
     margin: 0 75px;
-    padding: 38px 28px 10px 25px;
+    padding: 34px 28px 4px 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,19 +114,19 @@
   line-height: 18px;
   color: $special-grey-opacity;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     text-align: left;
+    letter-spacing: -2.9px;
     font-size: 20px;
     line-height: 22px;
   }
 }
 
 .profile__image {
-  // margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     order: 4;
-    margin: 0 75px 40px 0;
+    margin: 0 75px 31px 0;
   }
 
   @media (min-width: $desktop-width) {
