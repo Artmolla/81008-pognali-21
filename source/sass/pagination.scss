@@ -3,6 +3,9 @@
   @include flex-center;
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 42px;
+    top: 5px;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 36px;
@@ -29,7 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 27px;
+    margin-bottom: 18px;
     justify-content: flex-start;
     border-radius: none;
     width: auto;
@@ -51,6 +54,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    padding-right: 41px;
   }
 }
 

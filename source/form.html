@@ -115,14 +115,15 @@
   <main class="main">
     <section class="profile">
       <div class="profile__content">
-        <h1 class="page-body__title page-body__title--inner">Направления</h1>
+        <h1 class="page-body__title page-body__title--inner page-body__title--directions">Направления</h1>
         <div class="user-score user-score--profile">
           <svg class="user-score__progress-ring user-score__progress-ring--directions" viewBox="0 0 100 100" width="100"
             height="100">
             <circle class="user-score__progress-ring__circle user-score__progress-ring__circle--directions"
               fill="transparent" r="45" cx="50" cy="50" />
           </svg>
-          <span class="user-score__score user-score__score--profile user-score__score--directions">80</span>level
+          <span class="user-score__score user-score__score--profile user-score__score--directions">80</span>
+          <span class="user-score__text user-score__text--directions">level</span>
         </div>
         <picture class="profile__image">
           <source srcset="img/users/demin-desktop-190-190.png" media="(min-width: 1439px)">
@@ -253,7 +254,7 @@
       <form class="planner__steps" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="planner__step planner__step--1" id="step-1">
           <div class="planner__header">
-            <h3 class="planner__title planner__title--steps">Шаг 1. <br class="line-break--off">Даты пребывания</h3>
+            <h3 class="planner__title planner__title--steps">Шаг 1. <br class="hide-on-desktops">Даты пребывания</h3>
             <div class="pagination pagination--desktop">
               <ul class="pagination-list list-reset">
                 <li class="pagination__item pagination__item--active">
@@ -272,7 +273,8 @@
             </div>
           </div>
           <p class="planner__info">
-            Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую
+            Укажите предпочтительное количество попутчиков, которых <br class="hide-on-mobile hide-on-tablets">вы хотели
+            бы позвать в поездку и ее предполагаемую
             длительность.
           </p>
           <div class="planner__input-group">
@@ -302,10 +304,10 @@
               Можно с детьми
             </label>
             <div class="planner__input-container">
-              <label class="planner__label" for="period">
+              <label class="planner__label planner__label--duration" for="period">
                 длительность: <span class="planner__band">дн.</span>
               </label>
-              <div class="planner__buttons-group">
+              <div class="planner__buttons-group planner__buttons-group--duration">
                 <button class="button button--less button--calendar" type="button" aria-label="less">
                   <svg class="planner__input-icon" viewBox="0 0 14 2" width="14" height="2" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
@@ -482,15 +484,15 @@
           </div>
           <a class="button button--next-step link-reset" href="#step-2">
             <span>Следующий шаг</span>
-            <svg class="hide-on-mobile" class="button__arrow-icon button-arrow-icon--hide-on-mobile"
-              xmlns="http://www.w3.org/2000/svg" width="11" height="12" fill="currentColor">
+            <svg class="button__arrow-icon hide-on-mobile" xmlns="http://www.w3.org/2000/svg" width="11" height="12"
+              fill="currentColor">
               <path d="M10.0698 6.07495L.157238 11.7041V.445786L10.0698 6.07495z" />
             </svg>
           </a>
         </fieldset>
         <fieldset class="planner__step planner__step--2" id="step-2">
           <div class="planner__header">
-            <h3 class="planner__title planner__title--steps">Шаг 2.<br class="line-break--off"> Маршрут</h3>
+            <h3 class="planner__title planner__title--steps">Шаг 2.<br class="hide-on-desktops"> Маршрут</h3>
             <div class="pagination pagination--desktop">
               <ul class="pagination-list list-reset">
                 <li class="pagination__item">
@@ -513,7 +515,8 @@
           </p>
           <div class="planner__countries">
             <div class="planner__country">
-              <select class="planner__destination-name planner__destination-name--country" name="country">
+              <select class="planner__destination-name planner__destination-name--country planner__open-countries-list"
+                name="country">
                 <option value="Босния и герцеговина">Босния и герцеговина</option>
               </select>
               <div class="planner__icon">
@@ -533,7 +536,8 @@
           </div>
           <div class="planner__countries">
             <div class="planner__country">
-              <select class="planner__destination-name planner__destination-name--country" name="country">
+              <select class="planner__destination-name planner__destination-name--country planner__open-countries-list"
+                name="country">
                 <option value="Чехия">Чехия</option>
               </select>
               <div class="planner__icon">
@@ -553,7 +557,7 @@
           </div>
           <div class="planner__countries">
             <div class="planner__country planner__country--choose-country">
-              <button class="planner__destination-name" type="button">Выберите страну
+              <button class="planner__destination-name planner__open-countries-list" type="button">Выберите страну
                 <img src="img/arrow-down.svg" alt="Дропдаун" width="12" height="16"></button>
               <button class="button button--close button--close-flag" type="button">
                 <svg class="planner__close-icon" viewBox="0 0 9 9" width="9" height="9" fill="currentColor"
@@ -566,7 +570,7 @@
           </div>
           <div class="planner__countries planner__countries--add-country">
             <div class="planner__country planner__country--choose-country planner__country--add-country">
-              <button class="planner__destination-name" type="button">Добавить страну
+              <button class="planner__destination-name planner__open-countries-list" type="button">Добавить страну
                 <img src="img/icon_plus.svg" alt="Добавить страну" width="14" height="14">
               </button>
             </div>
@@ -687,7 +691,7 @@
               <li class="alphabet__country">Алжир</li>
               <li class="alphabet__country">Ангола</li>
               <li class="alphabet__country">Андорра</li>
-              <li class="alphabet__country">Антигуа и Барбуда</li>
+              <li class="alphabet__country alphabet__country--long-name">Антигуа и Барбуда</li>
               <li class="alphabet__country">Аргентина</li>
               <li class="alphabet__country">Армения</li>
               <li class="alphabet__country">Афганистан</li>
@@ -695,8 +699,8 @@
           </div>
         </fieldset>
         <fieldset class="planner__step planner__step--3" id="step-3">
-          <div class="planner__header">
-            <h3 class="planner__title planner__title--steps">Шаг 3.<br class="line-break--off"> Развлечения</h3>
+          <div class="planner__header planner__header--step-3">
+            <h3 class="planner__title planner__title--steps">Шаг 3.<br class="hide-on-desktops"> Развлечения</h3>
             <div class="pagination pagination--desktop">
               <ul class="pagination-list list-reset">
                 <li class="pagination__item">
@@ -714,8 +718,9 @@
               </ul>
             </div>
           </div>
-          <p class="planner__info">
-            Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+          <p class="planner__info planner__info--step-3">
+            Наконец, расскажите о своих планах времяпровождения. <br class="hide-on-mobile hide-on-tablets">Можно писать
+            в свободной форме и ставить тэги.
           </p>
           <label class="planner__textarea-label planner__textarea-label--bosnia" for="plans-fiel-1">Босния и Герцеговина
             <picture>
@@ -744,10 +749,10 @@
             </button>
             <a class="button button--next-step button--step-backwards link-reset" href="#step-2">
               <svg class="button__arrow-icon button__arrow-icon--reflect hide-on-mobile"
-              xmlns="http://www.w3.org/2000/svg" width="11" height="12" fill="currentColor">
-              <path d="M10.0698 6.07495L.157238 11.7041V.445786L10.0698 6.07495z" />
-            </svg>
-            <span>На шаг назад</span></a>
+                xmlns="http://www.w3.org/2000/svg" width="11" height="12" fill="currentColor">
+                <path d="M10.0698 6.07495L.157238 11.7041V.445786L10.0698 6.07495z" />
+              </svg>
+              <span>На шаг назад</span></a>
             </a>
           </div>
         </fieldset>
@@ -806,6 +811,7 @@
     </footer>
   </main>
   <script src="js/toggle-menu.js"></script>
+  <script src="js/alphabet.js"></script>
   <script src="js/user-score-progress-bar.js"></script>
 </body>
 

@@ -51,8 +51,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1;
     color: $white;
-    margin: 0 0 149px 75px;
+    margin: 0;
+    justify-self: center;
+    margin-top: 46px;
   }
 }
 
@@ -70,6 +74,12 @@
 
 .user-score__score--directions {
   margin-bottom: 3px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 3px;
+    margin-right: 10px;
+    border-bottom: 2px solid $white;
+  }
 }
 
 .user-score__progress-ring {
@@ -90,6 +100,11 @@
     right: 2px;
     top: -1px;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 3px;
+    top: -3px;
+  }
 }
 
 .user-score__progress-ring__circle {
@@ -102,4 +117,10 @@
 
 .user-score__progress-ring__circle--directions {
   stroke-width: 3px;
+}
+
+.user-score__text--directions {
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
+  }
 }
