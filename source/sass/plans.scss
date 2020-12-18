@@ -7,7 +7,7 @@
   color: $basic-blue-dark;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 75px 88px 75px;
+    padding: 56px 75px 94px 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,7 +55,7 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 16px 26px 3px 40px;
+    padding: 16px 26px 2px 40px;
     flex-basis: 100%;
   }
 
@@ -93,7 +93,7 @@
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
-    padding-top: 10px;
+    padding: 8px 10px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,6 +116,7 @@
     font-size: 24px;
     line-height: 24px;
     padding-bottom: 11px;
+    letter-spacing: 0.01em;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,10 +127,6 @@
 
 .plans__companion {
   line-height: 1px;
-
-  // @media (min-width: $tablet-width) {
-  //   margin-right: 10px;
-  // }
 }
 
 .plans__dates {
@@ -141,6 +138,28 @@
 
     width: 44%;
     margin: 0;
+    padding-left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: 0.01em;
+    width: 47%;
+  }
+}
+
+.plans__dates--indonesia {
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+}
+
+.plans__hyphen {
+  @media (min-width: $tablet-width) {
+    padding: 0 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 10px;
   }
 }
 
@@ -154,5 +173,9 @@
 
   &:active {
     opacity: 0.1;
+  }
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0.1em;
   }
 }
