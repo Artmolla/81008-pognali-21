@@ -458,11 +458,12 @@
                     <td class="calendar__day"><button
                         class="calendar__button calendar__button--selected calendar__button--availible-day"
                         type="button" aria-pressed="true" aria-label="Day of the week">27</button></td>
-                    <td class="calendar__day"><button
-                        class="calendar__button calendar__button--selected calendar__button--availible-day"
+                    <td class="calendar__day">
+                      <button class="calendar__button calendar__button--selected calendar__button--availible-day"
                         type="button" aria-pressed="true" aria-label="Day of the week">28
-                        <span class="calendar__leaving-date hide-on-mobile hide-on-tablets"> Выезд</span></button></td>
-                      </button></td>
+                        <span class="calendar__leaving-date hide-on-mobile hide-on-tablets"> Выезд</span>
+                      </button>
+                    </td>
                     <td class="calendar__day"><button class="calendar__button calendar__button--availible-day"
                         type="button" aria-pressed="false" aria-label="Day of the week">29</button></td>
                   </tr>
@@ -561,17 +562,19 @@
           </div>
           <div class="planner__countries">
             <div class="planner__country planner__country--choose-country">
-              <button class="planner__destination-name planner__destination-name--choose-country planner__open-countries-list" type="button">Выберите страну
+              <button
+                class="planner__destination-name planner__destination-name--choose-country planner__open-countries-list"
+                type="button">Выберите страну
                 <img src="img/arrow-down.svg" alt="Дропдаун" width="12" height="16"></button>
-                <div class="planner__icon planner__icon--empty">
-              <button class="button button--close button--close-flag" type="button">
-                <svg class="planner__close-icon" viewBox="0 0 9 9" width="9" height="9" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.875 1.125l-6.75 6.75M1.125 1.125l6.75 6.75" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
+              <div class="planner__icon planner__icon--empty">
+                <button class="button button--close button--close-flag" type="button">
+                  <svg class="planner__close-icon" viewBox="0 0 9 9" width="9" height="9" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.875 1.125l-6.75 6.75M1.125 1.125l6.75 6.75" stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
           <div class="planner__countries planner__countries--add-country">
@@ -584,8 +587,8 @@
           <div class="planner__buttons">
             <a class="button button--next-step link-reset" href="#step-3">
               <span>Следующий шаг</span>
-              <svg class="button__arrow-icon hide-on-mobile"
-                xmlns="http://www.w3.org/2000/svg" width="11" height="12" fill="currentColor">
+              <svg class="button__arrow-icon hide-on-mobile" xmlns="http://www.w3.org/2000/svg" width="11" height="12"
+                fill="currentColor">
                 <path d="M10.0698 6.07495L.157238 11.7041V.445786L10.0698 6.07495z" />
               </svg>
             </a>
@@ -748,8 +751,8 @@
           <div class="planner__buttons">
             <button class="button button--next-step link-reset" type="submit">
               <span>Отправить</span>
-              <svg class="button__arrow-icon hide-on-mobile"
-                xmlns="http://www.w3.org/2000/svg" width="11" height="12" fill="currentColor">
+              <svg class="button__arrow-icon hide-on-mobile" xmlns="http://www.w3.org/2000/svg" width="11" height="12"
+                fill="currentColor">
                 <path d="M10.0698 6.07495L.157238 11.7041V.445786L10.0698 6.07495z" />
               </svg>
             </button>
