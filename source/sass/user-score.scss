@@ -51,8 +51,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1;
     color: $white;
-    margin: 0 0 149px 75px;
+    margin: 0;
+    justify-self: center;
+    margin-top: 46px;
   }
 }
 
@@ -68,10 +72,39 @@
   }
 }
 
+.user-score__score--directions {
+  margin-bottom: 3px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 3px;
+    margin-right: 10px;
+    border-bottom: 2px solid $white;
+  }
+}
+
 .user-score__progress-ring {
   position: absolute;
   right: -30px;
   top: -30px;
+}
+
+.user-score__progress-ring--directions {
+  width: 108px;
+  height: 108px;
+  right: -3px;
+  top: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 102px;
+    height: 102px;
+    right: 2px;
+    top: -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 3px;
+    top: -3px;
+  }
 }
 
 .user-score__progress-ring__circle {
@@ -80,4 +113,14 @@
   transform-origin: 50% 50%;
   stroke: $special-orange;
   stroke-width: 4px;
+}
+
+.user-score__progress-ring__circle--directions {
+  stroke-width: 3px;
+}
+
+.user-score__text--directions {
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
+  }
 }

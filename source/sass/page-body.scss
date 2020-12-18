@@ -29,21 +29,48 @@
 }
 
 .page-body__title--inner {
+  position: relative;
   width: 100%;
   padding: 62px 0 10px 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: $white;
   background-color: $basic-blue;
+  border-radius: 0 0 20px 20px;
+
+  &::before {
+    position: absolute;
+    bottom: -2px;
+    content: "";
+    width: 214px;
+    height: 5px;
+    border-radius: 4px;
+    background-color: $special-orange;
+
+    @media (min-width: $tablet-width) {
+      bottom: -4px;
+      width: 358px;
+      height: 8px;
+    }
+  }
+
+  @media (min-width: $mobile-width) {
+    padding: 21px 0 10px 25px;
+    text-align: left;
+  }
 
   @media (min-width: $tablet-width) {
+    padding: 84px 0 62px 75px;
     order: 1;
+    border-radius: 0 0 60px 60px;
     margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
-    padding: 62px 0 0 124px;
-    margin-bottom: 171px;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    padding: 113px 0 63px 123px;
+    width: auto;
+    margin: -1px 0 0 0;
   }
 }
 

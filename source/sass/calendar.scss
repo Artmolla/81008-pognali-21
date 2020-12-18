@@ -4,13 +4,29 @@
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .calendar__header {
   @include grid-small;
   border-top: 1px solid $special-grey-borders;
   border-bottom: 1px solid $special-grey-borders;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .calendar__title {
@@ -19,10 +35,13 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
+  padding: 11px 10px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding: 25px 10px;
   }
 }
 
@@ -33,11 +52,16 @@
 }
 
 .calendar__day-name {
-  padding-bottom: 10px;
+  padding: 0 0 8px 6px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-bottom: 19px;
   }
 }
 
@@ -54,6 +78,11 @@
 
   @media (min-width: $tablet-width) {
     display: inline;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
   }
 }
 
@@ -70,7 +99,19 @@
   &::after {
     content: "";
     display: block;
-    margin-top: 100%;
+    margin-top: 98%;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 90%;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 71px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 144px;
   }
 }
 
@@ -85,13 +126,31 @@
   @include absolute-center;
 
   @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
     @include flex;
-    padding: 10px;
+    padding: 12px;
+  }
+}
+
+.calendar__button--availible-day {
+  background-color: $basic-blue-light;
+  color: $basic-blue-dark;
+  font-weight: 500;
+
+  &:hover {
+    border: 2px solid $special-orange-borders;
+    background-color: $basic-blue-dark;
+    color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: 1px solid $special-grey-borders;
   }
 }
 
@@ -101,12 +160,28 @@
   font-weight: 500;
 }
 
+.calendar__arrival-date {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.calendar__leaving-date {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    text-align: left;
+  }
+}
+
 .calendar__button--current {
   border: 2px solid $special-orange-borders;
 }
 
-.calendar__button--next-month {
-  background-color: $basic-blue-light;
-  color: $basic-blue-dark;
-  font-weight: 500;
+
+.calendar__icon {
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 40px;
+  }
 }

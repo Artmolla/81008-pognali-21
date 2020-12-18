@@ -5,6 +5,7 @@
   background-color: $basic-yellow;
   color: $basic-blue;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $special-orange-light;
@@ -131,7 +132,7 @@
 .button--change-photo {
   width: 100%;
   padding: 11px;
-  margin: 0 25px 33px 25px;
+  margin: 7px 25px 32px 25px;
   border-radius: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -142,7 +143,7 @@
 
   @media (min-width: $tablet-width) {
     order: 5;
-    margin: 0 75px 52px 75px;
+    margin: 10px 75px 52px 75px;
     padding: 21px;
     letter-spacing: 0.09em;
   }
@@ -150,10 +151,12 @@
   @media (min-width: $desktop-width) {
     border-radius: 0 0 20px 20px;
     padding: 15px;
-    position: absolute;
-    top: 190px;
-    right: 0;
     width: 190px;
+    grid-column: 3 / -1;
+    grid-row: 2;
+    align-self: start;
+    justify-self: start;
+    margin: 0 0 25px 0;
   }
 }
 
@@ -173,10 +176,18 @@
   font-size: 16px;
 }
 
-.button__text-desktop {
+.button__text-tablet {
   display: none;
 
   @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.button__text-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
     display: block;
   }
 }
@@ -191,32 +202,144 @@
   font-weight: bold;
   border-radius: 20px;
   margin-bottom: 13px;
-  padding: 6px 39px 4px 39px;
+  padding: 7px 39px 3px 42px;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    @include flex;
+
+    justify-content: space-between;
+    align-items: center;
+    text-transform: none;
     font-size: 24px;
     line-height: 24px;
-    width: 50%;
-    padding: 26px 34px 24px 34px;
+    width: 53%;
+    margin-left: -2px;
+    padding: 29px 31px 27px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 29%;
+    padding: 29px 38px 27px 34px;
   }
 }
 
 .button--step-backwards {
   background-color: transparent;
+  padding: 1px 39px 3px 38px;
+  margin-bottom: 0;
+
+  &:hover {
+    background-color: inherit;
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 47%;
+    padding: 0 0 15px 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 26%;
+  }
 }
 
 .button--close-flag {
+  @include flex;
+  @include flex-center;
+
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
   position: absolute;
-  top: -13px;
-  right: -16px;
-  background-color: transparent;
+  top: -11px;
+  right: -11px;
+  background-color: $basic-blue-light;
+  color: $special-icon-grey;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    right: -18px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -10px;
+  }
 }
 
 .button--calendar {
   background-color: transparent;
+  padding: 0;
+  margin: 0;
+  color: $special-blue-dark-opacity;
+
+  &:hover {
+    background-color: inherit;
+    color: $black;
+  }
+
+  &:active {
+    background-color: inherit;
+    opacity: 0.1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: -7px;
+  }
+}
+
+.button--close-alphabet {
+  color: $white;
+  background-color: inherit;
+  opacity: 0.3;
+
+  &:hover {
+    background-color: inherit;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.button--less {
+  @include flex;
+  @include flex-center;
+
+  z-index: 2;
+  margin-left: 14px;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  justify-self: start;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 21px;
+  }
+}
+
+.button--more {
+  margin-right: 14px;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 6px;
+  }
 }
 
 .button--minimize {
@@ -282,5 +405,30 @@
 
   @media (min-width: $desktop-width) {
     min-width: 150px;
+  }
+}
+
+.button--previous {
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-left: -7px;
+  }
+}
+
+.button--next {
+  padding: 0;
+}
+
+.button__arrow-icon {
+  @media (min-width: $desktop-width) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.button__arrow-icon--reflect {
+  @media (min-width: $tablet-width) {
+    transform: scale(-1, 1);
   }
 }

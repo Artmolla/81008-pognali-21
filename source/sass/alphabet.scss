@@ -1,12 +1,20 @@
 .alphabet {
-  // display: none;
+  display: none;
+  position: absolute;
+  top: 293px;
+  width: calc(100% - 50px);
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+  z-index: 10;
+  background-color: $white;
+
+  @include popup-shadow;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    // display: grid;
+    grid-template-columns: 1fr 34%;
+    top: 445px;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
@@ -14,6 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    top: 503px;
     width: 730px;
   }
 }
@@ -32,7 +41,8 @@
   letter-spacing: 0.02em;
 
   justify-content: space-between;
-  padding: 10px 17px 9px 17px;
+  padding: 13px 11px 11px 16px;
+  margin-top: 0;
   margin-bottom: 0;
   text-transform: uppercase;
   border-radius: 4px 4px 0 0;
@@ -44,31 +54,34 @@
     line-height: 20px;
     letter-spacing: 0.1em;
     padding: 27px 25px 23px 25px;
-    width: 63%;
+    width: 57%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 25px;
+    padding: 25px 25px;
     letter-spacing: 0.1em;
     margin-bottom: 34px;
+    width: 93%;
   }
 }
 
 .alphabet__list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   align-items: center;
   justify-items: center;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(5, 55px);
     grid-template-rows: repeat(6, 70px);
+    padding: 36px 0 0 27px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(5, 60px);
     gap: 15px;
+    padding: 0 0 0 25px;
   }
 }
 
@@ -106,7 +119,7 @@
   @include flex;
   @include flex-center;
 
-  padding: 10px 16px 10px 15px;
+  padding: 11px 16px 10px 15px;
 
   @media (min-width: $tablet-width) {
     width: 55px;
@@ -135,8 +148,19 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  padding: 20px 19px;
+  padding: 18px 19px;
   color: $special-grey;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 38px 19px 18px 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 3px 19px 18px 32px;
+  }
 }
 
 .alphabet__countries-list--catalog {
@@ -167,5 +191,20 @@
   @media (min-width: $tablet-width) {
     font-weight: normal;
     margin-bottom: 10px;
+    letter-spacing: 0.01em;
+  }
+}
+
+.alphabet--open {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+}
+
+.alphabet__country--long-name {
+  @media (min-width: $tablet-width) {
+    letter-spacing: -1px;
   }
 }
