@@ -114,19 +114,23 @@
   &::before {
     @media (min-width: $tablet-width) {
       position: absolute;
-      content: "";
+      top: calc(29% + 3px);
+      bottom: 20%;
+      right: calc(23% + 38px);
       width: 1px;
-      bottom: 0;
+      height: auto;
+      content: "";
       background-color: $special-grey-borders;
-      height: 50%;
-      top: 230px;
-      right: 178px;
+    }
+
+    @media (min-width: 1096px) {
+      top: calc(27% + 3px);
     }
 
     @media (min-width: $desktop-width) {
-      right: 383px;
-      top: 271px;
-      height: 60%;
+      top: calc(30% + 3px);
+      bottom: 10%;
+      right: calc(23% + 81px);
     }
   }
 
@@ -433,11 +437,11 @@
 
   &::after {
     position: absolute;
-    content: "";
-    right: 48px;
     bottom: -15px;
+    right: calc(24% - 6px);
     width: 10px;
     height: 10px;
+    content: "";
     background-image: url("../img/icon-decorative-arrow-doen.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -472,31 +476,30 @@
 
   &::before {
     position: absolute;
+    top: 40%;
+    right: calc(24% - 6px);
     content: "";
     width: 8px;
     height: 8px;
     background-color: $basic-blue;
     border-radius: 50%;
-    top: 50%;
-    left: 75%;
     transform: translate(-2px, -50%);
     z-index: 1;
 
     @media (min-width: $tablet-width) {
-      top: 38%;
-      left: 73%;
+      right: calc(23% + 7px);
       width: 14px;
       height: 14px;
     }
 
     @media (min-width: $desktop-width) {
       top: 37%;
-      left: 77%;
+      right: calc(23% - 14px);
     }
   }
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 69% auto;
+    grid-template-columns: 69% 23%;
     gap: 0 40px;
     font-weight: 500;
     font-size: 20px;
@@ -506,12 +509,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 73% auto;
+    grid-template-columns: 73% 23%;
   }
 }
 
 .planner__country--choose-country {
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr auto;
 
   &::before {
     width: 7px;
@@ -526,7 +529,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 69% auto;
+    grid-template-columns: 69% 23%;
   }
 
   @media (min-width: $desktop-width) {
@@ -600,6 +603,12 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 69px 10px 0;
+  }
+}
+
+.planner__icon--empty {
+  @media (min-width: $mobile-width) {
+    border: none;
   }
 }
 
@@ -701,11 +710,11 @@
 .planner__textarea-label--bosnia {
   &::before {
     position: absolute;
-    top: 11px;
+    top: 13px;
     left: -14px;
     content: "";
     width: 13px;
-    height: 279px;
+    height: 276px;
     border-width: 2px 0 2px 2px;
     border-style: solid;
     border-color: $basic-blue;
