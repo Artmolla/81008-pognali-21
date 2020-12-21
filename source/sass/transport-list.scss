@@ -40,6 +40,9 @@
 }
 
 .transport-list__item--catalog {
+  @include flex;
+  @include flex-center;
+
   background-color: $basic-blue-light;
   color: $basic-blue;
 }

@@ -24,6 +24,7 @@
 
 .main__button-container {
   margin-bottom: 3px;
+
   @media (min-width: $tablet-width) {
     @include flex;
 
