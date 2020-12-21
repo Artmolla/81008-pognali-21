@@ -1,12 +1,12 @@
 
 .main--companions {
   position: relative;
-  padding: 73px 25px 46px 25px;
+  padding-bottom: 46px;
   background-color: $basic-blue-light;
   color: $basic-blue-dark;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px 62px 40px;
+    padding-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,11 +14,16 @@
     column-gap: 85px;
     grid-template-columns: 1fr min-content;
     align-items: start;
-    padding: 53px 60px 85px 60px;
+    padding: 85px;
   }
 }
 
+.main--catalog {
+  padding-bottom: 75px;
+}
+
 .main__button-container {
+  margin-bottom: 3px;
   @media (min-width: $tablet-width) {
     @include flex;
 

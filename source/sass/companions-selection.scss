@@ -1,5 +1,5 @@
 .companion-selection {
-  padding: 26px 25px 22px 25px;
+  padding: 4px 25px 22px 25px;
   margin-bottom: 28px;
   border-radius: 20px;
   background-color: $basic-yellow;
@@ -24,6 +24,8 @@
 
 .companion-selection__filter {
   border: none;
+  padding: 0;
+  margin: 0;
   border-top: 1px solid $special-yellow-grey-borders;
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
@@ -32,6 +34,9 @@
 }
 
 .companion-selection__list {
+  display: none;
+  padding-top: 5px;
+  padding-bottom: 7px;
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     @include flex;
 
@@ -39,21 +44,61 @@
     align-items: center;
     justify-content: space-around;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+}
+
+
+.companion-selection__list--open {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .companion-selection__item {
+  margin-bottom: 10px;
+
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     flex: 1;
   }
 }
 
 .companion-selection__button {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 12px 0 14px 0;
+  cursor: pointer;
+  padding: 12px 0 9px 0;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    top: 47%;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     text-align: left;
@@ -62,10 +107,36 @@
   }
 }
 
+.companion-selection__button--open::after {
+  background-image: url("../img/icon-arrow-up.svg");
+}
+
 .companion-selection__label {
+  @include flex;
+
+  position: relative;
+  padding-left: 25px;
   font-style: normal;
-  font-weight: bold;
-  line-height: 18px;
-  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
   color: $basic-blue-dark;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: $white;
+  }
+}
+
+.companion-selection__checkbox:checked + .companion-selection__label::before {
+  background-image: url("../img/icon-check-mark.svg");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: center;
 }

@@ -4,6 +4,9 @@
 }
 
 .transport-list--catalog {
+  justify-content: flex-start;
+  padding: 6px 0 19px 1px;
+
   @media (min-width: $tablet-width) {
     flex-direction: column;
   }
@@ -34,6 +37,11 @@
     width: 33px;
     height: 38px;
   }
+}
+
+.transport-list__item--catalog {
+  background-color: $basic-blue-light;
+  color: $basic-blue;
 }
 
 .transport-list__icon {

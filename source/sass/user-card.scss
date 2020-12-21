@@ -48,6 +48,52 @@
   }
 }
 
+.user-card__like-container {
+  @include flex;
+  @include flex-center;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: $basic-blue-light;
+}
+
+.user-card__heart-icon {
+  // color: red;
+  // fill-rule: nonzero;
+  // fill: red;
+}
+
+.user-card__heart-icon {
+  opacity: 0.5;
+}
+
+.user-card__icon-path--liked {
+  fill-rule: nonzero;
+  color: $red;
+}
+
+.user-card__like-container:hover {
+  background-color: $special-blue-grey-light;
+}
+
+.user-card__like-container:hover .user-card__heart-icon {
+  opacity: 1;
+}
+
+.user-card__like-container:active .user-card__heart-icon {
+  opacity: 0.3;
+}
+
+.user-card__like-container--liked {
+  background-color: $special-light-red;
+}
+
+.user-card__like-container--liked:hover {
+  background-color: $special-hover-red;
+}
+
 .user-card__content {
   position: relative;
   display: flex;
@@ -90,6 +136,14 @@
     }
   }
 
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 22px;
@@ -117,6 +171,8 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
+  padding-left: 7px;
+  padding-top: 3px;
 }
 
 .user-card__text-container {
@@ -132,6 +188,10 @@
   }
 }
 
+.user-card__text-container--catalog {
+  margin-top: 6px;
+}
+
 .user-card__text {
   position: absolute;
   top: -12px;
@@ -140,12 +200,24 @@
   background-color: $white;
 }
 
+.user-card__text--catalog {
+  top: -6px;
+}
+
 .user-card__text--left {
   left: 15px;
 }
 
 .user-card__text--right {
   right: 25px;
+}
+
+.user-card__text--catalog-left {
+  left: 25px;
+}
+
+.user-card__text--catalog-right {
+  right: 10px;
 }
 
 .user-card__group {
@@ -170,10 +242,13 @@
   }
 }
 
+.user-card__group--catalog {
+  padding: 10px 0 0 0;
+  margin-bottom: 18px;
+}
+
 .user-card--catalog {
   @include flex;
-
-  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -207,6 +282,17 @@
 }
 
 .user-card__user-name--catalog {
+  flex: 0 1 36%;
+  text-align: left;
+  margin-top: 0;
+  padding-left: 16px;
+
+  &::before {
+    left: unset;
+    top: 11px;
+    right: -62px;
+  }
+
   @media (min-width: $tablet-width) {
     grid-area: user-name;
     grid-column: 2 / 4;

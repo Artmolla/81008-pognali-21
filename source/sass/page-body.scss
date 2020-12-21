@@ -126,6 +126,17 @@
   }
 }
 
+.page-body__title--companions {
+  position: relative;
+  z-index: 2;
+  width: auto;
+  margin-bottom: 0;
+
+  &::before {
+    width: 172px;
+  }
+}
+
 .page-body__contacts {
   @include flex;
 

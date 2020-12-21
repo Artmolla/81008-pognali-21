@@ -15,7 +15,7 @@
 
   text-align: center;
   position: relative;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     min-width: 148px;
@@ -76,6 +76,11 @@
   height: 10px;
   border-radius: 50%;
   background-color: $basic-blue-dark;
+
+  &:hover {
+    transform: scale(1.4);
+  }
+
 }
 
 .level-filter__toggle--min {
