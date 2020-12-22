@@ -12,6 +12,16 @@
   }
 }
 
+.continents--catalog {
+  display: none;
+  padding: 31px 48px 12px 48px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    display: block;
+  }
+}
+
 .continents__list {
   @media (min-width: $tablet-width) {
     @include flex;
@@ -29,4 +39,8 @@
 
 .continents__item--active {
   color: $special-midnight;
+}
+
+.continents--open {
+  display: block;
 }

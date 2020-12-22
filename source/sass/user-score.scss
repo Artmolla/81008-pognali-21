@@ -28,12 +28,20 @@
 }
 
 .user-score--catalog {
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding-right: 5px;
+  @include flex;
+  @include flex-center;
+
+  width: 50px;
+  height: 50px;
+  margin: 0 -6px 0 0;
   background-color: inherit;
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 67px;
+    height: 67px;
+    padding: 0;
+  }
 }
 
 .user-score__score {
@@ -125,10 +133,16 @@
 }
 
 .user-score__progress-ring--catalog {
-  top: -10px;
-  right: -6px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 47px;
   height: 47px;
+
+  @media (min-width: $tablet-width) {
+    width: 67px;
+    height: 67px;
+  }
 }
 
 .user-score__progress-ring__circle {
@@ -151,6 +165,10 @@
 
 .user-score__text--catalog {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: initial;
+  }
 }
 
 .user-score__progress-ring__circle--catalog {

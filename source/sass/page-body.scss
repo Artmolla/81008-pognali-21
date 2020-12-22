@@ -134,6 +134,10 @@
 
   &::before {
     width: 172px;
+
+    @media (min-width: $tablet-width) {
+      width: 286px;
+    }
   }
 }
 

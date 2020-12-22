@@ -82,15 +82,28 @@
 }
 
 .alphabet--catalog {
-  // display: block;
+  position: static;
+  box-sizing: border-box;
   width: 100%;
-  top: 0;
-  // flex-basis: 100%;
+  box-shadow: none;
+  background-color: $special-blue-grey-light;
+  padding: 0 50px 27px 50px;
+  border-radius: 0 0 26px 26px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 39%;
+    padding-left: 42px;
+    order: 3;
+  }
 }
 
 .alphabet__list--catalog {
-  grid-template-columns: repeat(5, 20%);
-  grid-template-rows: repeat(6, auto);
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(6, auto);
+    gap: 14px 0;
+    padding-left: 0;
+  }
 }
 
 .alphabet__item {
@@ -167,12 +180,17 @@
 }
 
 .alphabet__countries-list--catalog {
-  font-size: 20px;
-  line-height: 30px;
-  padding: 20px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 15px 0 28px 0;
+  background-color: $special-blue-grey-light;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 38px 0 28px 68px;
   }
 }
 
@@ -198,6 +216,10 @@
   }
 }
 
+.alphabet__country--catalog {
+  margin-bottom: 0;
+}
+
 .alphabet--open {
   display: block;
 
@@ -209,5 +231,11 @@
 .alphabet__country--long-name {
   @media (min-width: $tablet-width) {
     letter-spacing: -1px;
+  }
+}
+
+.alphabet__country--catalog-long-name {
+  @media (min-width: $tablet-width) {
+    letter-spacing: normal;
   }
 }

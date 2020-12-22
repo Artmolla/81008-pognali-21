@@ -9,10 +9,20 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+  }
+}
+
+.transport-list--filter {
+  flex-direction: row;
+
+  @media (min-width: $tablet-width) {
+    padding: 6px 0 13px 1px;
   }
 }
 
@@ -45,6 +55,12 @@
 
   background-color: $basic-blue-light;
   color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 32px;
+    background-color: inherit;
+  }
 }
 
 .transport-list__icon {

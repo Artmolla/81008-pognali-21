@@ -1,7 +1,7 @@
 .filtered {
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
-    grid-row: 3;
+    grid-row: 1;
   }
 }
 
@@ -23,6 +23,15 @@
 
   &:last-child {
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 35px 26px 14px 35px;
+    margin-bottom: 41px;
   }
 }
 
@@ -50,6 +59,15 @@
     content: "";
     background-image: url("../img/icon-plus-more.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 13px;
+      left: -2px;
+      width: 26px;
+      height: 26px;
+      background-size: 26px 26px;
+      background-position: center;
+    }
   }
 
   &:hover::before {
@@ -58,6 +76,15 @@
 
   &:active::before {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 145px;
+    padding-left: 43px;
+    margin: 0 auto 47px auto;
+    font-size: 20px;
+    font-weight: bold;
   }
 }
 
@@ -73,7 +100,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 20%;
-    padding: 25px 29px;
+    padding: 25px 9px 25px 29px;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -101,6 +128,12 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.filtered__button--previous {
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
   }
 }
 

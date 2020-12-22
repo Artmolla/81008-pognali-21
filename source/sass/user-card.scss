@@ -43,8 +43,10 @@
 
 .user-card__likes--catalog {
   @media (min-width: $tablet-width) {
-    grid-area: likes;
-    position: static;
+    grid-area: button-likes;
+    top: 19px;
+    left: 180px;
+    width: auto;
   }
 }
 
@@ -59,8 +61,22 @@
   background-color: $basic-blue-light;
 }
 
+.user-card__like-container--catalog {
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .user-card__heart-icon {
   opacity: 0.5;
+}
+
+.user-card__heart-icon--catalog {
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .user-card__icon-path--liked {
@@ -169,6 +185,13 @@
   padding-top: 3px;
 }
 
+.user-card__likes-quantity--catalog {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .user-card__text-container {
   position: relative;
   margin-right: -26px;
@@ -184,6 +207,10 @@
 
 .user-card__text-container--catalog {
   margin-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 21px;
+  }
 }
 
 .user-card__text {
@@ -208,6 +235,10 @@
 
 .user-card__text--catalog-left {
   left: 25px;
+
+  @media (min-width: $tablet-width) {
+    left: 65px;
+  }
 }
 
 .user-card__text--catalog-right {
@@ -237,8 +268,12 @@
 }
 
 .user-card__group--catalog {
-  padding: 10px 0 0 0;
-  margin-bottom: 18px;
+  padding: 0;
+  margin-bottom: 4px;
+
+  // @media (min-width: $tablet-width) {
+  //   margin-bottom: 18px;
+  // }
 }
 
 .user-card--catalog {
@@ -250,10 +285,12 @@
     grid-template-areas:
       "profile-photo user-name user-status transport-list"
       "profile-photo tag-list user-status transport-list"
-      "profile-photo button likes transport-list"
+      "profile-photo button-likes button-likes transport-list"
       "text-container text-container text-container text-container"
       "flag-list flag-list flag-list flag-list";
     margin: 0;
+    min-width: 100%;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -294,6 +331,7 @@
     line-height: 30px;
     margin: 0;
     text-align: left;
+    padding: 0 0 0 33px;
   }
 }
 

@@ -18,7 +18,7 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     grid-area: flag-list;
-    padding: 0;
+    padding: 10px 0 0 0;
     margin: 0;
   }
 
@@ -61,5 +61,6 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: initial;
+    margin-right: 27px;
   }
 }
