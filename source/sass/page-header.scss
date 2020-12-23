@@ -19,25 +19,11 @@
   background-color: $white;
 }
 
-.page-header--menu-open {
-  background-color: $white;
-  position: absolute;
-  padding-bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-}
-
 .page-header--inner {
+  background-color: $special-midnight;
+
   @media (min-width: $mobile-width) and (max-width: 767px) {
     padding: 20px 25px 30px 27px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // position: relative;
-    // padding-bottom: 148px;
-    // border-radius: 0 0 26px 26px;
   }
 }
 
@@ -64,4 +50,14 @@
 
 .page-header__toggle-menu-button--menu-open {
   background-image: url("../img/icon_menu_mobile_close.svg");
+}
+
+.page-header--menu-open {
+  background-color: $white;
+  position: absolute;
+  padding-bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }

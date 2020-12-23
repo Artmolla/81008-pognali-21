@@ -33,6 +33,11 @@
     padding: 35px 26px 14px 35px;
     margin-bottom: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .filtered__show-more-button {

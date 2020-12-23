@@ -95,6 +95,12 @@
     padding-left: 42px;
     order: 3;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
+    padding: 50px 36px 0 37px;
+    margin-bottom: 16px;
+  }
 }
 
 .alphabet__list--catalog {
@@ -103,6 +109,10 @@
     grid-template-rows: repeat(6, auto);
     gap: 14px 0;
     padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 45px 1px;
   }
 }
 
@@ -128,6 +138,12 @@
     font-size: 60px;
     line-height: 60px;
     border: none;
+  }
+}
+
+.alphabet__item--extra-padding-on-desktops {
+  @media (min-width: $desktop-width) {
+    padding-top: 35px;
   }
 }
 
@@ -192,6 +208,10 @@
     line-height: 30px;
     padding: 38px 0 28px 68px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .alphabet__countries-list--desktop-only {
@@ -201,7 +221,7 @@
     font-size: 20px;
     line-height: 30px;
     display: block;
-    padding: 0;
+    padding: 26px 0 0 0;
     text-align: left;
   }
 }
@@ -213,6 +233,11 @@
     font-weight: normal;
     margin-bottom: 10px;
     letter-spacing: 0.01em;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
   }
 }
 

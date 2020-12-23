@@ -48,6 +48,11 @@
     left: 180px;
     width: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 8px;
+    left: 194px;
+  }
 }
 
 .user-card__like-container {
@@ -271,9 +276,11 @@
   padding: 0;
   margin-bottom: 4px;
 
-  // @media (min-width: $tablet-width) {
-  //   margin-bottom: 18px;
-  // }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding-bottom: 27px;
+  }
 }
 
 .user-card--catalog {
@@ -294,13 +301,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 10px;
     border-radius: 25px;
+    grid-template-columns: 1fr 38% 1fr 1fr;
     grid-template-areas:
-      "profile-photo user-status user-name flag-list"
-      "profile-photo tag-list tag-list flag-list"
-      "profile-photo button likes transport-list";
+      "profile-photo user-name flag-list flag-list"
+      "profile-photo tag-list flag-list flag-list"
+      "profile-photo button-likes transport-list transport-list";
   }
 }
 
@@ -322,6 +329,16 @@
     left: unset;
     top: 11px;
     right: -62px;
+
+    @media (min-width: $tablet-width) {
+      top: 14px;
+      right: -33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 26px;
+      top: 45px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -332,6 +349,12 @@
     margin: 0;
     text-align: left;
     padding: 0 0 0 33px;
+    justify-self: baseline;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 0 0 52px;
+    align-self: center;
   }
 }
 

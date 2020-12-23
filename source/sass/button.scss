@@ -39,21 +39,6 @@
   }
 }
 
-// .button--show-all-countries {
-//   display: none;
-
-//   @media (min-width: $tablet-width) {
-//     display: block;
-//     font-style: normal;
-//     font-weight: bold;
-//     font-size: 20px;
-//     line-height: 20px;
-//     text-transform: uppercase;
-//     flex-basis: 30%;
-//     background-color: inherit;
-//   }
-// }
-
 .button--business-rates {
   display: flex;
   align-items: center;
@@ -360,6 +345,10 @@
     line-height: 20px;
     order: 4;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0;
+  }
 }
 
 .button--open-filter {
@@ -371,30 +360,16 @@
   line-height: 18px;
   text-transform: uppercase;
   background-color: $special-blue-grey-light;
+  flex: 1;
 
   &:hover {
     background-color: $special-blue-grey-light;
   }
 
-  &::before {
-    position: absolute;
-    bottom: 1px;
-    left: 23px;
-    width: 15px;
-    height: 15px;
-    content: "";
-    background-image: url("../img/icon-decorative-filter.svg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
   &::after {
     position: absolute;
-    bottom: -7px;
-    right: 6px;
+    bottom: -10px;
+    right: 24px;
     width: 20px;
     height: 20px;
     content: "";
@@ -407,20 +382,27 @@
       bottom: 15px;
       right: 50px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 60px;
+      top: 33px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     order: 2;
-    flex: 1;
     text-align: left;
     padding: 10px 25px 0 25px;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   display: none;
-  // }
+  @media (min-width: $desktop-width) {
+    text-align: right;
+    padding: 3px 115px 0 0;
+    width: auto;
+    flex: 0 1 auto;
+  }
 }
 
 .button--companion-submit {
@@ -465,6 +447,8 @@
 
   @media (min-width: $desktop-width) {
     min-width: 150px;
+    top: 8px;
+    left: 44px;
   }
 }
 
@@ -500,7 +484,6 @@
     height: 25px;
   }
 }
-
 
 .button--visible {
   display: block;

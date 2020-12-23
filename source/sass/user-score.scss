@@ -42,6 +42,10 @@
     height: 67px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 35px;
+  }
 }
 
 .user-score__score {

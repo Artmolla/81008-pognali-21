@@ -20,6 +20,11 @@
     order: 1;
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 48px 12px 23px;
+    flex: 1;
+  }
 }
 
 .continents__list {

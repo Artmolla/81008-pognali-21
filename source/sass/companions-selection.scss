@@ -5,12 +5,15 @@
   background-color: $basic-yellow;
 
   @media (min-width: $tablet-width) {
-    padding: 7px 34px 37px 34px;
+    padding: 6px 34px 37px 34px;
     margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / -1;
+    padding: 46px 34px 47px 48px;
+    align-self: baseline;
+    margin: 0;
   }
 }
 
@@ -28,6 +31,11 @@
     letter-spacing: normal;
     padding-bottom: 37px;
     margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-bottom: 19px;
   }
 }
 
@@ -66,7 +74,7 @@
 .companion-selection__list--open {
   display: block;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
     display: flex;
   }
 }
@@ -113,6 +121,10 @@
     @media (min-width: $tablet-width) and (max-width: 1439px) {
       display: none;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 10px;
+    }
   }
 
   &:hover {
@@ -131,6 +143,12 @@
     flex-basis: 20%;
     color: $basic-blue-dark;
   }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .companion-selection__filter--transport {
@@ -141,11 +159,26 @@
   @media (min-width: $tablet-width) {
     padding-top: 3px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 12px;
+  }
+}
+
+.companion-selection__button--level {
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+    padding-bottom: 15px;
+  }
 }
 
 .companion-selection__filter--level {
   @media (min-width: $tablet-width) {
     margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
   }
 }
 
@@ -180,21 +213,30 @@
       left: 3px;
       top: 1px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+      top: 6px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding: 4px 0 0 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0 0 38px;
+  }
 }
 
 .companion-selection__label--last {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
     padding-left: 46px;
   }
 
   &::before {
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: 1439px) {
       left: 12px;
     }
   }
