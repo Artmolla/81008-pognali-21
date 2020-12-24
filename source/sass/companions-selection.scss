@@ -248,3 +248,27 @@
   background-size: 14px 14px;
   background-position: center;
 }
+
+.companion-selection__checkbox:hover + .companion-selection__label {
+  color: rgba($black, 0.6);
+}
+
+.companion-selection__checkbox:hover + .companion-selection__label::before {
+  opacity: 0.6;
+}
+
+.companion-selection__checkbox:checked:hover + .companion-selection__label::before {
+  opacity: 1;
+}
+
+.companion-selection__checkbox:active + .companion-selection__label {
+  opacity: 0.3;
+}
+
+.companion-selection__checkbox:disabled + .companion-selection__label {
+  opacity: 0.3;
+}
+
+.companion-selection__checkbox:disabled:hover + .companion-selection__label {
+  color: inherit;
+}
