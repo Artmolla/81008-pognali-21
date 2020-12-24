@@ -4,7 +4,7 @@
   line-height: 18px;
   text-transform: uppercase;
   padding: 15px 0 15px 0;
-  color: $special-midnight-opacity;
+  color: $special-midnight;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -42,8 +42,20 @@
   }
 }
 
-.continents__item--active {
-  color: $special-midnight;
+.continents__link {
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.continents__link--active {
+  opacity: 1;
 }
 
 .continents--open {
