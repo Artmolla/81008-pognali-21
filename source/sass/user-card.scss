@@ -73,10 +73,6 @@
   }
 }
 
-.user-card__heart-icon {
-  opacity: 0.5;
-}
-
 .user-card__heart-icon--catalog {
   @media (min-width: $tablet-width) {
     width: 20px;
