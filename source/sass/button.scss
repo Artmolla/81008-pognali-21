@@ -364,6 +364,11 @@
 
   &:hover {
     background-color: $special-blue-grey-light;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   &::after {
