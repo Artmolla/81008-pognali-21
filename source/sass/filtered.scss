@@ -25,7 +25,7 @@
     margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 50px;
+      margin-bottom: 44px;
     }
   }
 
@@ -105,7 +105,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 20%;
-    padding: 25px 9px 25px 29px;
+    padding: 25px 7px 25px 28px;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -135,7 +135,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 17px 0 14px 0;
+    padding: 0;
   }
 }
 

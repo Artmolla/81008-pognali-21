@@ -37,4 +37,8 @@
 
 .tag-list--bigger-padding {
   padding-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+  }
 }
