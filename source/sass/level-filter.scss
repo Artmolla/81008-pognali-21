@@ -53,6 +53,14 @@
   letter-spacing: 0.06em;
   background-color: $white;
 
+  &:hover {
+    border-color: $special-grey-hover;
+  }
+
+  &:active {
+    border-color: $basic-blue;
+  }
+
   @media (min-width: $tablet-width) {
     font-weight: 500;
     font-size: 20px;
@@ -89,7 +97,7 @@
   }
 }
 
-.level-filter__toggle {
+.level-filter__handle {
   position: absolute;
   top: -4px;
   width: 10px;
@@ -98,7 +106,11 @@
   background-color: $basic-blue-dark;
 
   &:hover {
-    transform: scale(1.4);
+    transform: translateY(-50%) scale(1.4);
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px $range-shadow;
   }
 
   @media (min-width: $tablet-width) {
@@ -109,10 +121,10 @@
   }
 }
 
-.level-filter__toggle--min {
+.level-filter__handle--min {
   left: 30%;
 }
 
-.level-filter__toggle--max {
+.level-filter__handle--max {
   left: calc(100% - 10px);
 }
