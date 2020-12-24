@@ -1,5 +1,5 @@
 .companion-selection {
-  padding: 4px 25px 22px 25px;
+  padding: 8px 25px 22px 25px;
   margin-bottom: 28px;
   border-radius: 20px;
   background-color: $basic-yellow;
@@ -23,6 +23,7 @@
   font-size: 22px;
   line-height: 22px;
   letter-spacing: 0.02em;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-yellow-grey-borders;

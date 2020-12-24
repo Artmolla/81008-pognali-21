@@ -46,6 +46,14 @@
   padding-top: 13px;
   margin-top: 2px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     flex-basis: unset;

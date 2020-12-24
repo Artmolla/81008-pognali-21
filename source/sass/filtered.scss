@@ -45,7 +45,7 @@
   display: inline-block;
   width: 100%;
   padding-left: 15px;
-  margin-bottom: 18px;
+  margin-bottom: 23px;
   text-align: center;
   font-style: normal;
   font-weight: bold;
@@ -125,7 +125,6 @@
   @include flex;
   @include flex-center;
 
-  padding: 17px 0 14px 0;
   flex-basis: calc(50% - 0.5px);
   cursor: pointer;
   background-color: $white;
@@ -133,6 +132,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 0 14px 0;
   }
 }
 

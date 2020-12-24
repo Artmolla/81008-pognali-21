@@ -99,7 +99,8 @@
 
 .level-filter__handle {
   position: absolute;
-  top: -4px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 10px;
   height: 10px;
   border-radius: 50%;
