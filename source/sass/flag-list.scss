@@ -53,6 +53,10 @@
 .flag-list__text--catalog {
   margin: 0 0 0 13px;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 18px;
+  }
 }
 
 .flag-list__item--companions-filtered {
@@ -71,7 +75,7 @@
   margin-bottom: 3px;
 
   @media (min-width: $desktop-width) {
-    padding-top: 11px;
+    padding-top: 50px;
     margin-bottom: 0;
   }
 }

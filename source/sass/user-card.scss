@@ -262,6 +262,12 @@
   }
 }
 
+.user-card__group--two-flags {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
+  }
+}
+
 .user-card--catalog {
   @include flex;
 

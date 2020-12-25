@@ -27,6 +27,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 44px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 61px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -73,6 +77,10 @@
       background-size: 26px 26px;
       background-position: center;
     }
+
+    @media (min-width: $desktop-width) {
+      left: -45px;
+    }
   }
 
   &:hover::before {
@@ -90,6 +98,12 @@
     margin: 0 auto 47px auto;
     font-size: 20px;
     font-weight: bold;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 23px;
+    margin-bottom: 67px;
   }
 }
 
@@ -119,6 +133,11 @@
   @include flex;
   border-radius: 20px;
   overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+    padding-right: 13px;
+  }
 }
 
 .filtered__button {
@@ -136,6 +155,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: unset;
   }
 }
 

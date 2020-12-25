@@ -221,5 +221,13 @@
     background-image: url("../img/icon-back-to-index.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $desktop-width) {
+      right: -12px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 48px 0 0;
   }
 }
