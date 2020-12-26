@@ -39,21 +39,6 @@
   }
 }
 
-.button--show-all-countries {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-    flex-basis: 30%;
-    background-color: inherit;
-  }
-}
-
 .button--business-rates {
   display: flex;
   align-items: center;
@@ -343,6 +328,8 @@
 }
 
 .button--minimize {
+  display: none;
+  position: relative;
   width: 100%;
   padding: 10px 10px 9px 10px;
   font-style: normal;
@@ -354,39 +341,106 @@
   border-radius: 20px;
   background-color: $special-blue-grey;
 
+  &::before {
+    position: absolute;
+    left: 95px;
+    top: 12px;
+    width: 14px;
+    height: 14px;
+    content: "";
+    background-image: url("../img/icon-close-filter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      left: 288px;
+      top: 37px;
+      width: 24px;
+      height: 24px;
+      background-size: 24px 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 45%;
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    padding: 42px 0 38px 35px;
     font-size: 20px;
     line-height: 20px;
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: 0.01em;
   }
 }
 
 .button--open-filter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 20px;
+  position: relative;
   width: 100%;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  border-radius: 20px;
   background-color: $special-blue-grey-light;
+  flex: 1;
+
+  &:hover {
+    background-color: $special-blue-grey-light;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -10px;
+    right: 24px;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-image: url("../img/icon-three-dots-for-filter.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/icon-three-dots-for-filter-tablet.svg");
+      width: 30px;
+      bottom: 15px;
+      right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 60px;
+      top: 33px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    display: none;
+    font-size: 20px;
+    line-height: 20px;
+    order: 2;
+    text-align: left;
+    padding: 10px 25px 0 25px;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    text-align: right;
+    padding: 3px 115px 0 0;
+    width: auto;
+    flex: 0 1 auto;
   }
 }
 
 .button--companion-submit {
   background-color: $white;
   width: 100%;
-  padding: 12px 73px 12px 72px;
+  padding: 14px 73px 10px 71px;
+  margin-top: 3px;
   font-style: normal;
   border-radius: 25px;
   font-weight: bold;
@@ -394,19 +448,48 @@
   line-height: 17px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 18px 73px 12px 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 53px;
+  }
 }
 
 .button--catalog {
-  grid-area: button;
+  grid-area: button-likes;
   margin: 0;
-  font-size: 20px;
-  line-height: 20px;
-  padding: 16px 33px 14px 33px;
+  font-size: 17px;
+  line-height: 17px;
+  padding: 14px 33px 9px 41px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 19px;
+    left: 29px;
+    width: 150px;
+    justify-content: center;
+    padding: 18px 0 12px 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-radius: 26px;
+  }
 
   @media (min-width: $desktop-width) {
     min-width: 150px;
+    top: 8px;
+    left: 44px;
   }
 }
+
+// .button--two-flags {
+//   top: 20px;
+// }
 
 .button--previous {
   padding: 0;
@@ -432,3 +515,27 @@
     transform: scale(-1, 1);
   }
 }
+
+.button--close-filter {
+  &::after {
+    background-image: url("../img/icon-close-filter.svg");
+    width: 25px;
+    height: 25px;
+
+    @media (min-width: $desktop-width) {
+      top: 27px;
+      right: 58px;
+    }
+  }
+}
+
+.button--visible {
+  display: block;
+}
+
+// .button__close-icon {
+//   @media (min-width: $tablet-width) {
+//     width: 22px;
+//     height: 24px;
+//   }
+// }

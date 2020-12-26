@@ -4,12 +4,25 @@
 }
 
 .transport-list--catalog {
+  justify-content: flex-start;
+  padding: 6px 0 19px 1px;
+
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+  }
+}
+
+.transport-list--filter {
+  flex-direction: row;
+
+  @media (min-width: $tablet-width) {
+    padding: 6px 0 13px 1px;
   }
 }
 
@@ -33,6 +46,20 @@
   @media (min-width: $tablet-width) {
     width: 33px;
     height: 38px;
+  }
+}
+
+.transport-list__item--catalog {
+  @include flex;
+  @include flex-center;
+
+  background-color: $basic-blue-light;
+  color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 32px;
+    background-color: inherit;
   }
 }
 

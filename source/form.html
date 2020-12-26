@@ -35,7 +35,7 @@
               <a class="main-nav__link link-reset" href="#">О сервисе</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link link-reset" href="form.html">Направления</a>
+              <a class="main-nav__link link-reset">Направления</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link link-reset" href="catalog.html">Попутчики</a>
@@ -136,7 +136,8 @@
         </button>
         <div class="profile__container profile__container--tags">
           <h3 class="profile__title profile__title--tags">Тэги</h3>
-          <textarea class="profile__tags">#бургер #бар #футбол #концерт #крафт
+          <label class="visually-hidden" for="profile-tags">Теги</label>
+          <textarea class="profile__tags" id="profile-tags">#бургер #бар #футбол #концерт #крафт
           </textarea>
         </div>
         <div class="profile__container profile__container--transport">
@@ -550,7 +551,7 @@
                   <source srcset="img/flags/flag-czech-70-47.png" media="(min-width: 767px)">
                   <img src="img/flags/flag-czech-35-24.png" alt="Чехия">
                 </picture>
-                <button class="button button--close button--close-flag" type="button">
+                <button class="button button--close button--close-flag" type="button" aria-label="Закрыть">
                   <svg class="planner__close-icon" viewBox="0 0 9 9" width="9" height="9" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.875 1.125l-6.75 6.75M1.125 1.125l6.75 6.75" stroke="currentColor" stroke-linecap="round"
@@ -567,7 +568,7 @@
                 type="button">Выберите страну
                 <img src="img/arrow-down.svg" alt="Дропдаун" width="12" height="16"></button>
               <div class="planner__icon planner__icon--empty">
-                <button class="button button--close button--close-flag" type="button">
+                <button class="button button--close button--close-flag" type="button" aria-label="Закрыть">
                   <svg class="planner__close-icon" viewBox="0 0 9 9" width="9" height="9" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.875 1.125l-6.75 6.75M1.125 1.125l6.75 6.75" stroke="currentColor" stroke-linecap="round"
@@ -769,7 +770,7 @@
     </section>
     <footer class="page-footer page-footer--directions">
       <div class="page-footer__content">
-        <a class="link-reset">
+        <a href="index.html" class="link-reset">
           <picture>
             <source srcset="img/logos/logo-blue-desktop.png" media="(min-width: 1440px)">
             <source srcset="img/logos/logo-blue-tablet.png" media="(min-width: 768px)">

@@ -1,7 +1,7 @@
 .filtered {
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
-    grid-row: 3;
+    grid-row: 1;
   }
 }
 
@@ -17,10 +17,39 @@
   }
 }
 
+.filtered__item--catalog {
+  padding: 15px 26px 14px 18px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 44px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 61px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 35px 26px 14px 35px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}
+
 .filtered__show-more-button {
+  position: relative;
   display: inline-block;
   width: 100%;
-  margin-bottom: 18px;
+  padding-left: 15px;
+  margin-bottom: 23px;
   text-align: center;
   font-style: normal;
   font-weight: bold;
@@ -28,13 +57,69 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $basic-blue-dark;
+
+  &::before {
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    content: "";
+    background-image: url("../img/icon-plus-more.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 13px;
+      left: -2px;
+      width: 26px;
+      height: 26px;
+      background-size: 26px 26px;
+      background-position: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -45px;
+    }
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 145px;
+    padding-left: 43px;
+    margin: 0 auto 47px auto;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 23px;
+    margin-bottom: 67px;
+  }
+}
+
+.filtered__icon-show-more-arrow--reflect {
+  transform: scale(-1, 1);
+}
+
+.filtered__plus-icon {
+  margin-right: 16px;
 }
 
 .filtered__pagination-container {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 20%;
-    padding: 25px 29px;
+    padding: 25px 7px 25px 28px;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -48,13 +133,17 @@
   @include flex;
   border-radius: 20px;
   overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+    padding-right: 13px;
+  }
 }
 
 .filtered__button {
   @include flex;
   @include flex-center;
 
-  padding: 17px 0 14px 0;
   flex-basis: calc(50% - 0.5px);
   cursor: pointer;
   background-color: $white;
@@ -62,6 +151,20 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: unset;
+  }
+}
+
+.filtered__button--previous {
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
   }
 }
 
@@ -84,8 +187,19 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.filtered__link--arrow {
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .filtered__link--active {
   background-color: $basic-yellow;
+  opacity: 1;
 }

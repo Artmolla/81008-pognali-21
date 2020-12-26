@@ -4,11 +4,26 @@
   line-height: 18px;
   text-transform: uppercase;
   padding: 15px 0 15px 0;
-  color: $special-midnight-opacity;
+  color: $special-midnight;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.continents--catalog {
+  display: none;
+  padding: 31px 48px 12px 48px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 48px 12px 23px;
+    flex: 1;
   }
 }
 
@@ -25,8 +40,28 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 32px;
+  }
 }
 
-.continents__item--active {
-  color: $special-midnight;
+.continents__link {
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.continents__link--active {
+  opacity: 1;
+}
+
+.continents--open {
+  display: block;
 }
