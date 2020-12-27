@@ -4,10 +4,15 @@
   margin-top: -30px;
   padding: 78px 25px 31px 25px;
   border-radius: 0 0 30px 30px;
-  background-color: $basic-blue;
+  background-color: $special-midnight;
   background-image: url("../img/companions-bg.png");
   background-repeat: no-repeat;
   background-position: top 64px left -2px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/companions-bg@2x.png");
+    background-size: 297px auto;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 164px 74px 87px 74px;
@@ -16,6 +21,11 @@
     background-position: top 129px right 74px;
     margin-top: -60px;
     border-radius: 0 0 60px 60px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/companions-bg-tablet@2x.png");
+      background-size: 654px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -29,6 +39,11 @@
     background-image: url("../img/companions-bg-desktop.png");
     background-repeat: no-repeat;
     background-position: top 130px left 60px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/companions-bg-desktop@2x.png");
+      background-size: 630px auto;
+    }
   }
 }
 
