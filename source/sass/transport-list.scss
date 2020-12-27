@@ -27,11 +27,15 @@
 }
 
 .transport-list__item {
+  @include flex;
+  @include flex-center;
+
   position: relative;
   width: 32px;
   height: 32px;
   background-color: $white;
   border-radius: 50%;
+  color: $basic-blue-opacity;
 
   @media (min-width: $tablet-width) {
     width: 44px;
@@ -40,11 +44,7 @@
 }
 
 .transport-list__item--index {
-  width: 33px;
-  height: 32px;
-
   @media (min-width: $tablet-width) {
-    width: 33px;
     height: 38px;
   }
 }
@@ -61,6 +61,10 @@
     height: 32px;
     background-color: inherit;
   }
+}
+
+.transport-list__item--active {
+  color: $basic-blue;
 }
 
 .transport-list__icon {
