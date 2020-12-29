@@ -298,6 +298,7 @@
 
 .user-card__image {
   vertical-align: top;
+  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
     grid-area: profile-photo;
