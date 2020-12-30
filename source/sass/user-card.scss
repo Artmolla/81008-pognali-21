@@ -298,9 +298,15 @@
 
 .user-card__image {
   vertical-align: top;
+  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
+    border-radius: 20px;
     grid-area: profile-photo;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 20px 0 0 20px;
   }
 }
 
@@ -375,6 +381,11 @@
     left: 26px;
     top: 41px;
   }
+}
+
+.user-card__user-status--index {
+  left: 53px;
+  top: 30px;
 }
 
 .user-card__user-status--offline {
