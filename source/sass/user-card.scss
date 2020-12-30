@@ -301,7 +301,12 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
+    border-radius: 20px;
     grid-area: profile-photo;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 20px 0 0 20px;
   }
 }
 
