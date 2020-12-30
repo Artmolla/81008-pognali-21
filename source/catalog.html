@@ -14,9 +14,10 @@
       <div class="menu__header">
         <a class="page-header__logo link-reset" href="index.html">
           <picture class="page-header__image">
-            <source srcset="img/logos/logo-desktop.png" media="(min-width: 1440px)">
-            <source srcset="img/logos/logo-tablet.png" media="(min-width: 768px)">
-            <img src="img/logos/logo-white-mobile.png" alt="Погнали?">
+            <source srcset="img/logos/logo-desktop.png 1x, img/logos/logo-desktop@2x.png 2x"
+              media="(min-width: 1440px)">
+            <source srcset="img/logos/logo-tablet.png 1x, img/logos/logo-tablet@2x.png 2x" media="(min-width: 768px)">
+            <img src="img/logos/logo-white-mobile.png" srcset="img/logos/logo-white-mobile@2x.png 2x" alt="Погнали?">
           </picture>
         </a>
         <button class="page-header__toggle-menu-button button-reset" type="button">
@@ -647,9 +648,12 @@
             <div class="user-card user-card--catalog">
               <a class="user-card__image" href="#">
                 <picture>
-                  <source srcset="img/users/firsova-desktop.png" media="(min-width: 1440px)">
-                  <source srcset="img/users/firsova-tablet-190-190.png" media="(min-width: 768px)">
-                  <img class="user-card__image" src="img/users/firsova-mobile.png" alt="Таня Фирсова">
+                  <source srcset="img/users/firsova-desktop.png 1x, img/users/firsova-tablet-285-285@2x.png 2x"
+                    media="(min-width: 1440px)">
+                  <source srcset="img/users/firsova-tablet-190-190.png 1x, img/users/firsova-tablet-190-190@2x.png 2x"
+                    media="(min-width: 768px)">
+                  <img class="user-card__image" src="img/users/firsova-mobile.png"
+                    srcset="img/users/firsova-mobile@2x.png 2x" alt="Таня Фирсова">
                 </picture>
               </a>
               <div class="user-card__likes user-card__likes--catalog">
@@ -708,22 +712,28 @@
               <ul class="flag-list flag-list--catalog list-reset">
                 <li class="flag-list__item flag-list__item--companions-filtered">
                   <picture class="flag-list__img">
-                    <source srcset="img/flags/flag-sri-lanka-35-24.png" media="(min-width: 767px)">
-                    <img src="img/flags/flag-sri-lanka-26-18.png" alt="Флаг Шри-Ланки">
+                    <source srcset="img/flags/flag-sri-lanka-35-24.png 1x, img/flags/flag-sri-lanka-35-24@2x.png 2x"
+                      media="(min-width: 767px)">
+                    <img src="img/flags/flag-sri-lanka-26-18.png" srcset="img/flags/flag-sri-lanka-26-18@2x.png 2x"
+                      alt="Флаг Шри-Ланки">
                   </picture>
                   <p class="flag-list__text flag-list__text--catalog">Шри-ланка</p>
                 </li>
                 <li class="flag-list__item flag-list__item--companions-filtered">
                   <picture class="flag-list__img">
-                    <source srcset="img/flags/flag-thailand-35-24.png" media="(min-width: 767px)">
-                    <img src="img/flags/flag-thailand-26-18.png" alt="Флаг Тайланда">
+                    <source srcset="img/flags/flag-thailand-35-24.png 1x, img/flags/flag-thailand-35-24@2x.png 2x"
+                      media="(min-width: 767px)">
+                    <img src="img/flags/flag-thailand-26-18.png" srcset="img/flags/flag-thailand-26-18@2x.png 2x"
+                      alt="Флаг Тайланда">
                   </picture>
                   <p class="flag-list__text flag-list__text--catalog">Тайланд</p>
                 </li>
                 <li class="flag-list__item flag-list__item--companions-filtered">
                   <picture class="flag-list__img">
-                    <source srcset="img/flags/flag-seychelles-35-24.png" media="(min-width: 767px)">
-                    <img src="img/flags/flag-seychelles-26-18.png" alt="Флаг Сейшелы">
+                    <source srcset="img/flags/flag-seychelles-35-24.png 1x, img/flags/flag-seychelles-35-24@2x.png 2x"
+                      media="(min-width: 767px)">
+                    <img src="img/flags/flag-seychelles-26-18.png" srcset="img/flags/flag-seychelles-26-18@2x.png 2x"
+                      alt="Флаг Сейшелы">
                   </picture>
                   <p class="flag-list__text flag-list__text--catalog">Сейшелы</p>
                 </li>
@@ -800,9 +810,12 @@
             <div class="user-card user-card--catalog">
               <a class="user-card__image" href="#">
                 <picture>
-                  <source srcset="img/users/demin-desktop.png" media="(min-width: 1440px)">
-                  <source srcset="img/users/demin-tablet.png" media="(min-width: 768px)">
-                  <img class="user-card__image" src="img/users/demin-mobile.png" alt="Петя Демин">
+                  <source srcset="img/users/demin-desktop.png 1x, img/users/demin-tablet-285-285@2x.png 2x"
+                    media="(min-width: 1440px)">
+                  <source srcset="img/users/demin-tablet.png 1x, img/users/demin-desktop-190-190@2x.png 2x"
+                    media="(min-width: 768px)">
+                  <img class="user-card__image" src="img/users/demin-mobile.png"
+                    srcset="img/users/demin-mobile@2x.png 2x" alt="Петя Демин">
                 </picture>
               </a>
               <div class="user-card__likes user-card__likes--catalog">
@@ -855,15 +868,19 @@
               <ul class="flag-list flag-list--catalog flag-list--two-flags list-reset">
                 <li class="flag-list__item flag-list__item--companions-filtered">
                   <picture class="flag-list__img">
-                    <source srcset="img/flags/flag-belgium-35-24.png" media="(min-width: 767px)">
-                    <img src="img/flags/flag-belgium-26-18.png" alt="Флаг Бельгии">
+                    <source srcset="img/flags/flag-belgium-35-24.png 1x, img/flags/flag-belgium-35-24@2x.png 2x"
+                      media="(min-width: 767px)">
+                    <img src="img/flags/flag-belgium-26-18.png" srcset="img/flags/flag-belgium-26-18@2x.png 2x"
+                      alt="Флаг Бельгии">
                   </picture>
                   <p class="flag-list__text flag-list__text--catalog">Бельгия</p>
                 </li>
                 <li class="flag-list__item flag-list__item--companions-filtered">
                   <picture class="flag-list__img">
-                    <source srcset="img/flags/flag-czech-35-24.png" media="(min-width: 767px)">
-                    <img src="img/flags/flag-czech-26-18.png" alt="Флаг Чехии">
+                    <source srcset="img/flags/flag-czech-35-24.png 1x, img/flags/flag-czech-35-24@2x.png 2x"
+                      media="(min-width: 767px)">
+                    <img src="img/flags/flag-czech-26-18.png" srcset="img/flags/flag-czech-26-18@2x.png 2x"
+                      alt="Флаг Чехии">
                   </picture>
                   <p class="flag-list__text flag-list__text--catalog">Чехия</p>
                 </li>
@@ -940,9 +957,12 @@
             <div class="user-card user-card--catalog">
               <a class="user-card__image" href="#">
                 <picture>
-                  <source srcset="img/users/smolov-desktop.png" media="(min-width: 1440px)">
-                  <source srcset="img/users/smolov-tablet.png" media="(min-width: 768px)">
-                  <img class="user-card__image" src="img/users/smolov-mobile.png" alt="Марк Смолов">
+                  <source srcset="img/users/smolov-desktop.png 1x, img/users/smolov-desktop@2x.png 2x"
+                    media="(min-width: 1440px)">
+                  <source srcset="img/users/smolov-tablet.png 1x, img/users/smolov-tablet@2x.png 2x"
+                    media="(min-width: 768px)">
+                  <img class="user-card__image" src="img/users/smolov-mobile.png"
+                    srcset="img/users/smolov-mobile@2x.png 2x" alt="Марк Смолов">
                 </picture>
               </a>
               <div class="user-card__likes user-card__likes--catalog">
@@ -995,22 +1015,27 @@
               <ul class="flag-list flag-list--catalog list-reset">
                 <li class="flag-list__item flag-list__item--companions-filtered">
                   <picture class="flag-list__img">
-                    <source srcset="img/flags/flag-usa-35-24.png" media="(min-width: 767px)">
-                    <img src="img/flags/flag-usa-26-18.png" alt="США">
+                    <source srcset="img/flags/flag-usa-35-24.png 1x, img/flags/flag-usa-35-24@2x.png 2x"
+                      media="(min-width: 767px)">
+                    <img src="img/flags/flag-usa-26-18.png" srcset="img/flags/flag-usa-26-18@2x.png 2x" alt="США">
                   </picture>
                   <p class="flag-list__text flag-list__text--catalog">США</p>
                 </li>
                 <li class="flag-list__item flag-list__item--companions-filtered">
                   <picture class="flag-list__img">
-                    <source srcset="img/flags/flag-australia-35-24.png" media="(min-width: 767px)">
-                    <img src="img/flags/flag-australia-26-18.png" alt="Австралия">
+                    <source srcset="img/flags/flag-australia-35-24.png 1x, img/flags/flag-australia-35-24@2x.png 2x"
+                      media="(min-width: 767px)">
+                    <img src="img/flags/flag-australia-26-18.png" srcset="img/flags/flag-australia-26-18@2x.png 2x"
+                      alt="Австралия">
                   </picture>
                   <p class="flag-list__text flag-list__text--catalog">Австралия</p>
                 </li>
                 <li class="flag-list__item flag-list__item--companions-filtered">
                   <picture class="flag-list__img">
-                    <source srcset="img/flags/flag-dominikana-35-24.png" media="(min-width: 767px)">
-                    <img src="img/flags/flag-dominikana-26-18.png" alt="Доминикана">
+                    <source srcset="img/flags/flag-dominikana-35-24.png 1x, img/flags/flag-dominikana-35-24@2x.png 2x"
+                      media="(min-width: 767px)">
+                    <img src="img/flags/flag-dominikana-26-18.png" srcset="img/flags/flag-dominikana-26-18@2x.png 2x"
+                      alt="Доминикана">
                   </picture>
                   <p class="flag-list__text flag-list__text--catalog">Доминикана</p>
                 </li>
@@ -1087,9 +1112,12 @@
             <div class="user-card user-card--catalog">
               <a class="user-card__image" href="#">
                 <picture>
-                  <source srcset="img/users/rogovaya-desktop.png" media="(min-width: 1440px)">
-                  <source srcset="img/users/rogovaya-tablet.png" media="(min-width: 768px)">
-                  <img class="user-card__image" src="img/users/rogovaya-mobile.png" alt="Лариса Роговая">
+                  <source srcset="img/users/rogovaya-desktop.png 1x, img/users/rogovaya-desktop@2x.png 2x"
+                    media="(min-width: 1440px)">
+                  <source srcset="img/users/rogovaya-tablet.png 1x, img/users/rogovaya-tablet@2x.png 2x"
+                    media="(min-width: 768px)">
+                  <img class="user-card__image" src="img/users/rogovaya-mobile.png"
+                    srcset="img/users/rogovaya-mobile@2x.png 2x" alt="Лариса Роговая">
                 </picture>
               </a>
               <div class="user-card__likes user-card__likes--catalog">
@@ -1139,15 +1167,20 @@
               <ul class="flag-list flag-list--catalog flag-list--two-flags list-reset">
                 <li class="flag-list__item flag-list__item--companions-filtered">
                   <picture class="flag-list__img">
-                    <source srcset="img/flags/flag-united-kingdom-35-24.png" media="(min-width: 767px)">
-                    <img src="img/flags/flag-united-kingdom-26-18.png" alt="Великобритания">
+                    <source
+                      srcset="img/flags/flag-united-kingdom-35-24.png 1x, img/flags/flag-united-kingdom-35-24@2x.png 2x"
+                      media="(min-width: 767px)">
+                    <img src="img/flags/flag-united-kingdom-26-18.png"
+                      srcset="img/flags/flag-united-kingdom-26-18@2x.png 2x" alt="Великобритания">
                   </picture>
                   <p class="flag-list__text flag-list__text--catalog">Великобритания</p>
                 </li>
                 <li class="flag-list__item flag-list__item--companions-filtered">
                   <picture class="flag-list__img">
-                    <source srcset="img/flags/flag-germany-35-24.png" media="(min-width: 767px)">
-                    <img src="img/flags/flag-germany-26-18.png" alt="Германия">
+                    <source srcset="img/flags/flag-germany-35-24.png 1x, img/flags/flag-germany-35-24@2x.png 2x"
+                      media="(min-width: 767px)">
+                    <img src="img/flags/flag-germany-26-18.png" srcset="img/flags/flag-germany-26-18@2x.png 2x"
+                      alt="Германия">
                   </picture>
                   <p class="flag-list__text flag-list__text--catalog">Германия</p>
                 </li>
@@ -1259,9 +1292,11 @@
     <div class="page-footer__content">
       <a href="index.html" class="link-reset">
         <picture>
-          <source srcset="img/logos/logo-blue-desktop.png" media="(min-width: 1440px)">
-          <source srcset="img/logos/logo-blue-tablet.png" media="(min-width: 768px)">
-          <img src="img/logos/logo-blue-mobile.png" alt="Погнали?">
+          <source srcset="img/logos/logo-blue-desktop.png 1x, img/logos/logo-blue-desktop@2x.png 2x"
+            media="(min-width: 1440px)">
+          <source srcset="img/logos/logo-blue-tablet.png 1x, img/logos/logo-blue-tablet@2x.png 2x"
+            media="(min-width: 768px)">
+          <img src="img/logos/logo-blue-mobile.png" srcset="img/logos/logo-blue-mobile@2x.png 2x" alt="Погнали?">
         </picture>
       </a>
       <ul class="social-list social-list--footer list-reset">
