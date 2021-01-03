@@ -14,6 +14,12 @@
       <div class="menu__header">
         <a class="page-header__logo link-reset" href="index.html">
           <picture class="page-header__image">
+            <source type="image/webp" srcset="img/logos/logo-desktop.webp 1x, img/logos/logo-desktop@2x.webp 2x"
+              media="(min-width: 1440px)">
+            <source type="image/webp" srcset="img/logos/logo-tablet.webp 1x, img/logos/logo-tablet@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source type="image/webp"
+              srcset="img/logos/logo-white-mobile.webp 1x, img/logos/logo-white-mobile@2x.webp 2x">
             <source srcset="img/logos/logo-desktop.png 1x, img/logos/logo-desktop@2x.png 2x"
               media="(min-width: 1440px)">
             <source srcset="img/logos/logo-tablet.png 1x, img/logos/logo-tablet@2x.png 2x" media="(min-width: 768px)">
@@ -132,6 +138,14 @@
           <span class="user-score__text user-score__text--directions">level</span>
         </div>
         <picture class="profile__image">
+          <source type="image/webp"
+            srcset="img/users/demin-desktop-190-190.webp 1x, img/users/demin-desktop-190-190@2x.webp 2x"
+            media="(min-width: 1439px)">
+          <source type="image/webp"
+            srcset="img/users/demin-tablet-94-94.webp 1x, img/users/demin-tablet-94-94@2x.webp 2x"
+            media="(min-width: 768px)">
+          <source type="image/webp"
+            srcset="img/users/demin-mobile-100-100.webp 1x, img/users/demin-mobile-100-100@2x.webp 2x">
           <source srcset="img/users/demin-desktop-190-190.png 1x, img/users/demin-desktop-190-190@2x.png 2x"
             media="(min-width: 1439px)">
           <source srcset="img/users/demin-tablet-94-94.png 1x, img/users/demin-tablet-94-94@2x.png 2x"
@@ -531,11 +545,16 @@
           <div class="planner__countries">
             <div class="planner__country">
               <select class="planner__destination-name planner__destination-name--country planner__open-countries-list"
-                name="country">
+                name="country" aria-label="Выберите страну">
                 <option value="Босния и герцеговина">Босния и герцеговина</option>
               </select>
               <div class="planner__icon">
                 <picture>
+                  <source type="image/webp"
+                    srcset="img/flags/bosnia-and-herzegovina-70-47.webp 1x, img/flags/bosnia-and-herzegovina-70-47@2x.webp 2x"
+                    media="(min-width: 768px)">
+                  <source type="image/webp"
+                    srcset="img/flags/bosnia-and-herzegovina-35-24.webp 1x, img/flags/bosnia-and-herzegovina-35-24@2x.webp 2x">
                   <source
                     srcset="img/flags/bosnia-and-herzegovina-70-47.png 1x, img/flags/bosnia-and-herzegovina-70-47@2x.png 2x"
                     media="(min-width: 768px)">
@@ -555,11 +574,16 @@
           <div class="planner__countries">
             <div class="planner__country">
               <select class="planner__destination-name planner__destination-name--country planner__open-countries-list"
-                name="country">
+                name="country" aria-label="Выберите страну">
                 <option value="Чехия">Чехия</option>
               </select>
               <div class="planner__icon">
                 <picture>
+                  <source type="image/webp"
+                    srcset="img/flags/flag-czech-70-47.webp 1x, img/flags/flag-czech-70-47@2x.webp 2x"
+                    media="(min-width: 767px)">
+                  <source type="image/webp"
+                    srcset="img/flags/flag-czech-35-24.webp 1x, img/flags/flag-czech-35-24@2x.webp 2x">
                   <source srcset="img/flags/flag-czech-70-47.png 1x, img/flags/flag-czech-70-47@2x.png 2x"
                     media="(min-width: 767px)">
                   <img src="img/flags/flag-czech-35-24.png" srcset="img/flags/flag-czech-35-24@2x.png 2x" alt="Чехия">
@@ -747,6 +771,11 @@
           </p>
           <label class="planner__textarea-label planner__textarea-label--bosnia" for="plans-fiel-1">Босния и Герцеговина
             <picture class="planner__flag planner__flag--bosnia">
+              <source type="image/webp"
+                srcset="img/flags/bosnia-and-herzegovina-70-47.webp 1x, img/flags/bosnia-and-herzegovina-70-47@2x.webp 2x"
+                media="(min-width: 767px)">
+              <source type="image/webp"
+                srcset="img/flags/bosnia-and-herzegovina-35-24.webp 1x, img/flags/bosnia-and-herzegovina-35-24@2x.webp 2x">
               <source
                 srcset="img/flags/bosnia-and-herzegovina-70-47.png 1x, img/flags/bosnia-and-herzegovina-70-47@2x.png 2x"
                 media="(min-width: 767px)">
@@ -758,6 +787,11 @@
           </textarea>
           <label class="planner__textarea-label" for="plans-field-2">Чехия
             <picture class="planner__flag planner__flag--czech">
+              <source type="image/webp"
+                srcset="img/flags/flag-czech-70-47.webp 1x, img/flags/flag-czech-70-47@2x.webp 2x"
+                media="(min-width: 767px)">
+              <source type="image/webp"
+                srcset="img/flags/flag-czech-35-24.webp 1x, img/flags/flag-czech-35-24@2x.webp 2x">
               <source srcset="img/flags/flag-czech-70-47.png 1x, img/flags/flag-czech-70-47@2x.png 2x"
                 media="(min-width: 767px)">
               <img src="img/flags/flag-czech-35-24.png" srcset="img/flags/flag-czech-35-24@2x.png 2x" alt="Чехия">
@@ -789,6 +823,13 @@
       <div class="page-footer__content">
         <a href="index.html" class="link-reset">
           <picture>
+            <source type="image/webp"
+              srcset="img/logos/logo-blue-desktop.webp 1x, img/logos/logo-blue-desktop@2x.webp 2x"
+              media="(min-width: 1440px)">
+            <source type="image/webp" srcset="img/logos/logo-blue-tablet.webp 1x, img/logos/logo-blue-tablet@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source type="image/webp"
+              srcset="img/logos/logo-blue-mobile.webp 1x, img/logos/logo-blue-mobile@2x.webp 2x">
             <source srcset="img/logos/logo-blue-desktop.png 1x, img/logos/logo-blue-desktop@2x.png 2x"
               media="(min-width: 1440px)">
             <source srcset="img/logos/logo-blue-tablet.png 1x, img/logos/logo-blue-tablet@2x.png 2x"
@@ -838,7 +879,8 @@
           </li>
         </ul>
       </div>
-      <a class="page-footer__developers link-reset" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer">
+      <a class="page-footer__developers link-reset" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+        rel="noreferrer">
         <span class="page-footer__text">Разработано</span>
         <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
       </a>
