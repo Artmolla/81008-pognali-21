@@ -89,6 +89,14 @@
 
   margin-bottom: 20px;
 
+  @media (min-width: 591px) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: 665px) {
+    justify-content: space-around;
+  }
+
   @media (min-width: $tablet-width) {
     @include flex;
 
