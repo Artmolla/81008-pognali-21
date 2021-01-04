@@ -14,6 +14,12 @@
       <div class="menu__header">
         <a class="page-header__logo link-reset">
           <picture class="page-header__image">
+            <source type="image/webp" srcset="img/logos/logo-desktop.webp 1x, img/logos/logo-desktop@2x.webp 2x"
+              media="(min-width: 1440px)">
+            <source type="image/webp" srcset="img/logos/logo-tablet.webp 1x, img/logos/logo-tablet@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source type="image/webp"
+              srcset="img/logos/logo-white-mobile.webp 1x, img/logos/logo-white-mobile@2x.webp 2x">
             <source srcset="img/logos/logo-desktop.png 1x, img/logos/logo-desktop@2x.png 2x"
               media="(min-width: 1440px)">
             <source srcset="img/logos/logo-tablet.png 1x, img/logos/logo-tablet@2x.png 2x" media="(min-width: 768px)">
@@ -205,6 +211,11 @@
           </div>
           <div class="directions__content">
             <picture class="directions__flag">
+              <source type="image/webp"
+                srcset="img/flags/flag-thailand-70-47.webp 1x, img/flags/flag-thailand-70-47@2x.webp 2x"
+                media="(min-width: 767px)">
+              <source type="image/webp"
+                srcset="img/flags/flag-thailand-35-24.webp 1x, img/flags/flag-thailand-35-24@2x.webp 2x">
               <source srcset="img/flags/flag-thailand-70-47.png 1x, img/flags/flag-thailand-70-47@2x.png 2x"
                 media="(min-width: 767px)">
               <img src="img/flags/flag-thailand-35-24.png" srcset="img/flags/flag-thailand-35-24@2x.png 2x"
@@ -231,6 +242,11 @@
           </div>
           <div class="directions__content">
             <picture class="directions__flag">
+              <source type="image/webp"
+                srcset="img/flags/flag-france-70-47.webp 1x, img/flags/flag-france-70-47@2x.webp 2x"
+                media="(min-width: 768px)">
+              <source type="image/webp"
+                srcset="img/flags/flag-france-35-24.webp 1x, img/flags/flag-france-35-24@2x.webp 2x">
               <source srcset="img/flags/flag-france-70-47.png 1x, img/flags/flag-france-70-47@2x.png 2x"
                 media="(min-width: 768px)">
               <img src="img/flags/flag-france-35-24.png" srcset="img/flags/flag-france-35-24@2x.png 2x"
@@ -257,6 +273,11 @@
           </div>
           <div class="directions__content directions__content--czech">
             <picture class="directions__flag">
+              <source type="image/webp"
+                srcset="img/flags/flag-czech-70-47.webp 1x, img/flags/flag-czech-70-47@2x.webp 2x"
+                media="(min-width: 768px)">
+              <source type="image/webp"
+                srcset="img/flags/flag-czech-35-24.webp 1x, img/flags/flag-czech-35-24@2x.webp 2x">
               <source srcset="img/flags/flag-czech-70-47.png 1x, img/flags/flag-czech-70-47@2x.png 2x"
                 media="(min-width: 768px)">
               <img src="img/flags/flag-czech-35-24.png" srcset="img/flags/flag-czech-35-24@2x.png 2x" alt="Флаг Чехии">
@@ -310,6 +331,11 @@
               <span class="user-score__score">99</span>level
             </div>
             <picture class="user-card__image">
+              <source type="image/webp"
+                srcset="img/users/firsova-tablet-285-285.webp 1x, img/users/firsova-tablet-285-285@2x.webp 2x"
+                media="(min-width: 767px)">
+              <source type="image/webp"
+                srcset="img/users/firsova-mobile-270-270.webp 1x, img/users/firsova-mobile-270-270@2x.webp 2x">
               <source srcset="img/users/firsova-tablet-285-285.png 1x, img/users/firsova-tablet-285-285@2x.png 2x"
                 media="(min-width: 767px)">
               <img src="img/users/firsova-mobile-270-270.png" srcset="img/users/firsova-mobile-270-270@2x.png 2x"
@@ -318,18 +344,30 @@
             <div class="user-card__content">
               <ul class="flag-list flag-list--index list-reset">
                 <li class="flag-list__item">
-                  <img class="flag-list__img" src="img/flags/flag-sri-lanka-35-24.png" alt="Флаг Шри-Ланки" width="35"
-                    height="25">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/flags/flag-sri-lanka-35-24.webp 1x, img/flags/flag-sri-lanka-35-24@2x.webp 2x">
+                    <img class="flag-list__img" src="img/flags/flag-sri-lanka-35-24.png"
+                      srcset="img/flags/flag-sri-lanka-35-24@2x.png 2x" alt="Флаг Шри-Ланки">
+                  </picture>
                   <span class="tooltip tooltip--flags">Шри Ланка</span>
                 </li>
                 <li class="flag-list__item">
-                  <img class="flag-list__img" src="img/flags/flag-thailand-35-24.png" alt="Флаг Тайланда" width="35"
-                    height="25">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/flags/flag-thailand-35-24.webp 1x, img/flags/flag-thailand-35-24@2x.webp 2x">
+                    <img class="flag-list__img" src="img/flags/flag-thailand-35-24.png"
+                      srcset="img/flags/flag-thailand-35-24@2x.png 2x" alt="Флаг Тайланда">
+                  </picture>
                   <span class="tooltip tooltip--flags">Тайланд</span>
                 </li>
                 <li class="flag-list__item">
-                  <img class="flag-list__img" src="img/flags/flag-seychelles-35-24.png" alt="Флаг Сейшелы" width="35"
-                    height="25">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/flags/flag-seychelles-35-24.webp 1x, img/flags/flag-seychelles-35-24@2x.webp 2x">
+                    <img class="flag-list__img" src="img/flags/flag-seychelles-35-24.png"
+                      srcset="img/flags/flag-seychelles-35-24@2x.png 2x" alt="Флаг Сейшелы">
+                  </picture>
                   <span class="tooltip tooltip--flags">Сейшелы</span>
                 </li>
               </ul>
@@ -417,6 +455,11 @@
               <span class="user-score__score">80</span>level
             </div>
             <picture class="user-card__image">
+              <source type="image/webp"
+                srcset="img/users/demin-tablet-285-285.webp 1x, img/users/demin-tablet-285-285@2x.webp 2x"
+                media="(min-width: 767px)">
+              <source type="image/webp"
+                srcset="img/users/demin-mobile-270-270.webp 1x, img/users/demin-mobile-270-270@2x.webp 2x">
               <source srcset="img/users/demin-tablet-285-285.png 1x, img/users/demin-tablet-285-285@2x.png 2x"
                 media="(min-width: 767px)">
               <img src="img/users/demin-mobile-270-270.png" srcset="img/users/demin-mobile-270-270@2x.png 2x"
@@ -425,13 +468,21 @@
             <div class="user-card__content">
               <ul class="flag-list flag-list--index list-reset">
                 <li class="flag-list__item">
-                  <img class="flag-list__img" src="img/flags/flag-belgium-35-24.png" alt="Флаг Бельгии" width="35"
-                    height="24">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/flags/flag-belgium-35-24.webp 1x, img/flags/flag-belgium-35-24@2x.webp 2x">
+                    <img class="flag-list__img" src="img/flags/flag-belgium-35-24.png"
+                      srcset="img/flags/flag-belgium-35-24.png 2x" alt="Флаг Бельгии">
+                  </picture>
                   <span class="tooltip tooltip--flags">Бельгия</span>
                 </li>
                 <li class="flag-list__item">
-                  <img class="flag-list__img" src="img/flags/flag-czech-35-24.png" alt="Флаг Чехии" width="35"
-                    height="25">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/flags/flag-czech-35-24.webp 1x, img/flags/flag-czech-35-24@2x.webp 2x">
+                    <img class="flag-list__img" src="img/flags/flag-czech-35-24.png"
+                      srcset="img/flags/flag-czech-35-24@2x.webp 2x" alt="Флаг Чехии">
+                  </picture>
                   <span class="tooltip tooltip--flags">Чехия</span>
                 </li>
               </ul>
@@ -517,8 +568,11 @@
     </section>
     <section class="register">
       <picture>
-        <source srcset="img/rates-desktop.png" media="(min-width: 1439px)">
-        <img class="register__image" src="img/rates.png" alt="icon">
+        <source type="image/webp" srcset="img/rates-desktop.webp 1x, img/rates-desktop@2x.webp 2x"
+          media="(min-width: 1439px)">
+        <source type="image/webp" srcset="img/rates.webp 1x, img/rates@2x.webp 2x">
+        <source srcset="img/rates-desktop.png 1x, img/rates-desktop@2x.png 2x" media="(min-width: 1439px)">
+        <img class="register__image" src="img/rates.png" srcset="img/rates@2x.png 2x" alt="icon">
       </picture>
       <div class="user-price">
         <h2 class="user-price__title">Добавьте свой профиль</h2>
@@ -646,12 +700,19 @@
       <h2 class="visually-hidden">Карта</h2>
       <iframe class="map__frame"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.04368775839!2d30.318834002417514!3d59.93851937462457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2sBolshaya%20Konyushennaya%20St%2C%2018%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sua!4v1607542697664!5m2!1sen!2sua"
-        width="270" height="424" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        width="270" height="424" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="Наш адрес на карте"></iframe>
     </section>
     <footer class="page-footer">
       <div class="page-footer__content">
         <a class="link-reset">
           <picture>
+            <source type="image/webp"
+              srcset="img/logos/logo-blue-desktop.webp 1x, img/logos/logo-blue-desktop@2x.webp 2x"
+              media="(min-width: 1440px)">
+            <source type="image/webp" srcset="img/logos/logo-blue-tablet.webp 1x, img/logos/logo-blue-tablet@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source type="image/webp"
+              srcset="img/logos/logo-blue-mobile.webp 1x, img/logos/logo-blue-mobile@2x.webp 2x">
             <source srcset="img/logos/logo-blue-desktop.png 1x, img/logos/logo-blue-desktop@2x.png 2x"
               media="(min-width: 1440px)">
             <source srcset="img/logos/logo-blue-tablet.png 1x, img/logos/logo-blue-tablet@2x.png 2x"
@@ -701,7 +762,7 @@
           </li>
         </ul>
       </div>
-      <a class="page-footer__developers link-reset" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+      <a class="page-footer__developers link-reset" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer">
         <span class="page-footer__text">Разработано</span>
         <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
       </a>
