@@ -74,15 +74,17 @@
 }
 
 .user-card__heart-icon--catalog {
+  fill-rule: evenodd;
+
   @media (min-width: $tablet-width) {
     width: 20px;
     height: 20px;
   }
 }
 
-.user-card__icon-path--liked {
-  fill-rule: nonzero;
+.user-card__heart-icon--liked {
   color: $red;
+  fill-rule: initial;
 }
 
 .user-card__like-container:hover {
