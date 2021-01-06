@@ -31,7 +31,7 @@
     align-items: center;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: 790px) {
     flex-basis: 50%;
   }
 }

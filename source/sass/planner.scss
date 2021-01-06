@@ -633,6 +633,7 @@
 .planner__destination-name--choose-country {
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
+    padding-right: 20px;
   }
 }
 
@@ -801,5 +802,12 @@
   @media (min-width: $desktop-width) {
     position: relative;
     top: 9px;
+  }
+}
+
+.planner__arrow-icon {
+  @media (min-width: $tablet-width) {
+    width: 25px;
+    height: 24px;
   }
 }
