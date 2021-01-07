@@ -119,6 +119,7 @@ const clean = () => {
 }
 
 exports.clean = clean;
+
 // Server
 
 const server = (done) => {
@@ -139,7 +140,7 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html", gulp.series("html"), sync.reload);
+  gulp.watch("source/*.html", gulp.series("html", sync.reload));
 }
 
 // Build
