@@ -86,10 +86,10 @@ exports.html = html;
 const scripts = () => {
   return gulp.src("source/js/*.js")
   //   .pipe(uglify())
-    .pipe(rename(function (path) {
-      path.basename += ".min";
-      path.extname = ".js";
-  }))
+  //   .pipe(rename(function (path) {
+  //     path.basename += ".min";
+  //     path.extname = ".js";
+  // }))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
