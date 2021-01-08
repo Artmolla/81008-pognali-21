@@ -63,10 +63,10 @@ exports.createWebp = createWebp;
 //Sprite
 
 const sprite = () => {
-  return gulp.src("source/img/svg/*.svg")
+  return gulp.src("source/img/*.svg")
   .pipe(svgstore())
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img/svg"))
+  .pipe(gulp.dest("build/img/"))
 }
 
 exports.sprite = sprite;
@@ -85,11 +85,6 @@ exports.html = html;
 
 const scripts = () => {
   return gulp.src("source/js/*.js")
-  //   .pipe(uglify())
-  //   .pipe(rename(function (path) {
-  //     path.basename += ".min";
-  //     path.extname = ".js";
-  // }))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
