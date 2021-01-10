@@ -65,4 +65,9 @@
   @media (min-width: $tablet-width) {
     padding-top: 92px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0;
+  }
 }
