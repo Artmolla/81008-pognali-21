@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" as="font" href="fonts/bloggersans.woff" type="font/woff" crossorigin>
+  <link rel="preload" as="font" href="fonts/bloggersans-bold.woff" type="font/woff" crossorigin>
+  <link rel="preload" as="font" href="fonts/bloggersans-light.woff" type="font/woff" crossorigin>
+  <link rel="preload" as="font" href="fonts/bloggersans-medium.woff" type="font/woff" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Погнали</title>
 </head>
@@ -147,7 +151,7 @@
       <path d="M0 9L9.75.34v17.32L0 9z" fill="currentColor" />
     </symbol>
   </svg>
-  <header class="page-header">
+  <header class="page-header page-header--menu-open">
     <div class="menu">
       <div class="menu__header">
         <a class="page-header__logo link-reset">
@@ -164,16 +168,17 @@
             <img src="img/logos/logo-white-mobile.png" srcset="img/logos/logo-white-mobile@2x.png 2x" alt="Погнали?">
           </picture>
         </a>
-        <button class="page-header__toggle-menu-button button-reset" type="button">
+        <button class="page-header__toggle-menu-button page-header__toggle-menu-button--menu-open button-reset"
+          type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="authorization">
+        <div class="authorization authorization--menu-open">
           <a class="button authorization__button link-reset">
             <span class="authorization__text">Авторизация</span>
           </a>
         </div>
       </div>
-      <div class="menu__body">
+      <div class="menu__body menu__body--menu-open">
         <nav class="main-nav">
           <ul class="main-nav__list site-list list-reset">
             <li class="main-nav__item">
@@ -822,9 +827,9 @@
       </a>
     </footer>
   </main>
-  <script src="js/toggle-menu.js"></script>
-  <script src="js/user-score-progress-bar.js"></script>
-  <script src="js/business-rates.js"></script>
+  <script src="js/toggle-menu.min.js"></script>
+  <script src="js/user-score-progress-bar.min.js"></script>
+  <script src="js/business-rates.min.js"></script>
 </body>
 
 </html>
