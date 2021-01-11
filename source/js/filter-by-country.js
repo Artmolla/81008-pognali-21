@@ -5,7 +5,6 @@ let minimizeFilterButton = document.querySelector('.button--minimize');
 
 openFilterButton.addEventListener('click', function(evt){
   evt.preventDefault();
-
   countriesFilterPopup.classList.toggle('alphabet--open');
   openFilterButton.classList.toggle('button--close-filter');
   continentsList.classList.toggle('continents--open');
