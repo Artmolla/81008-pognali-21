@@ -155,16 +155,18 @@
       <div class="menu__header">
         <a class="page-header__logo link-reset" href="index.html">
           <picture class="page-header__image">
-            <source type="image/webp" srcset="img/logos/logo-desktop.webp 1x, img/logos/logo-desktop@2x.webp 2x"
-              media="(min-width: 1440px)">
-            <source type="image/webp" srcset="img/logos/logo-tablet.webp 1x, img/logos/logo-tablet@2x.webp 2x"
-              media="(min-width: 768px)">
-            <source type="image/webp"
+            <source class="page-header__image--desktop-webp" type="image/webp"
+              srcset="img/logos/logo-desktop.webp 1x, img/logos/logo-desktop@2x.webp 2x" media="(min-width: 1440px)">
+            <source class="page-header__image--tablet-webp" type="image/webp"
+              srcset="img/logos/logo-tablet.webp 1x, img/logos/logo-tablet@2x.webp 2x" media="(min-width: 768px)">
+            <source class="page-header__image--mobile-webp" type="image/webp"
               srcset="img/logos/logo-white-mobile.webp 1x, img/logos/logo-white-mobile@2x.webp 2x">
-            <source srcset="img/logos/logo-desktop.png 1x, img/logos/logo-desktop@2x.png 2x"
-              media="(min-width: 1440px)">
-            <source srcset="img/logos/logo-tablet.png 1x, img/logos/logo-tablet@2x.png 2x" media="(min-width: 768px)">
-            <img src="img/logos/logo-white-mobile.png" srcset="img/logos/logo-white-mobile@2x.png 2x" alt="Погнали?">
+            <source class="page-header__image--desktop-png"
+              srcset="img/logos/logo-desktop.png 1x, img/logos/logo-desktop@2x.png 2x" media="(min-width: 1440px)">
+            <source class="page-header__image--tablet-png"
+              srcset="img/logos/logo-tablet.png 1x, img/logos/logo-tablet@2x.png 2x" media="(min-width: 768px)">
+            <img class="page-header__image--mobile-png" src="img/logos/logo-white-mobile.png"
+              srcset="img/logos/logo-white-mobile@2x.png 2x" alt="Погнали?">
           </picture>
         </a>
         <button class="page-header__toggle-menu-button page-header__toggle-menu-button--menu-open button-reset"

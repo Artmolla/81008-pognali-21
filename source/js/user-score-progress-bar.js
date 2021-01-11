@@ -3,7 +3,6 @@ let usersScore = document.getElementsByClassName('user-score__score');
 const radius = circles[0].r.baseVal.value;
 const circumference = radius * 2 * Math.PI - 4;
 
-
 for (let i = 0; i < circles.length; i++) {
   circles[i].style.strokeDasharray = `${circumference} ${circumference}`;
   circles[i].style.strokeDashoffset = `${circumference}`;
