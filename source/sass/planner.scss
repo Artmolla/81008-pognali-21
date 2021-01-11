@@ -712,6 +712,11 @@
   }
 }
 
+.planner__textarea--error {
+  border-color: $special-pink;
+  position: relative;
+}
+
 .planner__textarea-label {
   @include flex;
 
