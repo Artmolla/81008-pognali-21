@@ -180,7 +180,7 @@
 }
 
 .planner__info {
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   color: $special-grey;
   margin: -5px 0 0 0;
 
@@ -188,6 +188,7 @@
     font-size: 20px;
     line-height: 24px;
     margin: -7px 0 17px 0;
+    padding-bottom: 20px;
     padding-right: 10px;
   }
 
@@ -681,7 +682,7 @@
   border: 1px solid $special-grey-borders;
   border-radius: 4px;
   padding: 10px 14px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: $special-blue-dark-opacity;
 
   @media (min-width: $tablet-width) {
@@ -769,7 +770,7 @@
     left: -14px;
     content: "";
     width: 13px;
-    height: 276px;
+    height: 279px;
     border-width: 2px 0 2px 2px;
     border-style: solid;
     border-color: $basic-blue;
