@@ -9,7 +9,7 @@
   border-radius: 0 0 30px 30px;
   margin-top: -1px;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 1.5dppx) {
     background-image: url("../img/about-mobile@2x.png");
     background-size: 292px auto;
   }
@@ -21,7 +21,7 @@
     padding: 100px 74px 89px 74px;
     border-radius: 0 0 60px 60px;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx) {
       background-image: url("../img/about-bg-tablet@2x.png");
       background-size: 720px auto;
     }
@@ -38,7 +38,7 @@
     padding: 133px 48% 163px 130px;
     border-radius: 0 0 56px 56px;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx) {
       background-image:
         url("../img/about-bg-desktop@2x.png"),
         url("../img/about-bg-rect-desktop@2x.png");
