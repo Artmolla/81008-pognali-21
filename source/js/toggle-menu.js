@@ -12,6 +12,7 @@ const headerLogoDesktopWebp = document.querySelector('.page-header__image--deskt
 menuBody.classList.remove('menu__body--menu-open');
 openMenuButton.classList.remove('page-header__toggle-menu-button--menu-open');
 pageHeader.classList.remove('page-header--menu-open');
+pageHeader.classList.remove('page-header--no-js');
 authorizationButton.classList.remove('authorization--menu-open');
 
 openMenuButton.addEventListener('click', function(evt){
