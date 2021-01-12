@@ -19,6 +19,10 @@
   justify-content: flex-start;
   margin: 0;
 
+  @media (min-width: 558px) and (max-width: 767px) {
+    flex-basis: 100%;
+  }
+
   @media (min-width: $tablet-width) {
     width: 64%;
     grid-area: tag-list;
