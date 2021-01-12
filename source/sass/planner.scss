@@ -156,7 +156,7 @@
     padding-bottom: 40px;
     padding-top: 48px;
     padding-left: 41px;
-    margin-bottom: 52px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -777,10 +777,10 @@
     z-index: 10;
 
     @media (min-width: $tablet-width) {
-      height: 270px;
+      height: 267px;
       left: unset;
       right: -9px;
-      top: 42px;
+      top: 46px;
       border-width: 0 0 0 2px;
     }
 
