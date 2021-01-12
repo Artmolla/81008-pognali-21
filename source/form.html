@@ -128,17 +128,17 @@
       <div class="menu__header">
         <a class="page-header__logo link-reset" href="index.html">
           <picture class="page-header__image">
-            <source class="page-header__image--desktop-webp" type="image/webp"
+            <source class="page-header__image page-header__image--desktop-webp" type="image/webp"
               srcset="img/logos/logo-desktop.webp 1x, img/logos/logo-desktop@2x.webp 2x" media="(min-width: 1440px)">
-            <source class="page-header__image--tablet-webp" type="image/webp"
+            <source class="page-header__image page-header__image--tablet-webp" type="image/webp"
               srcset="img/logos/logo-tablet.webp 1x, img/logos/logo-tablet@2x.webp 2x" media="(min-width: 768px)">
-            <source class="page-header__image--mobile-webp" type="image/webp"
+            <source class="page-header__image page-header__image--mobile-webp" type="image/webp"
               srcset="img/logos/logo-white-mobile.webp 1x, img/logos/logo-white-mobile@2x.webp 2x">
-            <source class="page-header__image--desktop-png"
+            <source class="page-header__image page-header__image--desktop-png"
               srcset="img/logos/logo-desktop.png 1x, img/logos/logo-desktop@2x.png 2x" media="(min-width: 1440px)">
-            <source class="page-header__image--tablet-png"
+            <source class="page-header__image page-header__image--tablet-png"
               srcset="img/logos/logo-tablet.png 1x, img/logos/logo-tablet@2x.png 2x" media="(min-width: 768px)">
-            <img class="page-header__image--mobile-png" src="img/logos/logo-white-mobile.png"
+            <img class="page-header__image page-header__image--mobile-png" src="img/logos/logo-white-mobile.png"
               srcset="img/logos/logo-white-mobile@2x.png 2x" alt="Погнали?">
           </picture>
         </a>
@@ -269,44 +269,46 @@
         </div>
         <div class="profile__container profile__container--transport">
           <h3 class="profile__title profile__title--transport">Транспорт</h3>
-          <ul class="transport-list list-reset">
-            <li class="transport-list__item transport-list__item--active">
-              <input class="transport-list__checkbox visually-hidden" id="plane-checkbox" type="checkbox"
-                name="transport" value="Самолет" checked>
-              <label class="transport-list__label" for="plane-checkbox" aria-label="Самолет">
-                <svg class="transport-list__icon" width="18" height="17">
-                  <use xlink:href="#icon-plane"></use>
-                </svg>
-              </label>
-            </li>
-            <li class="transport-list__item transport-list__item--active">
-              <input class="transport-list__checkbox visually-hidden" id="bus-checkbox" type="checkbox" name="transport"
-                value="Автобус" checked>
-              <label class="transport-list__label" for="bus-checkbox" aria-label="Автобус">
-                <svg class="transport-list__icon" width="18" height="17">
-                  <use xlink:href="#icon-bus"></use>
-                </svg>
-              </label>
-            </li>
-            <li class="transport-list__item transport-list__item">
-              <input class="transport-list__checkbox visually-hidden" id="bicycle-checkbox" type="checkbox"
-                name="transport" value="Велосипед">
-              <label class="transport-list__label" for="bicycle-checkbox" aria-label="Велосипед">
-                <svg class="transport-list__icon" width="18" height="17">
-                  <use xlink:href="#icon-bike"></use>
-                </svg>
-              </label>
-            </li>
-            <li class="transport-list__item transport-list__item--active">
-              <input class="transport-list__checkbox visually-hidden" id="run-checkbox" type="checkbox" name="transport"
-                value="Бег" checked>
-              <label class="transport-list__label" for="run-checkbox" aria-label="Бег">
-                <svg class="transport-list__icon" width="18" height="17">
-                  <use xlink:href="#icon-run"></use>
-                </svg>
-              </label>
-            </li>
-          </ul>
+          <form action="#" method="post">
+            <ul class="transport-list list-reset">
+              <li class="transport-list__item transport-list__item--active">
+                <input class="transport-list__checkbox visually-hidden" id="plane-checkbox" type="checkbox"
+                  name="transport" value="Самолет" checked>
+                <label class="transport-list__label" for="plane-checkbox" aria-label="Самолет">
+                  <svg class="transport-list__icon" width="18" height="17">
+                    <use xlink:href="#icon-plane"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="transport-list__item transport-list__item--active">
+                <input class="transport-list__checkbox visually-hidden" id="bus-checkbox" type="checkbox"
+                  name="transport" value="Автобус" checked>
+                <label class="transport-list__label" for="bus-checkbox" aria-label="Автобус">
+                  <svg class="transport-list__icon" width="18" height="17">
+                    <use xlink:href="#icon-bus"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="transport-list__item transport-list__item">
+                <input class="transport-list__checkbox visually-hidden" id="bicycle-checkbox" type="checkbox"
+                  name="transport" value="Велосипед">
+                <label class="transport-list__label" for="bicycle-checkbox" aria-label="Велосипед">
+                  <svg class="transport-list__icon" width="18" height="17">
+                    <use xlink:href="#icon-bike"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="transport-list__item transport-list__item--active">
+                <input class="transport-list__checkbox visually-hidden" id="run-checkbox" type="checkbox"
+                  name="transport" value="Бег" checked>
+                <label class="transport-list__label" for="run-checkbox" aria-label="Бег">
+                  <svg class="transport-list__icon" width="18" height="17">
+                    <use xlink:href="#icon-run"></use>
+                  </svg>
+                </label>
+              </li>
+            </ul>
+          </form>
         </div>
       </div>
     </section>
