@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-position: top 64px left -2px;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 1.5dppx) {
     background-image: url("../img/companions-bg@2x.png");
     background-size: 297px auto;
   }
@@ -22,7 +22,7 @@
     margin-top: -60px;
     border-radius: 0 0 60px 60px;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx) {
       background-image: url("../img/companions-bg-tablet@2x.png");
       background-size: 654px auto;
     }
@@ -40,7 +40,7 @@
     background-repeat: no-repeat;
     background-position: top 130px left 60px;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx) {
       background-image: url("../img/companions-bg-desktop@2x.png");
       background-size: 630px auto;
     }

@@ -123,23 +123,25 @@
       </g>
     </symbol>
   </svg>
-  <header class="page-header page-header--menu-open page-header--inner">
+  <header class="page-header page-header--menu-open page-header--no-js page-header--inner">
     <div class="menu">
       <div class="menu__header">
         <a class="page-header__logo link-reset" href="index.html">
-          <picture class="page-header__image">
-            <source class="page-header__image--desktop-webp" type="image/webp"
+          <picture class="page-header__image page-header__image--menu-open">
+            <source class="page-header__image page-header__image--desktop-webp" type="image/webp"
               srcset="img/logos/logo-desktop.webp 1x, img/logos/logo-desktop@2x.webp 2x" media="(min-width: 1440px)">
-            <source class="page-header__image--tablet-webp" type="image/webp"
-              srcset="img/logos/logo-tablet.webp 1x, img/logos/logo-tablet@2x.webp 2x" media="(min-width: 768px)">
-            <source class="page-header__image--mobile-webp" type="image/webp"
-              srcset="img/logos/logo-white-mobile.webp 1x, img/logos/logo-white-mobile@2x.webp 2x">
-            <source class="page-header__image--desktop-png"
+            <source class="page-header__image page-header__image--tablet-webp" type="image/webp"
+              srcset="img/logos/logo-blue-tablet.webp 1x, img/logos/logo-blue-tablet@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source class="page-header__image page-header__image--mobile-webp" type="image/webp"
+              srcset="img/logos/logo-blue-mobile.webp 1x, img/logos/logo-blue-mobile@2x.webp 2x">
+            <source class="page-header__image page-header__image--desktop-png"
               srcset="img/logos/logo-desktop.png 1x, img/logos/logo-desktop@2x.png 2x" media="(min-width: 1440px)">
-            <source class="page-header__image--tablet-png"
-              srcset="img/logos/logo-tablet.png 1x, img/logos/logo-tablet@2x.png 2x" media="(min-width: 768px)">
-            <img class="page-header__image--mobile-png" src="img/logos/logo-white-mobile.png"
-              srcset="img/logos/logo-white-mobile@2x.png 2x" alt="Погнали?">
+            <source class="page-header__image page-header__image--tablet-png"
+              srcset="img/logos/logo-blue-tablet.png 1x, img/logos/logo-blue-tablet@2x.png 2x"
+              media="(min-width: 768px)">
+            <img class="page-header__image page-header__image--mobile-png" src="img/logos/logo-blue-mobile.png"
+              srcset="img/logos/logo-blue-mobile@2x.png 2x" alt="Погнали?">
           </picture>
         </a>
         <button class="page-header__toggle-menu-button page-header__toggle-menu-button--menu-open button-reset"
@@ -269,44 +271,46 @@
         </div>
         <div class="profile__container profile__container--transport">
           <h3 class="profile__title profile__title--transport">Транспорт</h3>
-          <ul class="transport-list list-reset">
-            <li class="transport-list__item transport-list__item--active">
-              <input class="transport-list__checkbox visually-hidden" id="plane-checkbox" type="checkbox"
-                name="transport" value="Самолет" checked>
-              <label class="transport-list__label" for="plane-checkbox" aria-label="Самолет">
-                <svg class="transport-list__icon" width="18" height="17">
-                  <use xlink:href="#icon-plane"></use>
-                </svg>
-              </label>
-            </li>
-            <li class="transport-list__item transport-list__item--active">
-              <input class="transport-list__checkbox visually-hidden" id="bus-checkbox" type="checkbox" name="transport"
-                value="Автобус" checked>
-              <label class="transport-list__label" for="bus-checkbox" aria-label="Автобус">
-                <svg class="transport-list__icon" width="18" height="17">
-                  <use xlink:href="#icon-bus"></use>
-                </svg>
-              </label>
-            </li>
-            <li class="transport-list__item transport-list__item">
-              <input class="transport-list__checkbox visually-hidden" id="bicycle-checkbox" type="checkbox"
-                name="transport" value="Велосипед">
-              <label class="transport-list__label" for="bicycle-checkbox" aria-label="Велосипед">
-                <svg class="transport-list__icon" width="18" height="17">
-                  <use xlink:href="#icon-bike"></use>
-                </svg>
-              </label>
-            </li>
-            <li class="transport-list__item transport-list__item--active">
-              <input class="transport-list__checkbox visually-hidden" id="run-checkbox" type="checkbox" name="transport"
-                value="Бег" checked>
-              <label class="transport-list__label" for="run-checkbox" aria-label="Бег">
-                <svg class="transport-list__icon" width="18" height="17">
-                  <use xlink:href="#icon-run"></use>
-                </svg>
-              </label>
-            </li>
-          </ul>
+          <form action="#" method="post">
+            <ul class="transport-list list-reset">
+              <li class="transport-list__item transport-list__item--active">
+                <input class="transport-list__checkbox visually-hidden" id="plane-checkbox" type="checkbox"
+                  name="transport" value="Самолет" checked>
+                <label class="transport-list__label" for="plane-checkbox" aria-label="Самолет">
+                  <svg class="transport-list__icon" width="18" height="17">
+                    <use xlink:href="#icon-plane"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="transport-list__item transport-list__item--active">
+                <input class="transport-list__checkbox visually-hidden" id="bus-checkbox" type="checkbox"
+                  name="transport" value="Автобус" checked>
+                <label class="transport-list__label" for="bus-checkbox" aria-label="Автобус">
+                  <svg class="transport-list__icon" width="18" height="17">
+                    <use xlink:href="#icon-bus"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="transport-list__item transport-list__item">
+                <input class="transport-list__checkbox visually-hidden" id="bicycle-checkbox" type="checkbox"
+                  name="transport" value="Велосипед">
+                <label class="transport-list__label" for="bicycle-checkbox" aria-label="Велосипед">
+                  <svg class="transport-list__icon" width="18" height="17">
+                    <use xlink:href="#icon-bike"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="transport-list__item transport-list__item--active">
+                <input class="transport-list__checkbox visually-hidden" id="run-checkbox" type="checkbox"
+                  name="transport" value="Бег" checked>
+                <label class="transport-list__label" for="run-checkbox" aria-label="Бег">
+                  <svg class="transport-list__icon" width="18" height="17">
+                    <use xlink:href="#icon-run"></use>
+                  </svg>
+                </label>
+              </li>
+            </ul>
+          </form>
         </div>
       </div>
     </section>
@@ -379,7 +383,7 @@
             </div>
           </div>
           <p class="planner__info planner__info--step-1">
-            Укажите предпочтительное количество попутчиков, которых <br class="hide-on-mobile hide-on-tablets">вы хотели
+            Укажите предпочтительное количество попутчиков, которых <br class="hide-on-tablets">вы хотели
             бы позвать в поездку и ее предполагаемую
             длительность.
           </p>
@@ -795,17 +799,18 @@
               </li>
             </ul>
             <ul class="alphabet__countries-list list-reset">
-              <li class="alphabet__country">Австралия</li>
-              <li class="alphabet__country">Австрия</li>
-              <li class="alphabet__country">Азербайджан</li>
-              <li class="alphabet__country">Албания</li>
-              <li class="alphabet__country">Алжир</li>
-              <li class="alphabet__country">Ангола</li>
-              <li class="alphabet__country">Андорра</li>
-              <li class="alphabet__country alphabet__country--long-name">Антигуа и Барбуда</li>
-              <li class="alphabet__country">Аргентина</li>
-              <li class="alphabet__country">Армения</li>
-              <li class="alphabet__country">Афганистан</li>
+              <li class="alphabet__country"><a class="link-reset" href="#">Австралия</a></li>
+              <li class="alphabet__country"><a class="link-reset" href="#">Австрия</a></li>
+              <li class="alphabet__country"><a class="link-reset" href="#">Азербайджан</a></li>
+              <li class="alphabet__country"><a class="link-reset" href="#">Албания</a></li>
+              <li class="alphabet__country"><a class="link-reset" href="#">Алжир</a></li>
+              <li class="alphabet__country"><a class="link-reset" href="#">Ангола</a></li>
+              <li class="alphabet__country"><a class="link-reset" href="#">Андорра</a></li>
+              <li class="alphabet__country alphabet__country--long-name"><a class="link-reset" href="#">Антигуа и
+                  Барбуда</a></li>
+              <li class="alphabet__country"><a class="link-reset" href="#">Аргентина</a></li>
+              <li class="alphabet__country"><a class="link-reset" href="#">Армения</a></li>
+              <li class="alphabet__country"><a class="link-reset" href="#">Афганистан</a></li>
             </ul>
           </div>
         </fieldset>
@@ -829,10 +834,8 @@
               </ul>
             </div>
           </div>
-          <p class="planner__info planner__info--step-3">
-            Наконец, расскажите о своих планах времяпровождения. <br class="hide-on-mobile hide-on-tablets">Можно писать
-            в свободной форме и ставить тэги.
-          </p>
+          <p class="planner__info planner__info--step-3">Наконец, расскажите о своих планах времяпровождения. <br>Можно
+            писать в свободной форме и ставить тэги.</p>
           <label class="planner__textarea-label planner__textarea-label--bosnia" for="plans-fiel-1">Босния и Герцеговина
             <picture class="planner__flag planner__flag--bosnia">
               <source type="image/webp"

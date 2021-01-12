@@ -9,7 +9,7 @@
     right 48px top 147px,
     left top -76px;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 1.5dppx) {
     background-image:
       url("../img/traveller-illustration-mobile@2x.png"),
       url("../img/globe-back-mobile@2x.png");
@@ -26,7 +26,7 @@
       bottom 281px right 111px,
       bottom 142px left;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx) {
       background-image:
         url("../img/traveller-illustration-tablet@2x.png"),
         url("../img/globe-back-tablet@2x.png");
@@ -48,7 +48,7 @@
       bottom 1px right 405px,
       bottom 1px left;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx) {
       background-image:
         url("../img/traveller-illustration-desktop@2x.png"),
         url("../img/globe-back-desktop@2x.png");

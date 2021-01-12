@@ -273,6 +273,10 @@
 .user-card--catalog {
   @include flex;
 
+  @media (min-width: 321px) and (max-width: 767px) {
+    max-width: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     align-items: self-start;
@@ -313,7 +317,7 @@
 }
 
 .user-card__user-name--catalog {
-  flex: 0 1 36%;
+  flex: 0 1 calc(100% - 145px);
   text-align: left;
   margin-top: 0;
   padding-left: 16px;

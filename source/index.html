@@ -151,26 +151,29 @@
       <path d="M0 9L9.75.34v17.32L0 9z" fill="currentColor" />
     </symbol>
   </svg>
-  <header class="page-header page-header--menu-open">
+  <header class="page-header page-header--menu-open page-header--no-js">
     <div class="menu">
       <div class="menu__header">
         <a class="page-header__logo link-reset">
-          <picture class="page-header__image">
-            <source class="page-header__image--desktop-webp" type="image/webp"
+          <picture class="page-header__image page-header__image--menu-open">
+            <source class="page-header__image page-header__image--desktop-webp" type="image/webp"
               srcset="img/logos/logo-desktop.webp 1x, img/logos/logo-desktop@2x.webp 2x" media="(min-width: 1440px)">
-            <source class="page-header__image--tablet-webp" type="image/webp"
-              srcset="img/logos/logo-tablet.webp 1x, img/logos/logo-tablet@2x.webp 2x" media="(min-width: 768px)">
-            <source class="page-header__image--mobile-webp" type="image/webp"
-              srcset="img/logos/logo-white-mobile.webp 1x, img/logos/logo-white-mobile@2x.webp 2x">
-            <source class="page-header__image--desktop-png"
+            <source class="page-header__image page-header__image--tablet-webp" type="image/webp"
+              srcset="img/logos/logo-blue-tablet.webp 1x, img/logos/logo-blue-tablet@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source class="page-header__image page-header__image--mobile-webp" type="image/webp"
+              srcset="img/logos/logo-blue-mobile.webp 1x, img/logos/logo-blue-mobile@2x.webp 2x">
+            <source class="page-header__image page-header__image--desktop-png"
               srcset="img/logos/logo-desktop.png 1x, img/logos/logo-desktop@2x.png 2x" media="(min-width: 1440px)">
-            <source class="page-header__image--tablet-png"
-              srcset="img/logos/logo-tablet.png 1x, img/logos/logo-tablet@2x.png 2x" media="(min-width: 768px)">
-            <img class="page-header__image--mobile-png" src="img/logos/logo-white-mobile.png"
-              srcset="img/logos/logo-white-mobile@2x.png 2x" alt="Погнали?">
+            <source class="page-header__image page-header__image--tablet-png"
+              srcset="img/logos/logo-blue-tablet.png 1x, img/logos/logo-blue-tablet@2x.png 2x"
+              media="(min-width: 768px)">
+            <img class="page-header__image page-header__image--mobile-png" src="img/logos/logo-blue-mobile.png"
+              srcset="img/logos/logo-blue-mobile@2x.png 2x" alt="Погнали?">
           </picture>
         </a>
-        <button class="page-header__toggle-menu-button page-header__toggle-menu-button--menu-open button-reset"
+        <button
+          class="page-header__toggle-menu-button page-header__toggle-menu-button--menu-open page-header__toggle-menu-button--no-js button-reset"
           type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>

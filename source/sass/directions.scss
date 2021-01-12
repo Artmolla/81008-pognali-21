@@ -19,7 +19,7 @@
     border-radius: 0 0 60px 60px;
     margin-top: -60px;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx) {
       background-image:
         url("../img/flags-back@2x.png"),
         url("../img/rectangle-directions-bg-tablet.svg");
@@ -252,14 +252,14 @@
 .directions__image-container--thailand {
   background-image: url("../img/thailand-mobile.png");
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 1.5dppx) {
     background-image: url("../img/thailand-mobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/thailand-tablet.png");
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx) {
       background-image: url("../img/thailand-tablet@2x.png");
     }
   }
@@ -268,14 +268,14 @@
 .directions__image-container--french {
   background-image: url("../img/france-mobile.png");
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 1.5dppx) {
     background-image: url("../img/france-mobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/france-tablet.png");
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx) {
       background-image: url("../img/france-tablet@2x.png");
     }
   }
@@ -284,14 +284,14 @@
 .directions__image-container--czech {
   background-image: url("../img/czech-mobile.png");
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 1.5dppx) {
     background-image: url("../img/czech-mobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/czech-tablet.png");
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx) {
       background-image: url("../img/czech-tablet@2x.png");
     }
   }

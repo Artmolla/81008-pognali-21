@@ -12,7 +12,6 @@
   @include popup-shadow;
 
   @media (min-width: $tablet-width) {
-    // display: grid;
     grid-template-columns: 1fr 34%;
     top: 445px;
     font-weight: 500;
