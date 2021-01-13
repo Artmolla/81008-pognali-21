@@ -27,20 +27,20 @@
   }
 }
 
-// .page-header--scroll {
-//   position: fixed;
-//   z-index: 100;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   padding: 27px 25px 27px 27px;
-//   color: $special-midnight;
-//   background-color: $white;
+.page-header--scroll {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 27px 25px 27px 27px;
+  color: $special-midnight;
+  background-color: $white;
 
-//   @media (min-width: $tablet-width) {
-//     padding: 21px 60px;
-//   }
-// }
+  @media (min-width: $tablet-width) {
+    padding: 21px 60px;
+  }
+}
 
 .page-header__toggle-menu-button {
   background-image: url("../img/menu-icon.svg");

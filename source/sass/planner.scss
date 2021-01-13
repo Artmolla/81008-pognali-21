@@ -372,6 +372,10 @@
   }
 }
 
+.planner__checkbox:focus + .planner__checkbox-label::before {
+  border: 1px solid $black;
+}
+
 .planner__checkbox:checked + .planner__checkbox-label::before {
   background-image: url("../img/checkbox-checked.svg");
 }

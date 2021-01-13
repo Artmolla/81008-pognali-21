@@ -89,6 +89,10 @@
     }
   }
 
+  &:focus-within {
+    border: 1px solid $black;
+  }
+
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     flex: 1;
     margin-bottom: 0;
