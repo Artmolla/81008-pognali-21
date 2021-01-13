@@ -181,10 +181,6 @@
 }
 
 .alphabet__letter--form {
-  &:hover .alphabet__item {
-    border-color: red;
-  }
-
   &:active {
     background-color: $basic-blue-dark;
     color: $white;
