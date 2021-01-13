@@ -27,7 +27,7 @@
 
   @media (min-width: $tablet-width) {
     top: unset;
-    bottom: -30px;
+    bottom: -25px;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
@@ -98,12 +98,14 @@
 }
 
 .profile__container--tags {
+  border: none;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
     order: 6;
     margin: 0 75px;
-    padding: 34px 28px 4px 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,6 +117,7 @@
 }
 
 .profile__tags {
+  box-sizing: border-box;
   font-family: $main-font;
   flex-basis: 100%;
   width: 100%;
@@ -126,11 +129,23 @@
   font-size: 16px;
   line-height: 18px;
   color: $special-grey-opacity;
+  border: 1px solid $special-grey-borders;
+  border-radius: 10px;
+  padding: 24px 28px 20px 25px;
+
+  &:hover {
+    border-color: $special-grey-borders-hover;
+  }
+
+  &:active {
+    border-color: $special-grey;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: left;
     font-size: 20px;
     line-height: 22px;
+    padding: 34px 28px 13px 37px;
   }
 }
 

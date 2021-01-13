@@ -9,7 +9,7 @@
   z-index: 10;
   background-color: $white;
 
-  @include popup-shadow;
+  @include alphabet-popup-shadow;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 34%;
@@ -28,6 +28,7 @@
 
 .alphabet__title {
   color: white;
+  box-sizing: border-box;
 
   @include flex;
   font-weight: 500;
@@ -48,15 +49,15 @@
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
-    padding: 27px 25px 23px 25px;
-    width: 57%;
+    padding: 27px 14px 23px 25px;
+    width: 65%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 25px;
+    padding: 25px 18px 25px 25px;
     letter-spacing: 0.1em;
     margin-bottom: 34px;
-    width: 93%;
+    width: 100%;
   }
 }
 
@@ -179,6 +180,13 @@
   }
 }
 
+.alphabet__letter--form {
+  &:active {
+    background-color: $basic-blue-dark;
+    color: $white;
+  }
+}
+
 .alphabet__letter--selected {
   background-color: $basic-blue-dark;
   color: $white;
@@ -192,6 +200,11 @@
   @media (min-width: $desktop-width) {
     color: $basic-blue-dark;
   }
+}
+
+.alphabet__letter--selected-form {
+  background-color: $basic-blue-dark;
+  color: $white;
 }
 
 .alphabet__countries-list {
@@ -264,6 +277,10 @@
   margin-bottom: 0;
 }
 
+.alphabet__country--form {
+  margin-bottom: 10px;
+}
+
 .alphabet--open {
   display: block;
 
@@ -281,5 +298,27 @@
 .alphabet__country--catalog-long-name {
   @media (min-width: $tablet-width) {
     letter-spacing: normal;
+  }
+}
+
+.alphabet__icon {
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 22px;
+    height: 24px;
+  }
+}
+
+.alphabet__country-link {
+  &:hover {
+    color: $basic-blue-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
