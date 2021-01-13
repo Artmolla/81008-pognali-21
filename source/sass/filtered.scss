@@ -154,7 +154,6 @@
   @include flex;
   @include flex-center;
 
-  // flex-basis: calc(50% - 0.5px);
   flex: 1;
   cursor: pointer;
   background-color: $white;
