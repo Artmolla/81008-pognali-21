@@ -451,6 +451,7 @@
 
   &:hover {
     background-color: $white;
+
     @include button-drop-shadow;
   }
 

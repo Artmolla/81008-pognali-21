@@ -71,8 +71,9 @@
 }
 
 @mixin button-drop-shadow {
-  box-shadow: 0px 3px 6px $button-shadow;
+  box-shadow: 0 3px 6px $button-shadow;
 }
+
 @mixin outline {
   outline: 3px solid rgb(107, 206, 107);
   outline-offset: -3px;
