@@ -723,7 +723,8 @@
             </h2>
             <ul class="alphabet__list list-reset">
               <li class="alphabet__item">
-                <a class="alphabet__letter alphabet__letter--form alphabet__letter--selected alphabet__letter--selected-form link-reset" href="#">А</a>
+                <a class="alphabet__letter alphabet__letter--form alphabet__letter--selected alphabet__letter--selected-form link-reset"
+                  href="#">А</a>
               </li>
               <li class="alphabet__item">
                 <a class="alphabet__letter alphabet__letter--form link-reset" href="#">Б</a>
@@ -799,18 +800,29 @@
               </li>
             </ul>
             <ul class="alphabet__countries-list list-reset">
-              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset" href="#">Австралия</a></li>
-              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset" href="#">Австрия</a></li>
-              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset" href="#">Азербайджан</a></li>
-              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset" href="#">Албания</a></li>
-              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset" href="#">Алжир</a></li>
-              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset" href="#">Ангола</a></li>
-              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset" href="#">Андорра</a></li>
-              <li class="alphabet__country alphabet__country--form alphabet__country--long-name"><a class="alphabet__country-link link-reset" href="#">Антигуа и
+              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset"
+                  href="#">Австралия</a></li>
+              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset"
+                  href="#">Австрия</a></li>
+              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset"
+                  href="#">Азербайджан</a></li>
+              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset"
+                  href="#">Албания</a></li>
+              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset"
+                  href="#">Алжир</a></li>
+              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset"
+                  href="#">Ангола</a></li>
+              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset"
+                  href="#">Андорра</a></li>
+              <li class="alphabet__country alphabet__country--form alphabet__country--long-name"><a
+                  class="alphabet__country-link link-reset" href="#">Антигуа и
                   Барбуда</a></li>
-              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset" href="#">Аргентина</a></li>
-              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset" href="#">Армения</a></li>
-              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset" href="#">Афганистан</a></li>
+              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset"
+                  href="#">Аргентина</a></li>
+              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset"
+                  href="#">Армения</a></li>
+              <li class="alphabet__country alphabet__country--form"><a class="alphabet__country-link link-reset"
+                  href="#">Афганистан</a></li>
             </ul>
           </div>
         </fieldset>
@@ -850,9 +862,14 @@
                 srcset="img/flags/bosnia-and-herzegovina-35-24@2x.png 2x" alt="Босния и Герцеговина">
             </picture>
           </label>
-          <textarea class="planner__textarea" name="plans-field" id="plans-fiel-1" cols="30"
-            rows="9">План действий</textarea>
-          <label class="planner__textarea-label" for="plans-field-2">Чехия
+          <div class="planner__textarea-container">
+            <textarea class="planner__textarea" name="plans-field" id="plans-fiel-1" cols="30"
+              rows="9">План действий</textarea>
+            <div class="planner__error-massage">
+              Это поле должно быть заполнено
+            </div>
+          </div>
+          <label class="planner__textarea-label planner__textarea-label--czech" for="plans-field-2">Чехия
             <picture class="planner__flag planner__flag--czech">
               <source type="image/webp"
                 srcset="img/flags/flag-czech-70-47.webp 1x, img/flags/flag-czech-70-47@2x.webp 2x"
@@ -864,9 +881,14 @@
               <img src="img/flags/flag-czech-35-24.png" srcset="img/flags/flag-czech-35-24@2x.png 2x" alt="Чехия">
             </picture>
           </label>
-          <textarea class="planner__textarea planner__textarea--active" name="plans-field" id="plans-field-2" cols="30"
-            rows="9">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+          <div class="planner__textarea-container planner__textarea-container--czech">
+            <textarea class="planner__textarea planner__textarea--active" name="plans-field" id="plans-field-2"
+              cols="30" rows="9">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
           </textarea>
+            <div class="planner__error-massage">
+              Это поле должно быть заполнено
+            </div>
+          </div>
           <div class="planner__buttons">
             <button class="button button--next-step link-reset" type="submit">
               <span>Отправить</span>
