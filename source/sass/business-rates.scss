@@ -1,12 +1,13 @@
 .business-rates {
   display: none;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 50vh;
   left: 25px;
   right: 25px;
   z-index: 20;
   padding: 34px 0 0 0;
   border-radius: 20px;
+  color: $special-grey;
   background-color: $white;
 
   @include popup-shadow;
