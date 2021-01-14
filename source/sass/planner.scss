@@ -372,6 +372,10 @@
   }
 }
 
+.planner__checkbox:focus + .planner__checkbox-label::before {
+  border: 1px solid $black;
+}
+
 .planner__checkbox:checked + .planner__checkbox-label::before {
   background-image: url("../img/checkbox-checked.svg");
 }
@@ -669,6 +673,20 @@
   }
 }
 
+.planner__textarea-container {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-height: 141px;
+  }
+}
+
+.planner__textarea-container--czech {
+  @media (min-width: $tablet-width) {
+    max-height: initial;
+  }
+}
+
 .planner__textarea {
   @include text-area-reset;
 
@@ -717,6 +735,35 @@
 .planner__textarea--error {
   border-color: $special-pink;
   position: relative;
+}
+
+.planner__error-massage {
+  display: none;
+}
+
+.planner__textarea--error + .planner__error-massage {
+  @include flex;
+
+  position: absolute;
+  bottom: 20px;
+  left: 1px;
+  width: calc(94% - 10px);
+  align-items: center;
+  padding-left: 21px;
+  border-radius: 0 0 4px 4px;
+  height: 56px;
+  color: $red;
+  background-color: $special-light-pink;
+
+  @media (min-width: $tablet-width) {
+    bottom: 1px;
+    left: 1px;
+    width: calc(94% - 23px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(73% - 23px);
+  }
 }
 
 .planner__textarea-label {
@@ -788,6 +835,12 @@
     @media (min-width: $desktop-width) {
       right: 211px;
     }
+  }
+}
+
+.planner__textarea-label--czech {
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
   }
 }
 

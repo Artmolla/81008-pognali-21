@@ -63,7 +63,6 @@
 
     flex-basis: 80%;
     align-items: center;
-    justify-content: space-around;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,15 +82,12 @@
 .companion-selection__item {
   margin-bottom: 10px;
 
-  &:first-child {
-    @media (min-width: $tablet-width) {
-      margin-right: 6px;
-    }
+  &:focus-within {
+    border: 1px solid $black;
   }
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
-    flex: 1;
-    margin-bottom: 0;
+    min-width: 160px;
   }
 }
 
@@ -234,12 +230,6 @@
 .companion-selection__label--last {
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     padding-left: 46px;
-  }
-
-  &::before {
-    @media (min-width: $tablet-width) and (max-width: 1439px) {
-      left: 12px;
-    }
   }
 }
 

@@ -91,6 +91,10 @@
   }
 }
 
+.transport-list__checkbox:focus + .transport-list__label {
+  border: 1px solid $black;
+}
+
 .transport-list__checkbox:checked + .transport-list__label {
   color: $basic-blue;
 }
