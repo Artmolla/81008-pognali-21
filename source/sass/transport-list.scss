@@ -19,11 +19,16 @@
 }
 
 .transport-list--filter {
+  display: none;
   flex-direction: row;
 
   @media (min-width: $tablet-width) {
     padding: 6px 0 13px 1px;
   }
+}
+
+.transport-list--filter-open {
+  display: flex;
 }
 
 .transport-list__item {

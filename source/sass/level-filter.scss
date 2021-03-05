@@ -1,4 +1,5 @@
 .level-filter {
+  display: none;
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
@@ -12,6 +13,10 @@
   @media (min-width: $desktop-width) {
     padding-right: 12px;
   }
+}
+
+.level-filter--open {
+  display: block;
 }
 
 .level-filter__level-controls {

@@ -53,10 +53,14 @@
   @media (min-width: $desktop-width) {
     @include flex;
 
-    flex-basis: 61%;
+    flex-basis: calc(75% - 185px);
     justify-content: space-between;
     padding: 0;
   }
+
+  // @media (min-width: 1441px) {
+  //   flex-basis: calc(75% - 185px);
+  // }
 }
 
 .menu__body--menu-open {
