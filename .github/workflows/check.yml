@@ -26,3 +26,15 @@ jobs:
     - name: Run checks
       run: |
         npm test
+
+    - name: Build
+      run: |
+        npm build
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.KEY_FOR_ACTION }}
+        BRANCH: gh-pages
+        FOLDER: public
+        CLEAN: true
