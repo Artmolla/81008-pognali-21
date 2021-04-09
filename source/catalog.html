@@ -9,6 +9,15 @@
   <link rel="preload" as="font" href="fonts/bloggersans-medium.woff" type="font/woff" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
   <title>Каталог</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1VNGBM5CL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-J1VNGBM5CL');
+  </script>
 </head>
 
 <body class="page-body page-body--companions">
@@ -648,8 +657,8 @@
             </ul>
           </fieldset>
           <fieldset class="companion-selection__filter">
-            <button class="companion-selection__button button-reset"
-              type="button">Музыка<span class="hide-on-mobile">:</span></button>
+            <button class="companion-selection__button button-reset" type="button">Музыка<span
+                class="hide-on-mobile">:</span></button>
             <ul class="companion-selection__list list-reset">
               <li class="companion-selection__item">
                 <input class="companion-selection__checkbox visually-hidden" id="hard-rock" type="checkbox" name="music"
@@ -692,8 +701,7 @@
             </ul>
           </fieldset>
           <fieldset class="companion-selection__filter companion-selection__filter--transport">
-            <button
-              class="companion-selection__button companion-selection__button--transport button-reset"
+            <button class="companion-selection__button companion-selection__button--transport button-reset"
               type="button">Транспорт<span class="hide-on-mobile">:</span>
             </button>
             <ul class="transport-list transport-list--catalog transport-list--filter list-reset">
